@@ -1,0 +1,175 @@
+{
+  "clock": {
+    "loopMinutes": 60,
+    "description": "One 60-minute game day; deterministic server clock."
+  },
+  "profiles": {
+    "guard_patrol": {
+      "id": "guard_patrol",
+      "loopMinutes": 60,
+      "speedMeters": 2.4,
+      "phases": [
+        {
+          "id": "dawn_watch",
+          "start": 0,
+          "end": 10,
+          "anchor": "home",
+          "activity": "reporting",
+          "interactable": true
+        },
+        {
+          "id": "day_patrol_a",
+          "start": 10,
+          "end": 25,
+          "anchor": "post_a",
+          "activity": "patrolling",
+          "interactable": true
+        },
+        {
+          "id": "day_patrol_b",
+          "start": 25,
+          "end": 40,
+          "anchor": "post_b",
+          "activity": "patrolling",
+          "interactable": true
+        },
+        {
+          "id": "dusk_return",
+          "start": 40,
+          "end": 50,
+          "anchor": "home",
+          "activity": "returning",
+          "interactable": true
+        },
+        {
+          "id": "night_watch",
+          "start": 50,
+          "end": 60,
+          "anchor": "watch",
+          "activity": "night watch",
+          "interactable": true
+        }
+      ]
+    },
+    "market_vendor": {
+      "id": "market_vendor",
+      "loopMinutes": 60,
+      "speedMeters": 1.8,
+      "phases": [
+        {
+          "id": "dawn_open",
+          "start": 0,
+          "end": 10,
+          "anchor": "home",
+          "activity": "opening stall",
+          "interactable": true
+        },
+        {
+          "id": "market_day",
+          "start": 10,
+          "end": 40,
+          "anchor": "market",
+          "activity": "working market",
+          "interactable": true
+        },
+        {
+          "id": "dusk_close",
+          "start": 40,
+          "end": 50,
+          "anchor": "home",
+          "activity": "closing stall",
+          "interactable": true
+        },
+        {
+          "id": "night_home",
+          "start": 50,
+          "end": 60,
+          "anchor": "home",
+          "activity": "resting",
+          "interactable": true
+        }
+      ]
+    },
+    "scout_patrol": {
+      "id": "scout_patrol",
+      "loopMinutes": 60,
+      "speedMeters": 3.0,
+      "phases": [
+        {
+          "id": "dawn_briefing",
+          "start": 0,
+          "end": 10,
+          "anchor": "camp",
+          "activity": "briefing",
+          "interactable": true
+        },
+        {
+          "id": "road_patrol",
+          "start": 10,
+          "end": 25,
+          "anchor": "road",
+          "activity": "scouting road",
+          "interactable": true
+        },
+        {
+          "id": "watch_post",
+          "start": 25,
+          "end": 40,
+          "anchor": "watch",
+          "activity": "watching frontier",
+          "interactable": true
+        },
+        {
+          "id": "dusk_camp",
+          "start": 40,
+          "end": 50,
+          "anchor": "camp",
+          "activity": "returning to camp",
+          "interactable": true
+        },
+        {
+          "id": "night_watch",
+          "start": 50,
+          "end": 60,
+          "anchor": "watch",
+          "activity": "night watch",
+          "interactable": true
+        }
+      ]
+    },
+    "quest_stationary": {
+      "id": "quest_stationary",
+      "loopMinutes": 60,
+      "movementMode": "stationary",
+      "speedMeters": 0,
+      "phases": [
+        {
+          "id": "all_day",
+          "start": 0,
+          "end": 60,
+          "anchor": "home",
+          "activity": "available for quests",
+          "interactable": true
+        }
+      ]
+    },
+    "quest_local": {
+      "id": "quest_local",
+      "loopMinutes": 60,
+      "movementMode": "local_radius",
+      "wanderRadiusMeters": 6,
+      "speedMeters": 1.1,
+      "wanderIntervalSeconds": 9,
+      "phases": [
+        {
+          "id": "all_day",
+          "start": 0,
+          "end": 60,
+          "anchor": "home",
+          "activity": "working nearby",
+          "interactable": true
+        }
+      ]
+    }
+  }
+}

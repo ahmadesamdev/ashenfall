@@ -1,0 +1,1289 @@
+{
+  "warden": {
+    "grovekeeper": [
+      {
+        "id": "warden.grovekeeper.resonance",
+        "name": "Resonant Opener",
+        "talentId": "warden.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "rejuvenation"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After rejuvenation, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "warden.grovekeeper.flow",
+        "name": "Combat Flow",
+        "talentId": "warden.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "lifebloom"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After lifebloom, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "warden.grovekeeper.apex",
+        "name": "Apex Conversion",
+        "talentId": "warden.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "wild_growth",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "wild_growth gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "rootcaller": [
+      {
+        "id": "warden.rootcaller.resonance",
+        "name": "Resonant Opener",
+        "talentId": "warden.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "root"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After root, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "warden.rootcaller.flow",
+        "name": "Combat Flow",
+        "talentId": "warden.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "purge"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After purge, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "warden.rootcaller.apex",
+        "name": "Apex Conversion",
+        "talentId": "warden.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "thorn_barrage",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "thorn_barrage gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "thornwarden": [
+      {
+        "id": "warden.thornwarden.resonance",
+        "name": "Resonant Opener",
+        "talentId": "warden.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "thorn_lash"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After thorn_lash, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "warden.thornwarden.flow",
+        "name": "Combat Flow",
+        "talentId": "warden.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "thorn_barrage"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After thorn_barrage, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "warden.thornwarden.apex",
+        "name": "Apex Conversion",
+        "talentId": "warden.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "natures_wrath",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "natures_wrath gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ]
+  },
+  "hierophant": {
+    "sanctuary": [
+      {
+        "id": "hierophant.sanctuary.resonance",
+        "name": "Resonant Opener",
+        "talentId": "hierophant.grace",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "salvation"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After salvation, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "hierophant.sanctuary.flow",
+        "name": "Combat Flow",
+        "talentId": "hierophant.hotmastery",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "holy_light"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After holy_light, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "hierophant.sanctuary.apex",
+        "name": "Apex Conversion",
+        "talentId": "hierophant.emergency_grace",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "guardian_grace",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "guardian_grace gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "aegis": [
+      {
+        "id": "hierophant.aegis.resonance",
+        "name": "Resonant Opener",
+        "talentId": "hierophant.grace",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "sanctuary"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After sanctuary, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "hierophant.aegis.flow",
+        "name": "Combat Flow",
+        "talentId": "hierophant.hotmastery",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "holy_aegis"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After holy_aegis, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "hierophant.aegis.apex",
+        "name": "Apex Conversion",
+        "talentId": "hierophant.emergency_grace",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "radiant_barrier",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "radiant_barrier gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "battlepriest": [
+      {
+        "id": "hierophant.battlepriest.resonance",
+        "name": "Resonant Opener",
+        "talentId": "hierophant.grace",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "divine_word"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After divine_word, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "hierophant.battlepriest.flow",
+        "name": "Combat Flow",
+        "talentId": "hierophant.hotmastery",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "radiant_burst"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After radiant_burst, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "hierophant.battlepriest.apex",
+        "name": "Apex Conversion",
+        "talentId": "hierophant.emergency_grace",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "smite_light",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "smite_light gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ]
+  },
+  "vanguard": {
+    "fortress": [
+      {
+        "id": "vanguard.fortress.resonance",
+        "name": "Resonant Opener",
+        "talentId": "vanguard.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "shield_wall"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After shield_wall, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "vanguard.fortress.flow",
+        "name": "Combat Flow",
+        "talentId": "vanguard.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "guard"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After guard, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "vanguard.fortress.apex",
+        "name": "Apex Conversion",
+        "talentId": "vanguard.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "revenge",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "revenge gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "warbreaker": [
+      {
+        "id": "vanguard.warbreaker.resonance",
+        "name": "Resonant Opener",
+        "talentId": "vanguard.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "revenge"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After revenge, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "vanguard.warbreaker.flow",
+        "name": "Combat Flow",
+        "talentId": "vanguard.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "shield_charge"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After shield_charge, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "vanguard.warbreaker.apex",
+        "name": "Apex Conversion",
+        "talentId": "vanguard.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "ground_smash",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "ground_smash gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "warden": [
+      {
+        "id": "vanguard.warden.resonance",
+        "name": "Resonant Opener",
+        "talentId": "vanguard.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "shield_bash"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After shield_bash, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "vanguard.warden.flow",
+        "name": "Combat Flow",
+        "talentId": "vanguard.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "ground_smash"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After ground_smash, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "vanguard.warden.apex",
+        "name": "Apex Conversion",
+        "talentId": "vanguard.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "whirlwind_guard",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "whirlwind_guard gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ]
+  },
+  "ranger": {
+    "marksman": [
+      {
+        "id": "ranger.marksman.resonance",
+        "name": "Resonant Opener",
+        "talentId": "ranger.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "hunter_mark"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After hunter_mark, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "ranger.marksman.flow",
+        "name": "Combat Flow",
+        "talentId": "ranger.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "piercing_arrow"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After piercing_arrow, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "ranger.marksman.apex",
+        "name": "Apex Conversion",
+        "talentId": "ranger.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "trueshot",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "trueshot gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "skirmisher": [
+      {
+        "id": "ranger.skirmisher.resonance",
+        "name": "Resonant Opener",
+        "talentId": "ranger.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "evasive_step"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After evasive_step, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "ranger.skirmisher.flow",
+        "name": "Combat Flow",
+        "talentId": "ranger.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "steady_shot"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After steady_shot, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "ranger.skirmisher.apex",
+        "name": "Apex Conversion",
+        "talentId": "ranger.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "volley",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "volley gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "stormarcher": [
+      {
+        "id": "ranger.stormarcher.resonance",
+        "name": "Resonant Opener",
+        "talentId": "ranger.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "volley"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After volley, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "ranger.stormarcher.flow",
+        "name": "Combat Flow",
+        "talentId": "ranger.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "rain_of_arrows"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After rain_of_arrows, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "ranger.stormarcher.apex",
+        "name": "Apex Conversion",
+        "talentId": "ranger.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "hunter_mark",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "hunter_mark gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ]
+  },
+  "arcanist": {
+    "spellfire": [
+      {
+        "id": "arcanist.spellfire.resonance",
+        "name": "Resonant Opener",
+        "talentId": "arcanist.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "arcane_surge"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After arcane_surge, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "arcanist.spellfire.flow",
+        "name": "Combat Flow",
+        "talentId": "arcanist.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "meteor_shard"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After meteor_shard, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "arcanist.spellfire.apex",
+        "name": "Apex Conversion",
+        "talentId": "arcanist.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "flame_surge",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "flame_surge gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "frostweaver": [
+      {
+        "id": "arcanist.frostweaver.resonance",
+        "name": "Resonant Opener",
+        "talentId": "arcanist.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "frost_nova"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After frost_nova, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "arcanist.frostweaver.flow",
+        "name": "Combat Flow",
+        "talentId": "arcanist.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "frost_lance"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After frost_lance, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "arcanist.frostweaver.apex",
+        "name": "Apex Conversion",
+        "talentId": "arcanist.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "blink",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "blink gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "aethermind": [
+      {
+        "id": "arcanist.aethermind.resonance",
+        "name": "Resonant Opener",
+        "talentId": "arcanist.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "arcane_echo"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After arcane_echo, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "arcanist.aethermind.flow",
+        "name": "Combat Flow",
+        "talentId": "arcanist.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "mana_burn"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After mana_burn, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "arcanist.aethermind.apex",
+        "name": "Apex Conversion",
+        "talentId": "arcanist.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "arcane_bolt",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "arcane_bolt gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ]
+  },
+  "templar": {
+    "crusader": [
+      {
+        "id": "templar.crusader.resonance",
+        "name": "Resonant Opener",
+        "talentId": "templar.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "holy_strike"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After holy_strike, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "templar.crusader.flow",
+        "name": "Combat Flow",
+        "talentId": "templar.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "judgement"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After judgement, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "templar.crusader.apex",
+        "name": "Apex Conversion",
+        "talentId": "templar.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "judging_blade",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "judging_blade gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "guardian": [
+      {
+        "id": "templar.guardian.resonance",
+        "name": "Resonant Opener",
+        "talentId": "templar.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "blessed_guard"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After blessed_guard, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "templar.guardian.flow",
+        "name": "Combat Flow",
+        "talentId": "templar.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "aegis_of_light"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After aegis_of_light, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "templar.guardian.apex",
+        "name": "Apex Conversion",
+        "talentId": "templar.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "consecration",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "consecration gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "redeemer": [
+      {
+        "id": "templar.redeemer.resonance",
+        "name": "Resonant Opener",
+        "talentId": "templar.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "lay_on_hands"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After lay_on_hands, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "templar.redeemer.flow",
+        "name": "Combat Flow",
+        "talentId": "templar.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "consecration"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After consecration, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "templar.redeemer.apex",
+        "name": "Apex Conversion",
+        "talentId": "templar.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "smite",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "smite gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ]
+  },
+  "occultist": {
+    "plaguecaller": [
+      {
+        "id": "occultist.plaguecaller.resonance",
+        "name": "Resonant Opener",
+        "talentId": "occultist.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "curse"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After curse, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "occultist.plaguecaller.flow",
+        "name": "Combat Flow",
+        "talentId": "occultist.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "shadow_rend"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After shadow_rend, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "occultist.plaguecaller.apex",
+        "name": "Apex Conversion",
+        "talentId": "occultist.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "nightfall",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "nightfall gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "soulreaper": [
+      {
+        "id": "occultist.soulreaper.resonance",
+        "name": "Resonant Opener",
+        "talentId": "occultist.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "life_drain"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After life_drain, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "occultist.soulreaper.flow",
+        "name": "Combat Flow",
+        "talentId": "occultist.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "soul_siphon"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After soul_siphon, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "occultist.soulreaper.apex",
+        "name": "Apex Conversion",
+        "talentId": "occultist.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "doom",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "doom gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "voidcaller": [
+      {
+        "id": "occultist.voidcaller.resonance",
+        "name": "Resonant Opener",
+        "talentId": "occultist.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "shadow_pact"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After shadow_pact, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "occultist.voidcaller.flow",
+        "name": "Combat Flow",
+        "talentId": "occultist.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "void_pulse"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After void_pulse, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "occultist.voidcaller.apex",
+        "name": "Apex Conversion",
+        "talentId": "occultist.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "eldritch_bolt",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "eldritch_bolt gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ]
+  },
+  "reaver": {
+    "berserker": [
+      {
+        "id": "reaver.berserker.resonance",
+        "name": "Resonant Opener",
+        "talentId": "reaver.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "bloodrush"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After bloodrush, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "reaver.berserker.flow",
+        "name": "Combat Flow",
+        "talentId": "reaver.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "execution"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After execution, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "reaver.berserker.apex",
+        "name": "Apex Conversion",
+        "talentId": "reaver.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "death_waltz",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "death_waltz gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "bloodreaver": [
+      {
+        "id": "reaver.bloodreaver.resonance",
+        "name": "Resonant Opener",
+        "talentId": "reaver.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "rend"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After rend, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "reaver.bloodreaver.flow",
+        "name": "Combat Flow",
+        "talentId": "reaver.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "bloodletter"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After bloodletter, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "reaver.bloodreaver.apex",
+        "name": "Apex Conversion",
+        "talentId": "reaver.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "blood_whirl",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "blood_whirl gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "warborn": [
+      {
+        "id": "reaver.warborn.resonance",
+        "name": "Resonant Opener",
+        "talentId": "reaver.power",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "whirlwind"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After whirlwind, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "reaver.warborn.flow",
+        "name": "Combat Flow",
+        "talentId": "reaver.discipline",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "blood_strike"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After blood_strike, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "reaver.warborn.apex",
+        "name": "Apex Conversion",
+        "talentId": "reaver.apex",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "death_waltz",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "death_waltz gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ]
+  },
+  "shadowblade": {
+    "assassin": [
+      {
+        "id": "shadowblade.assassin.resonance",
+        "name": "Resonant Opener",
+        "talentId": "shadowblade.executioner",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "ambush"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After ambush, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "shadowblade.assassin.flow",
+        "name": "Combat Flow",
+        "talentId": "shadowblade.momentum",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "eviscerate"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After eviscerate, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "shadowblade.assassin.apex",
+        "name": "Apex Conversion",
+        "talentId": "shadowblade.cold_blood",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "death_mark",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "death_mark gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "saboteur": [
+      {
+        "id": "shadowblade.saboteur.resonance",
+        "name": "Resonant Opener",
+        "talentId": "shadowblade.executioner",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "venom"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After venom, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "shadowblade.saboteur.flow",
+        "name": "Combat Flow",
+        "talentId": "shadowblade.momentum",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "crippling_toxin"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After crippling_toxin, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "shadowblade.saboteur.apex",
+        "name": "Apex Conversion",
+        "talentId": "shadowblade.cold_blood",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "hemorrhage",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "hemorrhage gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ],
+    "duelist": [
+      {
+        "id": "shadowblade.duelist.resonance",
+        "name": "Resonant Opener",
+        "talentId": "shadowblade.executioner",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "shadow_step"
+        },
+        "effect": {
+          "nextPowerPct": 12
+        },
+        "description": "After shadow_step, your next damaging or healing ability is empowered by 12%."
+      },
+      {
+        "id": "shadowblade.duelist.flow",
+        "name": "Combat Flow",
+        "talentId": "shadowblade.momentum",
+        "minRank": 1,
+        "trigger": {
+          "type": "after_cast",
+          "abilityId": "shadow_flurry"
+        },
+        "effect": {
+          "resourceGain": 8,
+          "nextPowerPct": 8
+        },
+        "description": "After shadow_flurry, gain 8 resource and empower your next combat action by 8%."
+      },
+      {
+        "id": "shadowblade.duelist.apex",
+        "name": "Apex Conversion",
+        "talentId": "shadowblade.cold_blood",
+        "minRank": 1,
+        "trigger": {
+          "type": "conditional_cast",
+          "abilityId": "vanish",
+          "targetHpBelow": 0.35,
+          "selfHpBelow": 0.45
+        },
+        "effect": {
+          "nextPowerPct": 18
+        },
+        "description": "vanish gains 18% power when the target is below 35% HP or you are below 45% HP."
+      }
+    ]
+  }
+}

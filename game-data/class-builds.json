@@ -1,0 +1,774 @@
+{
+  "warden": {
+    "role": "Support",
+    "solo": "Buff / control",
+    "group": "Buffs / control / utility",
+    "pvp": "Control / disruption",
+    "talentFocus": ["buffDuration", "stunResist", "resolveRegen"],
+    "buildUnlockLevel": 10,
+    "builds": [
+      {
+        "id": "grovekeeper",
+        "name": "Grovekeeper",
+        "description": "HoT-heavy support with sustained recovery.",
+        "effects": {
+          "healing": 12,
+          "hotPower": 18,
+          "hotDuration": 15
+        },
+        "abilityMultipliers": {
+          "rejuvenation": 1.15,
+          "lifebloom": 1.1,
+          "wild_growth": 1.12,
+          "swiftmend": 1.06,
+          "entangling_vines": 1.075,
+          "ironbark": 1.09,
+          "spirit_bloom": 1.08,
+          "tranquility": 1.08
+        },
+        "talentTreeId": "grovekeeper",
+        "keystoneTalentId": "warden.grovekeeper.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "rootcaller",
+        "name": "Rootcaller",
+        "description": "Control and disruption specialist.",
+        "effects": {
+          "controlDuration": 30,
+          "stunResist": 10,
+          "haste": 4
+        },
+        "abilityMultipliers": {
+          "root": 1.25,
+          "purge": 1.2,
+          "thorn_barrage": 1.12,
+          "swiftmend": 1.06,
+          "entangling_vines": 1.1,
+          "ironbark": 1.08,
+          "natures_grasp": 1.1
+        },
+        "talentTreeId": "rootcaller",
+        "keystoneTalentId": "warden.rootcaller.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "thornwarden",
+        "name": "Thorn Warden",
+        "description": "Hybrid support that converts uptime into damage.",
+        "effects": {
+          "damage": 4,
+          "healing": 5,
+          "crit": 3
+        },
+        "abilityMultipliers": {
+          "thorn_lash": 1.027,
+          "thorn_barrage": 1.072,
+          "natures_wrath": 1.001,
+          "swiftmend": 1.06,
+          "entangling_vines": 1.08,
+          "ironbark": 1.09,
+          "natures_grasp": 1.1,
+          "ancestral_growth": 1.08
+        },
+        "talentTreeId": "thornwarden",
+        "keystoneTalentId": "warden.thornwarden.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      }
+    ]
+  },
+  "hierophant": {
+    "role": "Healer",
+    "solo": "Sustain / DoT",
+    "group": "Healing / cleanse",
+    "pvp": "Sustain / denial",
+    "talentFocus": ["healing", "maxHp", "hotDuration"],
+    "buildUnlockLevel": 10,
+    "builds": [
+      {
+        "id": "sanctuary",
+        "name": "Sanctuary Healer",
+        "description": "Pure reactive healing and emergency recovery.",
+        "effects": {
+          "healing": 12,
+          "maxHpPct": 3,
+          "hotPower": 5
+        },
+        "abilityMultipliers": {
+          "salvation": 1.15,
+          "holy_light": 1.1,
+          "guardian_grace": 1.1,
+          "divine_hymn": 1.1,
+          "mass_renew": 1.1
+        },
+        "talentTreeId": "sanctuary",
+        "keystoneTalentId": "hierophant.sanctuary.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "aegis",
+        "name": "Aegis Healer",
+        "description": "Barrier and prevention specialist.",
+        "effects": {
+          "healing": 9,
+          "barrierPower": 25,
+          "damageTaken": -3
+        },
+        "abilityMultipliers": {
+          "sanctuary": 1.2,
+          "holy_aegis": 1.1,
+          "radiant_barrier": 1.1,
+          "divine_hymn": 1.08
+        },
+        "talentTreeId": "aegis",
+        "keystoneTalentId": "hierophant.aegis.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "battlepriest",
+        "name": "Battle Priest",
+        "description": "Trades some healing for offensive holy pressure.",
+        "effects": {
+          "damage": 7,
+          "healing": 5,
+          "crit": 5,
+          "haste": 3
+        },
+        "abilityMultipliers": {
+          "divine_word": 1.1,
+          "radiant_burst": 1.1,
+          "smite_light": 1.1,
+          "divine_hymn": 1.08
+        },
+        "talentTreeId": "battlepriest",
+        "keystoneTalentId": "hierophant.battlepriest.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      }
+    ]
+  },
+  "vanguard": {
+    "role": "Tank",
+    "solo": "Defense / threat",
+    "group": "Mitigation / threat",
+    "pvp": "Durability / control",
+    "talentFocus": ["maxHp", "armor", "haste"],
+    "buildUnlockLevel": 10,
+    "builds": [
+      {
+        "id": "fortress",
+        "name": "Fortress Tank",
+        "description": "Mitigation, barriers and reliable threat.",
+        "effects": {
+          "armorPct": 8,
+          "maxHpPct": 6,
+          "threat": 12,
+          "damageTaken": -4
+        },
+        "abilityMultipliers": {
+          "shield_wall": 1.15,
+          "guard": 1.1,
+          "revenge": 1.1,
+          "iron_rebuke": 1.06,
+          "shield_reinforcement": 1.08,
+          "rallying_banner": 1.09,
+          "shield_storm": 1.08,
+          "last_stand": 1.08,
+          "citadel_breaker": 1.08
+        },
+        "talentTreeId": "fortress",
+        "keystoneTalentId": "vanguard.fortress.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "warbreaker",
+        "name": "Warbreaker",
+        "description": "Aggressive tanking through counterattacks and pressure.",
+        "effects": {
+          "damage": 3.5,
+          "threat": 10,
+          "haste": 3,
+          "maxHpPct": -2
+        },
+        "abilityMultipliers": {
+          "revenge": 1.2,
+          "shield_charge": 1.15,
+          "ground_smash": 1.1,
+          "iron_rebuke": 1.06,
+          "shield_reinforcement": 1.075,
+          "rallying_banner": 1.09,
+          "shield_storm": 1.08,
+          "thunderous_challenge": 1.08,
+          "citadel_breaker": 1.1
+        },
+        "talentTreeId": "warbreaker",
+        "keystoneTalentId": "vanguard.warbreaker.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "warden",
+        "name": "Bulwark Controller",
+        "description": "Control-heavy tank built around interrupts and stuns.",
+        "effects": {
+          "armorPct": 4,
+          "controlDuration": 25,
+          "stunResist": 15,
+          "threat": 8
+        },
+        "abilityMultipliers": {
+          "shield_bash": 1.15,
+          "ground_smash": 1.08,
+          "whirlwind_guard": 1.1,
+          "iron_rebuke": 1.06,
+          "shield_reinforcement": 1.075,
+          "rallying_banner": 1.09,
+          "thunderous_challenge": 1.1,
+          "shield_storm": 1.08
+        },
+        "talentTreeId": "warden",
+        "keystoneTalentId": "vanguard.warden.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      }
+    ]
+  },
+  "ranger": {
+    "role": "Ranged DPS",
+    "solo": "Range / traps",
+    "group": "Ranged DPS / control",
+    "pvp": "Kiting / traps",
+    "talentFocus": ["attack", "crit", "haste"],
+    "buildUnlockLevel": 10,
+    "builds": [
+      {
+        "id": "marksman",
+        "name": "Marksman",
+        "description": "Long-range single-target precision.",
+        "effects": {
+          "damage": 9,
+          "crit": 10,
+          "rangeDamage": 8
+        },
+        "abilityMultipliers": {
+          "hunter_mark": 1.2,
+          "piercing_arrow": 1.22,
+          "trueshot": 1.15,
+          "aimed_shot": 1.06,
+          "multishot": 1.075,
+          "concussive_shot": 1.09,
+          "rapid_fire": 1.08,
+          "black_arrow": 1.1,
+          "deadeye": 1.1,
+          "hunters_fury": 1.08
+        },
+        "talentTreeId": "marksman",
+        "keystoneTalentId": "ranger.marksman.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "skirmisher",
+        "name": "Skirmisher",
+        "description": "Mobile ranged pressure and repositioning.",
+        "effects": {
+          "damage": 6,
+          "haste": 8,
+          "damageTaken": -3
+        },
+        "abilityMultipliers": {
+          "evasive_step": 1.2,
+          "steady_shot": 1.12,
+          "volley": 1.12,
+          "aimed_shot": 1.06,
+          "multishot": 1.075,
+          "concussive_shot": 1.09,
+          "rapid_fire": 1.1,
+          "aspect_of_the_wild": 1.08,
+          "hunters_fury": 1.08
+        },
+        "talentTreeId": "skirmisher",
+        "keystoneTalentId": "ranger.skirmisher.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "stormarcher",
+        "name": "Storm Archer",
+        "description": "AoE and sustained battlefield pressure.",
+        "effects": {
+          "damage": 7,
+          "crit": 5,
+          "aoeDamage": 18
+        },
+        "abilityMultipliers": {
+          "volley": 1.2,
+          "rain_of_arrows": 1.25,
+          "hunter_mark": 1.1,
+          "aimed_shot": 1.06,
+          "multishot": 1.075,
+          "concussive_shot": 1.09,
+          "explosive_trap": 1.08,
+          "barrage": 1.1,
+          "hunters_fury": 1.1
+        },
+        "talentTreeId": "stormarcher",
+        "keystoneTalentId": "ranger.stormarcher.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      }
+    ]
+  },
+  "arcanist": {
+    "role": "Magic DPS",
+    "solo": "Burst / AoE",
+    "group": "Magic burst / AoE",
+    "pvp": "Burst / control",
+    "talentFocus": ["attack", "crit", "haste"],
+    "buildUnlockLevel": 10,
+    "builds": [
+      {
+        "id": "spellfire",
+        "name": "Spellfire",
+        "description": "Burst caster focused on fire and Arcane Surge windows.",
+        "effects": {
+          "damage": 10,
+          "crit": 7,
+          "haste": 2
+        },
+        "abilityMultipliers": {
+          "arcane_surge": 1.2,
+          "meteor_shard": 1.2,
+          "flame_surge": 1.18,
+          "arcane_missiles": 1.06,
+          "ice_lance": 1.075,
+          "flame_burst": 1.09,
+          "comet": 1.1,
+          "arcane_overload": 1.08,
+          "starfall": 1.08
+        },
+        "talentTreeId": "spellfire",
+        "keystoneTalentId": "arcanist.spellfire.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "frostweaver",
+        "name": "Frostweaver",
+        "description": "Control caster with stronger slows and Frost Nova.",
+        "effects": {
+          "controlDuration": 30,
+          "damage": 8,
+          "haste": 4
+        },
+        "abilityMultipliers": {
+          "frost_nova": 1.25,
+          "frost_lance": 1.22,
+          "blink": 1.15,
+          "arcane_missiles": 1.06,
+          "ice_lance": 1.1,
+          "flame_burst": 1.09,
+          "time_stop": 1.08,
+          "starfall": 1.08
+        },
+        "talentTreeId": "frostweaver",
+        "keystoneTalentId": "arcanist.frostweaver.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "aethermind",
+        "name": "Aethermind",
+        "description": "Mana/resource-efficient spell sequencing.",
+        "effects": {
+          "damage": 7,
+          "haste": 6,
+          "resourceCost": -12
+        },
+        "abilityMultipliers": {
+          "arcane_echo": 1.25,
+          "mana_burn": 1.18,
+          "arcane_bolt": 1.1,
+          "arcane_missiles": 1.06,
+          "ice_lance": 1.075,
+          "flame_burst": 1.09,
+          "mana_rupture": 1.1,
+          "arcane_overload": 1.08,
+          "comet": 1.08,
+          "starfall": 1.08
+        },
+        "talentTreeId": "aethermind",
+        "keystoneTalentId": "arcanist.aethermind.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      }
+    ]
+  },
+  "templar": {
+    "role": "Hybrid",
+    "solo": "Holy melee",
+    "group": "Off-tank / support DPS",
+    "pvp": "Pressure / sustain",
+    "talentFocus": ["attack", "armor", "healing"],
+    "buildUnlockLevel": 10,
+    "builds": [
+      {
+        "id": "crusader",
+        "name": "Crusader",
+        "description": "Aggressive holy melee hybrid.",
+        "effects": {
+          "damage": 4.5,
+          "crit": 4,
+          "armorPct": 3
+        },
+        "abilityMultipliers": {
+          "holy_strike": 1.048,
+          "judgement": 1.094,
+          "judging_blade": 1.048,
+          "shield_of_faith": 1.06,
+          "holy_hammer": 1.08,
+          "divine_storm": 1.1,
+          "last_judgment": 1.1,
+          "holy_reckoning": 1.08
+        },
+        "talentTreeId": "crusader",
+        "keystoneTalentId": "templar.crusader.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "guardian",
+        "name": "Guardian Templar",
+        "description": "Off-tank hybrid with stronger barriers.",
+        "effects": {
+          "armorPct": 8,
+          "maxHpPct": 6,
+          "healing": 5,
+          "threat": 8
+        },
+        "abilityMultipliers": {
+          "blessed_guard": 1.2,
+          "aegis_of_light": 1.2,
+          "consecration": 1.12,
+          "shield_of_faith": 1.06,
+          "holy_hammer": 1.075,
+          "divine_storm": 1.09,
+          "divine_shield": 1.1,
+          "consecrated_light": 1.08,
+          "holy_reckoning": 1.08
+        },
+        "talentTreeId": "guardian",
+        "keystoneTalentId": "templar.guardian.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "redeemer",
+        "name": "Redeemer",
+        "description": "Support hybrid focused on emergency healing.",
+        "effects": {
+          "healing": 12,
+          "damage": 4,
+          "haste": 3
+        },
+        "abilityMultipliers": {
+          "lay_on_hands": 1.25,
+          "consecration": 1.15,
+          "smite": 1.1,
+          "shield_of_faith": 1.06,
+          "holy_hammer": 1.075,
+          "divine_storm": 1.09,
+          "consecrated_light": 1.1,
+          "beacon_of_hope": 1.1,
+          "holy_reckoning": 1.08
+        },
+        "talentTreeId": "redeemer",
+        "keystoneTalentId": "templar.redeemer.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      }
+    ]
+  },
+  "occultist": {
+    "role": "Caster",
+    "solo": "DoT / curses",
+    "group": "DoT / debuff",
+    "pvp": "DoT / control",
+    "talentFocus": ["damage", "poisonDamage", "bleedDamage"],
+    "buildUnlockLevel": 10,
+    "builds": [
+      {
+        "id": "plaguecaller",
+        "name": "Plaguecaller",
+        "description": "DoT spread and curse maintenance.",
+        "effects": {
+          "dotDamage": 25,
+          "debuffDuration": 15,
+          "damage": 4
+        },
+        "abilityMultipliers": {
+          "curse": 1.2,
+          "shadow_rend": 1.25,
+          "nightfall": 1.18,
+          "plague_spread": 1.08,
+          "fear": 1.075,
+          "siphon_life": 1.09,
+          "plague_of_shadows": 1.1,
+          "apocalypse": 1.08
+        },
+        "talentTreeId": "plaguecaller",
+        "keystoneTalentId": "occultist.plaguecaller.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "soulreaper",
+        "name": "Soul Reaper",
+        "description": "Drain, execute and self-sustain.",
+        "effects": {
+          "damage": 9,
+          "healing": 8,
+          "crit": 6
+        },
+        "abilityMultipliers": {
+          "life_drain": 1.2,
+          "soul_siphon": 1.22,
+          "doom": 1.2,
+          "plague_spread": 1.06,
+          "fear": 1.075,
+          "siphon_life": 1.09,
+          "soul_burst": 1.08,
+          "harvest_soul": 1.1,
+          "apocalypse": 1.1
+        },
+        "talentTreeId": "soulreaper",
+        "keystoneTalentId": "occultist.soulreaper.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "voidcaller",
+        "name": "Voidcaller",
+        "description": "Burst caster with Shadow Pact windows.",
+        "effects": {
+          "damage": 8,
+          "haste": 4,
+          "crit": 5
+        },
+        "abilityMultipliers": {
+          "shadow_pact": 1.2,
+          "void_pulse": 1.08,
+          "eldritch_bolt": 1.12,
+          "plague_spread": 1.06,
+          "fear": 1.075,
+          "siphon_life": 1.09,
+          "void_rift": 1.1,
+          "apocalypse": 1.08
+        },
+        "talentTreeId": "voidcaller",
+        "keystoneTalentId": "occultist.voidcaller.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      }
+    ]
+  },
+  "reaver": {
+    "role": "Melee DPS",
+    "solo": "Berserker",
+    "group": "Melee burst",
+    "pvp": "Pressure / execute",
+    "talentFocus": ["attack", "crit", "maxHp"],
+    "buildUnlockLevel": 10,
+    "builds": [
+      {
+        "id": "berserker",
+        "name": "Berserker",
+        "description": "High-pressure burst and execute gameplay.",
+        "effects": {
+          "damage": 10,
+          "crit": 7,
+          "maxHpPct": -3
+        },
+        "abilityMultipliers": {
+          "bloodrush": 1.18,
+          "execution": 1.22,
+          "death_waltz": 1.12,
+          "savage_slash": 1.08,
+          "blood_frenzy": 1.075,
+          "sweeping_blows": 1.09,
+          "carnage": 1.1,
+          "apocalypse_blade": 1.1
+        },
+        "talentTreeId": "berserker",
+        "keystoneTalentId": "reaver.berserker.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "bloodreaver",
+        "name": "Blood Reaver",
+        "description": "Bleed-centric sustained pressure.",
+        "effects": {
+          "dotDamage": 22,
+          "maxHpPct": 3,
+          "damage": 7
+        },
+        "abilityMultipliers": {
+          "rend": 1.25,
+          "bloodletter": 1.25,
+          "blood_whirl": 1.15,
+          "savage_slash": 1.06,
+          "blood_frenzy": 1.075,
+          "sweeping_blows": 1.09,
+          "rupturing_strike": 1.1,
+          "cleaving_rend": 1.1,
+          "annihilate": 1.08
+        },
+        "talentTreeId": "bloodreaver",
+        "keystoneTalentId": "reaver.bloodreaver.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "warborn",
+        "name": "Warborn",
+        "description": "Durable melee bruiser with sustained uptime.",
+        "effects": {
+          "damage": 6,
+          "maxHpPct": 8,
+          "damageTaken": -4
+        },
+        "abilityMultipliers": {
+          "whirlwind": 1.12,
+          "blood_strike": 1.12,
+          "death_waltz": 1.18,
+          "savage_slash": 1.06,
+          "blood_frenzy": 1.075,
+          "sweeping_blows": 1.08,
+          "cleaving_rend": 1.08,
+          "apocalypse_blade": 1.1
+        },
+        "talentTreeId": "warborn",
+        "keystoneTalentId": "reaver.warborn.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      }
+    ]
+  },
+  "shadowblade": {
+    "role": "Melee DPS",
+    "solo": "Stealth / burst",
+    "group": "Single-target DPS / interrupt",
+    "pvp": "Burst / reset",
+    "talentFocus": ["attack", "crit", "haste"],
+    "displayName": "Rogue",
+    "buildUnlockLevel": 10,
+    "builds": [
+      {
+        "id": "assassin",
+        "name": "Assassin",
+        "description": "Stealth opener and execute specialist.",
+        "effects": {
+          "damage": 6,
+          "crit": 6,
+          "haste": 3
+        },
+        "abilityMultipliers": {
+          "ambush": 1.25,
+          "eviscerate": 1.18,
+          "death_mark": 1.1,
+          "sinister_strike": 1.06,
+          "toxic_barrage": 1.075,
+          "cloak_of_shadows": 1.09,
+          "shadow_execution": 1.1,
+          "dance_of_death": 1.08
+        },
+        "talentTreeId": "assassin",
+        "keystoneTalentId": "shadowblade.assassin.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "saboteur",
+        "name": "Saboteur",
+        "description": "Poison, bleed and disruption specialist.",
+        "effects": {
+          "dotDamage": 18,
+          "controlDuration": 20,
+          "haste": 4
+        },
+        "abilityMultipliers": {
+          "venom": 1.18,
+          "crippling_toxin": 1.25,
+          "hemorrhage": 1.18,
+          "sinister_strike": 1.06,
+          "toxic_barrage": 1.1,
+          "cloak_of_shadows": 1.09,
+          "fan_of_blades": 1.08,
+          "dance_of_death": 1.08
+        },
+        "talentTreeId": "saboteur",
+        "keystoneTalentId": "shadowblade.saboteur.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      },
+      {
+        "id": "duelist",
+        "name": "Duelist",
+        "description": "Sustained single-target pressure with defensive resets.",
+        "effects": {
+          "damage": 6,
+          "crit": 5,
+          "damageTaken": -3,
+          "haste": 5
+        },
+        "abilityMultipliers": {
+          "shadow_step": 1.15,
+          "shadow_flurry": 1.15,
+          "vanish": 1.15,
+          "sinister_strike": 1.1,
+          "toxic_barrage": 1.075,
+          "cloak_of_shadows": 1.08,
+          "shadow_execution": 1.1
+        },
+        "talentTreeId": "duelist",
+        "keystoneTalentId": "shadowblade.duelist.keystone",
+        "talentPointUnlockLevel": 10,
+        "talentDesignVersion": "4.1",
+        "balanceVersion": "4.1"
+      }
+    ]
+  }
+}

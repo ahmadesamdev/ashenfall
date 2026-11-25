@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "tiers": [
+    {
+      "id": "normal",
+      "minLevel": 4,
+      "modifier": 1.0
+    },
+    {
+      "id": "veteran",
+      "minLevel": 16,
+      "modifier": 1.25
+    },
+    {
+      "id": "heroic",
+      "minLevel": 26,
+      "modifier": 1.55
+    },
+    {
+      "id": "mythic",
+      "minLevel": 36,
+      "modifier": 1.9
+    },
+    {
+      "id": "apex",
+      "minLevel": 51,
+      "modifier": 2.3
+    }
+  ],
+  "rules": {
+    "storyGate": true,
+    "partySizeMin": 1,
+    "partySizeMax": 5,
+    "checkpointRecovery": true,
+    "completionChest": true,
+    "lootIdentity": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "levelCap": 60,
+  "loops": [
+    "daily_world_events",
+    "dungeon_completion",
+    "boss_chase",
+    "tier_tokens",
+    "legendary_acquisition",
+    "reputation",
+    "crafting_mastery",
+    "weekly_challenges"
+  ],
+  "currencies": ["tier_tokens", "crafting_marks", "honor"],
+  "rules": {
+    "weeklyResetServerTime": true,
+    "pityPersistent": true,
+    "duplicateProtection": true,
+    "gearCapAlignedToLevel60": true
+  }
+}

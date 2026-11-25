@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "aric_after_ch1",
+      "npcId": "captain_aric",
+      "minChapter": 1,
+      "lines": [
+        "The patrol reports keep getting shorter. The people in them do not.",
+        "If you find another lantern, bring me the name attached to it."
+      ],
+      "choices": [
+        {
+          "id": "ask_patrol",
+          "text": "What happened to the sixth patrol?",
+          "response": "They went beneath Gloamwood. I ordered them to return before the roots closed. They did not."
+        }
+      ]
+    },
+    {
+      "id": "kael_after_ch3",
+      "npcId": "warden_kael",
+      "minChapter": 3,
+      "lines": [
+        "The ash is not random. It repeats names, routes and old symbols.",
+        "Someone - or something - is remembering the world in pieces."
+      ],
+      "choices": [
+        {
+          "id": "ask_pattern",
+          "text": "Can the pattern be followed?",
+          "response": "Yes. But every answer makes the next scar easier to find."
+        }
+      ]
+    },
+    {
+      "id": "havel_after_ch6",
+      "npcId": "old_lantern_keeper",
+      "minChapter": 6,
+      "lines": [
+        "I remember the road before the kingdom forgot itself.",
+        "The old lanterns were never meant to light roads. They were meant to mark memories."
+      ],
+      "choices": [
+        {
+          "id": "ask_sixth",
+          "text": "What was the sixth lantern?",
+          "response": "A warning. Then a promise. Then, after the first Stitch, a prisoner's name."
+        }
+      ]
+    },
+    {
+      "id": "elian_after_ch8",
+      "npcId": "archivist_elian",
+      "minChapter": 8,
+      "lines": [
+        "Archives are not neutral. Choosing what survives is choosing what the next generation believes.",
+        "The Council sealed records because it feared panic. The Wardens sealed records because they feared misuse."
+      ],
+      "choices": [
+        {
+          "id": "ask_truth",
+          "text": "Which record should survive?",
+          "response": "The one that lets ordinary people understand the cost without inheriting the fear."
+        }
+      ]
+    },
+    {
+      "id": "covenant_after_ch6",
+      "npcId": "covenant_envoy",
+      "minChapter": 6,
+      "requiresFlag": "choice_covenant_heard",
+      "lines": [
+        "You listened when others would have killed us. That does not make us friends.",
+        "It makes you someone who can hear an uncomfortable answer."
+      ],
+      "choices": [
+        {
+          "id": "ask_hollow",
+          "text": "What does the Hollow want?",
+          "response": "To be remembered without being worshipped. The two are harder to separate than you think."
+        }
+      ]
+    },
+    {
+      "id": "hollow_after_ch8",
+      "npcId": "hollow_watcher",
+      "minChapter": 8,
+      "requiresFlag": "choice_hollow_listened",
+      "lines": [
+        "You gave memory a name. That is why the Hollow speaks to you.",
+        "Do not mistake a voice for a command."
+      ],
+      "choices": [
+        {
+          "id": "ask_future",
+          "text": "What happens after the Bells?",
+          "response": "The world becomes responsible for what it remembers."
+        }
+      ]
+    }
+  ]
+}

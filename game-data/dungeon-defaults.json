@@ -1,0 +1,6 @@
+{
+  "trashPools": {
+    "trash": ["catacomb_stalker", "catacomb_guard"],
+    "elite": ["catacomb_guardian", "catacomb_acolyte"]
+  }
+}

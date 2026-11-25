@@ -1,0 +1,1048 @@
+{
+  "version": 2,
+  "defaults": {
+    "active": {
+      "regionalPressure": 1.12,
+      "travelMultiplier": 0.98,
+      "resourceMultiplier": 0.95,
+      "mobDamageMultiplier": 1.05,
+      "mobAggroMultiplier": 1.08,
+      "settlementState": "alert",
+      "npcAlert": true
+    },
+    "completed": {
+      "regionalPressure": 0.88,
+      "travelMultiplier": 1.03,
+      "resourceMultiplier": 1.08,
+      "mobDamageMultiplier": 0.94,
+      "mobAggroMultiplier": 0.94,
+      "settlementState": "recovered",
+      "npcAlert": false
+    },
+    "failed": {
+      "regionalPressure": 1.18,
+      "travelMultiplier": 0.96,
+      "resourceMultiplier": 0.9,
+      "mobDamageMultiplier": 1.1,
+      "mobAggroMultiplier": 1.12,
+      "settlementState": "threatened",
+      "npcAlert": true
+    },
+    "recovering": {
+      "regionalPressure": 1.0,
+      "travelMultiplier": 1.0,
+      "resourceMultiplier": 1.0,
+      "mobDamageMultiplier": 1.0,
+      "mobAggroMultiplier": 1.0,
+      "settlementState": "recovering",
+      "npcAlert": false
+    }
+  },
+  "events": {
+    "caravan_under_fire": {
+      "completion": {
+        "travelMultiplier": 1.06,
+        "resourceMultiplier": 1.12,
+        "worldPhase": "recovered",
+        "poiStates": {
+          "fallen_caravan_poi": {
+            "state": "secured",
+            "label": "SECURED",
+            "highlight": true,
+            "icon": "✓"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Secured",
+            "state": "secured",
+            "poiId": "fallen_caravan_poi"
+          }
+        }
+      },
+      "failure": {
+        "travelMultiplier": 0.92,
+        "resourceMultiplier": 0.84,
+        "worldPhase": "threatened",
+        "poiStates": {
+          "fallen_caravan_poi": {
+            "state": "threatened",
+            "label": "THREATENED",
+            "highlight": true,
+            "icon": "⚠️"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Threatened",
+            "state": "threatened",
+            "poiId": "fallen_caravan_poi"
+          }
+        }
+      },
+      "active": {
+        "worldPhase": "event_active",
+        "poiStates": {
+          "fallen_caravan_poi": {
+            "state": "contested",
+            "label": "EVENT ACTIVE",
+            "highlight": true,
+            "icon": "⚔️"
+          }
+        },
+        "regionalWorld": {
+          "activity": {
+            "id": "caravan_under_fire_activity",
+            "name": "Fallen Caravan",
+            "kind": "caravan",
+            "poiId": "fallen_caravan_poi",
+            "phaseLabels": {
+              "opening": "ambushed",
+              "escalated": "raiders pressing",
+              "final": "last stand"
+            },
+            "playerFacing": true
+          },
+          "spawnPlan": {
+            "initialCount": 5,
+            "finalReinforcements": 1,
+            "maxEventMobs": 6,
+            "useEnemyTypes": "authored",
+            "reinforcementPolicy": "single_final_wave"
+          }
+        }
+      },
+      "recovering": {
+        "worldPhase": "recovering",
+        "poiStates": {
+          "fallen_caravan_poi": {
+            "state": "recovering",
+            "label": "RECOVERING",
+            "highlight": false
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Recovering",
+            "state": "recovering",
+            "poiId": "fallen_caravan_poi"
+          }
+        }
+      }
+    },
+    "corrupted_expedition": {
+      "completion": {
+        "resourceMultiplier": 1.1,
+        "mobDamageMultiplier": 0.9,
+        "worldPhase": "recovered",
+        "poiStates": {
+          "gloam_veinfield": {
+            "state": "secured",
+            "label": "SECURED",
+            "highlight": true,
+            "icon": "✓"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Secured",
+            "state": "secured",
+            "poiId": "gloam_veinfield"
+          }
+        }
+      },
+      "failure": {
+        "resourceMultiplier": 0.86,
+        "mobDamageMultiplier": 1.12,
+        "worldPhase": "threatened",
+        "poiStates": {
+          "gloam_veinfield": {
+            "state": "threatened",
+            "label": "THREATENED",
+            "highlight": true,
+            "icon": "⚠️"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Threatened",
+            "state": "threatened",
+            "poiId": "gloam_veinfield"
+          }
+        }
+      },
+      "active": {
+        "worldPhase": "event_active",
+        "poiStates": {
+          "gloam_veinfield": {
+            "state": "contested",
+            "label": "EVENT ACTIVE",
+            "highlight": true,
+            "icon": "⚔️"
+          }
+        },
+        "regionalWorld": {
+          "activity": {
+            "id": "corrupted_expedition_activity",
+            "name": "Umbral Veinfield",
+            "kind": "expedition",
+            "poiId": "gloam_veinfield",
+            "phaseLabels": {
+              "opening": "corruption spreading",
+              "escalated": "veinfield contested",
+              "final": "purge the source"
+            },
+            "playerFacing": true
+          },
+          "spawnPlan": {
+            "initialCount": 5,
+            "finalReinforcements": 1,
+            "maxEventMobs": 6,
+            "useEnemyTypes": "authored",
+            "reinforcementPolicy": "single_final_wave"
+          }
+        }
+      },
+      "recovering": {
+        "worldPhase": "recovering",
+        "poiStates": {
+          "gloam_veinfield": {
+            "state": "recovering",
+            "label": "RECOVERING",
+            "highlight": false
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Recovering",
+            "state": "recovering",
+            "poiId": "gloam_veinfield"
+          }
+        }
+      }
+    },
+    "undead_invasion": {
+      "completion": {
+        "mobDamageMultiplier": 0.88,
+        "mobAggroMultiplier": 0.9,
+        "travelMultiplier": 1.04,
+        "worldPhase": "recovered",
+        "poiStates": {
+          "undead_invasion_site": {
+            "state": "secured",
+            "label": "SECURED",
+            "highlight": true,
+            "icon": "✓"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Secured",
+            "state": "secured",
+            "poiId": "undead_invasion_site"
+          }
+        }
+      },
+      "failure": {
+        "mobDamageMultiplier": 1.16,
+        "mobAggroMultiplier": 1.18,
+        "worldPhase": "threatened",
+        "poiStates": {
+          "undead_invasion_site": {
+            "state": "threatened",
+            "label": "THREATENED",
+            "highlight": true,
+            "icon": "⚠️"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Threatened",
+            "state": "threatened",
+            "poiId": "undead_invasion_site"
+          }
+        }
+      },
+      "active": {
+        "worldPhase": "event_active",
+        "poiStates": {
+          "undead_invasion_site": {
+            "state": "contested",
+            "label": "EVENT ACTIVE",
+            "highlight": true,
+            "icon": "⚔️"
+          }
+        },
+        "regionalWorld": {
+          "activity": {
+            "id": "undead_invasion_activity",
+            "name": "Undead Invasion Site",
+            "kind": "invasion",
+            "poiId": "undead_invasion_site",
+            "phaseLabels": {
+              "opening": "graves open",
+              "escalated": "dead advance",
+              "final": "hold the line"
+            },
+            "playerFacing": true
+          },
+          "spawnPlan": {
+            "initialCount": 6,
+            "finalReinforcements": 2,
+            "maxEventMobs": 8,
+            "useEnemyTypes": "authored",
+            "reinforcementPolicy": "single_final_wave"
+          }
+        }
+      },
+      "recovering": {
+        "worldPhase": "recovering",
+        "poiStates": {
+          "undead_invasion_site": {
+            "state": "recovering",
+            "label": "RECOVERING",
+            "highlight": false
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Recovering",
+            "state": "recovering",
+            "poiId": "undead_invasion_site"
+          }
+        }
+      }
+    },
+    "village_defense": {
+      "completion": {
+        "travelMultiplier": 1.05,
+        "settlementState": "safe",
+        "worldPhase": "recovered",
+        "poiStates": {
+          "briarfen_event": {
+            "state": "secured",
+            "label": "SECURED",
+            "highlight": true,
+            "icon": "✓"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Secured",
+            "state": "secured",
+            "poiId": "briarfen_event"
+          }
+        }
+      },
+      "failure": {
+        "travelMultiplier": 0.9,
+        "settlementState": "threatened",
+        "worldPhase": "threatened",
+        "poiStates": {
+          "briarfen_event": {
+            "state": "threatened",
+            "label": "THREATENED",
+            "highlight": true,
+            "icon": "⚠️"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Threatened",
+            "state": "threatened",
+            "poiId": "briarfen_event"
+          }
+        }
+      },
+      "active": {
+        "worldPhase": "event_active",
+        "poiStates": {
+          "briarfen_event": {
+            "state": "contested",
+            "label": "EVENT ACTIVE",
+            "highlight": true,
+            "icon": "⚔️"
+          }
+        },
+        "regionalWorld": {
+          "activity": {
+            "id": "village_defense_activity",
+            "name": "Fenwatch Defense",
+            "kind": "defense",
+            "poiId": "briarfen_event",
+            "phaseLabels": {
+              "opening": "warning bells",
+              "escalated": "walls under pressure",
+              "final": "last stand"
+            },
+            "playerFacing": true
+          },
+          "spawnPlan": {
+            "initialCount": 5,
+            "finalReinforcements": 1,
+            "maxEventMobs": 6,
+            "useEnemyTypes": "authored",
+            "reinforcementPolicy": "single_final_wave"
+          }
+        }
+      },
+      "recovering": {
+        "worldPhase": "recovering",
+        "poiStates": {
+          "briarfen_event": {
+            "state": "recovering",
+            "label": "RECOVERING",
+            "highlight": false
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Recovering",
+            "state": "recovering",
+            "poiId": "briarfen_event"
+          }
+        }
+      }
+    },
+    "hollow_breach": {
+      "completion": {
+        "mobDamageMultiplier": 0.86,
+        "mobAggroMultiplier": 0.88,
+        "worldPhase": "recovered",
+        "poiStates": {
+          "hollow_breach_site": {
+            "state": "secured",
+            "label": "SECURED",
+            "highlight": true,
+            "icon": "✓"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Secured",
+            "state": "secured",
+            "poiId": "hollow_breach_site"
+          }
+        }
+      },
+      "failure": {
+        "mobDamageMultiplier": 1.2,
+        "mobAggroMultiplier": 1.22,
+        "travelMultiplier": 0.92,
+        "worldPhase": "threatened",
+        "poiStates": {
+          "hollow_breach_site": {
+            "state": "threatened",
+            "label": "THREATENED",
+            "highlight": true,
+            "icon": "⚠️"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Threatened",
+            "state": "threatened",
+            "poiId": "hollow_breach_site"
+          }
+        }
+      },
+      "active": {
+        "worldPhase": "event_active",
+        "poiStates": {
+          "hollow_breach_site": {
+            "state": "contested",
+            "label": "EVENT ACTIVE",
+            "highlight": true,
+            "icon": "⚔️"
+          }
+        },
+        "regionalWorld": {
+          "activity": {
+            "id": "hollow_breach_activity",
+            "name": "Hollow Breach Site",
+            "kind": "invasion",
+            "poiId": "hollow_breach_site",
+            "phaseLabels": {
+              "opening": "seal cracking",
+              "escalated": "breach widens",
+              "final": "seal or break"
+            },
+            "playerFacing": true
+          },
+          "spawnPlan": {
+            "initialCount": 6,
+            "finalReinforcements": 2,
+            "maxEventMobs": 8,
+            "useEnemyTypes": "authored",
+            "reinforcementPolicy": "single_final_wave"
+          }
+        }
+      },
+      "recovering": {
+        "worldPhase": "recovering",
+        "poiStates": {
+          "hollow_breach_site": {
+            "state": "recovering",
+            "label": "RECOVERING",
+            "highlight": false
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Recovering",
+            "state": "recovering",
+            "poiId": "hollow_breach_site"
+          }
+        }
+      }
+    },
+    "veil_anomaly": {
+      "completion": {
+        "resourceMultiplier": 1.14,
+        "mobDamageMultiplier": 0.9,
+        "worldPhase": "recovered",
+        "poiStates": {
+          "veil_anomaly_site": {
+            "state": "secured",
+            "label": "SECURED",
+            "highlight": true,
+            "icon": "✓"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Secured",
+            "state": "secured",
+            "poiId": "veil_anomaly_site"
+          }
+        }
+      },
+      "failure": {
+        "resourceMultiplier": 0.82,
+        "mobDamageMultiplier": 1.14,
+        "worldPhase": "threatened",
+        "poiStates": {
+          "veil_anomaly_site": {
+            "state": "threatened",
+            "label": "THREATENED",
+            "highlight": true,
+            "icon": "⚠️"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Threatened",
+            "state": "threatened",
+            "poiId": "veil_anomaly_site"
+          }
+        }
+      },
+      "active": {
+        "worldPhase": "event_active",
+        "poiStates": {
+          "veil_anomaly_site": {
+            "state": "contested",
+            "label": "EVENT ACTIVE",
+            "highlight": true,
+            "icon": "⚔️"
+          }
+        },
+        "regionalWorld": {
+          "activity": {
+            "id": "veil_anomaly_activity",
+            "name": "Veil Anomaly Anchor",
+            "kind": "anomaly",
+            "poiId": "veil_anomaly_site",
+            "phaseLabels": {
+              "opening": "anomaly forms",
+              "escalated": "reality unravels",
+              "final": "collapse the anchor"
+            },
+            "playerFacing": true
+          },
+          "spawnPlan": {
+            "initialCount": 6,
+            "finalReinforcements": 2,
+            "maxEventMobs": 8,
+            "useEnemyTypes": "authored",
+            "reinforcementPolicy": "single_final_wave"
+          }
+        }
+      },
+      "recovering": {
+        "worldPhase": "recovering",
+        "poiStates": {
+          "veil_anomaly_site": {
+            "state": "recovering",
+            "label": "RECOVERING",
+            "highlight": false
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Recovering",
+            "state": "recovering",
+            "poiId": "veil_anomaly_site"
+          }
+        }
+      }
+    },
+    "fen_reclamation": {
+      "completion": {
+        "travelMultiplier": 1.05,
+        "resourceMultiplier": 1.1,
+        "worldPhase": "recovered",
+        "poiStates": {
+          "briarfen_event": {
+            "state": "secured",
+            "label": "SECURED",
+            "highlight": true,
+            "icon": "✓"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Secured",
+            "state": "secured",
+            "poiId": "briarfen_event"
+          }
+        }
+      },
+      "failure": {
+        "travelMultiplier": 0.93,
+        "resourceMultiplier": 0.88,
+        "worldPhase": "threatened",
+        "poiStates": {
+          "briarfen_event": {
+            "state": "threatened",
+            "label": "THREATENED",
+            "highlight": true,
+            "icon": "⚠️"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Threatened",
+            "state": "threatened",
+            "poiId": "briarfen_event"
+          }
+        }
+      },
+      "active": {
+        "worldPhase": "event_active",
+        "poiStates": {
+          "briarfen_event": {
+            "state": "contested",
+            "label": "EVENT ACTIVE",
+            "highlight": true,
+            "icon": "⚔️"
+          }
+        },
+        "regionalWorld": {
+          "activity": {
+            "id": "fen_reclamation_activity",
+            "name": "Briarfen Causeway",
+            "kind": "expedition",
+            "poiId": "briarfen_event",
+            "phaseLabels": {
+              "opening": "lanterns reclaimed",
+              "escalated": "marsh recedes",
+              "final": "reclaim the causeway"
+            },
+            "playerFacing": true
+          },
+          "spawnPlan": {
+            "initialCount": 5,
+            "finalReinforcements": 1,
+            "maxEventMobs": 6,
+            "useEnemyTypes": "authored",
+            "reinforcementPolicy": "single_final_wave"
+          }
+        }
+      },
+      "recovering": {
+        "worldPhase": "recovering",
+        "poiStates": {
+          "briarfen_event": {
+            "state": "recovering",
+            "label": "RECOVERING",
+            "highlight": false
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Recovering",
+            "state": "recovering",
+            "poiId": "briarfen_event"
+          }
+        }
+      }
+    },
+    "sunscar_caravan": {
+      "completion": {
+        "travelMultiplier": 1.06,
+        "resourceMultiplier": 1.1,
+        "worldPhase": "recovered",
+        "poiStates": {
+          "sunscar_steppe_event": {
+            "state": "secured",
+            "label": "SECURED",
+            "highlight": true,
+            "icon": "✓"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Secured",
+            "state": "secured",
+            "poiId": "sunscar_steppe_event"
+          }
+        }
+      },
+      "failure": {
+        "travelMultiplier": 0.91,
+        "resourceMultiplier": 0.86,
+        "worldPhase": "threatened",
+        "poiStates": {
+          "sunscar_steppe_event": {
+            "state": "threatened",
+            "label": "THREATENED",
+            "highlight": true,
+            "icon": "⚠️"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Threatened",
+            "state": "threatened",
+            "poiId": "sunscar_steppe_event"
+          }
+        }
+      },
+      "active": {
+        "worldPhase": "event_active",
+        "poiStates": {
+          "sunscar_steppe_event": {
+            "state": "contested",
+            "label": "EVENT ACTIVE",
+            "highlight": true,
+            "icon": "⚔️"
+          }
+        },
+        "regionalWorld": {
+          "activity": {
+            "id": "sunscar_caravan_activity",
+            "name": "Sunscar Caravan Route",
+            "kind": "caravan",
+            "poiId": "sunscar_steppe_event",
+            "phaseLabels": {
+              "opening": "raiders spotted",
+              "escalated": "caravan besieged",
+              "final": "protect the convoy"
+            },
+            "playerFacing": true
+          },
+          "spawnPlan": {
+            "initialCount": 6,
+            "finalReinforcements": 1,
+            "maxEventMobs": 7,
+            "useEnemyTypes": "authored",
+            "reinforcementPolicy": "single_final_wave"
+          }
+        }
+      },
+      "recovering": {
+        "worldPhase": "recovering",
+        "poiStates": {
+          "sunscar_steppe_event": {
+            "state": "recovering",
+            "label": "RECOVERING",
+            "highlight": false
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Recovering",
+            "state": "recovering",
+            "poiId": "sunscar_steppe_event"
+          }
+        }
+      }
+    },
+    "crownfall_rebellion": {
+      "completion": {
+        "mobDamageMultiplier": 0.89,
+        "mobAggroMultiplier": 0.91,
+        "worldPhase": "recovered",
+        "poiStates": {
+          "crownfall_expanse_event": {
+            "state": "secured",
+            "label": "SECURED",
+            "highlight": true,
+            "icon": "✓"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Secured",
+            "state": "secured",
+            "poiId": "crownfall_expanse_event"
+          }
+        }
+      },
+      "failure": {
+        "mobDamageMultiplier": 1.15,
+        "mobAggroMultiplier": 1.16,
+        "worldPhase": "threatened",
+        "poiStates": {
+          "crownfall_expanse_event": {
+            "state": "threatened",
+            "label": "THREATENED",
+            "highlight": true,
+            "icon": "⚠️"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Threatened",
+            "state": "threatened",
+            "poiId": "crownfall_expanse_event"
+          }
+        }
+      },
+      "active": {
+        "worldPhase": "event_active",
+        "poiStates": {
+          "crownfall_expanse_event": {
+            "state": "contested",
+            "label": "EVENT ACTIVE",
+            "highlight": true,
+            "icon": "⚔️"
+          }
+        },
+        "regionalWorld": {
+          "activity": {
+            "id": "crownfall_rebellion_activity",
+            "name": "Crownfall Muster",
+            "kind": "invasion",
+            "poiId": "crownfall_expanse_event",
+            "phaseLabels": {
+              "opening": "dead muster",
+              "escalated": "royal host advances",
+              "final": "break the host"
+            },
+            "playerFacing": true
+          },
+          "spawnPlan": {
+            "initialCount": 6,
+            "finalReinforcements": 2,
+            "maxEventMobs": 8,
+            "useEnemyTypes": "authored",
+            "reinforcementPolicy": "single_final_wave"
+          }
+        }
+      },
+      "recovering": {
+        "worldPhase": "recovering",
+        "poiStates": {
+          "crownfall_expanse_event": {
+            "state": "recovering",
+            "label": "RECOVERING",
+            "highlight": false
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Recovering",
+            "state": "recovering",
+            "poiId": "crownfall_expanse_event"
+          }
+        }
+      }
+    },
+    "highland_storm": {
+      "completion": {
+        "travelMultiplier": 1.05,
+        "resourceMultiplier": 1.12,
+        "worldPhase": "recovered",
+        "poiStates": {
+          "veilscar_highlands_event": {
+            "state": "secured",
+            "label": "SECURED",
+            "highlight": true,
+            "icon": "✓"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Secured",
+            "state": "secured",
+            "poiId": "veilscar_highlands_event"
+          }
+        }
+      },
+      "failure": {
+        "travelMultiplier": 0.9,
+        "resourceMultiplier": 0.84,
+        "worldPhase": "threatened",
+        "poiStates": {
+          "veilscar_highlands_event": {
+            "state": "threatened",
+            "label": "THREATENED",
+            "highlight": true,
+            "icon": "⚠️"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Threatened",
+            "state": "threatened",
+            "poiId": "veilscar_highlands_event"
+          }
+        }
+      },
+      "active": {
+        "worldPhase": "event_active",
+        "poiStates": {
+          "veilscar_highlands_event": {
+            "state": "contested",
+            "label": "EVENT ACTIVE",
+            "highlight": true,
+            "icon": "⚔️"
+          }
+        },
+        "regionalWorld": {
+          "activity": {
+            "id": "highland_storm_activity",
+            "name": "Highland Storm Anchor",
+            "kind": "anomaly",
+            "poiId": "veilscar_highlands_event",
+            "phaseLabels": {
+              "opening": "storm forms",
+              "escalated": "storm peaks",
+              "final": "collapse the anchor"
+            },
+            "playerFacing": true
+          },
+          "spawnPlan": {
+            "initialCount": 6,
+            "finalReinforcements": 2,
+            "maxEventMobs": 8,
+            "useEnemyTypes": "authored",
+            "reinforcementPolicy": "single_final_wave"
+          }
+        }
+      },
+      "recovering": {
+        "worldPhase": "recovering",
+        "poiStates": {
+          "veilscar_highlands_event": {
+            "state": "recovering",
+            "label": "RECOVERING",
+            "highlight": false
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Recovering",
+            "state": "recovering",
+            "poiId": "veilscar_highlands_event"
+          }
+        }
+      }
+    },
+    "nightveil_tide": {
+      "completion": {
+        "mobDamageMultiplier": 0.87,
+        "mobAggroMultiplier": 0.89,
+        "travelMultiplier": 1.04,
+        "worldPhase": "recovered",
+        "poiStates": {
+          "nightveil_coast_event": {
+            "state": "secured",
+            "label": "SECURED",
+            "highlight": true,
+            "icon": "✓"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Secured",
+            "state": "secured",
+            "poiId": "nightveil_coast_event"
+          }
+        }
+      },
+      "failure": {
+        "mobDamageMultiplier": 1.18,
+        "mobAggroMultiplier": 1.2,
+        "travelMultiplier": 0.91,
+        "worldPhase": "threatened",
+        "poiStates": {
+          "nightveil_coast_event": {
+            "state": "threatened",
+            "label": "THREATENED",
+            "highlight": true,
+            "icon": "⚠️"
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Threatened",
+            "state": "threatened",
+            "poiId": "nightveil_coast_event"
+          }
+        }
+      },
+      "active": {
+        "worldPhase": "event_active",
+        "poiStates": {
+          "nightveil_coast_event": {
+            "state": "contested",
+            "label": "EVENT ACTIVE",
+            "highlight": true,
+            "icon": "⚔️"
+          }
+        },
+        "regionalWorld": {
+          "activity": {
+            "id": "nightveil_tide_activity",
+            "name": "Nightveil Tidefront",
+            "kind": "invasion",
+            "poiId": "nightveil_coast_event",
+            "phaseLabels": {
+              "opening": "tide rises",
+              "escalated": "drowned advance",
+              "final": "hold the anchorage"
+            },
+            "playerFacing": true
+          },
+          "spawnPlan": {
+            "initialCount": 7,
+            "finalReinforcements": 2,
+            "maxEventMobs": 9,
+            "useEnemyTypes": "authored",
+            "reinforcementPolicy": "single_final_wave"
+          }
+        }
+      },
+      "recovering": {
+        "worldPhase": "recovering",
+        "poiStates": {
+          "nightveil_coast_event": {
+            "state": "recovering",
+            "label": "RECOVERING",
+            "highlight": false
+          }
+        },
+        "regionalWorld": {
+          "activityState": {
+            "label": "Recovering",
+            "state": "recovering",
+            "poiId": "nightveil_coast_event"
+          }
+        }
+      }
+    }
+  }
+}

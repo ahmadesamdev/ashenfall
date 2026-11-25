@@ -1,0 +1,476 @@
+[
+  {
+    "id": "wayfarer_blade",
+    "name": "Wayfarer Blade",
+    "profession": "blacksmith",
+    "level": 1,
+    "materials": [
+      {
+        "itemId": "copper_ore",
+        "qty": 3
+      }
+    ],
+    "output": "wayfarer_blade",
+    "qty": 1
+  },
+  {
+    "id": "iron_wayfarer_blade",
+    "name": "Iron Wayfarer Blade",
+    "profession": "blacksmith",
+    "level": 2,
+    "materials": [
+      {
+        "itemId": "iron_ore",
+        "qty": 5
+      },
+      {
+        "itemId": "copper_ore",
+        "qty": 2
+      }
+    ],
+    "output": "wayfarer_blade",
+    "qty": 1
+  },
+  {
+    "id": "gravewatch_blade",
+    "name": "Gravewatch Blade",
+    "profession": "blacksmith",
+    "level": 2,
+    "materials": [
+      {
+        "itemId": "copper_ore",
+        "qty": 2
+      },
+      {
+        "itemId": "umbral_iron_ore",
+        "qty": 3
+      }
+    ],
+    "output": "gravewatch_blade",
+    "qty": 1
+  },
+  {
+    "id": "gravewatch_mail",
+    "name": "Gravewatch Mail",
+    "profession": "blacksmith",
+    "level": 2,
+    "materials": [
+      {
+        "itemId": "umbral_iron_ore",
+        "qty": 5
+      }
+    ],
+    "output": "gravewatch_mail",
+    "qty": 1
+  },
+  {
+    "id": "trailwarden_bow",
+    "name": "Trailwarden Bow",
+    "profession": "blacksmith",
+    "level": 2,
+    "materials": [
+      {
+        "itemId": "ashwood_stock",
+        "qty": 3
+      },
+      {
+        "itemId": "copper_ore",
+        "qty": 2
+      }
+    ],
+    "output": "trailwarden_bow",
+    "qty": 1
+  },
+  {
+    "id": "bloodletter_edge",
+    "name": "Bloodletter Edge",
+    "profession": "blacksmith",
+    "level": 4,
+    "materials": [
+      {
+        "itemId": "umbral_iron_ore",
+        "qty": 6
+      },
+      {
+        "itemId": "star_iron_ore",
+        "qty": 2
+      }
+    ],
+    "output": "bloodletter_edge",
+    "qty": 1
+  },
+  {
+    "id": "ashfall_plate",
+    "name": "Ashfall Plate",
+    "profession": "blacksmith",
+    "level": 5,
+    "materials": [
+      {
+        "itemId": "blacksteel_ore",
+        "qty": 6
+      },
+      {
+        "itemId": "star_iron_ore",
+        "qty": 3
+      }
+    ],
+    "output": "ashfall_plate",
+    "qty": 1
+  },
+  {
+    "id": "citadel_helm",
+    "name": "Citadel Helm",
+    "profession": "blacksmith",
+    "level": 7,
+    "materials": [
+      {
+        "itemId": "blacksteel_ore",
+        "qty": 7
+      },
+      {
+        "itemId": "star_iron_ore",
+        "qty": 4
+      }
+    ],
+    "output": "citadel_helm",
+    "qty": 1
+  },
+  {
+    "id": "citadel_rapier",
+    "name": "Citadel Rapier",
+    "profession": "blacksmith",
+    "level": 7,
+    "materials": [
+      {
+        "itemId": "blacksteel_ore",
+        "qty": 8
+      },
+      {
+        "itemId": "star_iron_ore",
+        "qty": 3
+      }
+    ],
+    "output": "citadel_rapier",
+    "qty": 1
+  },
+  {
+    "id": "gloamfang_daggers",
+    "name": "Gloamfang Daggers",
+    "profession": "blacksmith",
+    "level": 2,
+    "materials": [
+      {
+        "itemId": "copper_ore",
+        "qty": 3
+      },
+      {
+        "itemId": "umbral_iron_ore",
+        "qty": 4
+      }
+    ],
+    "output": "gloamfang_daggers",
+    "qty": 1
+  },
+  {
+    "id": "lantern_mace",
+    "name": "Lanternkeeper's Mace",
+    "profession": "blacksmith",
+    "level": 2,
+    "materials": [
+      {
+        "itemId": "copper_ore",
+        "qty": 2
+      },
+      {
+        "itemId": "umbral_iron_ore",
+        "qty": 4
+      }
+    ],
+    "output": "lantern_mace",
+    "qty": 1
+  },
+  {
+    "id": "blackglass_knife",
+    "name": "Blackglass Knife",
+    "profession": "blacksmith",
+    "level": 4,
+    "materials": [
+      {
+        "itemId": "umbral_iron_ore",
+        "qty": 6
+      },
+      {
+        "itemId": "star_iron_ore",
+        "qty": 2
+      }
+    ],
+    "output": "blackglass_knife",
+    "qty": 1
+  },
+  {
+    "id": "saintfall_charm",
+    "name": "Saintfall Charm",
+    "profession": "blacksmith",
+    "level": 4,
+    "materials": [
+      {
+        "itemId": "star_iron_ore",
+        "qty": 4
+      },
+      {
+        "itemId": "umbral_iron_ore",
+        "qty": 3
+      }
+    ],
+    "output": "saintfall_charm",
+    "qty": 1
+  },
+  {
+    "id": "dreadsilver_rapier",
+    "name": "Dreadsilver Rapier",
+    "profession": "blacksmith",
+    "level": 8,
+    "materials": [
+      {
+        "itemId": "dreadsilver_ore",
+        "qty": 7
+      },
+      {
+        "itemId": "blacksteel_ore",
+        "qty": 4
+      }
+    ],
+    "output": "dreadsilver_rapier",
+    "qty": 1
+  },
+  {
+    "id": "dreadsilver_plate",
+    "name": "Dreadsilver Plate",
+    "profession": "blacksmith",
+    "level": 9,
+    "materials": [
+      {
+        "itemId": "dreadsilver_ore",
+        "qty": 8
+      },
+      {
+        "itemId": "blacksteel_ore",
+        "qty": 5
+      }
+    ],
+    "output": "ashfall_plate",
+    "qty": 1
+  },
+  {
+    "id": "dreadsilver_guardian",
+    "name": "Dreadsilver Guardian's Edge",
+    "profession": "blacksmith",
+    "level": 10,
+    "materials": [
+      {
+        "itemId": "dreadsilver_ore",
+        "qty": 10
+      },
+      {
+        "itemId": "star_iron_ore",
+        "qty": 5
+      }
+    ],
+    "output": "vaultbreaker",
+    "qty": 1
+  },
+  {
+    "id": "dawnroot_tuning",
+    "name": "Dawnroot Tuning",
+    "profession": "blacksmith",
+    "level": 8,
+    "materials": [
+      {
+        "itemId": "star_iron_ore",
+        "qty": 6
+      },
+      {
+        "itemId": "umbral_iron_ore",
+        "qty": 6
+      }
+    ],
+    "output": "dawnroot_12_weapon",
+    "qty": 1
+  },
+  {
+    "id": "silver_lantern_mace",
+    "name": "Silver Lantern Mace",
+    "profession": "blacksmith",
+    "level": 4,
+    "materials": [
+      {
+        "itemId": "silver_ore",
+        "qty": 5
+      },
+      {
+        "itemId": "umbral_iron_ore",
+        "qty": 3
+      }
+    ],
+    "output": "lantern_mace",
+    "qty": 1
+  },
+  {
+    "id": "wolfhide_kit",
+    "name": "Wolfhide Kit",
+    "profession": "skinning",
+    "level": 1,
+    "materials": [
+      {
+        "itemId": "wolf_fang",
+        "qty": 2
+      }
+    ],
+    "output": "wolfhide_kit",
+    "qty": 1
+  },
+  {
+    "id": "graveleather_wrap",
+    "name": "Graveleather Wrap",
+    "profession": "skinning",
+    "level": 3,
+    "materials": [
+      {
+        "itemId": "wolf_fang",
+        "qty": 4
+      },
+      {
+        "itemId": "grave_steel",
+        "qty": 1
+      }
+    ],
+    "output": "graveleather_wrap",
+    "qty": 1
+  },
+  {
+    "id": "beastmaster_tonic",
+    "name": "Beastmaster Tonic",
+    "profession": "skinning",
+    "level": 5,
+    "materials": [
+      {
+        "itemId": "wolf_fang",
+        "qty": 6
+      },
+      {
+        "itemId": "ember_core",
+        "qty": 1
+      }
+    ],
+    "output": "beastmaster_tonic",
+    "qty": 1
+  },
+  {
+    "id": "minor_ashen_elixir",
+    "name": "Minor Ashen Elixir",
+    "profession": "alchemy",
+    "level": 1,
+    "materials": [
+      {
+        "itemId": "arcane_dust",
+        "qty": 2
+      },
+      {
+        "itemId": "copper_ore",
+        "qty": 1
+      }
+    ],
+    "output": "minor_ashen_elixir",
+    "qty": 1
+  },
+  {
+    "id": "focus_elixir",
+    "name": "Greater Focus Elixir",
+    "profession": "alchemy",
+    "level": 3,
+    "materials": [
+      {
+        "itemId": "arcane_dust",
+        "qty": 4
+      },
+      {
+        "itemId": "silver_ore",
+        "qty": 1
+      }
+    ],
+    "output": "focus_elixir",
+    "qty": 1
+  },
+  {
+    "id": "veilguard_potion",
+    "name": "Veilguard Potion",
+    "profession": "alchemy",
+    "level": 5,
+    "materials": [
+      {
+        "itemId": "arcane_dust",
+        "qty": 6
+      },
+      {
+        "itemId": "ember_core",
+        "qty": 1
+      }
+    ],
+    "output": "veilguard_potion",
+    "qty": 1
+  },
+  {
+    "id": "traveler_ration",
+    "name": "Traveler Ration",
+    "profession": "cooking",
+    "level": 1,
+    "materials": [
+      {
+        "itemId": "wolf_fang",
+        "qty": 1
+      },
+      {
+        "itemId": "copper_ore",
+        "qty": 1
+      }
+    ],
+    "output": "traveler_ration",
+    "qty": 1
+  },
+  {
+    "id": "hearty_ration",
+    "name": "Hearty Ration",
+    "profession": "cooking",
+    "level": 3,
+    "materials": [
+      {
+        "itemId": "wolf_fang",
+        "qty": 3
+      },
+      {
+        "itemId": "ember_core",
+        "qty": 1
+      }
+    ],
+    "output": "hearty_ration",
+    "qty": 1
+  },
+  {
+    "id": "ashen_feast",
+    "name": "Ashen Feast",
+    "profession": "cooking",
+    "level": 5,
+    "materials": [
+      {
+        "itemId": "wolf_fang",
+        "qty": 5
+      },
+      {
+        "itemId": "ember_core",
+        "qty": 2
+      }
+    ],
+    "output": "ashen_feast",
+    "qty": 1
+  }
+]

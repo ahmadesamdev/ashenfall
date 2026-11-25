@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "currencies": ["gold", "honor", "tier_tokens", "crafting_marks"],
+  "rules": {
+    "atomicTrade": true,
+    "auctionEscrow": true,
+    "bidRefundMail": true,
+    "sellerHistory": true,
+    "marketHistory": true,
+    "antiSelfBuy": true,
+    "bagCapacityAuthoritative": true,
+    "buybackWindowMs": 1800000,
+    "buybackPriceMultiplier": 1.5,
+    "dynamicVendorPricing": false,
+    "craftingQuality": true,
+    "professionSlots": 2,
+    "professionMastery": true
+  },
+  "sinks": [
+    "repair",
+    "crafting",
+    "enchants",
+    "gems",
+    "auctionFees",
+    "vendorPurchases",
+    "buyback_recovery",
+    "crafting_commissions"
+  ]
+}

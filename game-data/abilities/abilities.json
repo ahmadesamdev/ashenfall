@@ -1,0 +1,4199 @@
+[
+  {
+    "id": "basic_strike",
+    "name": "Basic Strike",
+    "icon": "⚔️",
+    "cooldown": 0,
+    "cost": 0,
+    "power": 1,
+    "gcd": 1.2,
+    "gain": 15,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals weapon or spell damage with a 1.0 power coefficient. Range: 18m.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 0,
+      "resourceCost": 0,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "shield_bash",
+    "name": "Shield Bash",
+    "icon": "🛡️",
+    "cooldown": 8,
+    "cost": 28,
+    "power": 1.85,
+    "gcd": 1.5,
+    "stun": 2,
+    "interrupt": true,
+    "requiresShield": true,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals weapon or spell damage with a 2.0 power coefficient. Stuns the target for 2 seconds. Interrupts an enemy cast. Range: 18m.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 8,
+      "resourceCost": 28,
+      "targetRule": "enemy",
+      "interruptible": true,
+      "pvp": "enabled"
+    },
+    "tags": ["tank", "interrupt", "stun"],
+    "threatMultiplier": 1.35
+  },
+  {
+    "id": "cleave",
+    "name": "Cleave",
+    "icon": "🪓",
+    "cooldown": 6,
+    "cost": 18,
+    "power": 1.45,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Cleave every enemy inside the 28m circle for 1.45x Attack.",
+    "aoe": {
+      "shape": "circle",
+      "radius": 28,
+      "center": "self"
+    },
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 6,
+      "resourceCost": 18,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "revenge",
+    "name": "Revenge",
+    "icon": "🔥",
+    "cooldown": 10,
+    "cost": 15,
+    "power": 2.8,
+    "gcd": 1.5,
+    "requiresBlock": true,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals weapon or spell damage with a 2.8 power coefficient. Range: 18m.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 10,
+      "resourceCost": 15,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["tank", "counterattack"],
+    "threatMultiplier": 1.5
+  },
+  {
+    "id": "guard",
+    "name": "Guard",
+    "icon": "🛡️",
+    "cooldown": 14,
+    "cost": 15,
+    "power": 0,
+    "gcd": 1.2,
+    "selfBuff": "guard",
+    "queueable": true,
+    "range": 18,
+    "description": "Grants Guard for 5 seconds, reducing incoming damage by 30% and forcing the current encounter target to you.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 14,
+      "resourceCost": 15,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "taunt": true,
+    "tauntDuration": 5
+  },
+  {
+    "id": "shield_wall",
+    "name": "Shield Wall",
+    "icon": "🏰",
+    "cooldown": 90,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "selfBuff": "shield_wall",
+    "range": 18,
+    "description": "Grants Shield Wall for 6 seconds, reducing incoming damage by 45%.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 90,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "arcane_bolt",
+    "name": "Arcane Bolt",
+    "icon": "🔮",
+    "cooldown": 0,
+    "cost": 0,
+    "power": 1.33,
+    "gcd": 1.2,
+    "gain": 18,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 1.1 power coefficient. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 0,
+      "resourceCost": 0,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 1.5
+  },
+  {
+    "id": "frost_nova",
+    "name": "Frost Nova",
+    "icon": "❄️",
+    "cooldown": 10,
+    "cost": 32,
+    "power": 1.5,
+    "gcd": 1.5,
+    "stun": 2,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 1.50x Spell Power to every enemy inside the 30m circle and stuns them for 2s.",
+    "aoe": {
+      "shape": "circle",
+      "radius": 30,
+      "center": "self"
+    },
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 10,
+      "resourceCost": 32,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "tags": ["arcanist", "control", "aoe"]
+  },
+  {
+    "id": "arcane_surge",
+    "name": "Arcane Surge",
+    "icon": "✨",
+    "cooldown": 25,
+    "cost": 35,
+    "power": 2.8,
+    "gcd": 1.5,
+    "selfBuff": "arcane_surge",
+    "queueable": true,
+    "range": 0,
+    "description": "Grants arcane surge for a short duration.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 25,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell"
+  },
+  {
+    "id": "blink",
+    "name": "Blink",
+    "icon": "🌀",
+    "cooldown": 12,
+    "cost": 15,
+    "power": 0,
+    "gcd": 0.5,
+    "queueable": true,
+    "range": 0,
+    "description": "A reliable blink ability for your class toolkit.",
+    "movement": "dash",
+    "movementDistance": 12,
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 15,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "barrier",
+    "name": "Barrier",
+    "icon": "🔷",
+    "cooldown": 25,
+    "cost": 30,
+    "power": 0,
+    "gcd": 1.2,
+    "selfBuff": "barrier",
+    "range": 0,
+    "description": "Grants barrier for a short duration.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 25,
+      "resourceCost": 30,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "mana_burn",
+    "name": "Mana Burn",
+    "icon": "💠",
+    "cooldown": 18,
+    "cost": 35,
+    "power": 2.1,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 2.1 power coefficient. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 18,
+      "resourceCost": 35,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell"
+  },
+  {
+    "id": "thorn_lash",
+    "name": "Thorn Lash",
+    "icon": "🌿",
+    "cooldown": 0,
+    "cost": 0,
+    "power": 1.26,
+    "gcd": 1.2,
+    "gain": 16,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 1.0 power coefficient. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 0,
+      "resourceCost": 0,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "tags": ["warden", "resource-builder"],
+    "castTime": 1.5
+  },
+  {
+    "id": "rejuvenation",
+    "name": "Rejuvenation",
+    "icon": "💚",
+    "cooldown": 8,
+    "cost": 22,
+    "power": 0,
+    "gcd": 1.2,
+    "heal": 0.18,
+    "queueable": true,
+    "range": 0,
+    "description": "Restores 18% of the target's maximum health.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 8,
+      "resourceCost": 22,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["healer-core"]
+  },
+  {
+    "id": "root",
+    "name": "Entangling Roots",
+    "icon": "🌱",
+    "cooldown": 12,
+    "cost": 26,
+    "power": 0.95,
+    "gcd": 1.5,
+    "stun": 2,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 1.0 power coefficient. Stuns the target for 2 seconds. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 26,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "tags": ["warden", "control"]
+  },
+  {
+    "id": "natures_wrath",
+    "name": "Nature's Wrath",
+    "icon": "🌩️",
+    "cooldown": 20,
+    "cost": 40,
+    "power": 3.04,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 2.7 power coefficient. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 20,
+      "resourceCost": 40,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 2.0
+  },
+  {
+    "id": "barkskin",
+    "name": "Barkskin",
+    "icon": "🌳",
+    "cooldown": 35,
+    "cost": 30,
+    "power": 0,
+    "gcd": 1.2,
+    "selfBuff": "barrier",
+    "range": 0,
+    "description": "Grants barrier for a short duration.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 35,
+      "resourceCost": 30,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["barrier"]
+  },
+  {
+    "id": "soothing_bloom",
+    "name": "Soothing Bloom",
+    "icon": "🌸",
+    "cooldown": 18,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "heal": 0.352,
+    "queueable": true,
+    "range": 0,
+    "description": "Restores 32% of the target's maximum health.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 18,
+      "resourceCost": 35,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["healer-core"],
+    "castTime": 1.5
+  },
+  {
+    "id": "quick_cut",
+    "name": "Quick Cut",
+    "icon": "🗡️",
+    "cooldown": 0,
+    "cost": 0,
+    "power": 1.03,
+    "gcd": 1.1,
+    "gain": 14,
+    "queueable": true,
+    "range": 18,
+    "description": "A fast melee strike that builds Momentum. Use it as your reliable filler attack.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 0,
+      "resourceCost": 0,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "venom",
+    "name": "Venom",
+    "icon": "🧪",
+    "cooldown": 10,
+    "cost": 22,
+    "power": 1.5,
+    "gcd": 1.4,
+    "queueable": true,
+    "stun": 1,
+    "range": 18,
+    "description": "Coat your blades in venom, striking the target and briefly stunning it while applying pressure.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 10,
+      "resourceCost": 22,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "ambush",
+    "name": "Ambush",
+    "icon": "🌑",
+    "cooldown": 14,
+    "cost": 32,
+    "power": 3,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "A devastating close-range opener that hits hard. Best used after closing the distance.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 14,
+      "resourceCost": 32,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["shadowblade", "opener", "stealth-synergy"]
+  },
+  {
+    "id": "smoke_bomb",
+    "name": "Smoke Bomb",
+    "icon": "💨",
+    "cooldown": 22,
+    "cost": 30,
+    "power": 0,
+    "gcd": 1.5,
+    "queueable": true,
+    "selfBuff": "smoke_bomb",
+    "range": 0,
+    "description": "Throw a smoke bomb at your feet, reducing incoming damage for 7 seconds.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 22,
+      "resourceCost": 30,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "shadow_dance",
+    "name": "Shadow Dance",
+    "icon": "🕯️",
+    "cooldown": 35,
+    "cost": 45,
+    "power": 3,
+    "gcd": 1.5,
+    "queueable": true,
+    "selfBuff": "shadow_dance",
+    "range": 0,
+    "description": "Enter a focused shadow rhythm for 8 seconds, increasing damage and haste while you remain in combat.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 35,
+      "resourceCost": 45,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "steady_shot",
+    "name": "Steady Shot",
+    "icon": "🏹",
+    "cooldown": 0,
+    "cost": 0,
+    "power": 1.34,
+    "gcd": 1.2,
+    "gain": 16,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 1.0 power coefficient. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 0,
+      "resourceCost": 0,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "castTime": 1.5
+  },
+  {
+    "id": "hunter_mark",
+    "name": "Hunter Mark",
+    "icon": "🎯",
+    "cooldown": 12,
+    "cost": 18,
+    "power": 1.15,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 1.2 power coefficient. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 18,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["ranger", "mark", "range-discipline"],
+    "debuff": {
+      "id": "hunter_mark",
+      "duration": 15,
+      "modifiers": {
+        "damageTaken": 12
+      }
+    }
+  },
+  {
+    "id": "volley",
+    "name": "Volley",
+    "icon": "🌧️",
+    "cooldown": 8,
+    "cost": 25,
+    "power": 1.6,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Volley combat ability.. Area: 34m radius; hits every enemy inside the circle.",
+    "aoe": {
+      "shape": "circle",
+      "radius": 34,
+      "center": "self"
+    },
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 8,
+      "resourceCost": 25,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "evasive_step",
+    "name": "Evasive Step",
+    "icon": "💨",
+    "cooldown": 18,
+    "cost": 20,
+    "power": 0,
+    "gcd": 0.6,
+    "queueable": true,
+    "range": 0,
+    "description": "A reliable evasive step ability for your class toolkit.",
+    "movement": "dash",
+    "movementDistance": 12,
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 18,
+      "resourceCost": 20,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "rain_of_arrows",
+    "name": "Rain of Arrows",
+    "icon": "🏹",
+    "cooldown": 28,
+    "cost": 42,
+    "power": 3.66,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 3.1 power coefficient. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 28,
+      "resourceCost": 42,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "castTime": 2.5
+  },
+  {
+    "id": "holy_strike",
+    "name": "Holy Strike",
+    "icon": "✝️",
+    "cooldown": 0,
+    "cost": 0,
+    "power": 1.12,
+    "gcd": 1.2,
+    "gain": 14,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals weapon or spell damage with a 1.1 power coefficient. Range: 18m.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 0,
+      "resourceCost": 0,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "smite",
+    "name": "Smite",
+    "icon": "☀️",
+    "cooldown": 8,
+    "cost": 20,
+    "power": 1.35,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 40,
+    "description": "Deals weapon or spell damage with a 1.8 power coefficient. Range: 18m.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 8,
+      "resourceCost": 20,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "lay_on_hands",
+    "name": "Lay on Hands",
+    "icon": "🤲",
+    "cooldown": 90,
+    "cost": 28,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "heal": 0.35,
+    "range": 40,
+    "description": "Restores 35% of the target maximum health.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 90,
+      "resourceCost": 28,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["templar", "emergency-heal"]
+  },
+  {
+    "id": "blessed_guard",
+    "name": "Blessed Guard",
+    "icon": "🕊️",
+    "cooldown": 28,
+    "cost": 25,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "selfBuff": "barrier",
+    "range": 0,
+    "description": "Grants barrier for a short duration.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 28,
+      "resourceCost": 25,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "judgement",
+    "name": "Judgement",
+    "icon": "⚖️",
+    "cooldown": 20,
+    "cost": 40,
+    "power": 2.9,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 40,
+    "description": "Deals weapon or spell damage with a 2.9 power coefficient. Range: 30m.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 20,
+      "resourceCost": 40,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["holy-finisher"]
+  },
+  {
+    "id": "eldritch_bolt",
+    "name": "Eldritch Bolt",
+    "icon": "🌀",
+    "cooldown": 0,
+    "cost": 0,
+    "power": 1.37,
+    "gcd": 1.2,
+    "gain": 17,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 1.1 power coefficient. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 0,
+      "resourceCost": 0,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 1.5
+  },
+  {
+    "id": "curse",
+    "name": "Curse",
+    "icon": "🔮",
+    "cooldown": 10,
+    "cost": 22,
+    "power": 1.15,
+    "gcd": 1.5,
+    "queueable": true,
+    "stun": 1,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 1.5 power coefficient. Stuns the target for 1 seconds. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 10,
+      "resourceCost": 22,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "tags": ["occultist", "curse", "dot"],
+    "debuff": {
+      "id": "curse",
+      "duration": 10,
+      "modifiers": {
+        "damageTaken": 10
+      }
+    },
+    "status": {
+      "id": "cursed",
+      "duration": 10,
+      "damage": 5
+    }
+  },
+  {
+    "id": "life_drain",
+    "name": "Life Drain",
+    "icon": "🩸",
+    "cooldown": 12,
+    "cost": 24,
+    "power": 1,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Damages the enemy and restores 8% of the target's maximum health. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 24,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfHeal": 0.08
+  },
+  {
+    "id": "shadow_pact",
+    "name": "Shadow Pact",
+    "icon": "📜",
+    "cooldown": 30,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "selfBuff": "arcane_surge",
+    "range": 0,
+    "description": "Grants arcane surge for a short duration.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 30,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "doom",
+    "name": "Doom",
+    "icon": "☠️",
+    "cooldown": 24,
+    "cost": 45,
+    "power": 3.79,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 3.4 power coefficient. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 24,
+      "resourceCost": 45,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "tags": ["occultist", "dot", "finisher", "execute-25"],
+    "executeThreshold": 0.25,
+    "executeMultiplier": 1.4,
+    "castTime": 2.0
+  },
+  {
+    "id": "veil_step",
+    "name": "Veil Step",
+    "icon": "👁️",
+    "cooldown": 20,
+    "cost": 18,
+    "power": 0,
+    "gcd": 0.6,
+    "queueable": true,
+    "range": 0,
+    "description": "A reliable veil step ability for your class toolkit.",
+    "movement": "dash",
+    "movementDistance": 12,
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 20,
+      "resourceCost": 18,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "blood_strike",
+    "name": "Blood Strike",
+    "icon": "🩸",
+    "cooldown": 0,
+    "cost": 0,
+    "power": 1.05,
+    "gcd": 1.2,
+    "gain": 16,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals weapon or spell damage with a 1.1 power coefficient. Range: 18m.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 0,
+      "resourceCost": 0,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "rend",
+    "name": "Rend",
+    "icon": "🩹",
+    "cooldown": 8,
+    "cost": 18,
+    "power": 1.15,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals weapon or spell damage with a 1.8 power coefficient. Range: 18m.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 8,
+      "resourceCost": 18,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["reaver", "bleed"],
+    "debuff": {
+      "id": "rend",
+      "duration": 8,
+      "modifiers": {
+        "damageTaken": 6
+      }
+    }
+  },
+  {
+    "id": "whirlwind",
+    "name": "Whirlwind",
+    "icon": "🌪️",
+    "cooldown": 9,
+    "cost": 24,
+    "power": 1.45,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Spin through every enemy inside the 30m circle for 1.45x Attack.",
+    "aoe": {
+      "shape": "circle",
+      "radius": 30,
+      "center": "self"
+    },
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 9,
+      "resourceCost": 24,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "frenzy",
+    "name": "Frenzy",
+    "icon": "💢",
+    "cooldown": 25,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "selfBuff": "frenzy",
+    "range": 0,
+    "description": "Enter a berserker frenzy for 8 seconds, increasing damage by 25%.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 25,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "bloodrush",
+    "name": "Bloodrush",
+    "icon": "🏃",
+    "cooldown": 18,
+    "cost": 25,
+    "power": 2.4,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals weapon or spell damage with a 2.4 power coefficient. Range: 18m.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 18,
+      "resourceCost": 25,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "execution",
+    "name": "Execution",
+    "icon": "💀",
+    "cooldown": 16,
+    "cost": 45,
+    "power": 4,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "A devastating execution strike. Below 30% target health, its damage is dramatically increased.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 16,
+      "resourceCost": 45,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["reaver", "execute", "threshold-30"]
+  },
+  {
+    "id": "holy_light",
+    "name": "Holy Light",
+    "icon": "✨",
+    "cooldown": 0,
+    "cost": 0,
+    "power": 1.24,
+    "gcd": 1.2,
+    "gain": 15,
+    "queueable": true,
+    "range": 72,
+    "description": "A dependable ranged holy attack that builds Faith. Use it whenever you need to keep pressure up. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 0,
+      "resourceCost": 0,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 1.5
+  },
+  {
+    "id": "renew",
+    "name": "Renew",
+    "icon": "💚",
+    "cooldown": 8,
+    "cost": 20,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "heal": 0.16,
+    "range": 72,
+    "description": "Restore a portion of the lowest-health party member nearby and leave a short healing-over-time blessing. Range: 72m.",
+    "hot": {
+      "duration": 6,
+      "tickHeal": 0.035
+    },
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 8,
+      "resourceCost": 20,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["healer-core"]
+  },
+  {
+    "id": "smite_light",
+    "name": "Light's Smite",
+    "icon": "🌟",
+    "cooldown": 7,
+    "cost": 18,
+    "power": 1.21,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Call down a focused strike of holy power against an enemy at range. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 7,
+      "resourceCost": 18,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 1.5
+  },
+  {
+    "id": "sanctuary",
+    "name": "Sanctuary",
+    "icon": "🛐",
+    "cooldown": 30,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "selfBuff": "barrier",
+    "range": 0,
+    "description": "Surround yourself with sacred protection, granting a temporary defensive barrier.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 30,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["hierophant", "defensive-cooldown", "barrier"]
+  },
+  {
+    "id": "purify",
+    "name": "Purify",
+    "icon": "🕯️",
+    "cooldown": 18,
+    "cost": 22,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "heal": 0.12,
+    "range": 72,
+    "description": "Cleanse harmful effects from the most wounded nearby party member and restore a small amount of health. Range: 72m.",
+    "cleanse": 2,
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 18,
+      "resourceCost": 22,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["hierophant", "cleanse"]
+  },
+  {
+    "id": "divine_word",
+    "name": "Divine Word",
+    "icon": "📿",
+    "cooldown": 35,
+    "cost": 50,
+    "power": 3.45,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "A powerful ranged holy attack that deals heavy damage to the chosen enemy. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 35,
+      "resourceCost": 50,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 2.0
+  },
+  {
+    "id": "shield_throw",
+    "name": "Shield Throw",
+    "icon": "🥏",
+    "cooldown": 10,
+    "cost": 25,
+    "power": 1.8,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 30,
+    "tags": ["tank", "ranged-threat"],
+    "description": "Deals weapon or spell damage with a 1.8 power coefficient. Range: 30m.",
+    "combatAudit": {
+      "rangeMeters": 30,
+      "cooldownSeconds": 10,
+      "resourceCost": 25,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "threatMultiplier": 1.25
+  },
+  {
+    "id": "deep_wound",
+    "name": "Deep Wound",
+    "icon": "🩸",
+    "cooldown": 12,
+    "cost": 25,
+    "power": 1.7,
+    "gcd": 1.4,
+    "queueable": true,
+    "range": 18,
+    "status": {
+      "id": "bleeding",
+      "duration": 8,
+      "damage": 7
+    },
+    "description": "Deals weapon or spell damage with a 1.7 power coefficient. Applies bleeding for 8 seconds. Range: 18m.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 25,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["vanguard", "bleed"],
+    "debuff": {
+      "id": "deep_wound",
+      "duration": 8,
+      "modifiers": {
+        "damageTaken": 5
+      }
+    }
+  },
+  {
+    "id": "flame_surge",
+    "name": "Flame Surge",
+    "icon": "🔥",
+    "cooldown": 8,
+    "cost": 30,
+    "power": 1.9,
+    "gcd": 1.4,
+    "queueable": true,
+    "range": 72,
+    "status": {
+      "id": "burning",
+      "duration": 6,
+      "damage": 8
+    },
+    "description": "Deals 1.90x Spell Power to every enemy inside the 32m circle.",
+    "aoe": {
+      "shape": "circle",
+      "radius": 32,
+      "center": "self"
+    },
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 8,
+      "resourceCost": 30,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell"
+  },
+  {
+    "id": "purifying_light",
+    "name": "Purifying Light",
+    "icon": "✨",
+    "cooldown": 12,
+    "cost": 28,
+    "power": 0,
+    "gcd": 1.2,
+    "heal": 0.22,
+    "cleanse": 1,
+    "range": 0,
+    "description": "Restores 22% of the target's maximum health.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 28,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["warden", "cleanse", "healer-core"]
+  },
+  {
+    "id": "shadow_rend",
+    "name": "Shadow Rend",
+    "icon": "🌑",
+    "cooldown": 9,
+    "cost": 24,
+    "power": 1.8,
+    "gcd": 1.3,
+    "queueable": true,
+    "range": 72,
+    "status": {
+      "id": "cursed",
+      "duration": 7,
+      "damage": 5
+    },
+    "description": "Deals weapon or spell damage with a 1.8 power coefficient. Applies cursed for 7 seconds. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 9,
+      "resourceCost": 24,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "tags": ["occultist", "dot", "curse"],
+    "debuff": {
+      "id": "shadow_rend",
+      "duration": 7,
+      "modifiers": {
+        "damageTaken": 8
+      }
+    }
+  },
+  {
+    "id": "shield_charge",
+    "name": "Shield Charge",
+    "icon": "🏃",
+    "cooldown": 14,
+    "cost": 25,
+    "power": 1.9,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 25,
+    "requiresShield": true,
+    "stun": 1.2,
+    "description": "Deals weapon or spell damage with a 1.9 power coefficient. Stuns the target for 1.2 seconds. Range: 25m.",
+    "movement": "charge",
+    "movementDistance": 25,
+    "combatAudit": {
+      "rangeMeters": 25,
+      "cooldownSeconds": 14,
+      "resourceCost": 25,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "fortifying_roar",
+    "name": "Fortifying Roar",
+    "icon": "🦁",
+    "cooldown": 28,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "selfBuff": "shield_wall",
+    "range": 0,
+    "description": "Fortify yourself for 6 seconds, reducing incoming damage by 45% and generating high threat.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 28,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["tank", "defensive-cooldown"],
+    "threatMultiplier": 1.4
+  },
+  {
+    "id": "whirlwind_guard",
+    "name": "Whirlwind Guard",
+    "icon": "🌀",
+    "cooldown": 18,
+    "cost": 30,
+    "power": 1.7,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Protect yourself while striking every enemy inside the 32m circle for 1.70x Attack.",
+    "aoe": {
+      "shape": "circle",
+      "radius": 32,
+      "center": "self"
+    },
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 18,
+      "resourceCost": 30,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "meteor_shard",
+    "name": "Meteor Shard",
+    "icon": "☄️",
+    "cooldown": 9,
+    "cost": 32,
+    "power": 2.38,
+    "gcd": 1.4,
+    "queueable": true,
+    "range": 72,
+    "status": {
+      "id": "burning",
+      "duration": 6,
+      "damage": 9
+    },
+    "description": "Deals weapon or spell damage with a 2.2 power coefficient. Applies burning for 6 seconds. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 9,
+      "resourceCost": 32,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 1.5
+  },
+  {
+    "id": "arcane_echo",
+    "name": "Arcane Echo",
+    "icon": "🔷",
+    "cooldown": 22,
+    "cost": 42,
+    "power": 0,
+    "gcd": 1.2,
+    "selfBuff": "arcane_echo",
+    "range": 0,
+    "description": "Stores an arcane echo for the next damaging spell, empowering its damage.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 22,
+      "resourceCost": 42,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["arcanist", "spell-sequencing"]
+  },
+  {
+    "id": "frost_lance",
+    "name": "Frost Lance",
+    "icon": "🧊",
+    "cooldown": 7,
+    "cost": 26,
+    "power": 1.95,
+    "gcd": 1.3,
+    "queueable": true,
+    "range": 72,
+    "status": {
+      "id": "chilled",
+      "duration": 5,
+      "damage": 3
+    },
+    "description": "Deals weapon or spell damage with a 1.8 power coefficient. Applies chilled for 5 seconds. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 7,
+      "resourceCost": 26,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "tags": ["arcanist", "slow"],
+    "castTime": 1.2
+  },
+  {
+    "id": "wild_growth",
+    "name": "Wild Growth",
+    "icon": "🌺",
+    "cooldown": 14,
+    "cost": 30,
+    "power": 0,
+    "gcd": 1.2,
+    "heal": 0.308,
+    "queueable": true,
+    "range": 0,
+    "description": "Restores 28% of the target's maximum health.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 14,
+      "resourceCost": 30,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["healer-core"],
+    "castTime": 1.5
+  },
+  {
+    "id": "thorn_barrage",
+    "name": "Thorn Barrage",
+    "icon": "🌵",
+    "cooldown": 8,
+    "cost": 24,
+    "power": 1.91,
+    "gcd": 1.4,
+    "queueable": true,
+    "range": 72,
+    "status": {
+      "id": "bleeding",
+      "duration": 6,
+      "damage": 7
+    },
+    "description": "Deals weapon or spell damage with a 1.7 power coefficient. Applies bleeding for 6 seconds. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 8,
+      "resourceCost": 24,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 1.5
+  },
+  {
+    "id": "shadow_step",
+    "name": "Shadow Step",
+    "icon": "👤",
+    "cooldown": 16,
+    "cost": 28,
+    "power": 2.2,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 25,
+    "description": "Blink toward a distant enemy and strike them, closing the gap without walking the whole way.",
+    "movement": "dash",
+    "movementDistance": 18,
+    "combatAudit": {
+      "rangeMeters": 25,
+      "cooldownSeconds": 16,
+      "resourceCost": 28,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "marked_for_death",
+    "name": "Marked for Death",
+    "icon": "☠️",
+    "cooldown": 20,
+    "cost": 35,
+    "power": 1.6,
+    "gcd": 1.3,
+    "queueable": true,
+    "range": 30,
+    "status": {
+      "id": "cursed",
+      "duration": 9,
+      "damage": 6
+    },
+    "description": "Mark the target for death. The curse deals damage over time and makes the target easier to finish.",
+    "combatAudit": {
+      "rangeMeters": 30,
+      "cooldownSeconds": 20,
+      "resourceCost": 35,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["shadowblade", "mark"],
+    "debuff": {
+      "id": "marked_for_death",
+      "duration": 12,
+      "modifiers": {
+        "damageTaken": 18
+      }
+    }
+  },
+  {
+    "id": "piercing_arrow",
+    "name": "Piercing Arrow",
+    "icon": "🏹",
+    "cooldown": 9,
+    "cost": 24,
+    "power": 2,
+    "gcd": 1.4,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals weapon or spell damage with a 2.0 power coefficient. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 9,
+      "resourceCost": 24,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "trueshot",
+    "name": "Trueshot",
+    "icon": "🎯",
+    "cooldown": 30,
+    "cost": 40,
+    "power": 0,
+    "gcd": 1.2,
+    "selfBuff": "trueshot",
+    "range": 0,
+    "description": "Enters a 6-second true-shot window: ranged attacks gain increased damage and critical chance.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 30,
+      "resourceCost": 40,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["ranger", "burst-window"]
+  },
+  {
+    "id": "judging_blade",
+    "name": "Judging Blade",
+    "icon": "⚖️",
+    "cooldown": 12,
+    "cost": 30,
+    "power": 2,
+    "gcd": 1.4,
+    "queueable": true,
+    "range": 40,
+    "status": {
+      "id": "burning",
+      "duration": 5,
+      "damage": 6
+    },
+    "description": "Deals weapon or spell damage with a 2.0 power coefficient. Applies burning for 5 seconds. Range: 18m.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 12,
+      "resourceCost": 30,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["templar", "holy-dot"],
+    "debuff": {
+      "id": "judging_blade",
+      "duration": 5,
+      "modifiers": {
+        "damageTaken": 5
+      }
+    }
+  },
+  {
+    "id": "aegis_of_light",
+    "name": "Aegis of Light",
+    "icon": "✨",
+    "cooldown": 32,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "selfBuff": "barrier",
+    "range": 0,
+    "description": "Grants barrier for a short duration.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 32,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "soul_siphon",
+    "name": "Soul Siphon",
+    "icon": "🩸",
+    "cooldown": 10,
+    "cost": 28,
+    "power": 1.7,
+    "gcd": 1.4,
+    "queueable": true,
+    "range": 72,
+    "description": "Damages the enemy and restores 12% of the target's maximum health. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 10,
+      "resourceCost": 28,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfHeal": 0.12
+  },
+  {
+    "id": "nightfall",
+    "name": "Nightfall",
+    "icon": "🌑",
+    "cooldown": 20,
+    "cost": 40,
+    "power": 2.9,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "status": {
+      "id": "cursed",
+      "duration": 8,
+      "damage": 7
+    },
+    "description": "Deals 2.60x Spell Power to every enemy inside the 34m circle and applies its damage-over-time effect.",
+    "aoe": {
+      "shape": "circle",
+      "radius": 34,
+      "center": "self"
+    },
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 20,
+      "resourceCost": 40,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "tags": ["occultist", "aoe", "dot"],
+    "castTime": 2.0
+  },
+  {
+    "id": "bloodletter",
+    "name": "Bloodletter",
+    "icon": "🩸",
+    "cooldown": 8,
+    "cost": 22,
+    "power": 1.7,
+    "gcd": 1.3,
+    "queueable": true,
+    "range": 18,
+    "status": {
+      "id": "bleeding",
+      "duration": 8,
+      "damage": 8
+    },
+    "description": "Deals weapon or spell damage with a 1.7 power coefficient. Applies bleeding for 8 seconds. Range: 18m.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 8,
+      "resourceCost": 22,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "death_waltz",
+    "name": "Death Waltz",
+    "icon": "💃",
+    "cooldown": 24,
+    "cost": 38,
+    "power": 2.4,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "selfBuff": "guard",
+    "description": "Unleash a heavy spin for 2.40x Attack against every enemy inside the 34m circle.",
+    "aoe": {
+      "shape": "circle",
+      "radius": 34,
+      "center": "self"
+    },
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 24,
+      "resourceCost": 38,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "radiant_word",
+    "name": "Radiant Word",
+    "icon": "🌟",
+    "cooldown": 12,
+    "cost": 24,
+    "power": 1.5,
+    "gcd": 1.3,
+    "queueable": true,
+    "range": 72,
+    "description": "Release a wave of light around you, dealing 1.50x Spell Power to every enemy inside the 30m circle.",
+    "aoe": {
+      "shape": "circle",
+      "radius": 30,
+      "center": "self"
+    },
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 24,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell"
+  },
+  {
+    "id": "salvation",
+    "name": "Salvation",
+    "icon": "🕊️",
+    "cooldown": 40,
+    "cost": 55,
+    "power": 0,
+    "gcd": 1.5,
+    "heal": 0.66,
+    "queueable": true,
+    "range": 72,
+    "description": "A major emergency heal that restores a large portion of your health. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 40,
+      "resourceCost": 55,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["hierophant", "emergency-heal"],
+    "castTime": 2.5
+  },
+  {
+    "id": "ground_smash",
+    "name": "Ground Smash",
+    "icon": "💥",
+    "cooldown": 14,
+    "cost": 30,
+    "power": 2.1,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "aoe": {
+      "shape": "circle",
+      "radius": 34,
+      "center": "self"
+    },
+    "stun": 1,
+    "description": "Smash the ground, dealing 2.10x Attack to every enemy inside the 34m circle and stunning them briefly.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 14,
+      "resourceCost": 30,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "smoke_burst",
+    "name": "Smoke Burst",
+    "icon": "🌫️",
+    "cooldown": 16,
+    "cost": 34,
+    "power": 2,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "aoe": {
+      "shape": "circle",
+      "radius": 30,
+      "center": "self"
+    },
+    "description": "Detonate smoke around you, dealing 2.00x Attack to every enemy inside the 30m circle.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 16,
+      "resourceCost": 34,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "consecration",
+    "name": "Consecration",
+    "icon": "✝️",
+    "cooldown": 18,
+    "cost": 40,
+    "power": 2,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 40,
+    "aoe": {
+      "shape": "circle",
+      "radius": 36,
+      "center": "self"
+    },
+    "description": "Consecrates a 36m area, dealing holy damage to every enemy inside the circle.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 18,
+      "resourceCost": 40,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "status": {
+      "id": "holy_burning",
+      "duration": 5,
+      "damage": 6
+    },
+    "tags": ["holy-aoe", "zone"]
+  },
+  {
+    "id": "void_pulse",
+    "name": "Void Pulse",
+    "icon": "🕳️",
+    "cooldown": 16,
+    "cost": 38,
+    "power": 2.3,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "aoe": {
+      "shape": "circle",
+      "radius": 34,
+      "center": "self"
+    },
+    "description": "Strikes every enemy inside the 34m circle for 2.30x Spell Power.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 16,
+      "resourceCost": 38,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell"
+  },
+  {
+    "id": "blood_whirl",
+    "name": "Blood Whirl",
+    "icon": "🩸",
+    "cooldown": 13,
+    "cost": 32,
+    "power": 2.1,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "aoe": {
+      "shape": "circle",
+      "radius": 30,
+      "center": "self"
+    },
+    "description": "Whirl through every enemy inside the 30m circle for 2.10x Attack.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 13,
+      "resourceCost": 32,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "radiant_burst",
+    "name": "Radiant Burst",
+    "icon": "🌟",
+    "cooldown": 16,
+    "cost": 36,
+    "power": 2,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "aoe": {
+      "shape": "circle",
+      "radius": 32,
+      "center": "self"
+    },
+    "description": "Detonate radiant energy around you, dealing 2.00x Spell Power to every enemy inside the 32m circle.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 16,
+      "resourceCost": 36,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell"
+  },
+  {
+    "id": "holy_aegis",
+    "name": "Holy Aegis",
+    "icon": "🛡️",
+    "cooldown": 24,
+    "cost": 32,
+    "power": 0,
+    "gcd": 1.2,
+    "selfBuff": "barrier",
+    "queueable": true,
+    "range": 0,
+    "description": "Raise a holy shield that absorbs incoming damage for a short time.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 24,
+      "resourceCost": 32,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["barrier"]
+  },
+  {
+    "id": "mass_renew",
+    "name": "Mass Renew",
+    "icon": "💚",
+    "cooldown": 28,
+    "cost": 48,
+    "power": 0,
+    "gcd": 1.5,
+    "heal": 0.418,
+    "queueable": true,
+    "range": 72,
+    "description": "Restore a large portion of the lowest-health party member and yourself. Emergency group recovery. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 28,
+      "resourceCost": 48,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["healer-core"],
+    "castTime": 1.5
+  },
+  {
+    "id": "hemorrhage",
+    "name": "Hemorrhage",
+    "icon": "🩸",
+    "cooldown": 8,
+    "cost": 16,
+    "power": 1.35,
+    "gcd": 1.3,
+    "queueable": true,
+    "range": 18,
+    "status": {
+      "id": "bleeding",
+      "duration": 7,
+      "damage": 5
+    },
+    "description": "A precise cut that opens a deep wound. Its bleed is extended by Bleed Duration gear.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 8,
+      "resourceCost": 16,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "eviscerate",
+    "name": "Eviscerate",
+    "icon": "🔪",
+    "cooldown": 12,
+    "cost": 28,
+    "power": 2.65,
+    "gcd": 1.4,
+    "queueable": true,
+    "range": 18,
+    "description": "A heavy finisher. Deals more damage against wounded targets in the future when the execution condition system is expanded.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 28,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["shadowblade", "execute"]
+  },
+  {
+    "id": "vanish",
+    "name": "Vanish",
+    "icon": "🌫️",
+    "cooldown": 45,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "selfBuff": "stealth",
+    "description": "Disappear into the Gloam, shedding current enemy pressure. Your next attack can reopen the fight on your terms.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 45,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["shadowblade", "stealth"]
+  },
+  {
+    "id": "lifebloom",
+    "name": "Lifebloom",
+    "icon": "🌺",
+    "cooldown": 10,
+    "cost": 24,
+    "power": 0,
+    "gcd": 1.2,
+    "heal": 0.16,
+    "queueable": true,
+    "range": 72,
+    "hot": {
+      "duration": 8,
+      "tickHeal": 0.012
+    },
+    "description": "A restorative bloom that heals immediately and continues healing over time. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 10,
+      "resourceCost": 24,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["healer-core"]
+  },
+  {
+    "id": "purifying_grove",
+    "name": "Purifying Grove",
+    "icon": "🌿",
+    "cooldown": 24,
+    "cost": 32,
+    "power": 0,
+    "gcd": 1.3,
+    "heal": 0.2,
+    "queueable": true,
+    "range": 72,
+    "cleanse": 4,
+    "description": "Heal the most wounded nearby ally and cleanse several harmful effects. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 24,
+      "resourceCost": 32,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["healer-core"]
+  },
+  {
+    "id": "rootward",
+    "name": "Rootward",
+    "icon": "🌳",
+    "cooldown": 30,
+    "cost": 34,
+    "power": 0,
+    "gcd": 1.2,
+    "selfBuff": "rootward",
+    "range": 0,
+    "description": "Surround yourself with living roots, reducing incoming stun duration and strengthening your healing.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 30,
+      "resourceCost": 34,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "shadow_flurry",
+    "name": "Shadow Flurry",
+    "icon": "🗡️",
+    "cooldown": 14,
+    "cost": 32,
+    "power": 2.05,
+    "gcd": 1.3,
+    "queueable": true,
+    "range": 18,
+    "aoe": {
+      "shape": "circle",
+      "radius": 28,
+      "center": "self"
+    },
+    "description": "Rapidly strike every enemy inside the 28m circle for 2.05x Attack.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 14,
+      "resourceCost": 32,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "crippling_toxin",
+    "name": "Crippling Toxin",
+    "icon": "☠️",
+    "cooldown": 18,
+    "cost": 24,
+    "power": 1.15,
+    "gcd": 1.3,
+    "queueable": true,
+    "range": 18,
+    "status": {
+      "id": "poisoned",
+      "duration": 10,
+      "damage": 8
+    },
+    "description": "A venomous strike that applies a lingering poison and keeps pressure on a fleeing target.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 18,
+      "resourceCost": 24,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "death_mark",
+    "name": "Death Mark",
+    "icon": "🎯",
+    "cooldown": 28,
+    "cost": 40,
+    "power": 3.35,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "status": {
+      "id": "bleeding",
+      "duration": 8,
+      "damage": 10
+    },
+    "description": "A finishing strike that applies a deep bleed and punishes wounded targets.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 28,
+      "resourceCost": 40,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    }
+  },
+  {
+    "id": "guardian_grace",
+    "name": "Guardian Grace",
+    "icon": "✨",
+    "cooldown": 24,
+    "cost": 34,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "heal": 0.352,
+    "hot": {
+      "duration": 8,
+      "tickHeal": 0.045
+    },
+    "range": 72,
+    "description": "A strong emergency heal followed by a sustained blessing. It automatically favors the most wounded party member. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 24,
+      "resourceCost": 34,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["healer-core"],
+    "castTime": 1.5
+  },
+  {
+    "id": "radiant_barrier",
+    "name": "Radiant Barrier",
+    "icon": "🛡️",
+    "cooldown": 30,
+    "cost": 36,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "selfBuff": "barrier",
+    "range": 0,
+    "description": "A protective ward for dangerous pulls and PvP burst windows.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 30,
+      "resourceCost": 36,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["barrier"]
+  },
+  {
+    "id": "purifying_wave",
+    "name": "Purifying Wave",
+    "icon": "🌊",
+    "cooldown": 20,
+    "cost": 38,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "heal": 0.24,
+    "hot": {
+      "duration": 6,
+      "tickHeal": 0.035
+    },
+    "range": 72,
+    "description": "Heal the most wounded nearby ally and leave a sustained healing-over-time effect. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 20,
+      "resourceCost": 38,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["healer-core"]
+  },
+  {
+    "id": "blessing_of_ashenfall",
+    "name": "Blessing of Ashenfall",
+    "icon": "✨",
+    "cooldown": 24,
+    "cost": 30,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "partyBuff": {
+      "id": "ashenfall_blessing",
+      "duration": 20,
+      "modifiers": {
+        "damage": 8,
+        "healing": 8,
+        "armor": 8
+      }
+    },
+    "range": 72,
+    "description": "Bless an allied party member for 20 seconds, increasing damage, healing and armor by 8%. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 24,
+      "resourceCost": 30,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["hierophant", "party-buff"]
+  },
+  {
+    "id": "revive",
+    "name": "Revive",
+    "icon": "🕊️",
+    "cooldown": 45,
+    "cost": 50,
+    "power": 0,
+    "gcd": 2,
+    "queueable": false,
+    "heal": 0,
+    "revive": {
+      "health": 0.35
+    },
+    "range": 72,
+    "description": "Restore a fallen party member to 35% health and return them to the active encounter. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 45,
+      "resourceCost": 50,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "disabled"
+    },
+    "tags": ["hierophant", "revive", "combat-recovery"],
+    "castTime": 3.0
+  },
+  {
+    "id": "purge",
+    "name": "Purge",
+    "icon": "🌀",
+    "cooldown": 16,
+    "cost": 22,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "purge": 1,
+    "range": 72,
+    "description": "Remove one beneficial magical effect from an enemy. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 16,
+      "resourceCost": 22,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "tags": ["warden", "purge", "utility"]
+  },
+  {
+    "id": "iron_rebuke",
+    "name": "Iron Rebuke",
+    "icon": "⚔️",
+    "cooldown": 12,
+    "cost": 23,
+    "power": 1.9,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals weapon damage for 1.90x Attack and generates 20 Resolve worth of additional threat.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 23,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "threatMultiplier": 1.6
+  },
+  {
+    "id": "shield_reinforcement",
+    "name": "Shield Reinforcement",
+    "icon": "🛡️",
+    "cooldown": 12,
+    "cost": 34,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Fortifies your defenses for 7 seconds, using your Barrier mitigation profile to absorb incoming damage.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 34,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "barrier",
+    "tags": ["tank", "defensive-cooldown", "barrier"]
+  },
+  {
+    "id": "rallying_banner",
+    "name": "Rallying Banner",
+    "icon": "🚩",
+    "cooldown": 12,
+    "cost": 30,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 45,
+    "description": "Rallies nearby party members for 20 seconds, increasing damage by 5% and armor by 10%.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 30,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "partyBuff": {
+      "id": "late_party_buff",
+      "duration": 20,
+      "modifiers": {
+        "damage": 5,
+        "armor": 10
+      }
+    },
+    "tags": ["party-buff", "utility"]
+  },
+  {
+    "id": "shield_storm",
+    "name": "Shield Storm",
+    "icon": "🌪️",
+    "cooldown": 12,
+    "cost": 26,
+    "power": 2.2,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Slams the target and nearby enemies for 2.20x Attack in a 12m area, hitting up to 6 targets.. Area: 34m radius; hits every enemy inside the circle.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 26,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "aoe": {
+      "shape": "circle",
+      "radius": 34,
+      "center": "self"
+    },
+    "threatMultiplier": 1.35
+  },
+  {
+    "id": "unyielding",
+    "name": "Unyielding",
+    "icon": "🏰",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Hardens your stance for 8 seconds, greatly reducing incoming damage and reinforcing threat control.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "shield_wall"
+  },
+  {
+    "id": "thunderous_challenge",
+    "name": "Thunderous Challenge",
+    "icon": "⚡",
+    "cooldown": 12,
+    "cost": 27,
+    "power": 2.25,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals 2.25x Attack and stuns the target for 1.5 seconds.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 27,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "stun": 1.5,
+    "threatMultiplier": 1.5
+  },
+  {
+    "id": "last_stand",
+    "name": "Last Stand",
+    "icon": "🩸",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Enters a last-stand defensive state for 8 seconds, greatly reducing incoming damage while you stabilize the fight.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "shield_wall"
+  },
+  {
+    "id": "citadel_breaker",
+    "name": "Citadel Breaker",
+    "icon": "🏰",
+    "cooldown": 12,
+    "cost": 48,
+    "power": 3.8,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "A devastating shield execution that deals 3.80x Attack to the target and nearby enemies in a 10m area.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 48,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "executeThreshold": 0.3,
+    "executeMultiplier": 1.65,
+    "threatMultiplier": 1.35
+  },
+  {
+    "id": "arcane_missiles",
+    "name": "Arcane Missiles",
+    "icon": "💠",
+    "cooldown": 12,
+    "cost": 24,
+    "power": 2.17,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Launches a concentrated arcane barrage for 2.00x Spell Power at up to 72m. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 24,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 2.0
+  },
+  {
+    "id": "ice_lance",
+    "name": "Ice Lance",
+    "icon": "❄️",
+    "cooldown": 12,
+    "cost": 23,
+    "power": 1.9,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 1.90x Spell Power and chills the target for 5 seconds, dealing 3 damage each second. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 23,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "status": {
+      "id": "chilled",
+      "duration": 5,
+      "damage": 3
+    }
+  },
+  {
+    "id": "flame_burst",
+    "name": "Flame Burst",
+    "icon": "🔥",
+    "cooldown": 12,
+    "cost": 25,
+    "power": 2.1,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 2.10x Spell Power in a 34m area; hits every enemy inside the circle and applies burning for 6s at 8 damage per tick.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 25,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "aoe": {
+      "shape": "circle",
+      "radius": 34,
+      "center": "self"
+    },
+    "status": {
+      "id": "burning",
+      "duration": 6,
+      "damage": 8
+    }
+  },
+  {
+    "id": "temporal_shift",
+    "name": "Temporal Shift",
+    "icon": "⏳",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Enters an accelerated spell window for 7 seconds, empowering the next sequence of damaging spells.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "arcane_surge"
+  },
+  {
+    "id": "spellward",
+    "name": "Spellward",
+    "icon": "🔷",
+    "cooldown": 12,
+    "cost": 34,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Raises a magical barrier for 7 seconds that absorbs incoming damage.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 34,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "barrier"
+  },
+  {
+    "id": "comet",
+    "name": "Comet",
+    "icon": "☄️",
+    "cooldown": 12,
+    "cost": 40,
+    "power": 3.57,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Calls down a comet for 3.30x Spell Power against one target at up to 72m. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 40,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 2.0
+  },
+  {
+    "id": "mana_rupture",
+    "name": "Mana Rupture",
+    "icon": "🌀",
+    "cooldown": 12,
+    "cost": 31,
+    "power": 2.82,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Tears through the target for 2.60x Spell Power at 72m. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 31,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 1.5
+  },
+  {
+    "id": "arcane_overload",
+    "name": "Arcane Overload",
+    "icon": "✨",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Overloads your arcane core for 8 seconds, greatly increasing spell burst during the window.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "arcane_surge"
+  },
+  {
+    "id": "time_stop",
+    "name": "Time Stop",
+    "icon": "⏱️",
+    "cooldown": 12,
+    "cost": 42,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 72,
+    "description": "Freezes the target for 2.5 seconds. Crowd control follows the normal diminishing-return rules. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 42,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "stun": 2.5,
+    "tags": ["control"]
+  },
+  {
+    "id": "starfall",
+    "name": "Starfall",
+    "icon": "🌠",
+    "cooldown": 30,
+    "cost": 43,
+    "power": 3.9,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Bombards a 40m area for 3.60x Spell Power, hitting every enemy inside the circle.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 30,
+      "resourceCost": 43,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "aoe": {
+      "shape": "circle",
+      "radius": 40,
+      "center": "self"
+    },
+    "castTime": 2.5
+  },
+  {
+    "id": "swiftmend",
+    "name": "Swiftmend",
+    "icon": "🌿",
+    "cooldown": 12,
+    "cost": 40,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 72,
+    "description": "Rapidly heals an ally for 28% of maximum health. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 40,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "heal": 0.28
+  },
+  {
+    "id": "entangling_vines",
+    "name": "Entangling Vines",
+    "icon": "🌱",
+    "cooldown": 12,
+    "cost": 18,
+    "power": 1.25,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Roots the target with nature magic for 1.5 seconds and deals 1.25x Spell Power. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 18,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "stun": 1.5
+  },
+  {
+    "id": "ironbark",
+    "name": "Ironbark",
+    "icon": "🌳",
+    "cooldown": 12,
+    "cost": 34,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Wraps an ally in protective bark for 7 seconds, reducing incoming damage through the Barrier system.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 34,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "barrier"
+  },
+  {
+    "id": "spirit_bloom",
+    "name": "Spirit Bloom",
+    "icon": "🌸",
+    "cooldown": 12,
+    "cost": 40,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 72,
+    "description": "Heals an ally for 35% of maximum health and leaves them stabilized for follow-up healing. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 40,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "heal": 0.385,
+    "castTime": 1.5
+  },
+  {
+    "id": "ancestral_growth",
+    "name": "Ancestral Growth",
+    "icon": "🍃",
+    "cooldown": 12,
+    "cost": 40,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 72,
+    "description": "Heals an ally for 25% of maximum health and applies a 6-second HoT restoring 4% maximum health each second. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 40,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "heal": 0.275,
+    "hot": {
+      "duration": 6,
+      "tickHeal": 0.04
+    },
+    "castTime": 1.5
+  },
+  {
+    "id": "natures_grasp",
+    "name": "Nature’s Grasp",
+    "icon": "🪴",
+    "cooldown": 12,
+    "cost": 23,
+    "power": 1.9,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Roots enemies around the target with a 2-second control effect and deals 1.90x Spell Power in a 12m area. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 23,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "stun": 2
+  },
+  {
+    "id": "tranquility",
+    "name": "Tranquility",
+    "icon": "☘️",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 72,
+    "description": "Channels a major recovery burst, healing an ally for 55% of maximum health. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "heal": 0.605,
+    "castTime": 2.5
+  },
+  {
+    "id": "sinister_strike",
+    "name": "Sinister Strike",
+    "icon": "🗡️",
+    "cooldown": 12,
+    "cost": 18,
+    "power": 1.45,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals 1.45x Attack with a fast 1.3-second GCD, rewarding high-uptime melee play.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 18,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack"
+  },
+  {
+    "id": "toxic_barrage",
+    "name": "Toxic Barrage",
+    "icon": "☠️",
+    "cooldown": 12,
+    "cost": 22,
+    "power": 1.8,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Strikes the target and nearby enemies for 1.80x Attack and applies Poison for 8 seconds at 7 damage per tick.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 22,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "status": {
+      "id": "poisoned",
+      "duration": 8,
+      "damage": 7
+    }
+  },
+  {
+    "id": "cloak_of_shadows",
+    "name": "Cloak of Shadows",
+    "icon": "🌑",
+    "cooldown": 12,
+    "cost": 30,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Vanishes into stealth for 5 seconds, breaking hostile world aggro and enabling your stealth-based attacks.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 30,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "stealth"
+  },
+  {
+    "id": "fan_of_blades",
+    "name": "Fan of Blades",
+    "icon": "🔪",
+    "cooldown": 12,
+    "cost": 24,
+    "power": 2,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Throw a storm of blades through every enemy inside the 30m circle for 2.00x Attack.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 24,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "aoe": {
+      "shape": "circle",
+      "radius": 30,
+      "center": "self"
+    }
+  },
+  {
+    "id": "shadow_execution",
+    "name": "Shadow Execution",
+    "icon": "💀",
+    "cooldown": 12,
+    "cost": 46,
+    "power": 3.8,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Executes weakened enemies for 3.80x Attack; gains 1.5x bonus power below 30% target health.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 46,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "executeThreshold": 0.3,
+    "executeMultiplier": 1.65
+  },
+  {
+    "id": "dance_of_death",
+    "name": "Dance of Death",
+    "icon": "🩸",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Enters Shadow Dance for 8 seconds, empowering your burst and stealth-synergy abilities.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "shadow_dance"
+  },
+  {
+    "id": "aimed_shot",
+    "name": "Aimed Shot",
+    "icon": "🏹",
+    "cooldown": 12,
+    "cost": 28,
+    "power": 2.48,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 2.10x Attack from up to 72m. This is a deliberate long-cast burst tool for marksman play. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 28,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "tags": ["ranged", "burst"],
+    "castTime": 2.0
+  },
+  {
+    "id": "multishot",
+    "name": "Multishot",
+    "icon": "🏹",
+    "cooldown": 12,
+    "cost": 18,
+    "power": 1.4,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Fires a spread for 1.40x Attack in a 36m area, hitting every enemy inside the circle.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 18,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "aoe": {
+      "shape": "circle",
+      "radius": 36,
+      "center": "self"
+    }
+  },
+  {
+    "id": "concussive_shot",
+    "name": "Concussive Shot",
+    "icon": "💥",
+    "cooldown": 12,
+    "cost": 18,
+    "power": 1.15,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 1.15x Attack and stuns the target for 1.5 seconds. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 18,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "stun": 1.5
+  },
+  {
+    "id": "camouflage",
+    "name": "Camouflage",
+    "icon": "🌲",
+    "cooldown": 12,
+    "cost": 30,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Enters stealth for 5 seconds, allowing repositioning and stealth-enabled openers.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 30,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "stealth"
+  },
+  {
+    "id": "rapid_fire",
+    "name": "Rapid Fire",
+    "icon": "🎯",
+    "cooldown": 12,
+    "cost": 32,
+    "power": 2.4,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Unleashes sustained ranged pressure for 2.40x Attack at 72m. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 32,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack"
+  },
+  {
+    "id": "serpent_sting",
+    "name": "Serpent Sting",
+    "icon": "🐍",
+    "cooldown": 12,
+    "cost": 18,
+    "power": 1.25,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 1.25x Attack and applies Poison for 8 seconds at 8 damage per tick. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 18,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "status": {
+      "id": "poisoned",
+      "duration": 8,
+      "damage": 8
+    }
+  },
+  {
+    "id": "kill_command",
+    "name": "Kill Command",
+    "icon": "🐺",
+    "cooldown": 12,
+    "cost": 28,
+    "power": 2.8,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Orders a finishing ranged strike for 2.80x Attack at 72m. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 28,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack"
+  },
+  {
+    "id": "explosive_trap",
+    "name": "Explosive Trap",
+    "icon": "💣",
+    "cooldown": 12,
+    "cost": 24,
+    "power": 2,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Detonates a 32m area for 2.00x Attack and applies Burning for 5 seconds at 6 damage per tick.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 24,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "aoe": {
+      "shape": "circle",
+      "radius": 32,
+      "center": "self"
+    },
+    "status": {
+      "id": "burning",
+      "duration": 5,
+      "damage": 6
+    }
+  },
+  {
+    "id": "barrage",
+    "name": "Barrage",
+    "icon": "🏹",
+    "cooldown": 12,
+    "cost": 42,
+    "power": 3,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Fires a massive volley across a 40m area for 3.00x Attack, hitting every enemy inside the circle.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 42,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "aoe": {
+      "shape": "circle",
+      "radius": 40,
+      "center": "self"
+    }
+  },
+  {
+    "id": "aspect_of_the_wild",
+    "name": "Aspect of the Wild",
+    "icon": "🦅",
+    "cooldown": 12,
+    "cost": 40,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Enters Trueshot for 6 seconds, increasing ranged burst and critical pressure.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 40,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "trueshot"
+  },
+  {
+    "id": "black_arrow",
+    "name": "Black Arrow",
+    "icon": "🖤",
+    "cooldown": 12,
+    "cost": 41,
+    "power": 3.4,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 3.40x Attack and applies a dark bleed-like effect for 8 seconds at 10 damage per tick. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 41,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "status": {
+      "id": "bleeding",
+      "duration": 8,
+      "damage": 10
+    }
+  },
+  {
+    "id": "deadeye",
+    "name": "Deadeye",
+    "icon": "🎯",
+    "cooldown": 30,
+    "cost": 50,
+    "power": 4.95,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Apex execution shot for 4.20x Attack; below 30% target health it gains 1.65x power. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 30,
+      "resourceCost": 50,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "executeThreshold": 0.3,
+    "executeMultiplier": 1.65,
+    "tags": ["ranged", "burst"],
+    "castTime": 2.0
+  },
+  {
+    "id": "hunters_fury",
+    "name": "Hunter’s Fury",
+    "icon": "🔥",
+    "cooldown": 12,
+    "cost": 28,
+    "power": 2.25,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 2.25x Attack and gains additional value against marked targets. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 28,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack"
+  },
+  {
+    "id": "shield_of_faith",
+    "name": "Shield of Faith",
+    "icon": "🛡️",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Raises a holy barrier for 7 seconds, absorbing incoming damage.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "barrier"
+  },
+  {
+    "id": "holy_hammer",
+    "name": "Holy Hammer",
+    "icon": "🔨",
+    "cooldown": 12,
+    "cost": 22,
+    "power": 1.8,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 40,
+    "description": "Deals 1.80x Attack to every enemy inside the 32m circle and generates holy pressure.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 12,
+      "resourceCost": 22,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "aoe": {
+      "shape": "circle",
+      "radius": 32,
+      "center": "self"
+    }
+  },
+  {
+    "id": "divine_storm",
+    "name": "Divine Storm",
+    "icon": "🌪️",
+    "cooldown": 12,
+    "cost": 26,
+    "power": 2.2,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals 2.20x Attack to every enemy inside the 32m circle.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 26,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "aoe": {
+      "shape": "circle",
+      "radius": 32,
+      "center": "self"
+    }
+  },
+  {
+    "id": "flash_of_light",
+    "name": "Flash of Light",
+    "icon": "✨",
+    "cooldown": 12,
+    "cost": 40,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 40,
+    "description": "Heals an ally for 25% of maximum health from up to 40m.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 12,
+      "resourceCost": 40,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "heal": 0.275,
+    "castTime": 1.0
+  },
+  {
+    "id": "divine_shield",
+    "name": "Divine Shield",
+    "icon": "🛡️",
+    "cooldown": 12,
+    "cost": 34,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Raises a powerful holy barrier for 7 seconds.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 34,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "barrier"
+  },
+  {
+    "id": "holy_fire",
+    "name": "Holy Fire",
+    "icon": "🔥",
+    "cooldown": 12,
+    "cost": 26,
+    "power": 2.2,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 40,
+    "description": "Deals 2.20x Spell Power and applies Burning for 5 seconds at 6 damage per tick.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 12,
+      "resourceCost": 26,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "status": {
+      "id": "burning",
+      "duration": 5,
+      "damage": 6
+    }
+  },
+  {
+    "id": "wrathful_verdict",
+    "name": "Wrathful Verdict",
+    "icon": "⚖️",
+    "cooldown": 12,
+    "cost": 43,
+    "power": 3.6,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 40,
+    "description": "Deals 3.60x Attack at 40m as a heavy holy finisher.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 12,
+      "resourceCost": 43,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack"
+  },
+  {
+    "id": "guardian_spirit",
+    "name": "Guardian Spirit",
+    "icon": "👼",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Enters a guarded state for 5 seconds, reducing incoming damage and stabilizing your next defensive window.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "guard"
+  },
+  {
+    "id": "consecrated_light",
+    "name": "Consecrated Light",
+    "icon": "🌟",
+    "cooldown": 12,
+    "cost": 40,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 40,
+    "description": "Heals an ally for 40% of maximum health from up to 40m.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 12,
+      "resourceCost": 40,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "heal": 0.4
+  },
+  {
+    "id": "last_judgment",
+    "name": "Last Judgment",
+    "icon": "⚔️",
+    "cooldown": 12,
+    "cost": 48,
+    "power": 4,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 40,
+    "description": "Deals 4.00x Attack at 40m and represents the final holy execution tool.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 12,
+      "resourceCost": 48,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack"
+  },
+  {
+    "id": "beacon_of_hope",
+    "name": "Beacon of Hope",
+    "icon": "🕯️",
+    "cooldown": 12,
+    "cost": 40,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 40,
+    "description": "Restores 50% of an ally’s maximum health from up to 40m.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 12,
+      "resourceCost": 40,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "heal": 0.5
+  },
+  {
+    "id": "holy_reckoning",
+    "name": "Holy Reckoning",
+    "icon": "☀️",
+    "cooldown": 12,
+    "cost": 32,
+    "power": 2.7,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 40,
+    "description": "Deals 2.70x Attack at 40m and marks the target for holy pressure.",
+    "combatAudit": {
+      "rangeMeters": 40,
+      "cooldownSeconds": 12,
+      "resourceCost": 32,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack"
+  },
+  {
+    "id": "plague_spread",
+    "name": "Plague Spread",
+    "icon": "🦠",
+    "cooldown": 12,
+    "cost": 20,
+    "power": 1.7,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 1.70x Spell Power to every enemy inside the 32m circle and applies Poison for 8s.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 20,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "aoe": {
+      "shape": "circle",
+      "radius": 32,
+      "center": "self"
+    },
+    "status": {
+      "id": "poisoned",
+      "duration": 8,
+      "damage": 7
+    }
+  },
+  {
+    "id": "fear",
+    "name": "Fear",
+    "icon": "😱",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 72,
+    "description": "Terrifies the target for 2.5 seconds; normal crowd-control diminishing returns apply. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "stun": 2.5,
+    "tags": ["control"]
+  },
+  {
+    "id": "siphon_life",
+    "name": "Siphon Life",
+    "icon": "🩸",
+    "cooldown": 12,
+    "cost": 18,
+    "power": 1.4,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 1.40x Spell Power at 72m and restores 12% of your maximum health. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 18,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "selfHeal": 0.12
+  },
+  {
+    "id": "dark_ward",
+    "name": "Dark Ward",
+    "icon": "🕯️",
+    "cooldown": 12,
+    "cost": 34,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Creates a dark barrier for 7 seconds that absorbs incoming damage.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 34,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "barrier"
+  },
+  {
+    "id": "soul_burst",
+    "name": "Soul Burst",
+    "icon": "💥",
+    "cooldown": 12,
+    "cost": 34,
+    "power": 3.12,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 2.80x Spell Power to one target at 72m. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 34,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "castTime": 1.5
+  },
+  {
+    "id": "plague_of_shadows",
+    "name": "Plague of Shadows",
+    "icon": "☠️",
+    "cooldown": 12,
+    "cost": 36,
+    "power": 3,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 3.00x Spell Power to every enemy inside the 36m circle and applies Curse for 8s.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 36,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "aoe": {
+      "shape": "circle",
+      "radius": 36,
+      "center": "self"
+    },
+    "status": {
+      "id": "cursed",
+      "duration": 8,
+      "damage": 7
+    }
+  },
+  {
+    "id": "void_ascendance",
+    "name": "Void Ascendance",
+    "icon": "🌌",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Enters an empowered arcane surge state for 8 seconds, increasing spell burst.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "arcane_surge"
+  },
+  {
+    "id": "harvest_soul",
+    "name": "Harvest Soul",
+    "icon": "💀",
+    "cooldown": 12,
+    "cost": 50,
+    "power": 4.69,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Deals 4.20x Spell Power and gains 1.4x power against targets below 25% health. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 50,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "executeThreshold": 0.25,
+    "executeMultiplier": 1.65,
+    "tags": ["occultist", "execute"],
+    "castTime": 2.0
+  },
+  {
+    "id": "void_rift",
+    "name": "Void Rift",
+    "icon": "🕳️",
+    "cooldown": 12,
+    "cost": 38,
+    "power": 3.57,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Tears open a 40m void rift for 3.20x Spell Power, hitting every enemy inside the circle.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 38,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "aoe": {
+      "shape": "circle",
+      "radius": 40,
+      "center": "self"
+    },
+    "castTime": 1.5
+  },
+  {
+    "id": "apocalypse",
+    "name": "Apocalypse",
+    "icon": "☄️",
+    "cooldown": 45,
+    "cost": 50,
+    "power": 5.13,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 72,
+    "description": "Apex occult devastation for 4.60x Spell Power; below 25% target health it gains 1.4x power. Range: 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 45,
+      "resourceCost": 50,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "spell",
+    "executeThreshold": 0.25,
+    "executeMultiplier": 1.65,
+    "tags": ["occultist", "execute"],
+    "castTime": 3.0
+  },
+  {
+    "id": "savage_slash",
+    "name": "Savage Slash",
+    "icon": "🩸",
+    "cooldown": 12,
+    "cost": 18,
+    "power": 1.4,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals 1.40x Attack as a fast melee strike.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 18,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack"
+  },
+  {
+    "id": "blood_frenzy",
+    "name": "Blood Frenzy",
+    "icon": "🔥",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Enters Frenzy for 8 seconds, increasing offensive pressure while you remain in melee.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "frenzy"
+  },
+  {
+    "id": "sweeping_blows",
+    "name": "Sweeping Blows",
+    "icon": "⚔️",
+    "cooldown": 12,
+    "cost": 22,
+    "power": 1.8,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals 1.80x Attack to every enemy inside the 30m circle.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 22,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "aoe": {
+      "shape": "circle",
+      "radius": 30,
+      "center": "self"
+    }
+  },
+  {
+    "id": "rupturing_strike",
+    "name": "Rupturing Strike",
+    "icon": "🩸",
+    "cooldown": 12,
+    "cost": 20,
+    "power": 1.65,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals 1.65x Attack and applies Bleeding for 8 seconds at 8 damage per tick.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 20,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "status": {
+      "id": "bleeding",
+      "duration": 8,
+      "damage": 8
+    }
+  },
+  {
+    "id": "battle_howl",
+    "name": "Battle Howl",
+    "icon": "🐺",
+    "cooldown": 12,
+    "cost": 30,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 45,
+    "description": "Rallies party members for 20 seconds, increasing damage by 6%.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 30,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "partyBuff": {
+      "id": "late_party_buff",
+      "duration": 20,
+      "modifiers": {
+        "damage": 6,
+        "armor": 0
+      }
+    },
+    "tags": ["party-buff", "utility"]
+  },
+  {
+    "id": "berserker_rage",
+    "name": "Berserker Rage",
+    "icon": "🔥",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Enters Frenzy for 8 seconds and pushes your next damage window aggressively.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "frenzy"
+  },
+  {
+    "id": "cleaving_rend",
+    "name": "Cleaving Rend",
+    "icon": "🩸",
+    "cooldown": 12,
+    "cost": 25,
+    "power": 2.1,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals 2.10x Attack to every enemy inside the 34m circle and applies Bleeding for 6s.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 25,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "aoe": {
+      "shape": "circle",
+      "radius": 34,
+      "center": "self"
+    },
+    "status": {
+      "id": "bleeding",
+      "duration": 6,
+      "damage": 7
+    }
+  },
+  {
+    "id": "carnage",
+    "name": "Carnage",
+    "icon": "💢",
+    "cooldown": 12,
+    "cost": 34,
+    "power": 2.8,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals 2.80x Attack to the target with strong sustained pressure.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 34,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack"
+  },
+  {
+    "id": "unbound_fury",
+    "name": "Unbound Fury",
+    "icon": "⚡",
+    "cooldown": 12,
+    "cost": 35,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 0,
+    "description": "Enters an empowered Frenzy window for 8 seconds.",
+    "combatAudit": {
+      "rangeMeters": 0,
+      "cooldownSeconds": 12,
+      "resourceCost": 35,
+      "targetRule": "self",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "selfBuff": "frenzy"
+  },
+  {
+    "id": "annihilate",
+    "name": "Annihilate",
+    "icon": "💀",
+    "cooldown": 12,
+    "cost": 42,
+    "power": 3.5,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Deals 3.50x Attack as a late-game single-target finisher.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 12,
+      "resourceCost": 42,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "executeThreshold": 0.3,
+    "executeMultiplier": 1.65
+  },
+  {
+    "id": "apocalypse_blade",
+    "name": "Apocalypse Blade",
+    "icon": "🗡️",
+    "cooldown": 45,
+    "cost": 50,
+    "power": 4.5,
+    "gcd": 1.5,
+    "queueable": true,
+    "range": 18,
+    "description": "Apex melee execution for 4.50x Attack; below 30% target health it gains 1.65x power.",
+    "combatAudit": {
+      "rangeMeters": 18,
+      "cooldownSeconds": 45,
+      "resourceCost": 50,
+      "targetRule": "enemy",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "scaling": "attack",
+    "executeThreshold": 0.3,
+    "executeMultiplier": 1.65
+  },
+  {
+    "id": "divine_hymn",
+    "name": "Divine Hymn",
+    "icon": "🎶",
+    "cooldown": 12,
+    "cost": 40,
+    "power": 0,
+    "gcd": 1.2,
+    "queueable": true,
+    "range": 72,
+    "description": "Major healing invocation that restores 55% of an ally’s maximum health from up to 72m.",
+    "combatAudit": {
+      "rangeMeters": 72,
+      "cooldownSeconds": 12,
+      "resourceCost": 40,
+      "targetRule": "ally",
+      "interruptible": false,
+      "pvp": "enabled"
+    },
+    "heal": 0.605,
+    "tags": ["hierophant", "healer-core", "apex"],
+    "castTime": 2.0
+  }
+]

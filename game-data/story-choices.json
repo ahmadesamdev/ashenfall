@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "choices": [
+    {
+      "id": "chapter1_truth",
+      "text": "Tell the Council the truth about the sixth lantern.",
+      "minChapter": 1,
+      "outcomeId": "chapter1_truth",
+      "flag": "choice_council_truth",
+      "reputation": {
+        "stonehold_council": 120,
+        "veil_wardens": 40
+      }
+    },
+    {
+      "id": "chapter2_duty",
+      "text": "Stand with the Lantern Guard and protect the patrol route.",
+      "minChapter": 2,
+      "outcomeId": "chapter2_duty",
+      "flag": "choice_guard_duty",
+      "reputation": {
+        "lantern_guard": 120,
+        "stonehold_council": 30
+      }
+    },
+    {
+      "id": "chapter3_study",
+      "text": "Share the bell records with the Veil Wardens.",
+      "minChapter": 3,
+      "outcomeId": "chapter3_study",
+      "flag": "choice_wardens_study",
+      "reputation": {
+        "veil_wardens": 140,
+        "lantern_guard": -20
+      }
+    },
+    {
+      "id": "chapter4_hear",
+      "text": "Listen to the Ashen Covenant before condemning them.",
+      "minChapter": 4,
+      "outcomeId": "chapter4_hear",
+      "flag": "choice_covenant_heard",
+      "reputation": {
+        "ashen_covenant": 160,
+        "stonehold_council": -40
+      }
+    },
+    {
+      "id": "chapter5_names",
+      "text": "Preserve the names of the dead rather than the orders they left.",
+      "minChapter": 5,
+      "outcomeId": "chapter5_names",
+      "flag": "choice_names_remembered",
+      "reputation": {
+        "lantern_guard": 60,
+        "veil_wardens": 80
+      }
+    },
+    {
+      "id": "chapter6_ledger",
+      "text": "Expose the royal ledger to the living historians.",
+      "minChapter": 6,
+      "outcomeId": "chapter6_ledger",
+      "flag": "choice_ledger_exposed",
+      "reputation": {
+        "veil_wardens": 100,
+        "stonehold_council": -70
+      }
+    },
+    {
+      "id": "chapter7_roads",
+      "text": "Seal one memory road and study another.",
+      "minChapter": 7,
+      "outcomeId": "chapter7_roads",
+      "flag": "choice_roads_balanced",
+      "reputation": {
+        "veil_wardens": 80,
+        "lantern_guard": 40
+      }
+    },
+    {
+      "id": "chapter8_listen",
+      "text": "Listen to the Hollow Court before striking it.",
+      "minChapter": 8,
+      "outcomeId": "chapter8_listen",
+      "flag": "choice_hollow_listened",
+      "reputation": {
+        "the_hollow": 180,
+        "ashen_covenant": 60
+      }
+    },
+    {
+      "id": "chapter9_stitch",
+      "text": "Preserve the first stitch record, even if it frightens Stonehold.",
+      "minChapter": 9,
+      "outcomeId": "chapter9_stitch",
+      "flag": "choice_stitch_truth",
+      "reputation": {
+        "veil_wardens": 120,
+        "stonehold_council": -80
+      }
+    },
+    {
+      "id": "chapter10_memories",
+      "text": "Choose which memories should survive the bells.",
+      "minChapter": 10,
+      "outcomeId": "chapter10_memories",
+      "flag": "choice_final_memory",
+      "reputation": {
+        "the_hollow": 100,
+        "veil_wardens": 100
+      }
+    }
+  ]
+}

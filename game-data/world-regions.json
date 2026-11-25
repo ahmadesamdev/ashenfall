@@ -1,0 +1,504 @@
+{
+  "version": 1,
+  "regions": [
+    {
+      "id": "gloamwood",
+      "name": "Gloamwood",
+      "environment": "Ancient dusk forest with luminous moss, drowned roots and lantern-lit clearings.",
+      "identity": "The forest is a living boundary around a wound in the Veil; paths shift and old lanterns are safer than open ground.",
+      "mechanics": [
+        {
+          "id": "lantern-trails",
+          "name": "Lantern Trails",
+          "description": "Lantern markers create safer travel corridors through the deepest woods."
+        },
+        {
+          "id": "root-snare",
+          "name": "Root Snare",
+          "description": "Certain corrupted clearings periodically hinder movement until the party leaves the marked area."
+        }
+      ],
+      "materials": ["umbral_iron_ore", "silver_ore"],
+      "settlements": ["Lantern Rest", "Rootwatch Camp"],
+      "rareMob": "gloam_huntmaster",
+      "dungeon": "sunken_catacombs",
+      "worldEvents": ["corrupted_expedition"],
+      "hiddenLocations": [
+        {
+          "id": "whispering_stump",
+          "name": "Whispering Stump",
+          "x": 0.73,
+          "y": 0.22,
+          "hint": "Follow the lanterns that point away from the road."
+        },
+        {
+          "id": "rootbound_shrine",
+          "name": "Rootbound Shrine",
+          "x": 0.31,
+          "y": 0.77,
+          "hint": "A broken shrine beneath the oldest roots."
+        }
+      ],
+      "lore": "The first lanterns were not built to guide travelers home. They were built to mark where the Veil had already been stitched shut."
+    },
+    {
+      "id": "stonehold",
+      "name": "Stonehold",
+      "environment": "Massive fortified capital of limestone walls, crowded markets and disciplined guard roads.",
+      "identity": "Ashenfall's political and economic center: duty, trade, professions and competing interpretations of the Veil.",
+      "mechanics": [
+        {
+          "id": "civic-hubs",
+          "name": "Civic Hubs",
+          "description": "Dense service districts concentrate trainers, professions, shops, guild services and the Auction House."
+        },
+        {
+          "id": "guard-patrols",
+          "name": "Guard Patrols",
+          "description": "Safe-zone patrols reinforce the city's no-combat boundary and gate approaches."
+        }
+      ],
+      "materials": ["copper_ore", "iron_ore"],
+      "settlements": [
+        "Crown Square",
+        "Market Quarter",
+        "Craft Quarter",
+        "Hall of Arms"
+      ],
+      "rareMob": null,
+      "dungeon": null,
+      "worldEvents": [],
+      "hiddenLocations": [
+        {
+          "id": "sealed_archive",
+          "name": "Sealed Archive",
+          "x": 0.61,
+          "y": 0.38,
+          "hint": "A locked civic archive beneath the western record hall."
+        },
+        {
+          "id": "old_wall_marker",
+          "name": "Old Wall Marker",
+          "x": 0.12,
+          "y": 0.51,
+          "hint": "An inscription older than the current city walls."
+        }
+      ],
+      "lore": "Stonehold was raised as the Last Wall, but its oldest foundations were already there when the Lantern Guard arrived."
+    },
+    {
+      "id": "eastern_reach",
+      "name": "Eastern Reach",
+      "environment": "Wind-cut farmland, exposed hills and long caravan roads under a hard open sky.",
+      "identity": "A contested frontier where trade routes, farms and ore claims collide with beasts and raiders.",
+      "mechanics": [
+        {
+          "id": "caravan-lanes",
+          "name": "Caravan Lanes",
+          "description": "Road travel is faster along marked trade corridors, but attracts roaming threats."
+        },
+        {
+          "id": "contested-veins",
+          "name": "Contested Veins",
+          "description": "High-value mining sites are exposed and can become natural conflict hotspots."
+        }
+      ],
+      "materials": ["iron_ore", "silver_ore", "blacksteel_ore"],
+      "settlements": ["Ravenford Watch", "Miller's Rest"],
+      "rareMob": "eastwatch_colossus",
+      "dungeon": "watcher_hollow",
+      "worldEvents": ["caravan_under_fire"],
+      "hiddenLocations": [
+        {
+          "id": "windscar_quarry",
+          "name": "Windscar Quarry",
+          "x": 0.79,
+          "y": 0.61,
+          "hint": "Look for exposed blackstone beneath the eastern ridge."
+        },
+        {
+          "id": "fallen_caravan",
+          "name": "Fallen Caravan",
+          "x": 0.37,
+          "y": 0.34,
+          "hint": "A supply wagon never reached Ravenford."
+        }
+      ],
+      "lore": "The Reach became valuable when the old road reopened. It became dangerous when everyone realized what the road was carrying."
+    },
+    {
+      "id": "ashen_wastes",
+      "name": "Ashen Wastes",
+      "environment": "Blackened badlands, glassed craters and ancient roads exposed by Veil storms.",
+      "identity": "A hostile open-PvP frontier where corruption reshapes terrain, creatures and the value of every resource vein.",
+      "mechanics": [
+        {
+          "id": "veil-storms",
+          "name": "Veil Storms",
+          "description": "Periodic anomaly pockets alter safe travel routes and concentrate hostile creatures."
+        },
+        {
+          "id": "open-frontier",
+          "name": "Open Frontier",
+          "description": "The region permits open PvP for characters meeting its minimum level."
+        },
+        {
+          "id": "volatile-veins",
+          "name": "Volatile Veins",
+          "description": "Rare ores appear in dangerous exposed areas and are worth contesting."
+        }
+      ],
+      "materials": ["star_iron_ore", "blacksteel_ore", "dreadsilver_ore"],
+      "settlements": ["Ashen Waystation", "Cinder Camp"],
+      "rareMob": "dreadfang_alpha",
+      "dungeon": "dreadvault",
+      "worldEvents": ["veil_anomaly"],
+      "hiddenLocations": [
+        {
+          "id": "glassroad",
+          "name": "The Glassroad",
+          "x": 0.71,
+          "y": 0.24,
+          "hint": "A road melted into black glass by an ancient Veil storm."
+        },
+        {
+          "id": "nameless_cairn",
+          "name": "Nameless Cairn",
+          "x": 0.22,
+          "y": 0.72,
+          "hint": "No name is carved here, only the old seal."
+        }
+      ],
+      "lore": "The Wastes do not merely preserve ruins. They preserve routes, names and unfinished intentions."
+    },
+    {
+      "id": "old_kingdom",
+      "name": "Old Kingdom",
+      "environment": "Buried royal heartland of ruined keeps, cracked roads, ash-covered shrines and dead court banners.",
+      "identity": "Exploration-heavy undead territory where the history of the old realm is recovered through relics and surviving roads.",
+      "mechanics": [
+        {
+          "id": "relic-sites",
+          "name": "Relic Sites",
+          "description": "Ancient landmarks reveal lore and can unlock exploration discoveries."
+        },
+        {
+          "id": "royal-roads",
+          "name": "Royal Roads",
+          "description": "Old roads connect ruin clusters and provide the safest route through undead patrol territory."
+        },
+        {
+          "id": "restless-dead",
+          "name": "Restless Dead",
+          "description": "Certain ruin sites become more dangerous after nearby undead are defeated."
+        }
+      ],
+      "materials": ["silver_ore", "blacksteel_ore", "dreadsilver_ore"],
+      "settlements": ["Crownfall Camp", "The Last Shrine"],
+      "rareMob": "kingdom_revenant",
+      "dungeon": "royal_catacombs",
+      "worldEvents": ["undead_invasion"],
+      "hiddenLocations": [
+        {
+          "id": "broken_throne",
+          "name": "Broken Throne",
+          "x": 0.49,
+          "y": 0.28,
+          "hint": "A throne room with no throne, only a crown-shaped scar."
+        },
+        {
+          "id": "kingroad_marker",
+          "name": "Kingroad Marker",
+          "x": 0.84,
+          "y": 0.64,
+          "hint": "The last surviving road marker points toward a vanished capital."
+        }
+      ],
+      "lore": "The Old Kingdom did not fall in one night. Its roads remained open long after its court stopped answering them."
+    },
+    {
+      "id": "black_citadel",
+      "name": "Black Citadel",
+      "environment": "Fortress-city of black stone built around a sealed door and surrounded by militarized ashland.",
+      "identity": "A military and narrative pressure point where the old court's memory survives inside a living fortress.",
+      "mechanics": [
+        {
+          "id": "citadel-gates",
+          "name": "Citadel Gates",
+          "description": "Fortified gates divide civilian, military and dungeon-facing routes."
+        },
+        {
+          "id": "seal-protocols",
+          "name": "Seal Protocols",
+          "description": "Story progression can change which fortress routes and services are accessible."
+        }
+      ],
+      "materials": ["blacksteel_ore", "dreadsilver_ore"],
+      "settlements": ["Citadel Barracks", "Sealward Market"],
+      "dungeon": "black_citadel",
+      "worldEvents": [],
+      "hiddenLocations": [
+        {
+          "id": "sealed_door",
+          "name": "The Sealed Door",
+          "x": 0.5,
+          "y": 0.19,
+          "hint": "The door remembers names that the living no longer use."
+        },
+        {
+          "id": "forgotten_court",
+          "name": "Forgotten Court",
+          "x": 0.73,
+          "y": 0.66,
+          "hint": "An abandoned court chamber beneath the military quarter."
+        }
+      ],
+      "lore": "The Citadel was built to guard the door. Over generations, the fortress forgot what the door was guarding."
+    },
+    {
+      "id": "hollow_expanse",
+      "name": "Hollow Expanse",
+      "environment": "A shattered black frontier where pale Veil light leaks through cracked earth and abandoned roads.",
+      "identity": "The apex wilderness: elite roaming patrols, rare hunts and dangerous open PvP surround the road to the deepest endgame.",
+      "mechanics": [
+        {
+          "id": "hollow-winds",
+          "name": "Hollow Winds",
+          "description": "Periodic surges empower roaming enemies and make exposed roads dangerous."
+        },
+        {
+          "id": "seal-breaks",
+          "name": "Seal Breaks",
+          "description": "Ancient seals flare open, concentrating elite creatures around old road markers."
+        },
+        {
+          "id": "apex-frontier",
+          "name": "Apex Frontier",
+          "description": "Open PvP and high-value resources make every route a contested expedition."
+        }
+      ],
+      "materials": ["blacksteel_ore", "dreadsilver_ore"],
+      "settlements": ["Lantern Bastion", "Hollowwatch"],
+      "rareMob": "hollow_herald",
+      "dungeon": "dreadvault",
+      "worldEvents": ["hollow_breach"],
+      "hiddenLocations": [
+        {
+          "id": "broken_seal",
+          "name": "Broken Seal",
+          "x": 0.42,
+          "y": 0.24,
+          "hint": "Follow the oldest road marker toward the scarred crossing."
+        },
+        {
+          "id": "hollow_mouth",
+          "name": "Mouth of the Hollow",
+          "x": 0.78,
+          "y": 0.32,
+          "hint": "The wind dies where the oldest stones meet."
+        }
+      ],
+      "lore": "The Expanse is what remains after the roads stop remembering where they were meant to lead."
+    },
+    {
+      "id": "briarfen",
+      "name": "Briarfen",
+      "environment": "Drowned thorn marshes and lantern causeways.",
+      "identity": "Drowned thorn marshes and lantern causeways.",
+      "mechanics": [
+        {
+          "id": "briarfen-travel",
+          "name": "Frontier Travel",
+          "description": "Explore roads, camps and dangerous side routes."
+        },
+        {
+          "id": "briarfen-events",
+          "name": "Regional Events",
+          "description": "Dynamic world events escalate as adventurers contribute."
+        }
+      ],
+      "materials": ["iron_ore", "silver_ore"],
+      "settlements": ["Fenwatch", "Thornmere"],
+      "rareMob": "fen_revenant",
+      "dungeon": null,
+      "worldEvents": ["fen_reclamation"],
+      "hiddenLocations": [
+        {
+          "id": "briarfen_hidden_1",
+          "name": "Fenwatch Hidden Site",
+          "x": 0.72,
+          "y": 0.22,
+          "hint": "Follow the safest road until it disappears."
+        },
+        {
+          "id": "briarfen_hidden_2",
+          "name": "Thornmere Relic",
+          "x": 0.3,
+          "y": 0.78,
+          "hint": "Look beyond the marked camp."
+        }
+      ],
+      "lore": "The Briarfen frontier is another scar left by the Veil."
+    },
+    {
+      "id": "sunscar_steppe",
+      "name": "Sunscar Steppe",
+      "environment": "Open red grasslands, caravan roads and ancient battlefields.",
+      "identity": "Open red grasslands, caravan roads and ancient battlefields.",
+      "mechanics": [
+        {
+          "id": "sunscar_steppe-travel",
+          "name": "Frontier Travel",
+          "description": "Explore roads, camps and dangerous side routes."
+        },
+        {
+          "id": "sunscar_steppe-events",
+          "name": "Regional Events",
+          "description": "Dynamic world events escalate as adventurers contribute."
+        }
+      ],
+      "materials": ["silver_ore", "blacksteel_ore"],
+      "settlements": ["Sunscar Camp", "Red Ridge"],
+      "rareMob": "steppe_colossus",
+      "dungeon": null,
+      "worldEvents": ["sunscar_caravan"],
+      "hiddenLocations": [
+        {
+          "id": "sunscar_steppe_hidden_1",
+          "name": "Sunscar Camp Hidden Site",
+          "x": 0.72,
+          "y": 0.22,
+          "hint": "Follow the safest road until it disappears."
+        },
+        {
+          "id": "sunscar_steppe_hidden_2",
+          "name": "Red Ridge Relic",
+          "x": 0.3,
+          "y": 0.78,
+          "hint": "Look beyond the marked camp."
+        }
+      ],
+      "lore": "The Sunscar Steppe frontier is another scar left by the Veil."
+    },
+    {
+      "id": "crownfall_expanse",
+      "name": "Crownfall Expanse",
+      "environment": "Broken royal estates and haunted roads buried in ash.",
+      "identity": "Broken royal estates and haunted roads buried in ash.",
+      "mechanics": [
+        {
+          "id": "crownfall_expanse-travel",
+          "name": "Frontier Travel",
+          "description": "Explore roads, camps and dangerous side routes."
+        },
+        {
+          "id": "crownfall_expanse-events",
+          "name": "Regional Events",
+          "description": "Dynamic world events escalate as adventurers contribute."
+        }
+      ],
+      "materials": ["blacksteel_ore", "dreadsilver_ore"],
+      "settlements": ["Crownfall Camp", "Last Bastion"],
+      "rareMob": "crownfall_revenant",
+      "dungeon": null,
+      "worldEvents": ["crownfall_rebellion"],
+      "hiddenLocations": [
+        {
+          "id": "crownfall_expanse_hidden_1",
+          "name": "Crownfall Camp Hidden Site",
+          "x": 0.72,
+          "y": 0.22,
+          "hint": "Follow the safest road until it disappears."
+        },
+        {
+          "id": "crownfall_expanse_hidden_2",
+          "name": "Last Bastion Relic",
+          "x": 0.3,
+          "y": 0.78,
+          "hint": "Look beyond the marked camp."
+        }
+      ],
+      "lore": "The Crownfall Expanse frontier is another scar left by the Veil."
+    },
+    {
+      "id": "veilscar_highlands",
+      "name": "Veilscar Highlands",
+      "environment": "Black ridges and aether storms above the world wound.",
+      "identity": "Black ridges and aether storms above the world wound.",
+      "mechanics": [
+        {
+          "id": "veilscar_highlands-travel",
+          "name": "Frontier Travel",
+          "description": "Explore roads, camps and dangerous side routes."
+        },
+        {
+          "id": "veilscar_highlands-events",
+          "name": "Regional Events",
+          "description": "Dynamic world events escalate as adventurers contribute."
+        }
+      ],
+      "materials": ["dreadsilver_ore", "blacksteel_ore"],
+      "settlements": ["Highland Watch", "Stormscar"],
+      "rareMob": "highland_gargoyle",
+      "dungeon": null,
+      "worldEvents": ["highland_storm"],
+      "hiddenLocations": [
+        {
+          "id": "veilscar_highlands_hidden_1",
+          "name": "Highland Watch Hidden Site",
+          "x": 0.72,
+          "y": 0.22,
+          "hint": "Follow the safest road until it disappears."
+        },
+        {
+          "id": "veilscar_highlands_hidden_2",
+          "name": "Stormscar Relic",
+          "x": 0.3,
+          "y": 0.78,
+          "hint": "Look beyond the marked camp."
+        }
+      ],
+      "lore": "The Veilscar Highlands frontier is another scar left by the Veil."
+    },
+    {
+      "id": "nightveil_coast",
+      "name": "Nightveil Coast",
+      "environment": "Storm-dark shores and drowned ruins before the Hollow.",
+      "identity": "Storm-dark shores and drowned ruins before the Hollow.",
+      "mechanics": [
+        {
+          "id": "nightveil_coast-travel",
+          "name": "Frontier Travel",
+          "description": "Explore roads, camps and dangerous side routes."
+        },
+        {
+          "id": "nightveil_coast-events",
+          "name": "Regional Events",
+          "description": "Dynamic world events escalate as adventurers contribute."
+        }
+      ],
+      "materials": ["dreadsilver_ore", "grave_steel"],
+      "settlements": ["Nightveil Anchorage", "Drowned Ward"],
+      "rareMob": "nightveil_behemoth",
+      "dungeon": null,
+      "worldEvents": ["nightveil_tide"],
+      "hiddenLocations": [
+        {
+          "id": "nightveil_coast_hidden_1",
+          "name": "Nightveil Anchorage Hidden Site",
+          "x": 0.72,
+          "y": 0.22,
+          "hint": "Follow the safest road until it disappears."
+        },
+        {
+          "id": "nightveil_coast_hidden_2",
+          "name": "Drowned Ward Relic",
+          "x": 0.3,
+          "y": 0.78,
+          "hint": "Look beyond the marked camp."
+        }
+      ],
+      "lore": "The Nightveil Coast frontier is another scar left by the Veil."
+    }
+  ]
+}

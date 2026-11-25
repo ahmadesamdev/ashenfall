@@ -1,0 +1,374 @@
+{
+  "version": 1,
+  "classes": {
+    "vanguard": {
+      "name": "Vanguard",
+      "steps": [
+        {
+          "id": "vanguard_story_1",
+          "name": "Vanguard: The Calling",
+          "minLevel": 10,
+          "requires": [],
+          "description": "Complete the Vanguard class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 1200,
+            "gold": 80
+          },
+          "flag": "vanguard_story_1"
+        },
+        {
+          "id": "vanguard_story_2",
+          "name": "Vanguard: The Trial",
+          "minLevel": 25,
+          "requires": ["vanguard_story_1"],
+          "description": "Complete the Vanguard class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 3000,
+            "gold": 200
+          },
+          "flag": "vanguard_story_2"
+        },
+        {
+          "id": "vanguard_story_3",
+          "name": "Vanguard: The Legacy",
+          "minLevel": 45,
+          "requires": ["vanguard_story_2"],
+          "description": "Complete the Vanguard class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 5400,
+            "gold": 360
+          },
+          "flag": "vanguard_story_3"
+        }
+      ]
+    },
+    "arcanist": {
+      "name": "Arcanist",
+      "steps": [
+        {
+          "id": "arcanist_story_1",
+          "name": "Arcanist: The Calling",
+          "minLevel": 10,
+          "requires": [],
+          "description": "Complete the Arcanist class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 1200,
+            "gold": 80
+          },
+          "flag": "arcanist_story_1"
+        },
+        {
+          "id": "arcanist_story_2",
+          "name": "Arcanist: The Trial",
+          "minLevel": 25,
+          "requires": ["arcanist_story_1"],
+          "description": "Complete the Arcanist class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 3000,
+            "gold": 200
+          },
+          "flag": "arcanist_story_2"
+        },
+        {
+          "id": "arcanist_story_3",
+          "name": "Arcanist: The Legacy",
+          "minLevel": 45,
+          "requires": ["arcanist_story_2"],
+          "description": "Complete the Arcanist class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 5400,
+            "gold": 360
+          },
+          "flag": "arcanist_story_3"
+        }
+      ]
+    },
+    "warden": {
+      "name": "Warden",
+      "steps": [
+        {
+          "id": "warden_story_1",
+          "name": "Warden: The Calling",
+          "minLevel": 10,
+          "requires": [],
+          "description": "Complete the Warden class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 1200,
+            "gold": 80
+          },
+          "flag": "warden_story_1"
+        },
+        {
+          "id": "warden_story_2",
+          "name": "Warden: The Trial",
+          "minLevel": 25,
+          "requires": ["warden_story_1"],
+          "description": "Complete the Warden class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 3000,
+            "gold": 200
+          },
+          "flag": "warden_story_2"
+        },
+        {
+          "id": "warden_story_3",
+          "name": "Warden: The Legacy",
+          "minLevel": 45,
+          "requires": ["warden_story_2"],
+          "description": "Complete the Warden class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 5400,
+            "gold": 360
+          },
+          "flag": "warden_story_3"
+        }
+      ]
+    },
+    "shadowblade": {
+      "name": "Shadowblade",
+      "steps": [
+        {
+          "id": "shadowblade_story_1",
+          "name": "Shadowblade: The Calling",
+          "minLevel": 10,
+          "requires": [],
+          "description": "Complete the Shadowblade class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 1200,
+            "gold": 80
+          },
+          "flag": "shadowblade_story_1"
+        },
+        {
+          "id": "shadowblade_story_2",
+          "name": "Shadowblade: The Trial",
+          "minLevel": 25,
+          "requires": ["shadowblade_story_1"],
+          "description": "Complete the Shadowblade class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 3000,
+            "gold": 200
+          },
+          "flag": "shadowblade_story_2"
+        },
+        {
+          "id": "shadowblade_story_3",
+          "name": "Shadowblade: The Legacy",
+          "minLevel": 45,
+          "requires": ["shadowblade_story_2"],
+          "description": "Complete the Shadowblade class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 5400,
+            "gold": 360
+          },
+          "flag": "shadowblade_story_3"
+        }
+      ]
+    },
+    "ranger": {
+      "name": "Ranger",
+      "steps": [
+        {
+          "id": "ranger_story_1",
+          "name": "Ranger: The Calling",
+          "minLevel": 10,
+          "requires": [],
+          "description": "Complete the Ranger class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 1200,
+            "gold": 80
+          },
+          "flag": "ranger_story_1"
+        },
+        {
+          "id": "ranger_story_2",
+          "name": "Ranger: The Trial",
+          "minLevel": 25,
+          "requires": ["ranger_story_1"],
+          "description": "Complete the Ranger class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 3000,
+            "gold": 200
+          },
+          "flag": "ranger_story_2"
+        },
+        {
+          "id": "ranger_story_3",
+          "name": "Ranger: The Legacy",
+          "minLevel": 45,
+          "requires": ["ranger_story_2"],
+          "description": "Complete the Ranger class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 5400,
+            "gold": 360
+          },
+          "flag": "ranger_story_3"
+        }
+      ]
+    },
+    "templar": {
+      "name": "Templar",
+      "steps": [
+        {
+          "id": "templar_story_1",
+          "name": "Templar: The Calling",
+          "minLevel": 10,
+          "requires": [],
+          "description": "Complete the Templar class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 1200,
+            "gold": 80
+          },
+          "flag": "templar_story_1"
+        },
+        {
+          "id": "templar_story_2",
+          "name": "Templar: The Trial",
+          "minLevel": 25,
+          "requires": ["templar_story_1"],
+          "description": "Complete the Templar class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 3000,
+            "gold": 200
+          },
+          "flag": "templar_story_2"
+        },
+        {
+          "id": "templar_story_3",
+          "name": "Templar: The Legacy",
+          "minLevel": 45,
+          "requires": ["templar_story_2"],
+          "description": "Complete the Templar class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 5400,
+            "gold": 360
+          },
+          "flag": "templar_story_3"
+        }
+      ]
+    },
+    "occultist": {
+      "name": "Occultist",
+      "steps": [
+        {
+          "id": "occultist_story_1",
+          "name": "Occultist: The Calling",
+          "minLevel": 10,
+          "requires": [],
+          "description": "Complete the Occultist class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 1200,
+            "gold": 80
+          },
+          "flag": "occultist_story_1"
+        },
+        {
+          "id": "occultist_story_2",
+          "name": "Occultist: The Trial",
+          "minLevel": 25,
+          "requires": ["occultist_story_1"],
+          "description": "Complete the Occultist class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 3000,
+            "gold": 200
+          },
+          "flag": "occultist_story_2"
+        },
+        {
+          "id": "occultist_story_3",
+          "name": "Occultist: The Legacy",
+          "minLevel": 45,
+          "requires": ["occultist_story_2"],
+          "description": "Complete the Occultist class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 5400,
+            "gold": 360
+          },
+          "flag": "occultist_story_3"
+        }
+      ]
+    },
+    "reaver": {
+      "name": "Reaver",
+      "steps": [
+        {
+          "id": "reaver_story_1",
+          "name": "Reaver: The Calling",
+          "minLevel": 10,
+          "requires": [],
+          "description": "Complete the Reaver class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 1200,
+            "gold": 80
+          },
+          "flag": "reaver_story_1"
+        },
+        {
+          "id": "reaver_story_2",
+          "name": "Reaver: The Trial",
+          "minLevel": 25,
+          "requires": ["reaver_story_1"],
+          "description": "Complete the Reaver class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 3000,
+            "gold": 200
+          },
+          "flag": "reaver_story_2"
+        },
+        {
+          "id": "reaver_story_3",
+          "name": "Reaver: The Legacy",
+          "minLevel": 45,
+          "requires": ["reaver_story_2"],
+          "description": "Complete the Reaver class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 5400,
+            "gold": 360
+          },
+          "flag": "reaver_story_3"
+        }
+      ]
+    },
+    "hierophant": {
+      "name": "Hierophant",
+      "steps": [
+        {
+          "id": "hierophant_story_1",
+          "name": "Hierophant: The Calling",
+          "minLevel": 10,
+          "requires": [],
+          "description": "Complete the Hierophant class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 1200,
+            "gold": 80
+          },
+          "flag": "hierophant_story_1"
+        },
+        {
+          "id": "hierophant_story_2",
+          "name": "Hierophant: The Trial",
+          "minLevel": 25,
+          "requires": ["hierophant_story_1"],
+          "description": "Complete the Hierophant class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 3000,
+            "gold": 200
+          },
+          "flag": "hierophant_story_2"
+        },
+        {
+          "id": "hierophant_story_3",
+          "name": "Hierophant: The Legacy",
+          "minLevel": 45,
+          "requires": ["hierophant_story_2"],
+          "description": "Complete the Hierophant class narrative chapter and learn what this path demands of its bearer.",
+          "reward": {
+            "xp": 5400,
+            "gold": 360
+          },
+          "flag": "hierophant_story_3"
+        }
+      ]
+    }
+  }
+}

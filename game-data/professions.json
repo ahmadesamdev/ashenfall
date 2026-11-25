@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "levelCap": 60,
+  "tracks": [
+    {
+      "id": "blacksmith",
+      "outputs": ["weapons", "armor", "masterworks"],
+      "milestones": [10, 20, 30, 45, 60]
+    },
+    {
+      "id": "mining",
+      "outputs": ["ore", "rare_ore", "volatile_veins"],
+      "milestones": [10, 20, 30, 45, 60]
+    },
+    {
+      "id": "skinning",
+      "outputs": ["beast_leather", "trophies", "rare_hides"],
+      "milestones": [10, 20, 30, 45, 60]
+    },
+    {
+      "id": "alchemy",
+      "outputs": ["potions", "elixirs", "combat_tonics"],
+      "milestones": [10, 20, 30, 45, 60]
+    },
+    {
+      "id": "cooking",
+      "outputs": ["food", "feasts", "camp_meals"],
+      "milestones": [10, 20, 30, 45, 60]
+    }
+  ],
+  "rules": {
+    "gatheringFeedsCrafting": true,
+    "craftingCompetesAtEndgame": true,
+    "specializationSlots": 2,
+    "recipeKnowledgePersistent": true,
+    "masteryBonuses": true,
+    "passiveGathering": true
+  }
+}

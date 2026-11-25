@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "maxLevel": 20,
+  "xpCurve": {
+    "base": 1000,
+    "growth": 1.35
+  },
+  "sources": {
+    "quest_xp": 0.02,
+    "mob_xp": 0.01,
+    "dungeon_completion": 50,
+    "world_event": 75,
+    "crafting": 10,
+    "pvp_win": 40
+  },
+  "levelRewards": [
+    {
+      "level": 2,
+      "memberCap": 55
+    },
+    {
+      "level": 5,
+      "memberCap": 60,
+      "bankSlots": 1
+    },
+    {
+      "level": 10,
+      "memberCap": 70,
+      "bankSlots": 2
+    },
+    {
+      "level": 15,
+      "memberCap": 80,
+      "bankSlots": 3
+    },
+    {
+      "level": 20,
+      "memberCap": 100,
+      "bankSlots": 5
+    }
+  ]
+}

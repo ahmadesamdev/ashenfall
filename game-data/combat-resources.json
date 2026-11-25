@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "classes": {
+    "vanguard": {
+      "resource": "Resolve",
+      "icon": "🔥",
+      "cap": 100,
+      "regenPerSecond": 4,
+      "builderAbilities": ["basic_strike"],
+      "builderGain": 15,
+      "spendStyle": "threat-control",
+      "thresholds": { "low": 25, "high": 70 },
+      "mechanics": {
+        "blockGain": 12,
+        "revengeRequiresBlock": true,
+        "tauntPriority": true
+      }
+    },
+    "arcanist": {
+      "resource": "Focus",
+      "icon": "🔷",
+      "cap": 120,
+      "regenPerSecond": 4,
+      "builderAbilities": ["arcane_bolt"],
+      "builderGain": 18,
+      "spendStyle": "spell-sequencing",
+      "thresholds": { "low": 30, "high": 85 },
+      "mechanics": { "burstAtHigh": true, "echoSequencing": true }
+    },
+    "warden": {
+      "resource": "Spirit",
+      "icon": "🌿",
+      "cap": 110,
+      "regenPerSecond": 4,
+      "builderAbilities": ["thorn_lash"],
+      "builderGain": 16,
+      "spendStyle": "sustain-control",
+      "thresholds": { "low": 25, "high": 75 },
+      "mechanics": { "supportPriority": true, "controlPriority": true }
+    },
+    "shadowblade": {
+      "resource": "Momentum",
+      "icon": "⚫",
+      "cap": 100,
+      "regenPerSecond": 4,
+      "builderAbilities": ["quick_cut"],
+      "builderGain": 14,
+      "spendStyle": "tempo-burst",
+      "thresholds": { "low": 20, "high": 75 },
+      "mechanics": { "stealthReset": true, "openerPriority": true }
+    },
+    "ranger": {
+      "resource": "Focus",
+      "icon": "🎯",
+      "cap": 105,
+      "regenPerSecond": 4,
+      "builderAbilities": ["steady_shot"],
+      "builderGain": 16,
+      "spendStyle": "precision-windows",
+      "thresholds": { "low": 25, "high": 75 },
+      "mechanics": { "rangeAsResource": true, "burstAtHigh": true }
+    },
+    "templar": {
+      "resource": "Zeal",
+      "icon": "✝️",
+      "cap": 105,
+      "regenPerSecond": 4,
+      "builderAbilities": ["holy_strike"],
+      "builderGain": 14,
+      "spendStyle": "offense-defense",
+      "thresholds": { "low": 25, "high": 75 },
+      "mechanics": { "hybridConversion": true, "defensiveTiming": true }
+    },
+    "occultist": {
+      "resource": "Corruption",
+      "icon": "☠️",
+      "cap": 115,
+      "regenPerSecond": 4,
+      "builderAbilities": ["eldritch_bolt"],
+      "builderGain": 17,
+      "spendStyle": "attrition-finisher",
+      "thresholds": { "low": 25, "high": 80 },
+      "mechanics": { "dotPressure": true, "executePriority": true }
+    },
+    "reaver": {
+      "resource": "Fury",
+      "icon": "🩸",
+      "cap": 110,
+      "regenPerSecond": 4,
+      "builderAbilities": ["blood_strike"],
+      "builderGain": 16,
+      "spendStyle": "aggression-burst",
+      "thresholds": { "low": 20, "high": 80 },
+      "mechanics": { "frenzyAtHigh": true, "executePriority": true }
+    },
+    "hierophant": {
+      "resource": "Faith",
+      "icon": "✨",
+      "cap": 125,
+      "regenPerSecond": 4,
+      "builderAbilities": ["holy_light"],
+      "builderGain": 15,
+      "spendStyle": "triage-prevention",
+      "thresholds": { "low": 30, "high": 85 },
+      "mechanics": { "healingPriority": true, "emergencyReserve": true }
+    }
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "stonehold": [
+    {
+      "id": "east_gate",
+      "name": "Gloam Gate",
+      "icon": "🚪",
+      "x": 0.82,
+      "y": 0.5,
+      "to": "gloamwood"
+    },
+    {
+      "id": "north_gate",
+      "name": "Eastern Road",
+      "icon": "🛣️",
+      "x": 0.5,
+      "y": 0.08,
+      "to": "eastern_reach"
+    },
+    {
+      "id": "south_gate",
+      "name": "Old Kingdom Road",
+      "icon": "🏚️",
+      "x": 0.5,
+      "y": 0.92,
+      "to": "old_kingdom"
+    }
+  ],
+  "gloamwood": [
+    {
+      "id": "gloam_return",
+      "name": "Gloam Gate to Stonehold",
+      "icon": "🚪",
+      "x": 0.08,
+      "y": 0.53,
+      "to": "stonehold",
+      "linkId": "east_gate"
+    },
+    {
+      "id": "gloam_briarfen",
+      "name": "Briarfen Causeway",
+      "icon": "🚪",
+      "x": 0.94,
+      "y": 0.52,
+      "to": "briarfen"
+    }
+  ],
+  "marches_of_dawn": [
+    {
+      "id": "marches_south",
+      "name": "Ashen Road",
+      "icon": "🚪",
+      "x": 0.5,
+      "y": 0.96,
+      "to": "ashen_wastes"
+    },
+    {
+      "id": "marches_west",
+      "name": "Harbor Road",
+      "icon": "⚓",
+      "x": 0.04,
+      "y": 0.5,
+      "to": "ebonharbor"
+    },
+    {
+      "id": "dawn_briarfen",
+      "name": "Fenward Road",
+      "icon": "🚪",
+      "x": 0.82,
+      "y": 0.88,
+      "to": "briarfen"
+    }
+  ],
+  "ebonharbor": [
+    {
+      "id": "harbor_south",
+      "name": "Duskmere Causeway",
+      "icon": "🚪",
+      "x": 0.5,
+      "y": 0.96,
+      "to": "duskmoor"
+    },
+    {
+      "id": "harbor_north",
+      "name": "Dawnwatch Road",
+      "icon": "🛣️",
+      "x": 0.5,
+      "y": 0.04,
+      "to": "dawnwatch"
+    }
+  ],
+  "dawnwatch": [
+    {
+      "id": "dawnwatch_east",
+      "name": "March Road",
+      "icon": "🚪",
+      "x": 0.96,
+      "y": 0.52,
+      "to": "marches_of_dawn"
+    }
+  ],
+  "duskmoor": [
+    {
+      "id": "marsh_west",
+      "name": "Harbor Causeway",
+      "icon": "🚪",
+      "x": 0.04,
+      "y": 0.52,
+      "to": "ebonharbor"
+    },
+    {
+      "id": "marsh_east",
+      "name": "Wastes Causeway",
+      "icon": "🚪",
+      "x": 0.95,
+      "y": 0.52,
+      "to": "ashen_wastes"
+    }
+  ],
+  "ashen_wastes": [
+    {
+      "id": "wastes_north",
+      "name": "Citadel Road",
+      "icon": "🛡️",
+      "x": 0.5,
+      "y": 0.04,
+      "to": "black_citadel"
+    },
+    {
+      "id": "wastes_reach",
+      "name": "Eastern Reach Road",
+      "icon": "🛣️",
+      "x": 0.5,
+      "y": 0.96,
+      "to": "eastern_reach"
+    },
+    {
+      "id": "wastes_kingdom",
+      "name": "Old Kingdom Road",
+      "icon": "🏚️",
+      "x": 0.18,
+      "y": 0.96,
+      "to": "old_kingdom"
+    },
+    {
+      "id": "wastes_crown",
+      "name": "Crownfall Road",
+      "icon": "👑",
+      "x": 0.22,
+      "y": 0.04,
+      "to": "crownfall_expanse"
+    }
+  ],
+  "black_citadel": [
+    {
+      "id": "citadel_gate",
+      "name": "Wastes Road",
+      "icon": "🚪",
+      "x": 0.97,
+      "y": 0.5,
+      "to": "ashen_wastes"
+    },
+    {
+      "id": "hollow_expanse_gate",
+      "name": "Hollow Expanse Gate",
+      "icon": "🌑",
+      "x": 0.5,
+      "y": 0.08,
+      "to": "hollow_expanse"
+    },
+    {
+      "id": "citadel_veil",
+      "name": "Highland Stair",
+      "icon": "⛰️",
+      "x": 0.28,
+      "y": 0.96,
+      "to": "veilscar_highlands"
+    }
+  ],
+  "eastern_reach": [
+    {
+      "id": "reach_return",
+      "name": "Road to Stonehold",
+      "icon": "🛣️",
+      "x": 0.04,
+      "y": 0.54,
+      "to": "stonehold",
+      "linkId": "north_gate"
+    },
+    {
+      "id": "reach_wastes",
+      "name": "Ashen North Road",
+      "icon": "🔥",
+      "x": 0.5,
+      "y": 0.04,
+      "to": "ashen_wastes"
+    },
+    {
+      "id": "reach_sunscar",
+      "name": "Sunscar Caravan Road",
+      "icon": "🛡️",
+      "x": 0.94,
+      "y": 0.46,
+      "to": "sunscar_steppe"
+    }
+  ],
+  "old_kingdom": [
+    {
+      "id": "kingdom_return",
+      "name": "Road to Stonehold",
+      "icon": "🏰",
+      "x": 0.96,
+      "y": 0.52,
+      "to": "stonehold",
+      "linkId": "south_gate"
+    },
+    {
+      "id": "kingdom_wastes",
+      "name": "Cinder Road",
+      "icon": "🔥",
+      "x": 0.5,
+      "y": 0.04,
+      "to": "ashen_wastes"
+    },
+    {
+      "id": "kingdom_crown",
+      "name": "Crownfall Estate Road",
+      "icon": "👑",
+      "x": 0.08,
+      "y": 0.58,
+      "to": "crownfall_expanse"
+    }
+  ],
+  "hollow_expanse": [
+    {
+      "id": "hollow_return",
+      "name": "Citadel Road",
+      "icon": "🏯",
+      "x": 0.08,
+      "y": 0.5,
+      "to": "black_citadel"
+    },
+    {
+      "id": "hollow_wastes",
+      "name": "Ashen Road",
+      "icon": "🔥",
+      "x": 0.92,
+      "y": 0.5,
+      "to": "ashen_wastes"
+    },
+    {
+      "id": "hollow_night",
+      "name": "Nightveil Shore",
+      "icon": "🌊",
+      "x": 0.96,
+      "y": 0.62,
+      "to": "nightveil_coast",
+      "linkId": "night_hollow"
+    }
+  ],
+  "briarfen": [
+    {
+      "id": "briar_gloam",
+      "name": "Gloamwood Causeway",
+      "icon": "🌲",
+      "x": 0.04,
+      "y": 0.52,
+      "to": "gloamwood",
+      "linkId": "gloam_briarfen"
+    },
+    {
+      "id": "briar_east",
+      "name": "Ravenford Road",
+      "icon": "🛡️",
+      "x": 0.96,
+      "y": 0.35,
+      "to": "eastern_reach"
+    },
+    {
+      "id": "briar_sunscar",
+      "name": "Sunscar Causeway",
+      "icon": "☀️",
+      "x": 0.92,
+      "y": 0.78,
+      "to": "sunscar_steppe"
+    }
+  ],
+  "sunscar_steppe": [
+    {
+      "id": "sun_briar",
+      "name": "Briarfen Road",
+      "icon": "🌿",
+      "x": 0.04,
+      "y": 0.78,
+      "to": "briarfen",
+      "linkId": "briar_sunscar"
+    },
+    {
+      "id": "sun_east",
+      "name": "Eastern Reach Road",
+      "icon": "🛡️",
+      "x": 0.04,
+      "y": 0.32,
+      "to": "eastern_reach",
+      "linkId": "reach_sunscar"
+    },
+    {
+      "id": "sun_wastes",
+      "name": "Ashen Road",
+      "icon": "🔥",
+      "x": 0.96,
+      "y": 0.34,
+      "to": "ashen_wastes"
+    },
+    {
+      "id": "sun_crown",
+      "name": "Crownfall Road",
+      "icon": "👑",
+      "x": 0.96,
+      "y": 0.76,
+      "to": "crownfall_expanse"
+    }
+  ],
+  "crownfall_expanse": [
+    {
+      "id": "crown_sun",
+      "name": "Sunscar Road",
+      "icon": "☀️",
+      "x": 0.04,
+      "y": 0.76,
+      "to": "sunscar_steppe",
+      "linkId": "sun_crown"
+    },
+    {
+      "id": "crown_wastes",
+      "name": "Wastes Road",
+      "icon": "🔥",
+      "x": 0.04,
+      "y": 0.24,
+      "to": "ashen_wastes",
+      "linkId": "wastes_crown"
+    },
+    {
+      "id": "crown_old",
+      "name": "Old Kingdom Road",
+      "icon": "🏚️",
+      "x": 0.58,
+      "y": 0.96,
+      "to": "old_kingdom",
+      "linkId": "kingdom_crown"
+    },
+    {
+      "id": "crown_veil",
+      "name": "Highland Ascent",
+      "icon": "⛰️",
+      "x": 0.96,
+      "y": 0.52,
+      "to": "veilscar_highlands"
+    }
+  ],
+  "veilscar_highlands": [
+    {
+      "id": "veil_crown",
+      "name": "Crownfall Descent",
+      "icon": "👑",
+      "x": 0.04,
+      "y": 0.52,
+      "to": "crownfall_expanse",
+      "linkId": "crown_veil"
+    },
+    {
+      "id": "veil_citadel",
+      "name": "Citadel Stair",
+      "icon": "🛡️",
+      "x": 0.72,
+      "y": 0.04,
+      "to": "black_citadel",
+      "linkId": "citadel_veil"
+    },
+    {
+      "id": "veil_night",
+      "name": "Nightveil Pass",
+      "icon": "🌊",
+      "x": 0.96,
+      "y": 0.52,
+      "to": "nightveil_coast"
+    }
+  ],
+  "nightveil_coast": [
+    {
+      "id": "night_veil",
+      "name": "Highland Pass",
+      "icon": "⛰️",
+      "x": 0.04,
+      "y": 0.52,
+      "to": "veilscar_highlands",
+      "linkId": "veil_night"
+    },
+    {
+      "id": "night_hollow",
+      "name": "Hollow Shore Road",
+      "icon": "🌑",
+      "x": 0.96,
+      "y": 0.42,
+      "to": "hollow_expanse"
+    }
+  ]
+}

@@ -1,0 +1,3868 @@
+{
+  "version": 2,
+  "generatedAt": "v2.13.0",
+  "slots": [
+    "weapon",
+    "shield",
+    "helmet",
+    "chest",
+    "shoulders",
+    "gloves",
+    "boots",
+    "neck",
+    "ring",
+    "ring2",
+    "relic",
+    "relic2"
+  ],
+  "families": {
+    "leveling": 5,
+    "dungeon": 10,
+    "raid": 15
+  },
+  "sets": [
+    {
+      "id": "grovekeeper_leveling_set",
+      "name": "Wayfarer Grovekeeper",
+      "buildId": "grovekeeper",
+      "classId": "warden",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["healing", "hotPower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "healing": 3,
+            "hotPower": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "hotPower": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "healing": 2,
+            "hotPower": 3
+          },
+          "abilityId": "rejuvenation",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "grovekeeper_dungeon_set",
+      "name": "Eclipse Grovekeeper",
+      "buildId": "grovekeeper",
+      "classId": "warden",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["healing", "hotPower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "healing": 5,
+            "hotPower": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "hotPower": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "healing": 3,
+            "hotPower": 5
+          },
+          "abilityId": "rejuvenation",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "grovekeeper_raid_set",
+      "name": "Ascendant Grovekeeper",
+      "buildId": "grovekeeper",
+      "classId": "warden",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["healing", "hotPower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "healing": 7,
+            "hotPower": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "hotPower": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "healing": 4,
+            "hotPower": 6
+          },
+          "abilityId": "rejuvenation",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "rootcaller_leveling_set",
+      "name": "Wayfarer Rootcaller",
+      "buildId": "rootcaller",
+      "classId": "warden",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["controlDuration", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "controlDuration": 3,
+            "haste": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 3
+          },
+          "abilityId": "root",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "rootcaller_dungeon_set",
+      "name": "Eclipse Rootcaller",
+      "buildId": "rootcaller",
+      "classId": "warden",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["controlDuration", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "controlDuration": 5,
+            "haste": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 5
+          },
+          "abilityId": "root",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "rootcaller_raid_set",
+      "name": "Ascendant Rootcaller",
+      "buildId": "rootcaller",
+      "classId": "warden",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["controlDuration", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "controlDuration": 7,
+            "haste": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 6
+          },
+          "abilityId": "root",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "thornwarden_leveling_set",
+      "name": "Wayfarer Thorn Warden",
+      "buildId": "thornwarden",
+      "classId": "warden",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["damage", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "damage": 3,
+            "crit": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 2,
+            "crit": 2
+          },
+          "abilityId": "thorn_lash",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "thornwarden_dungeon_set",
+      "name": "Eclipse Thorn Warden",
+      "buildId": "thornwarden",
+      "classId": "warden",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["damage", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "damage": 5,
+            "crit": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 3,
+            "crit": 2
+          },
+          "abilityId": "thorn_lash",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "thornwarden_raid_set",
+      "name": "Ascendant Thorn Warden",
+      "buildId": "thornwarden",
+      "classId": "warden",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["damage", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "damage": 7,
+            "crit": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 4,
+            "crit": 3
+          },
+          "abilityId": "thorn_lash",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "sanctuary_leveling_set",
+      "name": "Wayfarer Sanctuary Healer",
+      "buildId": "sanctuary",
+      "classId": "hierophant",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["healing", "hotPower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "healing": 3,
+            "hotPower": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "hotPower": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "healing": 2,
+            "hotPower": 3
+          },
+          "abilityId": "salvation",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "sanctuary_dungeon_set",
+      "name": "Eclipse Sanctuary Healer",
+      "buildId": "sanctuary",
+      "classId": "hierophant",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["healing", "hotPower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "healing": 5,
+            "hotPower": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "hotPower": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "healing": 3,
+            "hotPower": 5
+          },
+          "abilityId": "salvation",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "sanctuary_raid_set",
+      "name": "Ascendant Sanctuary Healer",
+      "buildId": "sanctuary",
+      "classId": "hierophant",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["healing", "hotPower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "healing": 7,
+            "hotPower": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "hotPower": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "healing": 4,
+            "hotPower": 6
+          },
+          "abilityId": "salvation",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "aegis_leveling_set",
+      "name": "Wayfarer Aegis Healer",
+      "buildId": "aegis",
+      "classId": "hierophant",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["vitality", "willpower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 3,
+            "willpower": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "willpower": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "vitality": 3,
+            "willpower": 2
+          },
+          "abilityId": "sanctuary",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "aegis_dungeon_set",
+      "name": "Eclipse Aegis Healer",
+      "buildId": "aegis",
+      "classId": "hierophant",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["vitality", "willpower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 5,
+            "willpower": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "willpower": 5
+          }
+        },
+        "6": {
+          "effects": {
+            "vitality": 5,
+            "willpower": 3
+          },
+          "abilityId": "sanctuary",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "aegis_raid_set",
+      "name": "Ascendant Aegis Healer",
+      "buildId": "aegis",
+      "classId": "hierophant",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["vitality", "willpower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 7,
+            "willpower": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "willpower": 6
+          }
+        },
+        "6": {
+          "effects": {
+            "vitality": 6,
+            "willpower": 4
+          },
+          "abilityId": "sanctuary",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "battlepriest_leveling_set",
+      "name": "Wayfarer Battle Priest",
+      "buildId": "battlepriest",
+      "classId": "hierophant",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["damage", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "damage": 3,
+            "crit": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 2,
+            "crit": 2
+          },
+          "abilityId": "divine_word",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "battlepriest_dungeon_set",
+      "name": "Eclipse Battle Priest",
+      "buildId": "battlepriest",
+      "classId": "hierophant",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["damage", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "damage": 5,
+            "crit": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 3,
+            "crit": 2
+          },
+          "abilityId": "divine_word",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "battlepriest_raid_set",
+      "name": "Ascendant Battle Priest",
+      "buildId": "battlepriest",
+      "classId": "hierophant",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["damage", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "damage": 7,
+            "crit": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 4,
+            "crit": 3
+          },
+          "abilityId": "divine_word",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "fortress_leveling_set",
+      "name": "Wayfarer Fortress Tank",
+      "buildId": "fortress",
+      "classId": "vanguard",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["vitality", "armor"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 3,
+            "armor": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "armor": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "maxHp": 15,
+            "armor": 2
+          },
+          "abilityId": "shield_wall",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "fortress_dungeon_set",
+      "name": "Eclipse Fortress Tank",
+      "buildId": "fortress",
+      "classId": "vanguard",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["vitality", "armor"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 5,
+            "armor": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "armor": 5
+          }
+        },
+        "6": {
+          "effects": {
+            "maxHp": 23,
+            "armor": 3
+          },
+          "abilityId": "shield_wall",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "fortress_raid_set",
+      "name": "Ascendant Fortress Tank",
+      "buildId": "fortress",
+      "classId": "vanguard",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["vitality", "armor"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 7,
+            "armor": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "armor": 6
+          }
+        },
+        "6": {
+          "effects": {
+            "maxHp": 30,
+            "armor": 4
+          },
+          "abilityId": "shield_wall",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "warbreaker_leveling_set",
+      "name": "Wayfarer Warbreaker",
+      "buildId": "warbreaker",
+      "classId": "vanguard",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["strength", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 3,
+            "haste": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 3
+          },
+          "abilityId": "revenge",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "warbreaker_dungeon_set",
+      "name": "Eclipse Warbreaker",
+      "buildId": "warbreaker",
+      "classId": "vanguard",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["strength", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 5,
+            "haste": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 5
+          },
+          "abilityId": "revenge",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "warbreaker_raid_set",
+      "name": "Ascendant Warbreaker",
+      "buildId": "warbreaker",
+      "classId": "vanguard",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["strength", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 7,
+            "haste": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 6
+          },
+          "abilityId": "revenge",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "warden_leveling_set",
+      "name": "Wayfarer Bulwark Controller",
+      "buildId": "warden",
+      "classId": "vanguard",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["vitality", "willpower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 3,
+            "willpower": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "willpower": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "vitality": 3,
+            "willpower": 2
+          },
+          "abilityId": "shield_bash",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "warden_dungeon_set",
+      "name": "Eclipse Bulwark Controller",
+      "buildId": "warden",
+      "classId": "vanguard",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["vitality", "willpower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 5,
+            "willpower": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "willpower": 5
+          }
+        },
+        "6": {
+          "effects": {
+            "vitality": 5,
+            "willpower": 3
+          },
+          "abilityId": "shield_bash",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "warden_raid_set",
+      "name": "Ascendant Bulwark Controller",
+      "buildId": "warden",
+      "classId": "vanguard",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["vitality", "willpower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 7,
+            "willpower": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "willpower": 6
+          }
+        },
+        "6": {
+          "effects": {
+            "vitality": 6,
+            "willpower": 4
+          },
+          "abilityId": "shield_bash",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "marksman_leveling_set",
+      "name": "Wayfarer Marksman",
+      "buildId": "marksman",
+      "classId": "ranger",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["agility", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 3,
+            "crit": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 2,
+            "crit": 2
+          },
+          "abilityId": "hunter_mark",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "marksman_dungeon_set",
+      "name": "Eclipse Marksman",
+      "buildId": "marksman",
+      "classId": "ranger",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["agility", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 5,
+            "crit": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 3,
+            "crit": 2
+          },
+          "abilityId": "hunter_mark",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "marksman_raid_set",
+      "name": "Ascendant Marksman",
+      "buildId": "marksman",
+      "classId": "ranger",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["agility", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 7,
+            "crit": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 4,
+            "crit": 3
+          },
+          "abilityId": "hunter_mark",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "skirmisher_leveling_set",
+      "name": "Wayfarer Skirmisher",
+      "buildId": "skirmisher",
+      "classId": "ranger",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["agility", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 3,
+            "haste": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 3
+          },
+          "abilityId": "evasive_step",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "skirmisher_dungeon_set",
+      "name": "Eclipse Skirmisher",
+      "buildId": "skirmisher",
+      "classId": "ranger",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["agility", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 5,
+            "haste": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 5
+          },
+          "abilityId": "evasive_step",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "skirmisher_raid_set",
+      "name": "Ascendant Skirmisher",
+      "buildId": "skirmisher",
+      "classId": "ranger",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["agility", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 7,
+            "haste": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 6
+          },
+          "abilityId": "evasive_step",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "stormarcher_leveling_set",
+      "name": "Wayfarer Storm Archer",
+      "buildId": "stormarcher",
+      "classId": "ranger",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["agility", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 3,
+            "crit": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 2,
+            "crit": 2
+          },
+          "abilityId": "volley",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "stormarcher_dungeon_set",
+      "name": "Eclipse Storm Archer",
+      "buildId": "stormarcher",
+      "classId": "ranger",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["agility", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 5,
+            "crit": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 3,
+            "crit": 2
+          },
+          "abilityId": "volley",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "stormarcher_raid_set",
+      "name": "Ascendant Storm Archer",
+      "buildId": "stormarcher",
+      "classId": "ranger",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["agility", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 7,
+            "crit": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 4,
+            "crit": 3
+          },
+          "abilityId": "volley",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "spellfire_leveling_set",
+      "name": "Wayfarer Spellfire",
+      "buildId": "spellfire",
+      "classId": "arcanist",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["intellect", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 3,
+            "crit": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 2,
+            "crit": 2
+          },
+          "abilityId": "arcane_surge",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "spellfire_dungeon_set",
+      "name": "Eclipse Spellfire",
+      "buildId": "spellfire",
+      "classId": "arcanist",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["intellect", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 5,
+            "crit": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 3,
+            "crit": 2
+          },
+          "abilityId": "arcane_surge",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "spellfire_raid_set",
+      "name": "Ascendant Spellfire",
+      "buildId": "spellfire",
+      "classId": "arcanist",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["intellect", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 7,
+            "crit": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 4,
+            "crit": 3
+          },
+          "abilityId": "arcane_surge",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "frostweaver_leveling_set",
+      "name": "Wayfarer Frostweaver",
+      "buildId": "frostweaver",
+      "classId": "arcanist",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["intellect", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 3,
+            "haste": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 3
+          },
+          "abilityId": "frost_nova",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "frostweaver_dungeon_set",
+      "name": "Eclipse Frostweaver",
+      "buildId": "frostweaver",
+      "classId": "arcanist",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["intellect", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 5,
+            "haste": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 5
+          },
+          "abilityId": "frost_nova",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "frostweaver_raid_set",
+      "name": "Ascendant Frostweaver",
+      "buildId": "frostweaver",
+      "classId": "arcanist",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["intellect", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 7,
+            "haste": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 6
+          },
+          "abilityId": "frost_nova",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "aethermind_leveling_set",
+      "name": "Wayfarer Aethermind",
+      "buildId": "aethermind",
+      "classId": "arcanist",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["intellect", "willpower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 3,
+            "willpower": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "willpower": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "intellect": 3,
+            "willpower": 2
+          },
+          "abilityId": "arcane_echo",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "aethermind_dungeon_set",
+      "name": "Eclipse Aethermind",
+      "buildId": "aethermind",
+      "classId": "arcanist",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["intellect", "willpower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 5,
+            "willpower": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "willpower": 5
+          }
+        },
+        "6": {
+          "effects": {
+            "intellect": 5,
+            "willpower": 3
+          },
+          "abilityId": "arcane_echo",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "aethermind_raid_set",
+      "name": "Ascendant Aethermind",
+      "buildId": "aethermind",
+      "classId": "arcanist",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["intellect", "willpower"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 7,
+            "willpower": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "willpower": 6
+          }
+        },
+        "6": {
+          "effects": {
+            "intellect": 6,
+            "willpower": 4
+          },
+          "abilityId": "arcane_echo",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "crusader_leveling_set",
+      "name": "Wayfarer Crusader",
+      "buildId": "crusader",
+      "classId": "templar",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["strength", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 3,
+            "crit": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 2,
+            "crit": 2
+          },
+          "abilityId": "holy_strike",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "crusader_dungeon_set",
+      "name": "Eclipse Crusader",
+      "buildId": "crusader",
+      "classId": "templar",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["strength", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 5,
+            "crit": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 3,
+            "crit": 2
+          },
+          "abilityId": "holy_strike",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "crusader_raid_set",
+      "name": "Ascendant Crusader",
+      "buildId": "crusader",
+      "classId": "templar",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["strength", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 7,
+            "crit": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 4,
+            "crit": 3
+          },
+          "abilityId": "holy_strike",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "guardian_leveling_set",
+      "name": "Wayfarer Guardian Templar",
+      "buildId": "guardian",
+      "classId": "templar",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["vitality", "armor"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 3,
+            "armor": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "armor": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "maxHp": 15,
+            "armor": 2
+          },
+          "abilityId": "blessed_guard",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "guardian_dungeon_set",
+      "name": "Eclipse Guardian Templar",
+      "buildId": "guardian",
+      "classId": "templar",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["vitality", "armor"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 5,
+            "armor": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "armor": 5
+          }
+        },
+        "6": {
+          "effects": {
+            "maxHp": 23,
+            "armor": 3
+          },
+          "abilityId": "blessed_guard",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "guardian_raid_set",
+      "name": "Ascendant Guardian Templar",
+      "buildId": "guardian",
+      "classId": "templar",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["vitality", "armor"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 7,
+            "armor": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "armor": 6
+          }
+        },
+        "6": {
+          "effects": {
+            "maxHp": 30,
+            "armor": 4
+          },
+          "abilityId": "blessed_guard",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "redeemer_leveling_set",
+      "name": "Wayfarer Redeemer",
+      "buildId": "redeemer",
+      "classId": "templar",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["willpower", "healing"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "willpower": 3,
+            "healing": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "healing": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "healing": 2,
+            "hotPower": 3
+          },
+          "abilityId": "lay_on_hands",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "redeemer_dungeon_set",
+      "name": "Eclipse Redeemer",
+      "buildId": "redeemer",
+      "classId": "templar",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["willpower", "healing"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "willpower": 5,
+            "healing": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "healing": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "healing": 3,
+            "hotPower": 5
+          },
+          "abilityId": "lay_on_hands",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "redeemer_raid_set",
+      "name": "Ascendant Redeemer",
+      "buildId": "redeemer",
+      "classId": "templar",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["willpower", "healing"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "willpower": 7,
+            "healing": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "healing": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "healing": 4,
+            "hotPower": 6
+          },
+          "abilityId": "lay_on_hands",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "plaguecaller_leveling_set",
+      "name": "Wayfarer Plaguecaller",
+      "buildId": "plaguecaller",
+      "classId": "occultist",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["intellect", "dotDamage"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 3,
+            "dotDamage": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "dotDamage": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 2,
+            "crit": 2
+          },
+          "abilityId": "curse",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "plaguecaller_dungeon_set",
+      "name": "Eclipse Plaguecaller",
+      "buildId": "plaguecaller",
+      "classId": "occultist",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["intellect", "dotDamage"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 5,
+            "dotDamage": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "dotDamage": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 3,
+            "crit": 2
+          },
+          "abilityId": "curse",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "plaguecaller_raid_set",
+      "name": "Ascendant Plaguecaller",
+      "buildId": "plaguecaller",
+      "classId": "occultist",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["intellect", "dotDamage"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 7,
+            "dotDamage": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "dotDamage": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 4,
+            "crit": 3
+          },
+          "abilityId": "curse",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "soulreaper_leveling_set",
+      "name": "Wayfarer Soul Reaper",
+      "buildId": "soulreaper",
+      "classId": "occultist",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["willpower", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "willpower": 3,
+            "crit": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 2,
+            "crit": 2
+          },
+          "abilityId": "life_drain",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "soulreaper_dungeon_set",
+      "name": "Eclipse Soul Reaper",
+      "buildId": "soulreaper",
+      "classId": "occultist",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["willpower", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "willpower": 5,
+            "crit": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 3,
+            "crit": 2
+          },
+          "abilityId": "life_drain",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "soulreaper_raid_set",
+      "name": "Ascendant Soul Reaper",
+      "buildId": "soulreaper",
+      "classId": "occultist",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["willpower", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "willpower": 7,
+            "crit": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 4,
+            "crit": 3
+          },
+          "abilityId": "life_drain",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "voidcaller_leveling_set",
+      "name": "Wayfarer Voidcaller",
+      "buildId": "voidcaller",
+      "classId": "occultist",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["intellect", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 3,
+            "haste": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 3
+          },
+          "abilityId": "shadow_pact",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "voidcaller_dungeon_set",
+      "name": "Eclipse Voidcaller",
+      "buildId": "voidcaller",
+      "classId": "occultist",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["intellect", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 5,
+            "haste": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 5
+          },
+          "abilityId": "shadow_pact",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "voidcaller_raid_set",
+      "name": "Ascendant Voidcaller",
+      "buildId": "voidcaller",
+      "classId": "occultist",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["intellect", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "intellect": 7,
+            "haste": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 6
+          },
+          "abilityId": "shadow_pact",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "berserker_leveling_set",
+      "name": "Wayfarer Berserker",
+      "buildId": "berserker",
+      "classId": "reaver",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["strength", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 3,
+            "crit": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 2,
+            "crit": 2
+          },
+          "abilityId": "bloodrush",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "berserker_dungeon_set",
+      "name": "Eclipse Berserker",
+      "buildId": "berserker",
+      "classId": "reaver",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["strength", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 5,
+            "crit": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 3,
+            "crit": 2
+          },
+          "abilityId": "bloodrush",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "berserker_raid_set",
+      "name": "Ascendant Berserker",
+      "buildId": "berserker",
+      "classId": "reaver",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["strength", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 7,
+            "crit": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 4,
+            "crit": 3
+          },
+          "abilityId": "bloodrush",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "bloodreaver_leveling_set",
+      "name": "Wayfarer Blood Reaver",
+      "buildId": "bloodreaver",
+      "classId": "reaver",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["strength", "vitality"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 3,
+            "vitality": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "vitality": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "maxHp": 15,
+            "vitality": 2
+          },
+          "abilityId": "rend",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "bloodreaver_dungeon_set",
+      "name": "Eclipse Blood Reaver",
+      "buildId": "bloodreaver",
+      "classId": "reaver",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["strength", "vitality"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 5,
+            "vitality": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "vitality": 5
+          }
+        },
+        "6": {
+          "effects": {
+            "maxHp": 23,
+            "vitality": 3
+          },
+          "abilityId": "rend",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "bloodreaver_raid_set",
+      "name": "Ascendant Blood Reaver",
+      "buildId": "bloodreaver",
+      "classId": "reaver",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["strength", "vitality"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "strength": 7,
+            "vitality": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "vitality": 6
+          }
+        },
+        "6": {
+          "effects": {
+            "maxHp": 30,
+            "vitality": 4
+          },
+          "abilityId": "rend",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "warborn_leveling_set",
+      "name": "Wayfarer Warborn",
+      "buildId": "warborn",
+      "classId": "reaver",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["vitality", "strength"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 3,
+            "strength": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "strength": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "vitality": 3,
+            "strength": 2
+          },
+          "abilityId": "whirlwind",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "warborn_dungeon_set",
+      "name": "Eclipse Warborn",
+      "buildId": "warborn",
+      "classId": "reaver",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["vitality", "strength"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 5,
+            "strength": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "strength": 5
+          }
+        },
+        "6": {
+          "effects": {
+            "vitality": 5,
+            "strength": 3
+          },
+          "abilityId": "whirlwind",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "warborn_raid_set",
+      "name": "Ascendant Warborn",
+      "buildId": "warborn",
+      "classId": "reaver",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["vitality", "strength"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "vitality": 7,
+            "strength": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "strength": 6
+          }
+        },
+        "6": {
+          "effects": {
+            "vitality": 6,
+            "strength": 4
+          },
+          "abilityId": "whirlwind",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "assassin_leveling_set",
+      "name": "Wayfarer Assassin",
+      "buildId": "assassin",
+      "classId": "shadowblade",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["agility", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 3,
+            "crit": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 2,
+            "crit": 2
+          },
+          "abilityId": "ambush",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "assassin_dungeon_set",
+      "name": "Eclipse Assassin",
+      "buildId": "assassin",
+      "classId": "shadowblade",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["agility", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 5,
+            "crit": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 3,
+            "crit": 2
+          },
+          "abilityId": "ambush",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "assassin_raid_set",
+      "name": "Ascendant Assassin",
+      "buildId": "assassin",
+      "classId": "shadowblade",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["agility", "crit"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 7,
+            "crit": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "crit": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 4,
+            "crit": 3
+          },
+          "abilityId": "ambush",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "saboteur_leveling_set",
+      "name": "Wayfarer Saboteur",
+      "buildId": "saboteur",
+      "classId": "shadowblade",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["agility", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 3,
+            "haste": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 3
+          },
+          "abilityId": "venom",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "saboteur_dungeon_set",
+      "name": "Eclipse Saboteur",
+      "buildId": "saboteur",
+      "classId": "shadowblade",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["agility", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 5,
+            "haste": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 5
+          },
+          "abilityId": "venom",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "saboteur_raid_set",
+      "name": "Ascendant Saboteur",
+      "buildId": "saboteur",
+      "classId": "shadowblade",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["agility", "haste"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 7,
+            "haste": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "haste": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "haste": 6
+          },
+          "abilityId": "venom",
+          "abilityPowerPct": 4
+        }
+      }
+    },
+    {
+      "id": "duelist_leveling_set",
+      "name": "Wayfarer Duelist",
+      "buildId": "duelist",
+      "classId": "shadowblade",
+      "family": "leveling",
+      "level": 5,
+      "rarity": "uncommon",
+      "preferredStats": ["agility", "damage"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 3,
+            "damage": 2
+          }
+        },
+        "4": {
+          "effects": {
+            "damage": 2
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 2,
+            "crit": 2
+          },
+          "abilityId": "shadow_step",
+          "abilityPowerPct": 0
+        }
+      }
+    },
+    {
+      "id": "duelist_dungeon_set",
+      "name": "Eclipse Duelist",
+      "buildId": "duelist",
+      "classId": "shadowblade",
+      "family": "dungeon",
+      "level": 10,
+      "rarity": "rare",
+      "preferredStats": ["agility", "damage"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 5,
+            "damage": 3
+          }
+        },
+        "4": {
+          "effects": {
+            "damage": 3
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 3,
+            "crit": 2
+          },
+          "abilityId": "shadow_step",
+          "abilityPowerPct": 2
+        }
+      }
+    },
+    {
+      "id": "duelist_raid_set",
+      "name": "Ascendant Duelist",
+      "buildId": "duelist",
+      "classId": "shadowblade",
+      "family": "raid",
+      "level": 15,
+      "rarity": "epic",
+      "preferredStats": ["agility", "damage"],
+      "bonuses": {
+        "2": {
+          "affixes": {
+            "agility": 7,
+            "damage": 4
+          }
+        },
+        "4": {
+          "effects": {
+            "damage": 4
+          }
+        },
+        "6": {
+          "effects": {
+            "damage": 4,
+            "crit": 3
+          },
+          "abilityId": "shadow_step",
+          "abilityPowerPct": 4
+        }
+      }
+    }
+  ],
+  "statLabels": {
+    "strength": "Strength",
+    "agility": "Agility",
+    "intellect": "Intellect",
+    "vitality": "Vitality",
+    "willpower": "Willpower",
+    "crit": "Critical",
+    "haste": "Haste",
+    "healing": "Healing",
+    "hotPower": "HoT Power",
+    "hotDuration": "HoT Duration",
+    "controlDuration": "Control Duration",
+    "stunResist": "Stun Resistance",
+    "damage": "Damage",
+    "dotDamage": "DoT Damage",
+    "armor": "Armor",
+    "maxHp": "Max Health",
+    "bleedDamage": "Bleed Damage",
+    "bleedDuration": "Bleed Duration",
+    "poisonDamage": "Poison Damage",
+    "poisonDuration": "Poison Duration",
+    "threat": "Threat",
+    "damageTaken": "Damage Reduction",
+    "barrierPower": "Barrier Power",
+    "buffDuration": "Buff Duration",
+    "debuffDuration": "Debuff Duration",
+    "attack": "Attack"
+  },
+  "chaseThemes": [
+    "starfall",
+    "graveward",
+    "veilbound",
+    "bloodrite",
+    "wildheart"
+  ],
+  "design": {
+    "totalBuilds": 27,
+    "totalGeneratedItems": 2293,
+    "totalBuildChaseItems": 27,
+    "gearEffectsVersion": 1,
+    "version": "2.14.0",
+    "systems": [
+      "stat_budgets",
+      "rarity_quality",
+      "tertiary_stats",
+      "sockets",
+      "gems",
+      "enchants",
+      "legendary_effect_families",
+      "active_trinkets",
+      "gear_score",
+      "build_evaluation",
+      "scenario_simulation",
+      "deterministic_stat_budgets",
+      "socket_color_matching",
+      "upgrade_tracks",
+      "loot_pity",
+      "loadout_optimization"
+    ],
+    "journeyLoot": {
+      "goal": "Every player level has meaningful gear progression without requiring a unique static item definition at every level.",
+      "baseItemLevels": [5, 10, 15, 20, 30, 45, 60],
+      "scaling": "Generated loot is normalized to the requested player/content item level; affixes, power and armor scale from the nearest authored base item.",
+      "world": "World drops use the current progression band and build/class targeting.",
+      "dungeons": "Dungeon variants provide higher source quality and tier-appropriate item levels.",
+      "chase": "Legendary and set chase items remain build-defining rather than mandatory stat sticks."
+    }
+  },
+  "buildChaseItems": [
+    "gear11_chase_grovekeeper",
+    "gear11_chase_rootcaller",
+    "gear11_chase_thornwarden",
+    "gear11_chase_sanctuary",
+    "gear11_chase_aegis",
+    "gear11_chase_battlepriest",
+    "gear11_chase_fortress",
+    "gear11_chase_warbreaker",
+    "gear11_chase_warden",
+    "gear11_chase_marksman",
+    "gear11_chase_skirmisher",
+    "gear11_chase_stormarcher",
+    "gear11_chase_spellfire",
+    "gear11_chase_frostweaver",
+    "gear11_chase_aethermind",
+    "gear11_chase_crusader",
+    "gear11_chase_guardian",
+    "gear11_chase_redeemer",
+    "gear11_chase_plaguecaller",
+    "gear11_chase_soulreaper",
+    "gear11_chase_voidcaller",
+    "gear11_chase_berserker",
+    "gear11_chase_bloodreaver",
+    "gear11_chase_warborn",
+    "gear11_chase_assassin",
+    "gear11_chase_saboteur",
+    "gear11_chase_duelist"
+  ],
+  "rules": {
+    "rarity": {
+      "common": {
+        "multiplier": 0.7,
+        "maxAffixes": 0,
+        "socketChance": 0
+      },
+      "uncommon": {
+        "multiplier": 0.88,
+        "maxAffixes": 1,
+        "socketChance": 0.1
+      },
+      "rare": {
+        "multiplier": 1,
+        "maxAffixes": 2,
+        "socketChance": 0.25
+      },
+      "epic": {
+        "multiplier": 1.18,
+        "maxAffixes": 3,
+        "socketChance": 0.45
+      },
+      "legendary": {
+        "multiplier": 1.38,
+        "maxAffixes": 4,
+        "socketChance": 0.7
+      }
+    },
+    "quality": {
+      "poor": 0.88,
+      "standard": 1,
+      "fine": 1.06,
+      "superior": 1.12,
+      "masterwork": 1.18
+    },
+    "statWeights": {
+      "strength": 1,
+      "agility": 1,
+      "intellect": 1,
+      "vitality": 1,
+      "willpower": 1,
+      "crit": 1.15,
+      "haste": 1.15,
+      "damage": 1.25,
+      "healing": 1.25,
+      "hotPower": 1.15,
+      "dotDamage": 1.2,
+      "armor": 0.85,
+      "maxHp": 0.04,
+      "attack": 1.05,
+      "threat": 1,
+      "controlDuration": 0.8,
+      "stunResist": 0.8,
+      "bleedDamage": 0.8,
+      "poisonDamage": 0.8,
+      "bleedDuration": 0.55,
+      "poisonDuration": 0.55,
+      "hotDuration": 0.55,
+      "buffDuration": 0.55,
+      "debuffDuration": 0.55,
+      "barrierPower": 0.9,
+      "rangeDamage": 1.1,
+      "aoeDamage": 1.1,
+      "damageTaken": 1,
+      "resourceCost": 0.8
+    },
+    "sockets": {
+      "maxPerItem": 2,
+      "bonusAtTwo": {
+        "stat": "versatility",
+        "value": 2
+      },
+      "colors": [
+        "strength",
+        "agility",
+        "intellect",
+        "vitality",
+        "willpower",
+        "crit",
+        "haste",
+        "healing"
+      ],
+      "matchMultiplier": 1.1
+    },
+    "gearScore": {
+      "itemLevel": 1,
+      "primary": 2,
+      "secondary": 2.4,
+      "tertiary": 1.4,
+      "socket": 8,
+      "enchant": 12,
+      "setPiece": 3,
+      "legendaryEffect": 18,
+      "socketMatch": 3,
+      "upgradeLevel": 2
+    },
+    "buildEvaluation": {
+      "preferred": 1.3,
+      "secondary": 0.95,
+      "tertiary": 0.65,
+      "offSpec": 0.5,
+      "setPiece": 4,
+      "legendary": 16,
+      "socketMatch": 2,
+      "upgradeLevel": 1.5
+    },
+    "buildTargetChance": 0.82,
+    "version": 3,
+    "statBudgetWeights": {
+      "strength": 1,
+      "agility": 1,
+      "intellect": 1,
+      "vitality": 1,
+      "willpower": 1,
+      "crit": 1,
+      "haste": 1,
+      "damage": 1,
+      "healing": 1,
+      "hotPower": 1,
+      "dotDamage": 1,
+      "armor": 1,
+      "attack": 1,
+      "threat": 1,
+      "controlDuration": 1,
+      "stunResist": 1,
+      "bleedDamage": 1,
+      "bleedDuration": 1,
+      "poisonDamage": 1,
+      "poisonDuration": 1,
+      "hotDuration": 1,
+      "buffDuration": 1,
+      "debuffDuration": 1,
+      "barrierPower": 1,
+      "rangeDamage": 1,
+      "aoeDamage": 1,
+      "damageTaken": 1,
+      "resourceCost": 1,
+      "maxHp": 0.05
+    },
+    "upgrades": {
+      "maxItemLevelIncrease": 3,
+      "statPerLevel": 0.055,
+      "powerPerLevel": 0.07,
+      "armorPerLevel": 0.055
+    },
+    "loot": {
+      "pity": {
+        "normalLegendary": 50,
+        "eliteLegendary": 12,
+        "bossLegendary": 3,
+        "bossEpic": 1
+      },
+      "buildTargetChance": 0.82
+    }
+  },
+  "tertiaryStats": [
+    {
+      "id": "movement_speed",
+      "stat": "movementSpeed",
+      "name": "Movement Speed",
+      "min": 1,
+      "max": 3
+    },
+    {
+      "id": "lifesteal",
+      "stat": "lifesteal",
+      "name": "Lifesteal",
+      "min": 1,
+      "max": 2
+    },
+    {
+      "id": "versatility",
+      "stat": "versatility",
+      "name": "Versatility",
+      "min": 1,
+      "max": 2
+    },
+    {
+      "id": "avoidance",
+      "stat": "avoidance",
+      "name": "Avoidance",
+      "min": 1,
+      "max": 3
+    },
+    {
+      "id": "leech",
+      "stat": "leech",
+      "name": "Leech",
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "gems": {
+    "ruby_flawed_gem": {
+      "id": "ruby_flawed_gem",
+      "name": "Flawed Ruby",
+      "grade": "flawed",
+      "stats": {
+        "strength": 2
+      },
+      "socketColor": "strength"
+    },
+    "ruby_normal_gem": {
+      "id": "ruby_normal_gem",
+      "name": "Normal Ruby",
+      "grade": "normal",
+      "stats": {
+        "strength": 4
+      },
+      "socketColor": "strength"
+    },
+    "ruby_perfect_gem": {
+      "id": "ruby_perfect_gem",
+      "name": "Perfect Ruby",
+      "grade": "perfect",
+      "stats": {
+        "strength": 7
+      },
+      "socketColor": "strength"
+    },
+    "ruby_pristine_gem": {
+      "id": "ruby_pristine_gem",
+      "name": "Pristine Ruby",
+      "grade": "pristine",
+      "stats": {
+        "strength": 10
+      },
+      "socketColor": "strength"
+    },
+    "sapphire_flawed_gem": {
+      "id": "sapphire_flawed_gem",
+      "name": "Flawed Sapphire",
+      "grade": "flawed",
+      "stats": {
+        "intellect": 2
+      },
+      "socketColor": "intellect"
+    },
+    "sapphire_normal_gem": {
+      "id": "sapphire_normal_gem",
+      "name": "Normal Sapphire",
+      "grade": "normal",
+      "stats": {
+        "intellect": 4
+      },
+      "socketColor": "intellect"
+    },
+    "sapphire_perfect_gem": {
+      "id": "sapphire_perfect_gem",
+      "name": "Perfect Sapphire",
+      "grade": "perfect",
+      "stats": {
+        "intellect": 7
+      },
+      "socketColor": "intellect"
+    },
+    "sapphire_pristine_gem": {
+      "id": "sapphire_pristine_gem",
+      "name": "Pristine Sapphire",
+      "grade": "pristine",
+      "stats": {
+        "intellect": 10
+      },
+      "socketColor": "intellect"
+    },
+    "emerald_flawed_gem": {
+      "id": "emerald_flawed_gem",
+      "name": "Flawed Emerald",
+      "grade": "flawed",
+      "stats": {
+        "agility": 2
+      },
+      "socketColor": "agility"
+    },
+    "emerald_normal_gem": {
+      "id": "emerald_normal_gem",
+      "name": "Normal Emerald",
+      "grade": "normal",
+      "stats": {
+        "agility": 4
+      },
+      "socketColor": "agility"
+    },
+    "emerald_perfect_gem": {
+      "id": "emerald_perfect_gem",
+      "name": "Perfect Emerald",
+      "grade": "perfect",
+      "stats": {
+        "agility": 7
+      },
+      "socketColor": "agility"
+    },
+    "emerald_pristine_gem": {
+      "id": "emerald_pristine_gem",
+      "name": "Pristine Emerald",
+      "grade": "pristine",
+      "stats": {
+        "agility": 10
+      },
+      "socketColor": "agility"
+    },
+    "topaz_flawed_gem": {
+      "id": "topaz_flawed_gem",
+      "name": "Flawed Topaz",
+      "grade": "flawed",
+      "stats": {
+        "willpower": 2
+      },
+      "socketColor": "willpower"
+    },
+    "topaz_normal_gem": {
+      "id": "topaz_normal_gem",
+      "name": "Normal Topaz",
+      "grade": "normal",
+      "stats": {
+        "willpower": 4
+      },
+      "socketColor": "willpower"
+    },
+    "topaz_perfect_gem": {
+      "id": "topaz_perfect_gem",
+      "name": "Perfect Topaz",
+      "grade": "perfect",
+      "stats": {
+        "willpower": 7
+      },
+      "socketColor": "willpower"
+    },
+    "topaz_pristine_gem": {
+      "id": "topaz_pristine_gem",
+      "name": "Pristine Topaz",
+      "grade": "pristine",
+      "stats": {
+        "willpower": 10
+      },
+      "socketColor": "willpower"
+    },
+    "garnet_flawed_gem": {
+      "id": "garnet_flawed_gem",
+      "name": "Flawed Garnet",
+      "grade": "flawed",
+      "stats": {
+        "vitality": 2
+      },
+      "socketColor": "vitality"
+    },
+    "garnet_normal_gem": {
+      "id": "garnet_normal_gem",
+      "name": "Normal Garnet",
+      "grade": "normal",
+      "stats": {
+        "vitality": 4
+      },
+      "socketColor": "vitality"
+    },
+    "garnet_perfect_gem": {
+      "id": "garnet_perfect_gem",
+      "name": "Perfect Garnet",
+      "grade": "perfect",
+      "stats": {
+        "vitality": 7
+      },
+      "socketColor": "vitality"
+    },
+    "garnet_pristine_gem": {
+      "id": "garnet_pristine_gem",
+      "name": "Pristine Garnet",
+      "grade": "pristine",
+      "stats": {
+        "vitality": 10
+      },
+      "socketColor": "vitality"
+    },
+    "diamond_flawed_gem": {
+      "id": "diamond_flawed_gem",
+      "name": "Flawed Diamond",
+      "grade": "flawed",
+      "stats": {
+        "crit": 2
+      },
+      "socketColor": "crit"
+    },
+    "diamond_normal_gem": {
+      "id": "diamond_normal_gem",
+      "name": "Normal Diamond",
+      "grade": "normal",
+      "stats": {
+        "crit": 4
+      },
+      "socketColor": "crit"
+    },
+    "diamond_perfect_gem": {
+      "id": "diamond_perfect_gem",
+      "name": "Perfect Diamond",
+      "grade": "perfect",
+      "stats": {
+        "crit": 7
+      },
+      "socketColor": "crit"
+    },
+    "diamond_pristine_gem": {
+      "id": "diamond_pristine_gem",
+      "name": "Pristine Diamond",
+      "grade": "pristine",
+      "stats": {
+        "crit": 10
+      },
+      "socketColor": "crit"
+    },
+    "opal_flawed_gem": {
+      "id": "opal_flawed_gem",
+      "name": "Flawed Opal",
+      "grade": "flawed",
+      "stats": {
+        "haste": 2
+      },
+      "socketColor": "haste"
+    },
+    "opal_normal_gem": {
+      "id": "opal_normal_gem",
+      "name": "Normal Opal",
+      "grade": "normal",
+      "stats": {
+        "haste": 4
+      },
+      "socketColor": "haste"
+    },
+    "opal_perfect_gem": {
+      "id": "opal_perfect_gem",
+      "name": "Perfect Opal",
+      "grade": "perfect",
+      "stats": {
+        "haste": 7
+      },
+      "socketColor": "haste"
+    },
+    "opal_pristine_gem": {
+      "id": "opal_pristine_gem",
+      "name": "Pristine Opal",
+      "grade": "pristine",
+      "stats": {
+        "haste": 10
+      },
+      "socketColor": "haste"
+    },
+    "amethyst_flawed_gem": {
+      "id": "amethyst_flawed_gem",
+      "name": "Flawed Amethyst",
+      "grade": "flawed",
+      "stats": {
+        "healing": 2
+      },
+      "socketColor": "healing"
+    },
+    "amethyst_normal_gem": {
+      "id": "amethyst_normal_gem",
+      "name": "Normal Amethyst",
+      "grade": "normal",
+      "stats": {
+        "healing": 4
+      },
+      "socketColor": "healing"
+    },
+    "amethyst_perfect_gem": {
+      "id": "amethyst_perfect_gem",
+      "name": "Perfect Amethyst",
+      "grade": "perfect",
+      "stats": {
+        "healing": 7
+      },
+      "socketColor": "healing"
+    },
+    "amethyst_pristine_gem": {
+      "id": "amethyst_pristine_gem",
+      "name": "Pristine Amethyst",
+      "grade": "pristine",
+      "stats": {
+        "healing": 10
+      },
+      "socketColor": "healing"
+    }
+  },
+  "enchants": {
+    "enchant_critical": {
+      "id": "enchant_critical",
+      "name": "Enchant: Critical",
+      "stats": {
+        "crit": 5
+      },
+      "level": 10
+    },
+    "enchant_haste": {
+      "id": "enchant_haste",
+      "name": "Enchant: Haste",
+      "stats": {
+        "haste": 5
+      },
+      "level": 10
+    },
+    "enchant_power": {
+      "id": "enchant_power",
+      "name": "Enchant: Power",
+      "stats": {
+        "damage": 4
+      },
+      "level": 10
+    },
+    "enchant_healing": {
+      "id": "enchant_healing",
+      "name": "Enchant: Healing",
+      "stats": {
+        "healing": 4
+      },
+      "level": 10
+    },
+    "enchant_vitality": {
+      "id": "enchant_vitality",
+      "name": "Enchant: Vitality",
+      "stats": {
+        "vitality": 5
+      },
+      "level": 10
+    },
+    "enchant_armor": {
+      "id": "enchant_armor",
+      "name": "Enchant: Armor",
+      "stats": {
+        "armor": 6
+      },
+      "level": 10
+    },
+    "enchant_willpower": {
+      "id": "enchant_willpower",
+      "name": "Enchant: Willpower",
+      "stats": {
+        "willpower": 5
+      },
+      "level": 10
+    },
+    "enchant_agility": {
+      "id": "enchant_agility",
+      "name": "Enchant: Agility",
+      "stats": {
+        "agility": 5
+      },
+      "level": 10
+    },
+    "enchant_intellect": {
+      "id": "enchant_intellect",
+      "name": "Enchant: Intellect",
+      "stats": {
+        "intellect": 5
+      },
+      "level": 10
+    },
+    "enchant_strength": {
+      "id": "enchant_strength",
+      "name": "Enchant: Strength",
+      "stats": {
+        "strength": 5
+      },
+      "level": 10
+    },
+    "enchant_dot": {
+      "id": "enchant_dot",
+      "name": "Enchant: Affliction",
+      "stats": {
+        "dotDamage": 5
+      },
+      "level": 10
+    },
+    "enchant_hot": {
+      "id": "enchant_hot",
+      "name": "Enchant: Renewal",
+      "stats": {
+        "hotPower": 5
+      },
+      "level": 10
+    }
+  },
+  "legendaryEffectFamilies": {
+    "resource": "build-defining resource engine",
+    "empowerment": "ability empowerment",
+    "defense": "survival trigger",
+    "execution": "execute/burst trigger",
+    "healing": "healing throughput trigger",
+    "control": "control/utility trigger"
+  },
+  "activeTrinkets": {
+    "grovekeeper": "gear13_trinket_grovekeeper",
+    "rootcaller": "gear13_trinket_rootcaller",
+    "thornwarden": "gear13_trinket_thornwarden",
+    "sanctuary": "gear13_trinket_sanctuary",
+    "aegis": "gear13_trinket_aegis",
+    "battlepriest": "gear13_trinket_battlepriest",
+    "fortress": "gear13_trinket_fortress",
+    "warbreaker": "gear13_trinket_warbreaker",
+    "warden": "gear13_trinket_warden",
+    "marksman": "gear13_trinket_marksman",
+    "skirmisher": "gear13_trinket_skirmisher",
+    "stormarcher": "gear13_trinket_stormarcher",
+    "spellfire": "gear13_trinket_spellfire",
+    "frostweaver": "gear13_trinket_frostweaver",
+    "aethermind": "gear13_trinket_aethermind",
+    "crusader": "gear13_trinket_crusader",
+    "guardian": "gear13_trinket_guardian",
+    "redeemer": "gear13_trinket_redeemer",
+    "plaguecaller": "gear13_trinket_plaguecaller",
+    "soulreaper": "gear13_trinket_soulreaper",
+    "voidcaller": "gear13_trinket_voidcaller",
+    "berserker": "gear13_trinket_berserker",
+    "bloodreaver": "gear13_trinket_bloodreaver",
+    "warborn": "gear13_trinket_warborn",
+    "assassin": "gear13_trinket_assassin",
+    "saboteur": "gear13_trinket_saboteur",
+    "duelist": "gear13_trinket_duelist"
+  },
+  "trinketRules": {
+    "cooldownFloorSeconds": 30,
+    "maxActiveBuffSeconds": 15,
+    "sharedUniqueGroup": true
+  },
+  "buildOptimization": {
+    "scenarios": [
+      "leveling",
+      "single_target",
+      "movement",
+      "dungeon",
+      "boss",
+      "tank_buster",
+      "party_damage"
+    ],
+    "weights": {
+      "leveling": {
+        "damage": 1,
+        "survival": 0.35,
+        "utility": 0.25
+      },
+      "single_target": {
+        "damage": 1,
+        "survival": 0.2,
+        "utility": 0.1
+      },
+      "movement": {
+        "damage": 0.8,
+        "survival": 0.2,
+        "utility": 0.7
+      },
+      "dungeon": {
+        "damage": 0.85,
+        "survival": 0.45,
+        "utility": 0.55
+      },
+      "boss": {
+        "damage": 0.9,
+        "survival": 0.6,
+        "utility": 0.5
+      },
+      "tank_buster": {
+        "damage": 0.25,
+        "survival": 1,
+        "utility": 0.4
+      },
+      "party_damage": {
+        "damage": 0.5,
+        "survival": 0.7,
+        "utility": 1
+      }
+    }
+  },
+  "maxLevel": 60,
+  "maxGearItemLevel": 60,
+  "progressionBands": {
+    "leveling": {
+      "min": 1,
+      "max": 15
+    },
+    "veteran": {
+      "min": 16,
+      "max": 25
+    },
+    "heroic": {
+      "min": 26,
+      "max": 35
+    },
+    "mythic": {
+      "min": 36,
+      "max": 50
+    },
+    "apex": {
+      "min": 51,
+      "max": 60
+    }
+  },
+  "lootTables": {
+    "version": 1,
+    "normal": {
+      "families": ["leveling"],
+      "targetChance": 0.82,
+      "duplicateProtection": true
+    },
+    "elite": {
+      "families": ["leveling", "dungeon"],
+      "targetChance": 0.86,
+      "duplicateProtection": true
+    },
+    "dungeon": {
+      "families": ["dungeon", "veteran", "heroic"],
+      "targetChance": 0.9,
+      "duplicateProtection": true,
+      "token": "dungeon_tier_token"
+    },
+    "raid": {
+      "families": ["heroic", "mythic", "apex"],
+      "targetChance": 0.92,
+      "duplicateProtection": true,
+      "token": "raid_tier_token"
+    },
+    "bosses": {
+      "sunken_catacombs": {
+        "dungeonId": "sunken_catacombs",
+        "dungeonName": "Sunken Catacombs",
+        "theme": "Hollow Saint",
+        "levelBand": "leveling",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_sunken_catacombs_neck",
+          "gear15_boss_sunken_catacombs_ring"
+        ]
+      },
+      "hollow_saint": {
+        "dungeonId": "black_citadel_apex",
+        "dungeonName": "Black Citadel — Apex",
+        "theme": "Black Citadel — Apex",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_black_citadel_apex_neck",
+          "gear15_boss_black_citadel_apex_ring"
+        ]
+      },
+      "sunken_catacombs_veteran": {
+        "dungeonId": "sunken_catacombs_veteran",
+        "dungeonName": "Sunken Catacombs — Veteran",
+        "theme": "Citadel Warden",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_sunken_catacombs_veteran_neck",
+          "gear15_boss_sunken_catacombs_veteran_ring"
+        ]
+      },
+      "sunken_catacombs_heroic": {
+        "dungeonId": "sunken_catacombs_heroic",
+        "dungeonName": "Sunken Catacombs — Heroic",
+        "theme": "Vault Tyrant",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_sunken_catacombs_heroic_neck",
+          "gear15_boss_sunken_catacombs_heroic_ring"
+        ]
+      },
+      "sunken_catacombs_mythic": {
+        "dungeonId": "sunken_catacombs_mythic",
+        "dungeonName": "Sunken Catacombs — Mythic",
+        "theme": "Hollow Warden",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_sunken_catacombs_mythic_neck",
+          "gear15_boss_sunken_catacombs_mythic_ring"
+        ]
+      },
+      "sunken_catacombs_apex": {
+        "dungeonId": "sunken_catacombs_apex",
+        "dungeonName": "Sunken Catacombs — Apex",
+        "theme": "Royal King",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_sunken_catacombs_apex_neck",
+          "gear15_boss_sunken_catacombs_apex_ring"
+        ]
+      },
+      "black_citadel": {
+        "dungeonId": "black_citadel",
+        "dungeonName": "Black Citadel",
+        "theme": "Black Citadel",
+        "levelBand": "leveling",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_black_citadel_neck",
+          "gear15_boss_black_citadel_ring"
+        ]
+      },
+      "black_citadel_veteran": {
+        "dungeonId": "black_citadel_veteran",
+        "dungeonName": "Black Citadel — Veteran",
+        "theme": "Black Citadel — Veteran",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_black_citadel_veteran_neck",
+          "gear15_boss_black_citadel_veteran_ring"
+        ]
+      },
+      "black_citadel_heroic": {
+        "dungeonId": "black_citadel_heroic",
+        "dungeonName": "Black Citadel — Heroic",
+        "theme": "Black Citadel — Heroic",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_black_citadel_heroic_neck",
+          "gear15_boss_black_citadel_heroic_ring"
+        ]
+      },
+      "black_citadel_mythic": {
+        "dungeonId": "black_citadel_mythic",
+        "dungeonName": "Black Citadel — Mythic",
+        "theme": "Black Citadel — Mythic",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_black_citadel_mythic_neck",
+          "gear15_boss_black_citadel_mythic_ring"
+        ]
+      },
+      "black_citadel_apex": {
+        "dungeonId": "black_citadel_apex",
+        "dungeonName": "Black Citadel — Apex",
+        "theme": "Black Citadel — Apex",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_black_citadel_apex_neck",
+          "gear15_boss_black_citadel_apex_ring"
+        ]
+      },
+      "dreadvault": {
+        "dungeonId": "dreadvault",
+        "dungeonName": "Dreadvault of the Black Citadel",
+        "theme": "Dreadvault of the Black Citadel",
+        "levelBand": "veteran",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_dreadvault_neck",
+          "gear15_boss_dreadvault_ring"
+        ]
+      },
+      "vault_tyrant": {
+        "dungeonId": "dreadvault_apex",
+        "dungeonName": "Dreadvault of the Black Citadel — Apex",
+        "theme": "Dreadvault of the Black Citadel — Apex",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_dreadvault_apex_neck",
+          "gear15_boss_dreadvault_apex_ring"
+        ]
+      },
+      "dreadvault_veteran": {
+        "dungeonId": "dreadvault_veteran",
+        "dungeonName": "Dreadvault of the Black Citadel — Veteran",
+        "theme": "Dreadvault of the Black Citadel — Veteran",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_dreadvault_veteran_neck",
+          "gear15_boss_dreadvault_veteran_ring"
+        ]
+      },
+      "dreadvault_heroic": {
+        "dungeonId": "dreadvault_heroic",
+        "dungeonName": "Dreadvault of the Black Citadel — Heroic",
+        "theme": "Dreadvault of the Black Citadel — Heroic",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_dreadvault_heroic_neck",
+          "gear15_boss_dreadvault_heroic_ring"
+        ]
+      },
+      "dreadvault_mythic": {
+        "dungeonId": "dreadvault_mythic",
+        "dungeonName": "Dreadvault of the Black Citadel — Mythic",
+        "theme": "Dreadvault of the Black Citadel — Mythic",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_dreadvault_mythic_neck",
+          "gear15_boss_dreadvault_mythic_ring"
+        ]
+      },
+      "dreadvault_apex": {
+        "dungeonId": "dreadvault_apex",
+        "dungeonName": "Dreadvault of the Black Citadel — Apex",
+        "theme": "Dreadvault of the Black Citadel — Apex",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_dreadvault_apex_neck",
+          "gear15_boss_dreadvault_apex_ring"
+        ]
+      },
+      "watcher_hollow": {
+        "dungeonId": "watcher_hollow",
+        "dungeonName": "Watcher Hollow",
+        "theme": "Watcher Hollow",
+        "levelBand": "veteran",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_watcher_hollow_neck",
+          "gear15_boss_watcher_hollow_ring"
+        ]
+      },
+      "watcher_hollowwarden": {
+        "dungeonId": "watcher_hollow_apex",
+        "dungeonName": "Watcher Hollow — Apex",
+        "theme": "Watcher Hollow — Apex",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_watcher_hollow_apex_neck",
+          "gear15_boss_watcher_hollow_apex_ring"
+        ]
+      },
+      "watcher_hollow_veteran": {
+        "dungeonId": "watcher_hollow_veteran",
+        "dungeonName": "Watcher Hollow — Veteran",
+        "theme": "Watcher Hollow — Veteran",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_watcher_hollow_veteran_neck",
+          "gear15_boss_watcher_hollow_veteran_ring"
+        ]
+      },
+      "watcher_hollow_heroic": {
+        "dungeonId": "watcher_hollow_heroic",
+        "dungeonName": "Watcher Hollow — Heroic",
+        "theme": "Watcher Hollow — Heroic",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_watcher_hollow_heroic_neck",
+          "gear15_boss_watcher_hollow_heroic_ring"
+        ]
+      },
+      "watcher_hollow_mythic": {
+        "dungeonId": "watcher_hollow_mythic",
+        "dungeonName": "Watcher Hollow — Mythic",
+        "theme": "Watcher Hollow — Mythic",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_watcher_hollow_mythic_neck",
+          "gear15_boss_watcher_hollow_mythic_ring"
+        ]
+      },
+      "watcher_hollow_apex": {
+        "dungeonId": "watcher_hollow_apex",
+        "dungeonName": "Watcher Hollow — Apex",
+        "theme": "Watcher Hollow — Apex",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_watcher_hollow_apex_neck",
+          "gear15_boss_watcher_hollow_apex_ring"
+        ]
+      },
+      "royal_catacombs": {
+        "dungeonId": "royal_catacombs",
+        "dungeonName": "Royal Catacombs",
+        "theme": "Royal Catacombs",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_royal_catacombs_neck",
+          "gear15_boss_royal_catacombs_ring"
+        ]
+      },
+      "royal_catacomb_king": {
+        "dungeonId": "royal_catacombs_apex",
+        "dungeonName": "Royal Catacombs — Apex",
+        "theme": "Royal Catacombs — Apex",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_royal_catacombs_apex_neck",
+          "gear15_boss_royal_catacombs_apex_ring"
+        ]
+      },
+      "royal_catacombs_veteran": {
+        "dungeonId": "royal_catacombs_veteran",
+        "dungeonName": "Royal Catacombs — Veteran",
+        "theme": "Royal Catacombs — Veteran",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_royal_catacombs_veteran_neck",
+          "gear15_boss_royal_catacombs_veteran_ring"
+        ]
+      },
+      "royal_catacombs_heroic": {
+        "dungeonId": "royal_catacombs_heroic",
+        "dungeonName": "Royal Catacombs — Heroic",
+        "theme": "Royal Catacombs — Heroic",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_royal_catacombs_heroic_neck",
+          "gear15_boss_royal_catacombs_heroic_ring"
+        ]
+      },
+      "royal_catacombs_mythic": {
+        "dungeonId": "royal_catacombs_mythic",
+        "dungeonName": "Royal Catacombs — Mythic",
+        "theme": "Royal Catacombs — Mythic",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_royal_catacombs_mythic_neck",
+          "gear15_boss_royal_catacombs_mythic_ring"
+        ]
+      },
+      "royal_catacombs_apex": {
+        "dungeonId": "royal_catacombs_apex",
+        "dungeonName": "Royal Catacombs — Apex",
+        "theme": "Royal Catacombs — Apex",
+        "levelBand": "heroic",
+        "guaranteed": {
+          "gear": 1,
+          "token": 1
+        },
+        "targetFamilies": ["dungeon", "raid"],
+        "uniqueDrops": [
+          "gear15_boss_royal_catacombs_apex_neck",
+          "gear15_boss_royal_catacombs_apex_ring"
+        ]
+      }
+    },
+    "duplicateProtection": {
+      "sameItemWindow": 8,
+      "sameSetSlotWindow": 4,
+      "minimumUpgradeDelta": 0.03
+    },
+    "tierTokens": {
+      "dungeon_tier_token": 3,
+      "raid_tier_token": 4,
+      "apex_tier_token": 5
+    }
+  },
+  "statCaps": {
+    "crit": {
+      "softCap": 35,
+      "hardCap": 60,
+      "breakpoints": [20, 30, 40, 50]
+    },
+    "haste": {
+      "softCap": 30,
+      "hardCap": 55,
+      "breakpoints": [15, 25, 35, 45]
+    },
+    "versatility": {
+      "softCap": 25,
+      "hardCap": 50,
+      "breakpoints": [10, 20, 30, 40]
+    },
+    "lifesteal": {
+      "softCap": 12,
+      "hardCap": 20,
+      "breakpoints": [5, 10, 15]
+    },
+    "avoidance": {
+      "softCap": 15,
+      "hardCap": 25,
+      "breakpoints": [5, 10, 15, 20]
+    },
+    "movementSpeed": {
+      "softCap": 15,
+      "hardCap": 25,
+      "breakpoints": [5, 10, 15]
+    }
+  },
+  "legendaryPaths": {
+    "worldDrop": {
+      "chance": 0.01,
+      "pity": 50
+    },
+    "dungeon": {
+      "chance": 0.03,
+      "pity": 8
+    },
+    "boss": {
+      "chance": 0.35,
+      "pity": 3
+    },
+    "crafting": {
+      "chance": 0.02,
+      "pity": 20
+    },
+    "tokenExchange": {
+      "cost": 8
+    },
+    "bossChase": true
+  },
+  "craftingCompetitive": {
+    "version": 1,
+    "tracks": [
+      {
+        "id": "artisan",
+        "maxQuality": "masterwork",
+        "itemLevelDelta": 0,
+        "affixSlots": 3
+      },
+      {
+        "id": "mythic_smith",
+        "maxQuality": "masterwork",
+        "itemLevelDelta": 1,
+        "affixSlots": 4
+      },
+      {
+        "id": "apex_artisan",
+        "maxQuality": "masterwork",
+        "itemLevelDelta": 2,
+        "affixSlots": 4
+      }
+    ],
+    "recipeItemLevelBands": [20, 30, 45, 60],
+    "craftedCanRollSockets": true,
+    "craftedCanRollTertiary": true,
+    "craftedCanUseSetImprint": true
+  },
+  "endgameCatalog": {
+    "maxLevel": 60,
+    "bands": ["veteran", "heroic", "mythic", "apex"],
+    "newDefinitions": 1286,
+    "bossIdentities": 29
+  }
+}

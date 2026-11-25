@@ -1,0 +1,3399 @@
+[
+  {
+    "type": "hollow_wolf",
+    "name": "Hollow Wolf",
+    "icon": "🐺",
+    "level": 3,
+    "maxHp": 90,
+    "attack": 7.8,
+    "armor": 4.8,
+    "xp": 55,
+    "gold": 12,
+    "temper": "aggressive",
+    "radius": 0.018,
+    "respawn": 12,
+    "zones": ["gloamwood", "marches_of_dawn"],
+    "drops": [
+      {
+        "item": "wolf_fang",
+        "chance": 0.75,
+        "qty": 1
+      },
+      {
+        "item": "ashen_tonic",
+        "chance": 0.08,
+        "qty": 1
+      },
+      {
+        "item": "rootcall_1_weapon",
+        "chance": 0.012,
+        "qty": 1
+      },
+      {
+        "item": "dawnroot_12_weapon",
+        "chance": 0.002,
+        "qty": 1
+      },
+      {
+        "item": "gloamhide_boots",
+        "chance": 0.04,
+        "qty": 1
+      },
+      {
+        "item": "lanternward_band",
+        "chance": 0.025,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "gloamwood": [
+        {
+          "id": "wolf-gloam-gate",
+          "x": 0.18,
+          "y": 0.53,
+          "r": 0.055,
+          "count": 9
+        },
+        {
+          "id": "wolf-south-road",
+          "x": 0.3,
+          "y": 0.68,
+          "r": 0.07,
+          "count": 10
+        },
+        {
+          "id": "wolf-north-grove",
+          "x": 0.27,
+          "y": 0.27,
+          "r": 0.075,
+          "count": 10
+        },
+        {
+          "id": "wolf-east-hollow",
+          "x": 0.77,
+          "y": 0.22,
+          "r": 0.08,
+          "count": 10
+        },
+        {
+          "id": "wolf-west-ridge",
+          "x": 0.12,
+          "y": 0.3,
+          "r": 0.06,
+          "count": 8
+        },
+        {
+          "id": "wolf-sunken-path",
+          "x": 0.56,
+          "y": 0.34,
+          "r": 0.07,
+          "count": 9
+        },
+        {
+          "id": "wolf-south-east",
+          "x": 0.73,
+          "y": 0.7,
+          "r": 0.07,
+          "count": 9
+        },
+        {
+          "id": "wolf-gate-outer",
+          "x": 0.145,
+          "y": 0.53,
+          "r": 0.032,
+          "count": 12
+        },
+        {
+          "id": "hollow_wolf_extra_0",
+          "x": 0.2,
+          "y": 0.58,
+          "r": 0.055,
+          "count": 12
+        },
+        {
+          "id": "hollow_wolf_extra_1",
+          "x": 0.23,
+          "y": 0.43,
+          "r": 0.055,
+          "count": 12
+        },
+        {
+          "id": "hollow_wolf_extra_2",
+          "x": 0.36,
+          "y": 0.78,
+          "r": 0.06,
+          "count": 12
+        },
+        {
+          "id": "hollow_wolf_extra_3",
+          "x": 0.4,
+          "y": 0.38,
+          "r": 0.055,
+          "count": 12
+        },
+        {
+          "id": "hollow_wolf_camp_13",
+          "x": 0.105,
+          "y": 0.53,
+          "r": 0.022,
+          "count": 8
+        },
+        {
+          "id": "hollow_wolf_camp_14",
+          "x": 0.13,
+          "y": 0.48,
+          "r": 0.024,
+          "count": 8
+        },
+        {
+          "id": "hollow_wolf_camp_15",
+          "x": 0.13,
+          "y": 0.58,
+          "r": 0.024,
+          "count": 8
+        },
+        {
+          "id": "hollow_wolf_camp_16",
+          "x": 0.22,
+          "y": 0.52,
+          "r": 0.026,
+          "count": 9
+        },
+        {
+          "id": "hollow_wolf_camp_17",
+          "x": 0.26,
+          "y": 0.42,
+          "r": 0.032,
+          "count": 8
+        },
+        {
+          "id": "road_hollow_wolf_0",
+          "x": 0.12,
+          "y": 0.53,
+          "r": 0.045,
+          "count": 8
+        },
+        {
+          "id": "road_hollow_wolf_1",
+          "x": 0.22,
+          "y": 0.46,
+          "r": 0.045,
+          "count": 8
+        },
+        {
+          "id": "road_hollow_wolf_2",
+          "x": 0.28,
+          "y": 0.54,
+          "r": 0.05,
+          "count": 8
+        },
+        {
+          "id": "road_hollow_wolf_3",
+          "x": 0.36,
+          "y": 0.5,
+          "r": 0.045,
+          "count": 8
+        },
+        {
+          "id": "road_hollow_wolf_4",
+          "x": 0.44,
+          "y": 0.58,
+          "r": 0.05,
+          "count": 8
+        }
+      ],
+      "marches_of_dawn": [
+        {
+          "x": 0.018,
+          "y": 0.5,
+          "r": 0.012,
+          "count": 4
+        },
+        {
+          "x": 0.55,
+          "y": 0.68,
+          "r": 0.16,
+          "count": 5
+        },
+        {
+          "x": 0.37,
+          "y": 0.53,
+          "r": 0.128,
+          "count": 2
+        },
+        {
+          "x": 0.18,
+          "y": 0.72,
+          "r": 0.13,
+          "count": 4
+        },
+        {
+          "x": 0.82,
+          "y": 0.78,
+          "r": 0.12,
+          "count": 4
+        }
+      ]
+    },
+    "leashRadius": 0.16,
+    "speedMeters": 22,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "pack"
+  },
+  {
+    "type": "gloomroot_spider",
+    "name": "Gloomroot Spider",
+    "icon": "🕷️",
+    "level": 4,
+    "maxHp": 106,
+    "attack": 9,
+    "armor": 5.8,
+    "xp": 80,
+    "gold": 18,
+    "temper": "neutral",
+    "radius": 0.017,
+    "respawn": 15,
+    "zones": ["gloamwood"],
+    "drops": [
+      {
+        "item": "lone_star",
+        "chance": 0.12,
+        "qty": 1
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.55,
+        "qty": 1
+      },
+      {
+        "item": "rootcall_1_weapon",
+        "chance": 0.012,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "gloamwood": [
+        {
+          "id": "spider-rootmaze",
+          "x": 0.31,
+          "y": 0.6,
+          "r": 0.07,
+          "count": 9
+        },
+        {
+          "id": "spider-blackfen",
+          "x": 0.6,
+          "y": 0.72,
+          "r": 0.08,
+          "count": 10
+        },
+        {
+          "id": "spider-east-thicket",
+          "x": 0.84,
+          "y": 0.57,
+          "r": 0.075,
+          "count": 9
+        },
+        {
+          "id": "spider-west-ruins",
+          "x": 0.15,
+          "y": 0.78,
+          "r": 0.065,
+          "count": 8
+        },
+        {
+          "id": "spider-deepwood",
+          "x": 0.48,
+          "y": 0.18,
+          "r": 0.07,
+          "count": 9
+        },
+        {
+          "id": "spider-gate-brush",
+          "x": 0.17,
+          "y": 0.58,
+          "r": 0.032,
+          "count": 10
+        },
+        {
+          "id": "gloomroot_spider_extra_0",
+          "x": 0.24,
+          "y": 0.62,
+          "r": 0.055,
+          "count": 11
+        },
+        {
+          "id": "gloomroot_spider_extra_1",
+          "x": 0.42,
+          "y": 0.74,
+          "r": 0.06,
+          "count": 11
+        },
+        {
+          "id": "gloomroot_spider_extra_2",
+          "x": 0.72,
+          "y": 0.58,
+          "r": 0.06,
+          "count": 11
+        },
+        {
+          "id": "gloomroot_spider_extra_3",
+          "x": 0.9,
+          "y": 0.44,
+          "r": 0.055,
+          "count": 11
+        },
+        {
+          "id": "gloomroot_spider_camp_11",
+          "x": 0.17,
+          "y": 0.47,
+          "r": 0.028,
+          "count": 8
+        },
+        {
+          "id": "gloomroot_spider_camp_12",
+          "x": 0.19,
+          "y": 0.57,
+          "r": 0.028,
+          "count": 8
+        },
+        {
+          "id": "gloomroot_spider_camp_13",
+          "x": 0.28,
+          "y": 0.52,
+          "r": 0.032,
+          "count": 9
+        },
+        {
+          "id": "gloomroot_spider_camp_14",
+          "x": 0.38,
+          "y": 0.6,
+          "r": 0.035,
+          "count": 9
+        },
+        {
+          "id": "gloomroot_spider_camp_15",
+          "x": 0.52,
+          "y": 0.7,
+          "r": 0.038,
+          "count": 9
+        },
+        {
+          "id": "road_gloomroot_spider_0",
+          "x": 0.14,
+          "y": 0.46,
+          "r": 0.04,
+          "count": 8
+        },
+        {
+          "id": "road_gloomroot_spider_1",
+          "x": 0.24,
+          "y": 0.54,
+          "r": 0.045,
+          "count": 8
+        },
+        {
+          "id": "road_gloomroot_spider_2",
+          "x": 0.34,
+          "y": 0.48,
+          "r": 0.045,
+          "count": 8
+        },
+        {
+          "id": "road_gloomroot_spider_3",
+          "x": 0.54,
+          "y": 0.56,
+          "r": 0.045,
+          "count": 8
+        },
+        {
+          "id": "road_gloomroot_spider_4",
+          "x": 0.66,
+          "y": 0.5,
+          "r": 0.05,
+          "count": 8
+        }
+      ]
+    },
+    "leashRadius": 0.13,
+    "speedMeters": 16,
+    "attackRangeMeters": 18,
+    "behaviorProfile": "territorial",
+    "aggroRangeMeters": 0
+  },
+  {
+    "type": "grave_brute",
+    "name": "Grave Brute",
+    "icon": "👹",
+    "level": 8,
+    "maxHp": 169,
+    "attack": 14,
+    "armor": 9.6,
+    "xp": 180,
+    "gold": 40,
+    "temper": "aggressive",
+    "radius": 0.022,
+    "respawn": 18,
+    "zones": ["ashen_wastes", "gloamwood"],
+    "drops": [
+      {
+        "item": "grave_steel",
+        "chance": 0.65,
+        "qty": 1
+      },
+      {
+        "item": "ashen_tonic",
+        "chance": 0.18,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "ashen_wastes": [
+        {
+          "x": 0.5,
+          "y": 0.018,
+          "r": 0.012,
+          "count": 4
+        },
+        {
+          "x": 0.28,
+          "y": 0.3,
+          "r": 0.14,
+          "count": 4
+        },
+        {
+          "x": 0.46,
+          "y": 0.45,
+          "r": 0.112,
+          "count": 2
+        }
+      ],
+      "gloamwood": [
+        {
+          "id": "brute-barrow",
+          "x": 0.73,
+          "y": 0.12,
+          "r": 0.055,
+          "count": 6
+        },
+        {
+          "id": "brute-graveyard",
+          "x": 0.1,
+          "y": 0.88,
+          "r": 0.055,
+          "count": 6
+        },
+        {
+          "id": "grave_brute_extra_0",
+          "x": 0.9,
+          "y": 0.84,
+          "r": 0.05,
+          "count": 8
+        },
+        {
+          "id": "grave_brute_extra_1",
+          "x": 0.62,
+          "y": 0.9,
+          "r": 0.055,
+          "count": 8
+        },
+        {
+          "id": "grave_brute_extra_2",
+          "x": 0.76,
+          "y": 0.3,
+          "r": 0.05,
+          "count": 8
+        },
+        {
+          "id": "grave_brute_camp_6",
+          "x": 0.7,
+          "y": 0.82,
+          "r": 0.04,
+          "count": 6
+        },
+        {
+          "id": "grave_brute_camp_7",
+          "x": 0.86,
+          "y": 0.72,
+          "r": 0.04,
+          "count": 6
+        },
+        {
+          "id": "grave_brute_camp_8",
+          "x": 0.9,
+          "y": 0.5,
+          "r": 0.035,
+          "count": 6
+        }
+      ]
+    },
+    "leashRadius": 0.16,
+    "speedMeters": 22,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical"
+  },
+  {
+    "type": "feral_ravager",
+    "name": "Feral Ravager",
+    "icon": "🐗",
+    "level": 6,
+    "maxHp": 137,
+    "attack": 11.5,
+    "armor": 7.7,
+    "xp": 130,
+    "gold": 28,
+    "temper": "neutral",
+    "radius": 0.02,
+    "respawn": 18,
+    "zones": ["marches_of_dawn", "gloamwood"],
+    "drops": [
+      {
+        "item": "ember_core",
+        "chance": 0.12,
+        "qty": 1
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.5,
+        "qty": 1
+      },
+      {
+        "item": "dawnroot_12_weapon",
+        "chance": 0.002,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "marches_of_dawn": [
+        {
+          "x": 0.018,
+          "y": 0.5,
+          "r": 0.012,
+          "count": 4
+        },
+        {
+          "x": 0.72,
+          "y": 0.33,
+          "r": 0.18,
+          "count": 5
+        },
+        {
+          "x": 0.54,
+          "y": 0.48,
+          "r": 0.144,
+          "count": 2
+        },
+        {
+          "x": 0.24,
+          "y": 0.24,
+          "r": 0.13,
+          "count": 4
+        },
+        {
+          "x": 0.86,
+          "y": 0.44,
+          "r": 0.13,
+          "count": 4
+        }
+      ],
+      "gloamwood": [
+        {
+          "id": "ravager-deepwood",
+          "x": 0.56,
+          "y": 0.12,
+          "r": 0.06,
+          "count": 7
+        },
+        {
+          "id": "ravager-south",
+          "x": 0.36,
+          "y": 0.88,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "ravager-east",
+          "x": 0.9,
+          "y": 0.62,
+          "r": 0.06,
+          "count": 7
+        },
+        {
+          "id": "feral_ravager_extra_0",
+          "x": 0.34,
+          "y": 0.18,
+          "r": 0.055,
+          "count": 9
+        },
+        {
+          "id": "feral_ravager_extra_1",
+          "x": 0.58,
+          "y": 0.42,
+          "r": 0.06,
+          "count": 9
+        },
+        {
+          "id": "feral_ravager_extra_2",
+          "x": 0.92,
+          "y": 0.68,
+          "r": 0.055,
+          "count": 9
+        },
+        {
+          "id": "feral_ravager_camp_7",
+          "x": 0.34,
+          "y": 0.72,
+          "r": 0.04,
+          "count": 8
+        },
+        {
+          "id": "feral_ravager_camp_8",
+          "x": 0.58,
+          "y": 0.62,
+          "r": 0.04,
+          "count": 8
+        },
+        {
+          "id": "feral_ravager_camp_9",
+          "x": 0.72,
+          "y": 0.48,
+          "r": 0.04,
+          "count": 8
+        }
+      ]
+    },
+    "leashRadius": 0.13,
+    "speedMeters": 16,
+    "attackRangeMeters": 18,
+    "behaviorProfile": "territorial",
+    "aggroRangeMeters": 0
+  },
+  {
+    "type": "ashen_reaver",
+    "name": "Ashen Reaver",
+    "icon": "🔥",
+    "level": 10,
+    "maxHp": 271,
+    "attack": 19.5,
+    "armor": 13.6,
+    "xp": 280,
+    "gold": 70,
+    "temper": "aggressive",
+    "radius": 0.023,
+    "respawn": 25,
+    "zones": ["ashen_wastes", "hollow_expanse"],
+    "drops": [
+      {
+        "item": "ember_core",
+        "chance": 0.35,
+        "qty": 1
+      },
+      {
+        "item": "saints_aegis",
+        "chance": 0.03,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "ashen_wastes": [
+        {
+          "x": 0.5,
+          "y": 0.018,
+          "r": 0.012,
+          "count": 4
+        },
+        {
+          "x": 0.72,
+          "y": 0.72,
+          "r": 0.15,
+          "count": 4
+        },
+        {
+          "x": 0.54,
+          "y": 0.57,
+          "r": 0.12,
+          "count": 2
+        }
+      ],
+      "gloamwood": [],
+      "hollow_expanse": [
+        {
+          "id": "ashen_reaver_hollow_0",
+          "x": 0.3,
+          "y": 0.5,
+          "r": 0.08,
+          "count": 8
+        },
+        {
+          "id": "ashen_reaver_hollow_1",
+          "x": 0.68,
+          "y": 0.38,
+          "r": 0.08,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.16,
+    "speedMeters": 22,
+    "id": "ashen_reaver",
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical"
+  },
+  {
+    "type": "catacomb_stalker",
+    "name": "Catacomb Stalker",
+    "icon": "🦂",
+    "level": 6,
+    "maxHp": 137,
+    "attack": 11.5,
+    "armor": 7.7,
+    "xp": 105,
+    "gold": 26,
+    "temper": "neutral",
+    "radius": 0.018,
+    "respawn": 600,
+    "zones": ["gloamwood"],
+    "drops": [
+      {
+        "item": "grave_steel",
+        "chance": 0.25,
+        "qty": 1
+      },
+      {
+        "item": "lantern_ring",
+        "chance": 0.05,
+        "qty": 1
+      },
+      {
+        "item": "rootcall_1_weapon",
+        "chance": 0.012,
+        "qty": 1
+      },
+      {
+        "item": "briarheart_6_weapon",
+        "chance": 0.006,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.08,
+    "spawnAreas": {
+      "gloamwood": [
+        {
+          "id": "stalker-old-road",
+          "x": 0.5,
+          "y": 0.28,
+          "r": 0.07,
+          "count": 9
+        },
+        {
+          "id": "stalker-east-road",
+          "x": 0.7,
+          "y": 0.43,
+          "r": 0.07,
+          "count": 9
+        },
+        {
+          "id": "stalker-south-marsh",
+          "x": 0.46,
+          "y": 0.86,
+          "r": 0.07,
+          "count": 9
+        },
+        {
+          "id": "stalker-west-ruins",
+          "x": 0.2,
+          "y": 0.43,
+          "r": 0.06,
+          "count": 8
+        },
+        {
+          "id": "catacomb_stalker_extra_0",
+          "x": 0.34,
+          "y": 0.52,
+          "r": 0.055,
+          "count": 10
+        },
+        {
+          "id": "catacomb_stalker_extra_1",
+          "x": 0.58,
+          "y": 0.26,
+          "r": 0.055,
+          "count": 10
+        },
+        {
+          "id": "catacomb_stalker_extra_2",
+          "x": 0.7,
+          "y": 0.88,
+          "r": 0.055,
+          "count": 10
+        },
+        {
+          "id": "catacomb_stalker_camp_8",
+          "x": 0.16,
+          "y": 0.42,
+          "r": 0.026,
+          "count": 7
+        },
+        {
+          "id": "catacomb_stalker_camp_9",
+          "x": 0.25,
+          "y": 0.58,
+          "r": 0.032,
+          "count": 8
+        },
+        {
+          "id": "catacomb_stalker_camp_10",
+          "x": 0.38,
+          "y": 0.48,
+          "r": 0.035,
+          "count": 8
+        },
+        {
+          "id": "catacomb_stalker_camp_11",
+          "x": 0.55,
+          "y": 0.56,
+          "r": 0.04,
+          "count": 8
+        },
+        {
+          "id": "road_catacomb_stalker_0",
+          "x": 0.22,
+          "y": 0.38,
+          "r": 0.045,
+          "count": 7
+        },
+        {
+          "id": "road_catacomb_stalker_1",
+          "x": 0.38,
+          "y": 0.38,
+          "r": 0.05,
+          "count": 7
+        },
+        {
+          "id": "road_catacomb_stalker_2",
+          "x": 0.56,
+          "y": 0.38,
+          "r": 0.045,
+          "count": 7
+        },
+        {
+          "id": "road_catacomb_stalker_3",
+          "x": 0.74,
+          "y": 0.46,
+          "r": 0.05,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.13,
+    "speedMeters": 16,
+    "attackRangeMeters": 18,
+    "behaviorProfile": "territorial",
+    "aggroRangeMeters": 0
+  },
+  {
+    "type": "crowsworn_scavenger",
+    "name": "Crowsworn Scavenger",
+    "icon": "🪶",
+    "level": 5,
+    "maxHp": 112,
+    "attack": 10.8,
+    "armor": 6.1,
+    "xp": 95,
+    "gold": 20,
+    "temper": "neutral",
+    "radius": 0.017,
+    "respawn": 16,
+    "zones": ["marches_of_dawn", "gloamwood"],
+    "drops": [
+      {
+        "item": "dawn_4_weapon",
+        "chance": 0.1,
+        "qty": 1
+      },
+      {
+        "item": "umbral_iron_ore",
+        "chance": 0.55,
+        "qty": 1
+      },
+      {
+        "item": "dawnroot_12_weapon",
+        "chance": 0.002,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "marches_of_dawn": [
+        {
+          "x": 0.018,
+          "y": 0.5,
+          "r": 0.012,
+          "count": 4
+        },
+        {
+          "x": 0.68,
+          "y": 0.54,
+          "r": 0.16,
+          "count": 8
+        },
+        {
+          "x": 0.18,
+          "y": 0.42,
+          "r": 0.11,
+          "count": 5
+        },
+        {
+          "x": 0.52,
+          "y": 0.18,
+          "r": 0.1,
+          "count": 5
+        },
+        {
+          "x": 0.88,
+          "y": 0.72,
+          "r": 0.1,
+          "count": 5
+        }
+      ],
+      "gloamwood": [
+        {
+          "id": "crowsworn-west",
+          "x": 0.12,
+          "y": 0.64,
+          "r": 0.07,
+          "count": 8
+        },
+        {
+          "id": "crowsworn-center",
+          "x": 0.42,
+          "y": 0.47,
+          "r": 0.065,
+          "count": 8
+        },
+        {
+          "id": "crowsworn-north-east",
+          "x": 0.87,
+          "y": 0.34,
+          "r": 0.065,
+          "count": 8
+        },
+        {
+          "id": "crow-gate-road",
+          "x": 0.2,
+          "y": 0.6,
+          "r": 0.032,
+          "count": 8
+        },
+        {
+          "id": "crowsworn_scavenger_extra_0",
+          "x": 0.18,
+          "y": 0.72,
+          "r": 0.05,
+          "count": 10
+        },
+        {
+          "id": "crowsworn_scavenger_extra_1",
+          "x": 0.52,
+          "y": 0.56,
+          "r": 0.055,
+          "count": 10
+        },
+        {
+          "id": "crowsworn_scavenger_extra_2",
+          "x": 0.84,
+          "y": 0.24,
+          "r": 0.055,
+          "count": 10
+        },
+        {
+          "id": "crowsworn_scavenger_camp_8",
+          "x": 0.11,
+          "y": 0.61,
+          "r": 0.025,
+          "count": 7
+        },
+        {
+          "id": "crowsworn_scavenger_camp_9",
+          "x": 0.24,
+          "y": 0.47,
+          "r": 0.03,
+          "count": 8
+        },
+        {
+          "id": "crowsworn_scavenger_camp_10",
+          "x": 0.33,
+          "y": 0.34,
+          "r": 0.035,
+          "count": 8
+        },
+        {
+          "id": "crowsworn_scavenger_camp_11",
+          "x": 0.44,
+          "y": 0.55,
+          "r": 0.035,
+          "count": 8
+        },
+        {
+          "id": "road_crowsworn_scavenger_0",
+          "x": 0.16,
+          "y": 0.64,
+          "r": 0.045,
+          "count": 7
+        },
+        {
+          "id": "road_crowsworn_scavenger_1",
+          "x": 0.34,
+          "y": 0.64,
+          "r": 0.05,
+          "count": 7
+        },
+        {
+          "id": "road_crowsworn_scavenger_2",
+          "x": 0.52,
+          "y": 0.64,
+          "r": 0.045,
+          "count": 7
+        },
+        {
+          "id": "road_crowsworn_scavenger_3",
+          "x": 0.72,
+          "y": 0.58,
+          "r": 0.05,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "ranged": true,
+    "attackRange": 0.22,
+    "speedMeters": 16,
+    "attackRangeMeters": 24,
+    "behaviorProfile": "caster",
+    "aggroRangeMeters": 0
+  },
+  {
+    "type": "gloam_cultist",
+    "name": "Gloam Cultist",
+    "icon": "🕯️",
+    "level": 6,
+    "maxHp": 127,
+    "attack": 12.1,
+    "armor": 6.9,
+    "xp": 110,
+    "gold": 24,
+    "temper": "aggressive",
+    "radius": 0.017,
+    "respawn": 18,
+    "zones": ["gloamwood"],
+    "drops": [
+      {
+        "item": "gloam_6_weapon",
+        "chance": 0.08,
+        "qty": 1
+      },
+      {
+        "item": "gloam_4_relic",
+        "chance": 0.12,
+        "qty": 1
+      },
+      {
+        "item": "rootcall_1_weapon",
+        "chance": 0.012,
+        "qty": 1
+      },
+      {
+        "item": "briarheart_6_weapon",
+        "chance": 0.006,
+        "qty": 1
+      },
+      {
+        "item": "gloamglass_focus",
+        "chance": 0.035,
+        "qty": 1
+      },
+      {
+        "item": "rootbound_amulet",
+        "chance": 0.04,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.08,
+    "spawnAreas": {
+      "gloamwood": [
+        {
+          "id": "cultist-south-shrine",
+          "x": 0.48,
+          "y": 0.78,
+          "r": 0.075,
+          "count": 10
+        },
+        {
+          "id": "cultist-east-shrine",
+          "x": 0.84,
+          "y": 0.78,
+          "r": 0.07,
+          "count": 9
+        },
+        {
+          "id": "cultist-north-ruin",
+          "x": 0.64,
+          "y": 0.16,
+          "r": 0.065,
+          "count": 8
+        },
+        {
+          "id": "cultist-west-cairn",
+          "x": 0.2,
+          "y": 0.18,
+          "r": 0.06,
+          "count": 8
+        },
+        {
+          "id": "gloam_cultist_extra_0",
+          "x": 0.34,
+          "y": 0.86,
+          "r": 0.055,
+          "count": 10
+        },
+        {
+          "id": "gloam_cultist_extra_1",
+          "x": 0.58,
+          "y": 0.12,
+          "r": 0.05,
+          "count": 10
+        },
+        {
+          "id": "gloam_cultist_extra_2",
+          "x": 0.88,
+          "y": 0.7,
+          "r": 0.055,
+          "count": 10
+        },
+        {
+          "id": "gloam_cultist_camp_8",
+          "x": 0.25,
+          "y": 0.25,
+          "r": 0.035,
+          "count": 8
+        },
+        {
+          "id": "gloam_cultist_camp_9",
+          "x": 0.4,
+          "y": 0.2,
+          "r": 0.035,
+          "count": 8
+        },
+        {
+          "id": "gloam_cultist_camp_10",
+          "x": 0.56,
+          "y": 0.28,
+          "r": 0.035,
+          "count": 8
+        },
+        {
+          "id": "road_gloam_cultist_0",
+          "x": 0.26,
+          "y": 0.22,
+          "r": 0.05,
+          "count": 7
+        },
+        {
+          "id": "road_gloam_cultist_1",
+          "x": 0.42,
+          "y": 0.22,
+          "r": 0.05,
+          "count": 7
+        },
+        {
+          "id": "road_gloam_cultist_2",
+          "x": 0.58,
+          "y": 0.2,
+          "r": 0.05,
+          "count": 7
+        },
+        {
+          "id": "road_gloam_cultist_3",
+          "x": 0.76,
+          "y": 0.34,
+          "r": 0.045,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.14,
+    "ranged": true,
+    "attackRange": 0.24,
+    "aoe": {
+      "radius": 0.08,
+      "damageMultiplier": 0.8
+    },
+    "speedMeters": 22,
+    "attackRangeMeters": 24,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "caster"
+  },
+  {
+    "type": "gloam_huntmaster",
+    "rare": true,
+    "name": "Gloam Huntmaster",
+    "icon": "🦌",
+    "level": 7,
+    "maxHp": 207,
+    "attack": 15,
+    "armor": 10.2,
+    "xp": 170,
+    "gold": 40,
+    "temper": "aggressive",
+    "radius": 0.021,
+    "respawn": 18,
+    "zones": ["gloamwood"],
+    "drops": [
+      {
+        "item": "gloam_6_weapon",
+        "chance": 0.18,
+        "qty": 1
+      },
+      {
+        "item": "gloam_8_chest",
+        "chance": 0.08,
+        "qty": 1
+      },
+      {
+        "item": "rootcall_1_weapon",
+        "chance": 0.012,
+        "qty": 1
+      },
+      {
+        "item": "briarheart_6_weapon",
+        "chance": 0.006,
+        "qty": 1
+      },
+      {
+        "item": "bloodletter_edge",
+        "chance": 0.018,
+        "qty": 1
+      },
+      {
+        "item": "trailwarden_bow",
+        "chance": 0.05,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.12,
+    "spawnAreas": {
+      "gloamwood": [
+        {
+          "id": "huntmaster-west",
+          "x": 0.3,
+          "y": 0.46,
+          "r": 0.065,
+          "count": 8
+        },
+        {
+          "id": "huntmaster-north-east",
+          "x": 0.66,
+          "y": 0.25,
+          "r": 0.065,
+          "count": 8
+        },
+        {
+          "id": "huntmaster-south-east",
+          "x": 0.78,
+          "y": 0.64,
+          "r": 0.06,
+          "count": 8
+        },
+        {
+          "id": "huntmaster-gate-patrol",
+          "x": 0.23,
+          "y": 0.5,
+          "r": 0.032,
+          "count": 8
+        },
+        {
+          "id": "gloam_huntmaster_extra_0",
+          "x": 0.22,
+          "y": 0.52,
+          "r": 0.05,
+          "count": 9
+        },
+        {
+          "id": "gloam_huntmaster_extra_1",
+          "x": 0.46,
+          "y": 0.46,
+          "r": 0.055,
+          "count": 9
+        },
+        {
+          "id": "gloam_huntmaster_extra_2",
+          "x": 0.82,
+          "y": 0.56,
+          "r": 0.055,
+          "count": 9
+        },
+        {
+          "id": "gloam_huntmaster_camp_8",
+          "x": 0.2,
+          "y": 0.4,
+          "r": 0.03,
+          "count": 7
+        },
+        {
+          "id": "gloam_huntmaster_camp_9",
+          "x": 0.32,
+          "y": 0.55,
+          "r": 0.035,
+          "count": 8
+        },
+        {
+          "id": "gloam_huntmaster_camp_10",
+          "x": 0.5,
+          "y": 0.46,
+          "r": 0.035,
+          "count": 8
+        },
+        {
+          "id": "road_gloam_huntmaster_0",
+          "x": 0.26,
+          "y": 0.46,
+          "r": 0.04,
+          "count": 7
+        },
+        {
+          "id": "road_gloam_huntmaster_1",
+          "x": 0.48,
+          "y": 0.46,
+          "r": 0.04,
+          "count": 7
+        },
+        {
+          "id": "road_gloam_huntmaster_2",
+          "x": 0.7,
+          "y": 0.46,
+          "r": 0.04,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.18,
+    "leader": true,
+    "speedMeters": 22,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "faction": "beasts",
+    "behaviorProfile": "elite"
+  },
+  {
+    "type": "catacomb_guard",
+    "name": "Catacomb Guard",
+    "icon": "🛡️",
+    "level": 3,
+    "maxHp": 90,
+    "attack": 7.8,
+    "armor": 4.8,
+    "xp": 90,
+    "gold": 20,
+    "temper": "aggressive",
+    "radius": 0.02,
+    "respawn": 30,
+    "zones": ["sunken_catacombs"],
+    "drops": [
+      {
+        "item": "grave_steel",
+        "chance": 0.5,
+        "qty": 1
+      },
+      {
+        "item": "mossbound_2_hood",
+        "chance": 0.01,
+        "qty": 1
+      },
+      {
+        "item": "gravewatch_mail",
+        "chance": 0.025,
+        "qty": 1
+      }
+    ],
+    "spawnAreas": {
+      "sunken_catacombs": [
+        {
+          "x": 0.48,
+          "y": 0.78,
+          "r": 0.045,
+          "count": 2
+        },
+        {
+          "x": 0.52,
+          "y": 0.62,
+          "r": 0.045,
+          "count": 2
+        }
+      ],
+      "gloamwood": []
+    },
+    "leashRadius": 0.12,
+    "speedMeters": 22,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical"
+  },
+  {
+    "type": "catacomb_acolyte",
+    "name": "Catacomb Acolyte",
+    "icon": "🕯️",
+    "level": 3,
+    "maxHp": 83,
+    "attack": 8.1,
+    "armor": 4.4,
+    "xp": 105,
+    "gold": 24,
+    "temper": "aggressive",
+    "radius": 0.018,
+    "respawn": 30,
+    "zones": ["sunken_catacombs"],
+    "drops": [
+      {
+        "item": "grave_steel",
+        "chance": 0.5,
+        "qty": 1
+      },
+      {
+        "item": "mossbound_2_hood",
+        "chance": 0.01,
+        "qty": 1
+      },
+      {
+        "item": "rootbound_amulet",
+        "chance": 0.025,
+        "qty": 1
+      }
+    ],
+    "spawnAreas": {
+      "sunken_catacombs": [
+        {
+          "x": 0.46,
+          "y": 0.5,
+          "r": 0.04,
+          "count": 2
+        },
+        {
+          "x": 0.54,
+          "y": 0.38,
+          "r": 0.04,
+          "count": 2
+        }
+      ],
+      "gloamwood": []
+    },
+    "leashRadius": 0.11,
+    "ranged": true,
+    "attackRange": 0.2,
+    "speedMeters": 22,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "caster"
+  },
+  {
+    "type": "catacomb_guardian",
+    "name": "Catacomb Guardian",
+    "icon": "👹",
+    "level": 4,
+    "maxHp": 143,
+    "attack": 10.6,
+    "armor": 6.8,
+    "xp": 210,
+    "gold": 55,
+    "temper": "aggressive",
+    "radius": 0.024,
+    "respawn": 30,
+    "zones": ["sunken_catacombs"],
+    "drops": [
+      {
+        "item": "gloam_4_weapon",
+        "chance": 0.12,
+        "qty": 1
+      },
+      {
+        "item": "mossbound_2_hood",
+        "chance": 0.01,
+        "qty": 1
+      }
+    ],
+    "spawnAreas": {
+      "sunken_catacombs": [
+        {
+          "x": 0.5,
+          "y": 0.22,
+          "r": 0.035,
+          "count": 1
+        }
+      ],
+      "gloamwood": []
+    },
+    "leashRadius": 0.13,
+    "leader": true,
+    "speedMeters": 22,
+    "aggroRangeMeters": 50,
+    "faction": "undead",
+    "behaviorProfile": "elite"
+  },
+  {
+    "type": "risen_guardian",
+    "name": "Risen Guardian",
+    "icon": "💀",
+    "level": 8,
+    "maxHp": 228,
+    "attack": 16.5,
+    "armor": 11.3,
+    "xp": 210,
+    "gold": 55,
+    "temper": "aggressive",
+    "radius": 0.021,
+    "respawn": 30,
+    "zones": ["ashen_wastes"],
+    "drops": [
+      {
+        "item": "grave_steel",
+        "chance": 0.45,
+        "qty": 1
+      },
+      {
+        "item": "ashfall_plate",
+        "chance": 0.025,
+        "qty": 1
+      },
+      {
+        "item": "citadel_helm",
+        "chance": 0.012,
+        "qty": 1
+      }
+    ],
+    "spawnAreas": {
+      "ashen_wastes": [
+        {
+          "x": 0.5,
+          "y": 0.018,
+          "r": 0.012,
+          "count": 4
+        },
+        {
+          "x": 0.38,
+          "y": 0.42,
+          "r": 0.08,
+          "count": 3
+        },
+        {
+          "x": 0.62,
+          "y": 0.46,
+          "r": 0.08,
+          "count": 3
+        }
+      ],
+      "gloamwood": []
+    },
+    "leashRadius": 0.14,
+    "speedMeters": 22,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical"
+  },
+  {
+    "type": "ashen_hyena",
+    "name": "Ashen Hyena",
+    "icon": "🐕",
+    "level": 2,
+    "maxHp": 68,
+    "attack": 6.2,
+    "armor": 3.4,
+    "xp": 38,
+    "gold": 8,
+    "temper": "aggressive",
+    "radius": 0.016,
+    "respawn": 10,
+    "zones": ["gloamwood", "marches_of_dawn"],
+    "drops": [
+      {
+        "item": "wolf_fang",
+        "chance": 0.45,
+        "qty": 1
+      },
+      {
+        "item": "rootcall_1_weapon",
+        "chance": 0.006,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.08,
+    "spawnAreas": {
+      "gloamwood": [
+        {
+          "id": "hyena-gate",
+          "x": 0.22,
+          "y": 0.52,
+          "r": 0.05,
+          "count": 8
+        },
+        {
+          "id": "hyena-road",
+          "x": 0.38,
+          "y": 0.58,
+          "r": 0.055,
+          "count": 8
+        }
+      ],
+      "marches_of_dawn": [
+        {
+          "id": "hyena-west",
+          "x": 0.25,
+          "y": 0.55,
+          "r": 0.07,
+          "count": 8
+        }
+      ]
+    },
+    "speedMeters": 22,
+    "behaviorProfile": "pack",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "dreadstalker",
+    "name": "Dreadstalker",
+    "icon": "🐺",
+    "level": 9,
+    "maxHp": 245,
+    "attack": 18.2,
+    "armor": 12.4,
+    "xp": 245,
+    "gold": 42,
+    "temper": "aggressive",
+    "radius": 0.02,
+    "respawn": 20,
+    "zones": ["ashen_wastes"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.35,
+        "qty": 1
+      },
+      {
+        "item": "dawnroot_12_weapon",
+        "chance": 0.01,
+        "qty": 1
+      },
+      {
+        "item": "veilglass_prism",
+        "chance": 0.003,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.12,
+    "spawnAreas": {
+      "ashen_wastes": [
+        {
+          "id": "stalker-east",
+          "x": 0.72,
+          "y": 0.3,
+          "r": 0.09,
+          "count": 7
+        },
+        {
+          "id": "stalker-south",
+          "x": 0.55,
+          "y": 0.72,
+          "r": 0.09,
+          "count": 7
+        }
+      ]
+    },
+    "speedMeters": 22,
+    "behaviorProfile": "tactical",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "veilbound_howler",
+    "name": "Veilbound Howler",
+    "icon": "🐺",
+    "level": 11,
+    "maxHp": 300,
+    "attack": 21.5,
+    "armor": 15,
+    "xp": 320,
+    "gold": 48,
+    "temper": "aggressive",
+    "radius": 0.022,
+    "respawn": 25,
+    "zones": ["ashen_wastes"],
+    "drops": [
+      {
+        "item": "dawnroot_12_weapon",
+        "chance": 0.012,
+        "qty": 1
+      },
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.4,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.12,
+    "spawnAreas": {
+      "ashen_wastes": [
+        {
+          "id": "howler-north",
+          "x": 0.3,
+          "y": 0.3,
+          "r": 0.09,
+          "count": 7
+        },
+        {
+          "id": "howler-west",
+          "x": 0.3,
+          "y": 0.7,
+          "r": 0.09,
+          "count": 7
+        }
+      ]
+    },
+    "speedMeters": 22,
+    "behaviorProfile": "tactical",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "ashbound_executioner",
+    "name": "Ashbound Executioner",
+    "icon": "💀",
+    "level": 12,
+    "maxHp": 355,
+    "attack": 24,
+    "armor": 17,
+    "xp": 380,
+    "gold": 55,
+    "temper": "aggressive",
+    "radius": 0.023,
+    "respawn": 28,
+    "zones": ["ashen_wastes", "hollow_expanse"],
+    "drops": [
+      {
+        "item": "citadel_rapier",
+        "chance": 0.009,
+        "qty": 1
+      },
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.5,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "ashen_wastes": [
+        {
+          "id": "executioner-east",
+          "x": 0.7,
+          "y": 0.48,
+          "r": 0.08,
+          "count": 6
+        },
+        {
+          "id": "executioner-south",
+          "x": 0.52,
+          "y": 0.82,
+          "r": 0.08,
+          "count": 6
+        }
+      ],
+      "hollow_expanse": [
+        {
+          "id": "ashbound_executioner_hollow_0",
+          "x": 0.3,
+          "y": 0.5,
+          "r": 0.08,
+          "count": 8
+        },
+        {
+          "id": "ashbound_executioner_hollow_1",
+          "x": 0.68,
+          "y": 0.38,
+          "r": 0.08,
+          "count": 7
+        }
+      ]
+    },
+    "speedMeters": 18,
+    "behaviorProfile": "tactical",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "veilscarred_arcanist",
+    "name": "Veilscarred Arcanist",
+    "icon": "🔮",
+    "level": 13,
+    "maxHp": 320,
+    "attack": 28,
+    "armor": 14,
+    "xp": 450,
+    "gold": 62,
+    "temper": "aggressive",
+    "ranged": true,
+    "attackRangeMeters": 32,
+    "radius": 0.022,
+    "respawn": 30,
+    "zones": ["ashen_wastes", "hollow_expanse"],
+    "drops": [
+      {
+        "item": "dreadsilver_rapier",
+        "chance": 0.006,
+        "qty": 1
+      },
+      {
+        "item": "star_iron_ore",
+        "chance": 0.55,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "ashen_wastes": [
+        {
+          "id": "arcanist-north-east",
+          "x": 0.78,
+          "y": 0.25,
+          "r": 0.08,
+          "count": 6
+        },
+        {
+          "id": "arcanist-center",
+          "x": 0.5,
+          "y": 0.42,
+          "r": 0.07,
+          "count": 5
+        }
+      ],
+      "hollow_expanse": [
+        {
+          "id": "veilscarred_arcanist_hollow_0",
+          "x": 0.3,
+          "y": 0.5,
+          "r": 0.08,
+          "count": 8
+        },
+        {
+          "id": "veilscarred_arcanist_hollow_1",
+          "x": 0.68,
+          "y": 0.38,
+          "r": 0.08,
+          "count": 7
+        }
+      ]
+    },
+    "speedMeters": 16,
+    "behaviorProfile": "caster",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "dreadfang_alpha",
+    "rare": true,
+    "name": "Dreadfang Alpha",
+    "icon": "🐺",
+    "level": 14,
+    "maxHp": 430,
+    "attack": 31,
+    "armor": 19,
+    "xp": 540,
+    "gold": 75,
+    "temper": "aggressive",
+    "radius": 0.024,
+    "respawn": 600,
+    "zones": ["ashen_wastes"],
+    "drops": [
+      {
+        "item": "dreadsilver_rapier",
+        "chance": 0.01,
+        "qty": 1
+      },
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.4,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.13,
+    "spawnAreas": {
+      "ashen_wastes": [
+        {
+          "id": "alpha-south-east",
+          "x": 0.78,
+          "y": 0.72,
+          "r": 0.09,
+          "count": 5
+        }
+      ]
+    },
+    "speedMeters": 23,
+    "behaviorProfile": "elite",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "reach_thornstag",
+    "name": "Thornback Stag",
+    "icon": "🦌",
+    "level": 6,
+    "maxHp": 175,
+    "attack": 13,
+    "armor": 8,
+    "xp": 125,
+    "gold": 28,
+    "temper": "neutral",
+    "radius": 0.02,
+    "respawn": 18,
+    "zones": ["eastern_reach"],
+    "drops": [
+      {
+        "item": "wolf_fang",
+        "chance": 0.35,
+        "qty": 1
+      },
+      {
+        "item": "star_iron_ore",
+        "chance": 0.05,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.12,
+    "spawnAreas": {
+      "eastern_reach": [
+        {
+          "id": "stag-west",
+          "x": 0.28,
+          "y": 0.3,
+          "r": 0.09,
+          "count": 8
+        },
+        {
+          "id": "stag-east",
+          "x": 0.76,
+          "y": 0.68,
+          "r": 0.09,
+          "count": 8
+        }
+      ]
+    },
+    "behaviorProfile": "territorial",
+    "aggroRangeMeters": 0
+  },
+  {
+    "type": "reach_roadbandit",
+    "name": "Roadbandit",
+    "icon": "🗡️",
+    "level": 7,
+    "maxHp": 205,
+    "attack": 15,
+    "armor": 9,
+    "xp": 155,
+    "gold": 38,
+    "temper": "aggressive",
+    "radius": 0.021,
+    "respawn": 20,
+    "zones": ["eastern_reach"],
+    "drops": [
+      {
+        "item": "ashbound_thread",
+        "chance": 0.18,
+        "qty": 1
+      },
+      {
+        "item": "iron_ore",
+        "chance": 0.25,
+        "qty": 1
+      },
+      {
+        "item": "gloamhide_boots",
+        "chance": 0.025,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "eastern_reach": [
+        {
+          "id": "bandit-road",
+          "x": 0.43,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "bandit-watch",
+          "x": 0.72,
+          "y": 0.5,
+          "r": 0.06,
+          "count": 6
+        }
+      ]
+    },
+    "leader": true,
+    "speedMeters": 19,
+    "faction": "raiders",
+    "behaviorProfile": "elite",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "reach_mirewing",
+    "name": "Mirewing Harrier",
+    "icon": "🦅",
+    "level": 8,
+    "maxHp": 190,
+    "attack": 18,
+    "armor": 7,
+    "xp": 180,
+    "gold": 42,
+    "temper": "aggressive",
+    "ranged": true,
+    "attackRangeMeters": 28,
+    "radius": 0.02,
+    "respawn": 22,
+    "zones": ["eastern_reach"],
+    "drops": [
+      {
+        "item": "silver_ore",
+        "chance": 0.2,
+        "qty": 1
+      },
+      {
+        "item": "star_iron_ore",
+        "chance": 0.08,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.11,
+    "spawnAreas": {
+      "eastern_reach": [
+        {
+          "id": "harrier-river",
+          "x": 0.68,
+          "y": 0.32,
+          "r": 0.08,
+          "count": 6
+        },
+        {
+          "id": "harrier-south",
+          "x": 0.58,
+          "y": 0.76,
+          "r": 0.07,
+          "count": 6
+        }
+      ]
+    },
+    "speedMeters": 15,
+    "behaviorProfile": "caster",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "eastwatch_colossus",
+    "rare": true,
+    "name": "Eastwatch Colossus",
+    "icon": "🪨",
+    "level": 9,
+    "maxHp": 620,
+    "attack": 29,
+    "armor": 18,
+    "xp": 650,
+    "gold": 120,
+    "temper": "aggressive",
+    "radius": 0.028,
+    "respawn": 600,
+    "zones": ["eastern_reach"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.55,
+        "qty": 1
+      },
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.12,
+        "qty": 1
+      },
+      {
+        "item": "veilglass_prism",
+        "chance": 0.03,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.08,
+    "spawnAreas": {
+      "eastern_reach": [
+        {
+          "id": "colossus-eastwatch",
+          "x": 0.72,
+          "y": 0.5,
+          "r": 0.045,
+          "count": 1
+        }
+      ]
+    },
+    "leader": true,
+    "speedMeters": 12,
+    "elite": true,
+    "faction": "apex",
+    "behaviorProfile": "elite",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "kingdom_hollow_knight",
+    "name": "Hollow Knight",
+    "icon": "🛡️",
+    "level": 9,
+    "maxHp": 300,
+    "attack": 23,
+    "armor": 16,
+    "xp": 280,
+    "gold": 58,
+    "temper": "aggressive",
+    "radius": 0.022,
+    "respawn": 24,
+    "zones": ["old_kingdom", "hollow_expanse"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.22,
+        "qty": 1
+      },
+      {
+        "item": "grave_steel",
+        "chance": 0.1,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "old_kingdom": [
+        {
+          "id": "knight-royal-road",
+          "x": 0.3,
+          "y": 0.48,
+          "r": 0.08,
+          "count": 8
+        },
+        {
+          "id": "knight-ruins",
+          "x": 0.62,
+          "y": 0.68,
+          "r": 0.08,
+          "count": 7
+        }
+      ],
+      "hollow_expanse": [
+        {
+          "id": "kingdom_hollow_knight_hollow_0",
+          "x": 0.3,
+          "y": 0.5,
+          "r": 0.08,
+          "count": 8
+        },
+        {
+          "id": "kingdom_hollow_knight_hollow_1",
+          "x": 0.68,
+          "y": 0.38,
+          "r": 0.08,
+          "count": 7
+        }
+      ]
+    },
+    "behaviorProfile": "tactical",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "kingdom_crownwraith",
+    "name": "Crown Wraith",
+    "icon": "👑",
+    "level": 10,
+    "maxHp": 260,
+    "attack": 27,
+    "armor": 11,
+    "xp": 320,
+    "gold": 65,
+    "temper": "aggressive",
+    "ranged": true,
+    "attackRangeMeters": 30,
+    "radius": 0.021,
+    "respawn": 26,
+    "zones": ["old_kingdom", "hollow_expanse"],
+    "drops": [
+      {
+        "item": "silver_ore",
+        "chance": 0.28,
+        "qty": 1
+      },
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.08,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "old_kingdom": [
+        {
+          "id": "wraith-crown",
+          "x": 0.48,
+          "y": 0.28,
+          "r": 0.07,
+          "count": 6
+        },
+        {
+          "id": "wraith-grave",
+          "x": 0.78,
+          "y": 0.7,
+          "r": 0.07,
+          "count": 6
+        }
+      ],
+      "hollow_expanse": [
+        {
+          "id": "kingdom_crownwraith_hollow_0",
+          "x": 0.3,
+          "y": 0.5,
+          "r": 0.08,
+          "count": 8
+        },
+        {
+          "id": "kingdom_crownwraith_hollow_1",
+          "x": 0.68,
+          "y": 0.38,
+          "r": 0.08,
+          "count": 7
+        }
+      ]
+    },
+    "speedMeters": 15,
+    "behaviorProfile": "caster",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "kingdom_basilisk",
+    "name": "Ashen Basilisk",
+    "icon": "🐍",
+    "level": 11,
+    "maxHp": 390,
+    "attack": 30,
+    "armor": 15,
+    "xp": 390,
+    "gold": 78,
+    "temper": "aggressive",
+    "radius": 0.024,
+    "respawn": 28,
+    "zones": ["old_kingdom", "hollow_expanse"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.35,
+        "qty": 1
+      },
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.15,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.13,
+    "spawnAreas": {
+      "old_kingdom": [
+        {
+          "id": "basilisk-east",
+          "x": 0.78,
+          "y": 0.32,
+          "r": 0.08,
+          "count": 6
+        },
+        {
+          "id": "basilisk-south",
+          "x": 0.56,
+          "y": 0.78,
+          "r": 0.07,
+          "count": 6
+        }
+      ],
+      "hollow_expanse": [
+        {
+          "id": "kingdom_basilisk_hollow_0",
+          "x": 0.3,
+          "y": 0.5,
+          "r": 0.08,
+          "count": 8
+        },
+        {
+          "id": "kingdom_basilisk_hollow_1",
+          "x": 0.68,
+          "y": 0.38,
+          "r": 0.08,
+          "count": 7
+        }
+      ]
+    },
+    "speedMeters": 18,
+    "behaviorProfile": "tactical",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "kingdom_revenant",
+    "rare": true,
+    "name": "Kingless Revenant",
+    "icon": "💀",
+    "level": 12,
+    "maxHp": 780,
+    "attack": 36,
+    "armor": 20,
+    "xp": 900,
+    "gold": 180,
+    "temper": "aggressive",
+    "radius": 0.029,
+    "respawn": 600,
+    "zones": ["old_kingdom"],
+    "drops": [
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.65,
+        "qty": 1
+      },
+      {
+        "item": "veilglass_prism",
+        "chance": 0.05,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.07,
+    "spawnAreas": {
+      "old_kingdom": [
+        {
+          "id": "revenant-ruined-crown",
+          "x": 0.48,
+          "y": 0.48,
+          "r": 0.04,
+          "count": 1
+        }
+      ]
+    },
+    "leader": true,
+    "speedMeters": 11,
+    "elite": true,
+    "faction": "undead",
+    "behaviorProfile": "elite",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "citadel_breachwarden",
+    "name": "Citadel Breachwarden",
+    "icon": "🛡️",
+    "level": 42,
+    "maxHp": 18000,
+    "attack": 180,
+    "armor": 95,
+    "xp": 3200,
+    "gold": 650,
+    "temper": "aggressive",
+    "rare": true,
+    "elite": true,
+    "leader": true,
+    "radius": 0.026,
+    "respawn": 900,
+    "zones": ["black_citadel", "hollow_expanse"],
+    "drops": [
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.75,
+        "qty": 2
+      },
+      {
+        "item": "veilglass_prism",
+        "chance": 0.12,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.08,
+    "spawnAreas": {
+      "black_citadel": [
+        {
+          "id": "citadel-breachwarden",
+          "x": 0.76,
+          "y": 0.72,
+          "r": 0.08,
+          "count": 1
+        }
+      ],
+      "hollow_expanse": [
+        {
+          "id": "hollow-breachwarden",
+          "x": 0.84,
+          "y": 0.3,
+          "r": 0.08,
+          "count": 1
+        }
+      ]
+    },
+    "leashRadius": 0.12,
+    "speedMeters": 12,
+    "attackRangeMeters": 18,
+    "faction": "undead",
+    "behaviorProfile": "elite",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "hollow_herald",
+    "name": "Hollow Herald",
+    "icon": "👁️",
+    "level": 48,
+    "maxHp": 22000,
+    "attack": 205,
+    "armor": 110,
+    "xp": 4200,
+    "gold": 850,
+    "temper": "aggressive",
+    "rare": true,
+    "elite": true,
+    "leader": true,
+    "radius": 0.027,
+    "respawn": 1200,
+    "zones": ["hollow_expanse"],
+    "drops": [
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.85,
+        "qty": 2
+      },
+      {
+        "item": "veilglass_prism",
+        "chance": 0.18,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.1,
+    "spawnAreas": {
+      "hollow_expanse": [
+        {
+          "id": "hollow-herald-lair",
+          "x": 0.7,
+          "y": 0.28,
+          "r": 0.09,
+          "count": 1
+        }
+      ]
+    },
+    "leashRadius": 0.13,
+    "speedMeters": 13,
+    "attackRangeMeters": 18,
+    "faction": "veilborn",
+    "behaviorProfile": "elite",
+    "aggroRangeMeters": 50
+  },
+  {
+    "type": "fen_stalker",
+    "name": "Fen Stalker",
+    "icon": "🐊",
+    "level": 10,
+    "maxHp": 400,
+    "attack": 27,
+    "armor": 17,
+    "xp": 460,
+    "gold": 88,
+    "temper": "aggressive",
+    "zones": ["briarfen"],
+    "drops": [
+      {
+        "item": "grave_steel",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "briarfen": [
+        {
+          "id": "fen_stalker-camp-a",
+          "x": 0.28,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "fen_stalker-camp-b",
+          "x": 0.7,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 120
+  },
+  {
+    "type": "thorn_hag",
+    "name": "Thorn Hag",
+    "icon": "🧙",
+    "level": 13,
+    "maxHp": 484,
+    "attack": 32.400000000000006,
+    "armor": 20.6,
+    "xp": 574,
+    "gold": 109,
+    "temper": "aggressive",
+    "zones": ["briarfen"],
+    "drops": [
+      {
+        "item": "grave_steel",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "briarfen": [
+        {
+          "id": "thorn_hag-camp-a",
+          "x": 0.4,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "thorn_hag-camp-b",
+          "x": 0.6399999999999999,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 120
+  },
+  {
+    "type": "marshbone_hound",
+    "name": "Marshbone Hound",
+    "icon": "🐺",
+    "level": 11,
+    "maxHp": 428,
+    "attack": 28.8,
+    "armor": 18.2,
+    "xp": 498,
+    "gold": 95,
+    "temper": "aggressive",
+    "zones": ["briarfen"],
+    "drops": [
+      {
+        "item": "grave_steel",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "briarfen": [
+        {
+          "id": "marshbone_hound-camp-a",
+          "x": 0.52,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "marshbone_hound-camp-b",
+          "x": 0.58,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "pack",
+    "respawn": 120
+  },
+  {
+    "type": "fen_revenant",
+    "name": "Fen Revenant",
+    "icon": "💀",
+    "level": 15,
+    "maxHp": 540,
+    "attack": 36,
+    "armor": 23,
+    "xp": 650,
+    "gold": 123,
+    "temper": "aggressive",
+    "zones": ["briarfen"],
+    "drops": [
+      {
+        "item": "grave_steel",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "briarfen": [
+        {
+          "id": "fen_revenant-camp-a",
+          "x": 0.64,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "fen_revenant-camp-b",
+          "x": 0.52,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "rare": true,
+    "behaviorProfile": "elite",
+    "respawn": 180
+  },
+  {
+    "type": "sunscar_raider",
+    "name": "Sunscar Raider",
+    "icon": "🏹",
+    "level": 19,
+    "maxHp": 652,
+    "attack": 43.2,
+    "armor": 27.8,
+    "xp": 802,
+    "gold": 151,
+    "temper": "aggressive",
+    "zones": ["sunscar_steppe"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "sunscar_steppe": [
+        {
+          "id": "sunscar_raider-camp-a",
+          "x": 0.28,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "sunscar_raider-camp-b",
+          "x": 0.7,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 120
+  },
+  {
+    "type": "redmaw_hyena",
+    "name": "Redmaw Hyena",
+    "icon": "🐕",
+    "level": 18,
+    "maxHp": 624,
+    "attack": 41.4,
+    "armor": 26.599999999999998,
+    "xp": 764,
+    "gold": 144,
+    "temper": "aggressive",
+    "zones": ["sunscar_steppe"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "sunscar_steppe": [
+        {
+          "id": "redmaw_hyena-camp-a",
+          "x": 0.4,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "redmaw_hyena-camp-b",
+          "x": 0.6399999999999999,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "pack",
+    "respawn": 120
+  },
+  {
+    "type": "ashwing_vulture",
+    "name": "Ashwing Vulture",
+    "icon": "🦅",
+    "level": 20,
+    "maxHp": 680,
+    "attack": 45,
+    "armor": 29,
+    "xp": 840,
+    "gold": 158,
+    "temper": "aggressive",
+    "zones": ["sunscar_steppe"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "sunscar_steppe": [
+        {
+          "id": "ashwing_vulture-camp-a",
+          "x": 0.52,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "ashwing_vulture-camp-b",
+          "x": 0.58,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "pack",
+    "respawn": 180
+  },
+  {
+    "type": "steppe_colossus",
+    "name": "Steppe Colossus",
+    "icon": "🗿",
+    "level": 24,
+    "maxHp": 792,
+    "attack": 52.2,
+    "armor": 33.8,
+    "xp": 992,
+    "gold": 186,
+    "temper": "aggressive",
+    "zones": ["sunscar_steppe"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "sunscar_steppe": [
+        {
+          "id": "steppe_colossus-camp-a",
+          "x": 0.64,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "steppe_colossus-camp-b",
+          "x": 0.52,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "rare": true,
+    "behaviorProfile": "elite",
+    "respawn": 180
+  },
+  {
+    "type": "crownfall_revenant",
+    "name": "Crownfall Revenant",
+    "icon": "👑",
+    "level": 31,
+    "maxHp": 988,
+    "attack": 64.80000000000001,
+    "armor": 42.199999999999996,
+    "xp": 1258,
+    "gold": 235,
+    "temper": "aggressive",
+    "zones": ["crownfall_expanse"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "crownfall_expanse": [
+        {
+          "id": "crownfall_revenant-camp-a",
+          "x": 0.28,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "crownfall_revenant-camp-b",
+          "x": 0.7,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "rare": true,
+    "behaviorProfile": "elite",
+    "respawn": 240
+  },
+  {
+    "type": "royal_boneguard",
+    "name": "Royal Boneguard",
+    "icon": "💀",
+    "level": 29,
+    "maxHp": 932,
+    "attack": 61.2,
+    "armor": 39.8,
+    "xp": 1182,
+    "gold": 221,
+    "temper": "aggressive",
+    "zones": ["crownfall_expanse"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "crownfall_expanse": [
+        {
+          "id": "royal_boneguard-camp-a",
+          "x": 0.4,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "royal_boneguard-camp-b",
+          "x": 0.6399999999999999,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 180
+  },
+  {
+    "type": "ashbound_reclaimer",
+    "name": "Ashbound Reclaimer",
+    "icon": "🔥",
+    "level": 34,
+    "maxHp": 1072,
+    "attack": 70.2,
+    "armor": 45.8,
+    "xp": 1372,
+    "gold": 256,
+    "temper": "aggressive",
+    "zones": ["crownfall_expanse"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "crownfall_expanse": [
+        {
+          "id": "ashbound_reclaimer-camp-a",
+          "x": 0.52,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "ashbound_reclaimer-camp-b",
+          "x": 0.58,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 240
+  },
+  {
+    "type": "crownless_witch",
+    "name": "Crownless Witch",
+    "icon": "🧙",
+    "level": 36,
+    "maxHp": 1128,
+    "attack": 73.8,
+    "armor": 48.199999999999996,
+    "xp": 1448,
+    "gold": 270,
+    "temper": "aggressive",
+    "zones": ["crownfall_expanse"],
+    "drops": [
+      {
+        "item": "blacksteel_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "crownfall_expanse": [
+        {
+          "id": "crownless_witch-camp-a",
+          "x": 0.64,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "crownless_witch-camp-b",
+          "x": 0.52,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 18,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 240
+  },
+  {
+    "type": "veilscar_raider",
+    "name": "Veilscar Raider",
+    "icon": "⚔️",
+    "level": 41,
+    "maxHp": 1268,
+    "attack": 82.8,
+    "armor": 54.199999999999996,
+    "xp": 1638,
+    "gold": 305,
+    "temper": "aggressive",
+    "zones": ["veilscar_highlands"],
+    "drops": [
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "veilscar_highlands": [
+        {
+          "id": "veilscar_raider-camp-a",
+          "x": 0.28,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "veilscar_raider-camp-b",
+          "x": 0.7,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 21,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 300
+  },
+  {
+    "type": "aether_wraith",
+    "name": "Aether Wraith",
+    "icon": "👻",
+    "level": 43,
+    "maxHp": 1324,
+    "attack": 86.4,
+    "armor": 56.6,
+    "xp": 1714,
+    "gold": 319,
+    "temper": "aggressive",
+    "zones": ["veilscar_highlands"],
+    "drops": [
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "veilscar_highlands": [
+        {
+          "id": "aether_wraith-camp-a",
+          "x": 0.4,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "aether_wraith-camp-b",
+          "x": 0.6399999999999999,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 21,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 300
+  },
+  {
+    "type": "highland_gargoyle",
+    "name": "Highland Gargoyle",
+    "icon": "🗿",
+    "level": 46,
+    "maxHp": 1408,
+    "attack": 91.8,
+    "armor": 60.199999999999996,
+    "xp": 1828,
+    "gold": 340,
+    "temper": "aggressive",
+    "zones": ["veilscar_highlands"],
+    "drops": [
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "veilscar_highlands": [
+        {
+          "id": "highland_gargoyle-camp-a",
+          "x": 0.52,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "highland_gargoyle-camp-b",
+          "x": 0.58,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 21,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "rare": true,
+    "behaviorProfile": "elite",
+    "respawn": 300
+  },
+  {
+    "type": "stormbound_arcanist",
+    "name": "Stormbound Arcanist",
+    "icon": "🧙",
+    "level": 49,
+    "maxHp": 1492,
+    "attack": 97.2,
+    "armor": 63.8,
+    "xp": 1942,
+    "gold": 361,
+    "temper": "aggressive",
+    "zones": ["veilscar_highlands"],
+    "drops": [
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "veilscar_highlands": [
+        {
+          "id": "stormbound_arcanist-camp-a",
+          "x": 0.64,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "stormbound_arcanist-camp-b",
+          "x": 0.52,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 21,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 300
+  },
+  {
+    "type": "nightveil_drowned",
+    "name": "Nightveil Drowned",
+    "icon": "🧟",
+    "level": 51,
+    "maxHp": 1548,
+    "attack": 100.8,
+    "armor": 66.19999999999999,
+    "xp": 2018,
+    "gold": 375,
+    "temper": "aggressive",
+    "zones": ["nightveil_coast"],
+    "drops": [
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "nightveil_coast": [
+        {
+          "id": "nightveil_drowned-camp-a",
+          "x": 0.28,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "nightveil_drowned-camp-b",
+          "x": 0.7,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 21,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 360
+  },
+  {
+    "type": "nightveil_reaver",
+    "name": "Nightveil Reaver",
+    "icon": "🗡️",
+    "level": 54,
+    "maxHp": 1632,
+    "attack": 106.2,
+    "armor": 69.8,
+    "xp": 2132,
+    "gold": 396,
+    "temper": "aggressive",
+    "zones": ["nightveil_coast"],
+    "drops": [
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "nightveil_coast": [
+        {
+          "id": "nightveil_reaver-camp-a",
+          "x": 0.4,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "nightveil_reaver-camp-b",
+          "x": 0.6399999999999999,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 21,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 360
+  },
+  {
+    "type": "hollowtide_witch",
+    "name": "Hollowtide Witch",
+    "icon": "🧙",
+    "level": 57,
+    "maxHp": 1716,
+    "attack": 111.60000000000001,
+    "armor": 73.39999999999999,
+    "xp": 2246,
+    "gold": 417,
+    "temper": "aggressive",
+    "zones": ["nightveil_coast"],
+    "drops": [
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "nightveil_coast": [
+        {
+          "id": "hollowtide_witch-camp-a",
+          "x": 0.52,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "hollowtide_witch-camp-b",
+          "x": 0.58,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 21,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "behaviorProfile": "tactical",
+    "respawn": 360
+  },
+  {
+    "type": "nightveil_behemoth",
+    "name": "Nightveil Behemoth",
+    "icon": "🐋",
+    "level": 60,
+    "maxHp": 1800,
+    "attack": 117,
+    "armor": 77,
+    "xp": 2360,
+    "gold": 438,
+    "temper": "aggressive",
+    "zones": ["nightveil_coast"],
+    "drops": [
+      {
+        "item": "dreadsilver_ore",
+        "chance": 0.35,
+        "qty": 1
+      }
+    ],
+    "wanderRadius": 0.09,
+    "spawnAreas": {
+      "nightveil_coast": [
+        {
+          "id": "nightveil_behemoth-camp-a",
+          "x": 0.64,
+          "y": 0.5,
+          "r": 0.07,
+          "count": 7
+        },
+        {
+          "id": "nightveil_behemoth-camp-b",
+          "x": 0.52,
+          "y": 0.72,
+          "r": 0.065,
+          "count": 7
+        }
+      ]
+    },
+    "leashRadius": 0.15,
+    "speedMeters": 21,
+    "attackRangeMeters": 18,
+    "aggroRangeMeters": 50,
+    "rare": true,
+    "behaviorProfile": "elite",
+    "respawn": 600
+  }
+]

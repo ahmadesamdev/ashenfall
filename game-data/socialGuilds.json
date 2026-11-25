@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "partySize": 5,
+  "guildRanks": ["initiate", "member", "veteran", "officer", "leader"],
+  "guildPerks": [
+    "shared_bank",
+    "guild_reputation",
+    "guild_challenges",
+    "guild_achievements",
+    "guild_vendor"
+  ],
+  "rules": {
+    "offlineMembershipPersists": true,
+    "leaderSuccession": true,
+    "inviteExpiryMs": 120000,
+    "friendCap": 100,
+    "ignoreBlocksInvites": true
+  }
+}

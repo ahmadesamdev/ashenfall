@@ -1,0 +1,81 @@
+{
+  "territorial": {
+    "factionMode": "wilds",
+    "socialAssist": false,
+    "assistRangeMeters": 0,
+    "reinforcementCost": 1,
+    "fleeAtHp": 0.15,
+    "kite": false,
+    "maxFleeCycles": 2
+  },
+  "pack": {
+    "factionMode": "pack",
+    "socialAssist": true,
+    "assistRangeMeters": 45,
+    "reinforcementCost": 1,
+    "fleeAtHp": 0.14,
+    "kite": false,
+    "kiteCycles": 0,
+    "commitMs": 0,
+    "maxFleeCycles": 2
+  },
+  "tactical": {
+    "factionMode": "faction",
+    "socialAssist": true,
+    "assistRangeMeters": 55,
+    "reinforcementCost": 1,
+    "fleeAtHp": 0.1,
+    "kite": false,
+    "kiteCycles": 0,
+    "commitMs": 0,
+    "maxFleeCycles": 2
+  },
+  "caster": {
+    "factionMode": "faction",
+    "socialAssist": true,
+    "assistRangeMeters": 55,
+    "reinforcementCost": 1,
+    "fleeAtHp": 0.18,
+    "kite": true,
+    "preferredRangeFactor": 0.72,
+    "retreatRangeFactor": 0.48,
+    "kiteCycles": 2,
+    "kiteDurationMs": 1400,
+    "kiteCooldownMs": 1800,
+    "commitMs": 2200,
+    "maxFleeCycles": 2
+  },
+  "skirmisher": {
+    "factionMode": "faction",
+    "socialAssist": true,
+    "assistRangeMeters": 48,
+    "reinforcementCost": 1,
+    "fleeAtHp": 0.2,
+    "kite": true,
+    "preferredRangeFactor": 0.64,
+    "retreatRangeFactor": 0.42,
+    "kiteCycles": 1,
+    "kiteDurationMs": 1100,
+    "kiteCooldownMs": 1600,
+    "commitMs": 2400,
+    "maxFleeCycles": 2
+  },
+  "relentless": {
+    "factionMode": "faction",
+    "socialAssist": false,
+    "assistRangeMeters": 0,
+    "reinforcementCost": 2,
+    "fleeAtHp": 0,
+    "kite": false,
+    "maxFleeCycles": 0
+  },
+  "elite": {
+    "factionMode": "faction",
+    "socialAssist": true,
+    "assistRangeMeters": 65,
+    "reinforcementCost": 2,
+    "fleeAtHp": 0,
+    "kite": false,
+    "maxFleeCycles": 0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "phases": ["opening", "escalated", "final", "completed"],
+  "eventTypes": ["caravan", "expedition", "invasion", "defense", "anomaly"],
+  "rules": {
+    "singleGlobalActiveEvent": true,
+    "contributionWeightedRewards": true,
+    "phaseEscalation": true,
+    "mobCleanup": true,
+    "questIntegration": true
+  }
+}

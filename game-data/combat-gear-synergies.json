@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "rules": {
+    "minimumEquippedItems": 4,
+    "minimumAffinityScore": 5,
+    "affinityPerMatchingAffix": 1,
+    "itemLevelWeight": 0.25,
+    "maxAttunementBonus": 0.06,
+    "critResourceGain": 2,
+    "resourceGainPct": 6,
+    "cooldownRecoveryPct": 4
+  },
+  "builds": {
+    "grovekeeper": {
+      "classId": "warden",
+      "preferredStats": ["healing", "hotPower"],
+      "effects": {
+        "hotPower": 8,
+        "healing": 3
+      },
+      "abilityId": "rejuvenation",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "rootcaller": {
+      "classId": "warden",
+      "preferredStats": ["controlDuration", "haste"],
+      "effects": {
+        "controlDuration": 6,
+        "haste": 2
+      },
+      "abilityId": "root",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "thornwarden": {
+      "classId": "warden",
+      "preferredStats": ["damage", "crit"],
+      "effects": {
+        "damage": 3,
+        "crit": 2
+      },
+      "abilityId": "thorn_lash",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "sanctuary": {
+      "classId": "hierophant",
+      "preferredStats": ["healing", "hotPower"],
+      "effects": {
+        "healing": 4,
+        "hotPower": 6
+      },
+      "abilityId": "salvation",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "aegis": {
+      "classId": "hierophant",
+      "preferredStats": ["vitality", "willpower"],
+      "effects": {
+        "damageTaken": -2,
+        "barrierPower": 8
+      },
+      "abilityId": "sanctuary",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "battlepriest": {
+      "classId": "hierophant",
+      "preferredStats": ["damage", "crit"],
+      "effects": {
+        "damage": 3,
+        "crit": 2
+      },
+      "abilityId": "divine_word",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "fortress": {
+      "classId": "vanguard",
+      "preferredStats": ["vitality", "armor"],
+      "effects": {
+        "armorPct": 3,
+        "threat": 5
+      },
+      "abilityId": "shield_wall",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "warbreaker": {
+      "classId": "vanguard",
+      "preferredStats": ["strength", "haste"],
+      "effects": {
+        "damage": 3,
+        "haste": 2
+      },
+      "abilityId": "revenge",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "warden": {
+      "classId": "vanguard",
+      "preferredStats": ["vitality", "willpower"],
+      "effects": {
+        "armorPct": 2,
+        "controlDuration": 5,
+        "threat": 3
+      },
+      "abilityId": "shield_bash",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "marksman": {
+      "classId": "ranger",
+      "preferredStats": ["agility", "crit"],
+      "effects": {
+        "rangeDamage": 5,
+        "crit": 2
+      },
+      "abilityId": "hunter_mark",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "skirmisher": {
+      "classId": "ranger",
+      "preferredStats": ["agility", "haste"],
+      "effects": {
+        "haste": 3,
+        "damageTaken": -1
+      },
+      "abilityId": "evasive_step",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "stormarcher": {
+      "classId": "ranger",
+      "preferredStats": ["agility", "crit"],
+      "effects": {
+        "aoeDamage": 6,
+        "crit": 1
+      },
+      "abilityId": "volley",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "spellfire": {
+      "classId": "arcanist",
+      "preferredStats": ["intellect", "crit"],
+      "effects": {
+        "damage": 3,
+        "crit": 2
+      },
+      "abilityId": "arcane_surge",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "frostweaver": {
+      "classId": "arcanist",
+      "preferredStats": ["intellect", "haste"],
+      "effects": {
+        "controlDuration": 6,
+        "haste": 2
+      },
+      "abilityId": "frost_nova",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "aethermind": {
+      "classId": "arcanist",
+      "preferredStats": ["intellect", "willpower"],
+      "effects": {
+        "resourceCost": -4,
+        "haste": 2
+      },
+      "abilityId": "arcane_echo",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "crusader": {
+      "classId": "templar",
+      "preferredStats": ["strength", "crit"],
+      "effects": {
+        "damage": 3,
+        "crit": 2
+      },
+      "abilityId": "holy_strike",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "guardian": {
+      "classId": "templar",
+      "preferredStats": ["vitality", "armor"],
+      "effects": {
+        "armorPct": 3,
+        "maxHpPct": 2
+      },
+      "abilityId": "blessed_guard",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "redeemer": {
+      "classId": "templar",
+      "preferredStats": ["willpower", "healing"],
+      "effects": {
+        "healing": 4,
+        "damage": 2
+      },
+      "abilityId": "lay_on_hands",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "plaguecaller": {
+      "classId": "occultist",
+      "preferredStats": ["intellect", "dotDamage"],
+      "effects": {
+        "dotDamage": 8,
+        "debuffDuration": 4
+      },
+      "abilityId": "curse",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "soulreaper": {
+      "classId": "occultist",
+      "preferredStats": ["willpower", "crit"],
+      "effects": {
+        "damage": 3,
+        "healing": 2,
+        "crit": 2
+      },
+      "abilityId": "life_drain",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "voidcaller": {
+      "classId": "occultist",
+      "preferredStats": ["intellect", "haste"],
+      "effects": {
+        "damage": 4,
+        "haste": 2
+      },
+      "abilityId": "shadow_pact",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "berserker": {
+      "classId": "reaver",
+      "preferredStats": ["strength", "crit"],
+      "effects": {
+        "damage": 4,
+        "crit": 2
+      },
+      "abilityId": "bloodrush",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "bloodreaver": {
+      "classId": "reaver",
+      "preferredStats": ["strength", "vitality"],
+      "effects": {
+        "dotDamage": 7,
+        "maxHpPct": 2
+      },
+      "abilityId": "rend",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "warborn": {
+      "classId": "reaver",
+      "preferredStats": ["vitality", "strength"],
+      "effects": {
+        "damageTaken": -2,
+        "maxHpPct": 3
+      },
+      "abilityId": "whirlwind",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "assassin": {
+      "classId": "shadowblade",
+      "preferredStats": ["agility", "crit"],
+      "effects": {
+        "damage": 3,
+        "crit": 2
+      },
+      "abilityId": "ambush",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "saboteur": {
+      "classId": "shadowblade",
+      "preferredStats": ["agility", "haste"],
+      "effects": {
+        "dotDamage": 6,
+        "controlDuration": 4,
+        "haste": 2
+      },
+      "abilityId": "venom",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    },
+    "duelist": {
+      "classId": "shadowblade",
+      "preferredStats": ["agility", "damage"],
+      "effects": {
+        "haste": 3,
+        "damageTaken": -1
+      },
+      "abilityId": "shadow_step",
+      "abilityPowerPct": 6,
+      "resourceGainPct": 6,
+      "cooldownRecoveryPct": 4,
+      "critResourceGain": 2
+    }
+  }
+}

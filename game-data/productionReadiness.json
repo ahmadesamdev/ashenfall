@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "nodeMin": "22.5",
+  "simulationTickHz": 20,
+  "uiSnapshotHz": 10,
+  "motionStreamHz": 20,
+  "limits": {
+    "maxPartySize": 5,
+    "maxConnectionsPerProcess": 10000,
+    "commandsPerSecond": 30,
+    "statePlayersPerZone": 250,
+    "stateMobsPerSnapshot": 180
+  },
+  "gates": [
+    "typecheck",
+    "build",
+    "startup-integrity",
+    "current-release",
+    "runtime-hardening",
+    "authority-torture",
+    "persistence",
+    "combat-regression",
+    "gear-endgame",
+    "story-complete",
+    "world-narrative",
+    "pvp-hardening",
+    "economy-hardening",
+    "social-hardening"
+  ]
+}

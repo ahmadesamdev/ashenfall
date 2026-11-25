@@ -1,0 +1,1839 @@
+{
+  "version": 1,
+  "generatedFrom": "class-builds.json + abilities.json + enemies.json + dungeons.json",
+  "scoreSemantics": "Comparative build affinity, normalized within each class and encounter archetype; not literal DPS/HPS percentages.",
+  "encounterArchetypes": {
+    "tank_buster": {
+      "label": "Tank Buster",
+      "weights": {
+        "mitigation": 5,
+        "threat": 3,
+        "healing": 2,
+        "control": 1
+      }
+    },
+    "sustained": {
+      "label": "Sustained Pressure",
+      "weights": {
+        "sustain": 4,
+        "dot": 3,
+        "mitigation": 2,
+        "healing": 2,
+        "damage": 2
+      }
+    },
+    "add_pressure": {
+      "label": "Adds / AoE",
+      "weights": {
+        "aoe": 5,
+        "threat": 3,
+        "control": 3,
+        "healing": 2,
+        "damage": 2
+      }
+    },
+    "movement": {
+      "label": "Movement / Positioning",
+      "weights": {
+        "range": 4,
+        "mobility": 4,
+        "sustain": 2,
+        "damage": 2
+      }
+    },
+    "control": {
+      "label": "Interrupt / Control",
+      "weights": {
+        "control": 5,
+        "haste": 2,
+        "threat": 2,
+        "damage": 2
+      }
+    },
+    "execute": {
+      "label": "Burst / Execute",
+      "weights": {
+        "burst": 5,
+        "execute": 4,
+        "damage": 3,
+        "crit": 2
+      }
+    }
+  },
+  "bosses": [
+    {
+      "dungeonId": "sunken_catacombs",
+      "dungeonName": "Sunken Catacombs",
+      "enemyId": "hollow_saint",
+      "enemyName": "The Hollow Saint",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 3,
+      "execute": 1
+    },
+    {
+      "dungeonId": "sunken_catacombs_veteran",
+      "dungeonName": "Sunken Catacombs — Veteran",
+      "enemyId": "hollow_saint",
+      "enemyName": "The Hollow Saint",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 3,
+      "execute": 1
+    },
+    {
+      "dungeonId": "sunken_catacombs_heroic",
+      "dungeonName": "Sunken Catacombs — Heroic",
+      "enemyId": "hollow_saint",
+      "enemyName": "The Hollow Saint",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 3,
+      "execute": 1
+    },
+    {
+      "dungeonId": "sunken_catacombs_mythic",
+      "dungeonName": "Sunken Catacombs — Mythic",
+      "enemyId": "hollow_saint",
+      "enemyName": "The Hollow Saint",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 3,
+      "execute": 1
+    },
+    {
+      "dungeonId": "sunken_catacombs_apex",
+      "dungeonName": "Sunken Catacombs — Apex",
+      "enemyId": "hollow_saint",
+      "enemyName": "The Hollow Saint",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 3,
+      "execute": 1
+    },
+    {
+      "dungeonId": "black_citadel",
+      "dungeonName": "Black Citadel",
+      "enemyId": "hollow_saint",
+      "enemyName": "The Hollow Saint",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 3,
+      "execute": 1
+    },
+    {
+      "dungeonId": "black_citadel_veteran",
+      "dungeonName": "Black Citadel — Veteran",
+      "enemyId": "hollow_saint",
+      "enemyName": "The Hollow Saint",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 3,
+      "execute": 1
+    },
+    {
+      "dungeonId": "black_citadel_heroic",
+      "dungeonName": "Black Citadel — Heroic",
+      "enemyId": "hollow_saint",
+      "enemyName": "The Hollow Saint",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 3,
+      "execute": 1
+    },
+    {
+      "dungeonId": "black_citadel_mythic",
+      "dungeonName": "Black Citadel — Mythic",
+      "enemyId": "hollow_saint",
+      "enemyName": "The Hollow Saint",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 3,
+      "execute": 1
+    },
+    {
+      "dungeonId": "black_citadel_apex",
+      "dungeonName": "Black Citadel — Apex",
+      "enemyId": "hollow_saint",
+      "enemyName": "The Hollow Saint",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 3,
+      "execute": 1
+    },
+    {
+      "dungeonId": "dreadvault",
+      "dungeonName": "Dreadvault of the Black Citadel",
+      "enemyId": "vault_tyrant",
+      "enemyName": "The Vault Tyrant",
+      "counts": {
+        "tank_buster": 1,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 4
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "dreadvault_veteran",
+      "dungeonName": "Dreadvault of the Black Citadel — Veteran",
+      "enemyId": "vault_tyrant",
+      "enemyName": "The Vault Tyrant",
+      "counts": {
+        "tank_buster": 1,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 4
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "dreadvault_heroic",
+      "dungeonName": "Dreadvault of the Black Citadel — Heroic",
+      "enemyId": "vault_tyrant",
+      "enemyName": "The Vault Tyrant",
+      "counts": {
+        "tank_buster": 1,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 4
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "dreadvault_mythic",
+      "dungeonName": "Dreadvault of the Black Citadel — Mythic",
+      "enemyId": "vault_tyrant",
+      "enemyName": "The Vault Tyrant",
+      "counts": {
+        "tank_buster": 1,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 4
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "dreadvault_apex",
+      "dungeonName": "Dreadvault of the Black Citadel — Apex",
+      "enemyId": "vault_tyrant",
+      "enemyName": "The Vault Tyrant",
+      "counts": {
+        "tank_buster": 1,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 4
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "watcher_hollow",
+      "dungeonName": "Watcher Hollow",
+      "enemyId": "watcher_hollowwarden",
+      "enemyName": "The Hollow Warden",
+      "counts": {
+        "tank_buster": 1,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "watcher_hollow_veteran",
+      "dungeonName": "Watcher Hollow — Veteran",
+      "enemyId": "watcher_hollowwarden",
+      "enemyName": "The Hollow Warden",
+      "counts": {
+        "tank_buster": 1,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "watcher_hollow_heroic",
+      "dungeonName": "Watcher Hollow — Heroic",
+      "enemyId": "watcher_hollowwarden",
+      "enemyName": "The Hollow Warden",
+      "counts": {
+        "tank_buster": 1,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "watcher_hollow_mythic",
+      "dungeonName": "Watcher Hollow — Mythic",
+      "enemyId": "watcher_hollowwarden",
+      "enemyName": "The Hollow Warden",
+      "counts": {
+        "tank_buster": 1,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "watcher_hollow_apex",
+      "dungeonName": "Watcher Hollow — Apex",
+      "enemyId": "watcher_hollowwarden",
+      "enemyName": "The Hollow Warden",
+      "counts": {
+        "tank_buster": 1,
+        "add_pressure": 1,
+        "movement": 3,
+        "control": 3
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "royal_catacombs",
+      "dungeonName": "Royal Catacombs",
+      "enemyId": "royal_catacomb_king",
+      "enemyName": "The King Beneath",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 2,
+        "control": 3
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "royal_catacombs_veteran",
+      "dungeonName": "Royal Catacombs — Veteran",
+      "enemyId": "royal_catacomb_king",
+      "enemyName": "The King Beneath",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 2,
+        "control": 3
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "royal_catacombs_heroic",
+      "dungeonName": "Royal Catacombs — Heroic",
+      "enemyId": "royal_catacomb_king",
+      "enemyName": "The King Beneath",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 2,
+        "control": 3
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "royal_catacombs_mythic",
+      "dungeonName": "Royal Catacombs — Mythic",
+      "enemyId": "royal_catacomb_king",
+      "enemyName": "The King Beneath",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 2,
+        "control": 3
+      },
+      "sustained": 4,
+      "execute": 1
+    },
+    {
+      "dungeonId": "royal_catacombs_apex",
+      "dungeonName": "Royal Catacombs — Apex",
+      "enemyId": "royal_catacomb_king",
+      "enemyName": "The King Beneath",
+      "counts": {
+        "tank_buster": 0,
+        "add_pressure": 1,
+        "movement": 2,
+        "control": 3
+      },
+      "sustained": 4,
+      "execute": 1
+    }
+  ],
+  "classes": {
+    "vanguard": {
+      "role": "Tank",
+      "builds": {
+        "fortress": {
+          "name": "Fortress Tank",
+          "capabilities": {
+            "mitigation": 24.8,
+            "threat": 54,
+            "healing": 9,
+            "sustain": 10,
+            "control": 0,
+            "damage": 32,
+            "burst": 0,
+            "execute": 0,
+            "aoe": 8,
+            "dot": 0,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 57.5,
+            "sustained": 79.3,
+            "add_pressure": 50,
+            "movement": 50,
+            "control": 50,
+            "execute": 50
+          },
+          "strengths": [
+            {
+              "id": "sustained",
+              "score": 79.3,
+              "label": "Sustained Pressure"
+            },
+            {
+              "id": "tank_buster",
+              "score": 57.5,
+              "label": "Tank Buster"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "execute",
+              "score": 50,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "control",
+              "score": 50,
+              "label": "Interrupt / Control"
+            }
+          ]
+        },
+        "warbreaker": {
+          "name": "Warbreaker",
+          "capabilities": {
+            "mitigation": 6.4,
+            "threat": 72,
+            "healing": 9,
+            "sustain": 0,
+            "control": 33,
+            "damage": 80.5,
+            "burst": 5,
+            "execute": 3.5,
+            "aoe": 18,
+            "dot": 0,
+            "range": 0,
+            "mobility": 15,
+            "haste": 3,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 50,
+            "sustained": 100,
+            "add_pressure": 84.7,
+            "movement": 100,
+            "control": 80,
+            "execute": 100
+          },
+          "strengths": [
+            {
+              "id": "sustained",
+              "score": 100,
+              "label": "Sustained Pressure"
+            },
+            {
+              "id": "movement",
+              "score": 100,
+              "label": "Movement / Positioning"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "tank_buster",
+              "score": 50,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "control",
+              "score": 80,
+              "label": "Interrupt / Control"
+            }
+          ]
+        },
+        "warden": {
+          "name": "Bulwark Controller",
+          "capabilities": {
+            "mitigation": 12,
+            "threat": 65,
+            "healing": 9,
+            "sustain": 0,
+            "control": 83,
+            "damage": 57,
+            "burst": 0,
+            "execute": 0,
+            "aoe": 26,
+            "dot": 0,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 100,
+            "sustained": 50,
+            "add_pressure": 100,
+            "movement": 60.4,
+            "control": 100,
+            "execute": 70.2
+          },
+          "strengths": [
+            {
+              "id": "tank_buster",
+              "score": 100,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "add_pressure",
+              "score": 100,
+              "label": "Adds / AoE"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "sustained",
+              "score": 50,
+              "label": "Sustained Pressure"
+            },
+            {
+              "id": "movement",
+              "score": 60.4,
+              "label": "Movement / Positioning"
+            }
+          ]
+        }
+      }
+    },
+    "arcanist": {
+      "role": "Magic DPS",
+      "builds": {
+        "spellfire": {
+          "name": "Spellfire",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 0,
+            "control": 0,
+            "damage": 113.5,
+            "burst": 85,
+            "execute": 10,
+            "aoe": 35,
+            "dot": 54.5,
+            "range": 20,
+            "mobility": 0,
+            "haste": 2,
+            "crit": 7
+          },
+          "encounterScores": {
+            "tank_buster": 50,
+            "sustained": 100,
+            "add_pressure": 70.9,
+            "movement": 100,
+            "control": 55.8,
+            "execute": 100
+          },
+          "strengths": [
+            {
+              "id": "sustained",
+              "score": 100,
+              "label": "Sustained Pressure"
+            },
+            {
+              "id": "movement",
+              "score": 100,
+              "label": "Movement / Positioning"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "tank_buster",
+              "score": 50,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "control",
+              "score": 55.8,
+              "label": "Interrupt / Control"
+            }
+          ]
+        },
+        "frostweaver": {
+          "name": "Frostweaver",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 0,
+            "control": 63,
+            "damage": 93,
+            "burst": 19,
+            "execute": 8,
+            "aoe": 42,
+            "dot": 41,
+            "range": 0,
+            "mobility": 15,
+            "haste": 4,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 100,
+            "sustained": 75.9,
+            "add_pressure": 100,
+            "movement": 66.6,
+            "control": 100,
+            "execute": 52.1
+          },
+          "strengths": [
+            {
+              "id": "tank_buster",
+              "score": 100,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "add_pressure",
+              "score": 100,
+              "label": "Adds / AoE"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "execute",
+              "score": 52.1,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "movement",
+              "score": 66.6,
+              "label": "Movement / Positioning"
+            }
+          ]
+        },
+        "aethermind": {
+          "name": "Aethermind",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 0,
+            "control": 0,
+            "damage": 88.5,
+            "burst": 19,
+            "execute": 7,
+            "aoe": 17,
+            "dot": 16.5,
+            "range": 10,
+            "mobility": 0,
+            "haste": 6,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 50,
+            "sustained": 50,
+            "add_pressure": 50,
+            "movement": 50,
+            "control": 50,
+            "execute": 50
+          },
+          "strengths": [
+            {
+              "id": "tank_buster",
+              "score": 50,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "sustained",
+              "score": 50,
+              "label": "Sustained Pressure"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "execute",
+              "score": 50,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "control",
+              "score": 50,
+              "label": "Interrupt / Control"
+            }
+          ]
+        }
+      }
+    },
+    "warden": {
+      "role": "Support",
+      "builds": {
+        "grovekeeper": {
+          "name": "Grovekeeper",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 89,
+            "sustain": 30,
+            "control": 12.5,
+            "damage": 7.5,
+            "burst": 0,
+            "execute": 0,
+            "aoe": 12,
+            "dot": 10,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 100,
+            "sustained": 100,
+            "add_pressure": 62.4,
+            "movement": 51.3,
+            "control": 50,
+            "execute": 50
+          },
+          "strengths": [
+            {
+              "id": "tank_buster",
+              "score": 100,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "sustained",
+              "score": 100,
+              "label": "Sustained Pressure"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "execute",
+              "score": 50,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "control",
+              "score": 50,
+              "label": "Interrupt / Control"
+            }
+          ]
+        },
+        "rootcaller": {
+          "name": "Rootcaller",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 6,
+            "sustain": 0,
+            "control": 110,
+            "damage": 57,
+            "burst": 2,
+            "execute": 0,
+            "aoe": 12,
+            "dot": 12,
+            "range": 0,
+            "mobility": 0,
+            "haste": 4,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 73.6,
+            "sustained": 54.3,
+            "add_pressure": 100,
+            "movement": 100,
+            "control": 100,
+            "execute": 100
+          },
+          "strengths": [
+            {
+              "id": "add_pressure",
+              "score": 100,
+              "label": "Adds / AoE"
+            },
+            {
+              "id": "movement",
+              "score": 100,
+              "label": "Movement / Positioning"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "sustained",
+              "score": 54.3,
+              "label": "Sustained Pressure"
+            },
+            {
+              "id": "tank_buster",
+              "score": 73.6,
+              "label": "Tank Buster"
+            }
+          ]
+        },
+        "thornwarden": {
+          "name": "Thorn Warden",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 19,
+            "sustain": 5,
+            "control": 23,
+            "damage": 32,
+            "burst": 7,
+            "execute": 4,
+            "aoe": 7.2,
+            "dot": 7.2,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 3
+          },
+          "encounterScores": {
+            "tank_buster": 50,
+            "sustained": 50,
+            "add_pressure": 50,
+            "movement": 50,
+            "control": 58.2,
+            "execute": 91.5
+          },
+          "strengths": [
+            {
+              "id": "execute",
+              "score": 91.5,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "control",
+              "score": 58.2,
+              "label": "Interrupt / Control"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "movement",
+              "score": 50,
+              "label": "Movement / Positioning"
+            },
+            {
+              "id": "add_pressure",
+              "score": 50,
+              "label": "Adds / AoE"
+            }
+          ]
+        }
+      }
+    },
+    "shadowblade": {
+      "role": "Melee DPS",
+      "builds": {
+        "assassin": {
+          "name": "Assassin",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 0,
+            "control": 0,
+            "damage": 87.5,
+            "burst": 66.5,
+            "execute": 34,
+            "aoe": 0,
+            "dot": 17.5,
+            "range": 0,
+            "mobility": 19,
+            "haste": 3,
+            "crit": 6
+          },
+          "encounterScores": {
+            "tank_buster": 50,
+            "sustained": 60.8,
+            "add_pressure": 50,
+            "movement": 64.4,
+            "control": 56.6,
+            "execute": 100
+          },
+          "strengths": [
+            {
+              "id": "execute",
+              "score": 100,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "movement",
+              "score": 64.4,
+              "label": "Movement / Positioning"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "add_pressure",
+              "score": 50,
+              "label": "Adds / AoE"
+            },
+            {
+              "id": "tank_buster",
+              "score": 50,
+              "label": "Tank Buster"
+            }
+          ]
+        },
+        "saboteur": {
+          "name": "Saboteur",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 0,
+            "control": 38,
+            "damage": 90,
+            "burst": 2,
+            "execute": 0,
+            "aoe": 8,
+            "dot": 71,
+            "range": 0,
+            "mobility": 9,
+            "haste": 4,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 100,
+            "sustained": 100,
+            "add_pressure": 100,
+            "movement": 50,
+            "control": 100,
+            "execute": 50
+          },
+          "strengths": [
+            {
+              "id": "tank_buster",
+              "score": 100,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "sustained",
+              "score": 100,
+              "label": "Sustained Pressure"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "execute",
+              "score": 50,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "movement",
+              "score": 50,
+              "label": "Movement / Positioning"
+            }
+          ]
+        },
+        "duelist": {
+          "name": "Duelist",
+          "capabilities": {
+            "mitigation": 3,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 3,
+            "control": 0,
+            "damage": 68.5,
+            "burst": 23.5,
+            "execute": 16,
+            "aoe": 15,
+            "dot": 7.5,
+            "range": 0,
+            "mobility": 48,
+            "haste": 5,
+            "crit": 5
+          },
+          "encounterScores": {
+            "tank_buster": 70.5,
+            "sustained": 50,
+            "add_pressure": 62,
+            "movement": 100,
+            "control": 50,
+            "execute": 62.8
+          },
+          "strengths": [
+            {
+              "id": "movement",
+              "score": 100,
+              "label": "Movement / Positioning"
+            },
+            {
+              "id": "tank_buster",
+              "score": 70.5,
+              "label": "Tank Buster"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "control",
+              "score": 50,
+              "label": "Interrupt / Control"
+            },
+            {
+              "id": "sustained",
+              "score": 50,
+              "label": "Sustained Pressure"
+            }
+          ]
+        }
+      }
+    },
+    "ranger": {
+      "role": "Ranged DPS",
+      "builds": {
+        "marksman": {
+          "name": "Marksman",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 0,
+            "control": 9,
+            "damage": 114.5,
+            "burst": 34,
+            "execute": 9,
+            "aoe": 7.5,
+            "dot": 10,
+            "range": 77.5,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 10
+          },
+          "encounterScores": {
+            "tank_buster": 50,
+            "sustained": 100,
+            "add_pressure": 51.7,
+            "movement": 100,
+            "control": 95.6,
+            "execute": 100
+          },
+          "strengths": [
+            {
+              "id": "sustained",
+              "score": 100,
+              "label": "Sustained Pressure"
+            },
+            {
+              "id": "movement",
+              "score": 100,
+              "label": "Movement / Positioning"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "tank_buster",
+              "score": 50,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "add_pressure",
+              "score": 51.7,
+              "label": "Adds / AoE"
+            }
+          ]
+        },
+        "skirmisher": {
+          "name": "Skirmisher",
+          "capabilities": {
+            "mitigation": 3,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 3,
+            "control": 9,
+            "damage": 75.5,
+            "burst": 10,
+            "execute": 6,
+            "aoe": 19.5,
+            "dot": 0,
+            "range": 34.5,
+            "mobility": 20,
+            "haste": 8,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 100,
+            "sustained": 50,
+            "add_pressure": 50,
+            "movement": 50,
+            "control": 50,
+            "execute": 50
+          },
+          "strengths": [
+            {
+              "id": "tank_buster",
+              "score": 100,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "sustained",
+              "score": 50,
+              "label": "Sustained Pressure"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "execute",
+              "score": 50,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "control",
+              "score": 50,
+              "label": "Interrupt / Control"
+            }
+          ]
+        },
+        "stormarcher": {
+          "name": "Storm Archer",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 0,
+            "control": 9,
+            "damage": 117.5,
+            "burst": 12,
+            "execute": 7,
+            "aoe": 88.5,
+            "dot": 8,
+            "range": 47.5,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 5
+          },
+          "encounterScores": {
+            "tank_buster": 50,
+            "sustained": 99.4,
+            "add_pressure": 100,
+            "movement": 63.2,
+            "control": 100,
+            "execute": 77.9
+          },
+          "strengths": [
+            {
+              "id": "add_pressure",
+              "score": 100,
+              "label": "Adds / AoE"
+            },
+            {
+              "id": "control",
+              "score": 100,
+              "label": "Interrupt / Control"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "tank_buster",
+              "score": 50,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "movement",
+              "score": 63.2,
+              "label": "Movement / Positioning"
+            }
+          ]
+        }
+      }
+    },
+    "templar": {
+      "role": "Hybrid",
+      "builds": {
+        "crusader": {
+          "name": "Crusader",
+          "capabilities": {
+            "mitigation": 3,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 0,
+            "control": 0,
+            "damage": 64.5,
+            "burst": 32.7,
+            "execute": 4.5,
+            "aoe": 18,
+            "dot": 4.8,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 4
+          },
+          "encounterScores": {
+            "tank_buster": 50,
+            "sustained": 50,
+            "add_pressure": 50,
+            "movement": 83.3,
+            "control": 68.8,
+            "execute": 100
+          },
+          "strengths": [
+            {
+              "id": "execute",
+              "score": 100,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "movement",
+              "score": 83.3,
+              "label": "Movement / Positioning"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "add_pressure",
+              "score": 50,
+              "label": "Adds / AoE"
+            },
+            {
+              "id": "sustained",
+              "score": 50,
+              "label": "Sustained Pressure"
+            }
+          ]
+        },
+        "guardian": {
+          "name": "Guardian Templar",
+          "capabilities": {
+            "mitigation": 12.8,
+            "threat": 28,
+            "healing": 13,
+            "sustain": 11,
+            "control": 0,
+            "damage": 41.5,
+            "burst": 0,
+            "execute": 0,
+            "aoe": 28.5,
+            "dot": 12,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 100,
+            "sustained": 70.1,
+            "add_pressure": 84.4,
+            "movement": 50,
+            "control": 100,
+            "execute": 50
+          },
+          "strengths": [
+            {
+              "id": "tank_buster",
+              "score": 100,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "control",
+              "score": 100,
+              "label": "Interrupt / Control"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "execute",
+              "score": 50,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "movement",
+              "score": 50,
+              "label": "Movement / Positioning"
+            }
+          ]
+        },
+        "redeemer": {
+          "name": "Redeemer",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 57,
+            "sustain": 12,
+            "control": 0,
+            "damage": 58.5,
+            "burst": 15.5,
+            "execute": 4,
+            "aoe": 31.5,
+            "dot": 15,
+            "range": 0,
+            "mobility": 0,
+            "haste": 3,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 80.6,
+            "sustained": 100,
+            "add_pressure": 100,
+            "movement": 100,
+            "control": 50,
+            "execute": 78
+          },
+          "strengths": [
+            {
+              "id": "sustained",
+              "score": 100,
+              "label": "Sustained Pressure"
+            },
+            {
+              "id": "add_pressure",
+              "score": 100,
+              "label": "Adds / AoE"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "control",
+              "score": 50,
+              "label": "Interrupt / Control"
+            },
+            {
+              "id": "execute",
+              "score": 78,
+              "label": "Burst / Execute"
+            }
+          ]
+        }
+      }
+    },
+    "occultist": {
+      "role": "Caster",
+      "builds": {
+        "plaguecaller": {
+          "name": "Plaguecaller",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 0,
+            "control": 27.5,
+            "damage": 107,
+            "burst": 4,
+            "execute": 22,
+            "aoe": 36,
+            "dot": 106,
+            "range": 0,
+            "mobility": 35,
+            "haste": 0,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 100,
+            "sustained": 100,
+            "add_pressure": 100,
+            "movement": 100,
+            "control": 100,
+            "execute": 65.1
+          },
+          "strengths": [
+            {
+              "id": "tank_buster",
+              "score": 100,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "sustained",
+              "score": 100,
+              "label": "Sustained Pressure"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "execute",
+              "score": 65.1,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "control",
+              "score": 100,
+              "label": "Interrupt / Control"
+            }
+          ]
+        },
+        "soulreaper": {
+          "name": "Soul Reaper",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 8,
+            "sustain": 8,
+            "control": 7.5,
+            "damage": 119,
+            "burst": 43,
+            "execute": 29,
+            "aoe": 26,
+            "dot": 6,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 6
+          },
+          "encounterScores": {
+            "tank_buster": 90,
+            "sustained": 68.2,
+            "add_pressure": 81.5,
+            "movement": 50,
+            "control": 76.1,
+            "execute": 100
+          },
+          "strengths": [
+            {
+              "id": "execute",
+              "score": 100,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "tank_buster",
+              "score": 90,
+              "label": "Tank Buster"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "movement",
+              "score": 50,
+              "label": "Movement / Positioning"
+            },
+            {
+              "id": "sustained",
+              "score": 68.2,
+              "label": "Sustained Pressure"
+            }
+          ]
+        },
+        "voidcaller": {
+          "name": "Voidcaller",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 0,
+            "control": 7.5,
+            "damage": 66,
+            "burst": 15,
+            "execute": 8,
+            "aoe": 24,
+            "dot": 6,
+            "range": 20,
+            "mobility": 20,
+            "haste": 4,
+            "crit": 5
+          },
+          "encounterScores": {
+            "tank_buster": 50,
+            "sustained": 50,
+            "add_pressure": 50,
+            "movement": 74.7,
+            "control": 50,
+            "execute": 50
+          },
+          "strengths": [
+            {
+              "id": "movement",
+              "score": 74.7,
+              "label": "Movement / Positioning"
+            },
+            {
+              "id": "tank_buster",
+              "score": 50,
+              "label": "Tank Buster"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "execute",
+              "score": 50,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "control",
+              "score": 50,
+              "label": "Interrupt / Control"
+            }
+          ]
+        }
+      }
+    },
+    "reaver": {
+      "role": "Melee DPS",
+      "builds": {
+        "berserker": {
+          "name": "Berserker",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 0,
+            "control": 0,
+            "damage": 104,
+            "burst": 39,
+            "execute": 32,
+            "aoe": 21,
+            "dot": 0,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 7
+          },
+          "encounterScores": {
+            "tank_buster": 50,
+            "sustained": 50,
+            "add_pressure": 50,
+            "movement": 63.5,
+            "control": 77.1,
+            "execute": 100
+          },
+          "strengths": [
+            {
+              "id": "execute",
+              "score": 100,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "control",
+              "score": 77.1,
+              "label": "Interrupt / Control"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "add_pressure",
+              "score": 50,
+              "label": "Adds / AoE"
+            },
+            {
+              "id": "sustained",
+              "score": 50,
+              "label": "Sustained Pressure"
+            }
+          ]
+        },
+        "bloodreaver": {
+          "name": "Blood Reaver",
+          "capabilities": {
+            "mitigation": 2.4,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 3,
+            "control": 0,
+            "damage": 120,
+            "burst": 7,
+            "execute": 32,
+            "aoe": 34,
+            "dot": 92,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 61.5,
+            "sustained": 100,
+            "add_pressure": 100,
+            "movement": 100,
+            "control": 100,
+            "execute": 81.8
+          },
+          "strengths": [
+            {
+              "id": "sustained",
+              "score": 100,
+              "label": "Sustained Pressure"
+            },
+            {
+              "id": "add_pressure",
+              "score": 100,
+              "label": "Adds / AoE"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "tank_buster",
+              "score": 61.5,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "execute",
+              "score": 81.8,
+              "label": "Burst / Execute"
+            }
+          ]
+        },
+        "warborn": {
+          "name": "Warborn",
+          "capabilities": {
+            "mitigation": 10.4,
+            "threat": 0,
+            "healing": 0,
+            "sustain": 12,
+            "control": 0,
+            "damage": 85,
+            "burst": 6,
+            "execute": 6,
+            "aoe": 46,
+            "dot": 8,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 100,
+            "sustained": 58.7,
+            "add_pressure": 96.5,
+            "movement": 50,
+            "control": 50,
+            "execute": 50
+          },
+          "strengths": [
+            {
+              "id": "tank_buster",
+              "score": 100,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "add_pressure",
+              "score": 96.5,
+              "label": "Adds / AoE"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "execute",
+              "score": 50,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "control",
+              "score": 50,
+              "label": "Interrupt / Control"
+            }
+          ]
+        }
+      }
+    },
+    "hierophant": {
+      "role": "Healer",
+      "builds": {
+        "sanctuary": {
+          "name": "Sanctuary Healer",
+          "capabilities": {
+            "mitigation": 2.4,
+            "threat": 10,
+            "healing": 80,
+            "sustain": 20,
+            "control": 0,
+            "damage": 10,
+            "burst": 0,
+            "execute": 0,
+            "aoe": 0,
+            "dot": 0,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 100,
+            "sustained": 91.4,
+            "add_pressure": 100,
+            "movement": 50,
+            "control": 75,
+            "execute": 54.7
+          },
+          "strengths": [
+            {
+              "id": "tank_buster",
+              "score": 100,
+              "label": "Tank Buster"
+            },
+            {
+              "id": "add_pressure",
+              "score": 100,
+              "label": "Adds / AoE"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "movement",
+              "score": 50,
+              "label": "Movement / Positioning"
+            },
+            {
+              "id": "execute",
+              "score": 54.7,
+              "label": "Burst / Execute"
+            }
+          ]
+        },
+        "aegis": {
+          "name": "Aegis Healer",
+          "capabilities": {
+            "mitigation": 3,
+            "threat": 0,
+            "healing": 65,
+            "sustain": 37,
+            "control": 0,
+            "damage": 0,
+            "burst": 0,
+            "execute": 0,
+            "aoe": 0,
+            "dot": 0,
+            "range": 0,
+            "mobility": 0,
+            "haste": 0,
+            "crit": 0
+          },
+          "encounterScores": {
+            "tank_buster": 82.3,
+            "sustained": 100,
+            "add_pressure": 50,
+            "movement": 79.2,
+            "control": 50,
+            "execute": 50
+          },
+          "strengths": [
+            {
+              "id": "sustained",
+              "score": 100,
+              "label": "Sustained Pressure"
+            },
+            {
+              "id": "tank_buster",
+              "score": 82.3,
+              "label": "Tank Buster"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "execute",
+              "score": 50,
+              "label": "Burst / Execute"
+            },
+            {
+              "id": "control",
+              "score": 50,
+              "label": "Interrupt / Control"
+            }
+          ]
+        },
+        "battlepriest": {
+          "name": "Battle Priest",
+          "capabilities": {
+            "mitigation": 0,
+            "threat": 0,
+            "healing": 21,
+            "sustain": 5,
+            "control": 0,
+            "damage": 37,
+            "burst": 33.5,
+            "execute": 7,
+            "aoe": 10,
+            "dot": 0,
+            "range": 0,
+            "mobility": 0,
+            "haste": 3,
+            "crit": 5
+          },
+          "encounterScores": {
+            "tank_buster": 50,
+            "sustained": 50,
+            "add_pressure": 74.1,
+            "movement": 100,
+            "control": 100,
+            "execute": 100
+          },
+          "strengths": [
+            {
+              "id": "movement",
+              "score": 100,
+              "label": "Movement / Positioning"
+            },
+            {
+              "id": "control",
+              "score": 100,
+              "label": "Interrupt / Control"
+            }
+          ],
+          "tradeoffs": [
+            {
+              "id": "sustained",
+              "score": 50,
+              "label": "Sustained Pressure"
+            },
+            {
+              "id": "tank_buster",
+              "score": 50,
+              "label": "Tank Buster"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

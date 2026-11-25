@@ -1,0 +1,166 @@
+{
+  "title": "Ashenfall  -  The Bells Beneath the World",
+  "chapters": [
+    {
+      "id": 0,
+      "name": "Prologue  -  The Last Wall",
+      "summary": "Captain Aric sends the player beyond Stonehold after a Lantern Guard patrol disappears in Gloamwood. The sixth lantern is still burning somewhere beneath the roots.",
+      "player_question": "Why did the patrol disappear, and why is one lantern still burning?",
+      "reveal": "The ash is rising from below the forest, not falling from the sky."
+    },
+    {
+      "id": 1,
+      "name": "Chapter I  -  Ashes of the Past",
+      "summary": "Warden Kael and Keeper Havel reveal that the missing patrol was investigating a bell beneath Gloamwood. The player begins to understand that the forest is guarding something rather than merely being haunted.",
+      "player_question": "Who rang the bell, and why does the forest protect it?",
+      "reveal": "The sixth lantern was carried beneath the roots by the patrol itself."
+    },
+    {
+      "id": 2,
+      "name": "Chapter II  -  The Bell Below",
+      "summary": "The Sunken Catacombs expose the Hollow Saint and a bell that answers something older than the surviving kingdoms. The name Eir-Vhal enters the story.",
+      "player_question": "What is Eir-Vhal, and why does the bell know the living?",
+      "reveal": "Eir-Vhal was the site of the first great Veil stitching, and its seal is weakening."
+    },
+    {
+      "id": 3,
+      "name": "Chapter III  -  A Door That Remembers",
+      "summary": "The Black Road leads to a Citadel built around an ancient sealed door. Quartermaster Vey’s dead soldiers are returning, and the corruption is spreading outward.",
+      "player_question": "What is behind the Door Below, and why does it remember people?",
+      "reveal": "The threat is not simply escaping the Veil; it is learning the people who guard it."
+    },
+    {
+      "id": 4,
+      "name": "Chapter IV  -  The Wastes Remember",
+      "summary": "Briarfen reveals that the old road network is using living travelers, drowned lanterns and marked beasts as a memory chain. The trail then bends back into the Ashen Wastes.",
+      "player_question": "Why are the old roads using living people to carry commands?",
+      "reveal": "The road network is a memory channel, and the black seal is learning how to travel through it."
+    },
+    {
+      "id": 5,
+      "name": "Chapter V  -  The Eastern Road",
+      "summary": "The Sunscar caravans are being searched for names rather than supplies. Eastwatch becomes the first living outpost to receive commands from the dead court.",
+      "player_question": "Who is sending royal orders through living roads?",
+      "reveal": "The memory network uses travelers, ledgers and signal towers as a living communication system."
+    },
+    {
+      "id": 6,
+      "name": "Chapter VI  -  The Crown Beneath",
+      "summary": "Crownfall exposes the royal court behind the black seal. The Old Kingdom records reveal that the first stitching was a bargain involving memory and authority.",
+      "player_question": "What did the old kingdom sacrifice to stitch the Veil?",
+      "reveal": "The first stitching bound people, names and roads into the Veil so the world could forget what was beneath it."
+    },
+    {
+      "id": 7,
+      "name": "Chapter VII  -  Roads That Remember",
+      "summary": "The Veilscar Highlands reveal the network from above. Storms are not weather; they are pressure escaping through the memory roads.",
+      "player_question": "Where do the memory roads converge?",
+      "reveal": "They converge beneath the world and continue toward the drowned edge of the Hollow."
+    },
+    {
+      "id": 8,
+      "name": "Chapter VIII  -  The Hollow Court",
+      "summary": "Nightveil Coast reveals that the memory court has routes beneath the sea. The drowned dead are preparing a final road toward the Hollow.",
+      "player_question": "Who is speaking through the drowned court?",
+      "reveal": "The Hollow is not simply a place; it is the surviving memory of an ancient court seeking a living voice."
+    },
+    {
+      "id": 9,
+      "name": "Chapter IX  -  The First Stitch",
+      "summary": "The player returns to the Black Citadel to trace the seal to its oldest surviving record and confront the thing that remembers names.",
+      "player_question": "Who made the first stitch, and what did it cost?",
+      "reveal": "The first stitch was made by people who chose to bind themselves into the Veil so the world could forget what they had seen."
+    },
+    {
+      "id": 10,
+      "name": "Chapter X  -  The Bells Beneath the World",
+      "summary": "The final road leads beneath the Old Kingdom. The bells are not calling the dead; they are calling the memories that were buried with them.",
+      "player_question": "Can the Veil be repaired without becoming its next prisoner?",
+      "reveal": "The player cannot simply close the door. They must decide which memories survive when the bells stop."
+    }
+  ],
+  "factions": [
+    {
+      "id": "stonehold_council",
+      "name": "Stonehold Council",
+      "stance": "Preservation",
+      "summary": "Politicians who believe survival depends on controlling what the public is allowed to know."
+    },
+    {
+      "id": "lantern_guard",
+      "name": "Lantern Guard",
+      "stance": "Duty",
+      "summary": "Soldiers who patrol the roads and keep the cities supplied, even when orders make less sense than the danger."
+    },
+    {
+      "id": "veil_wardens",
+      "name": "Veil Wardens",
+      "stance": "Truth",
+      "summary": "Scholars and field agents who study Veil scars and fear that ignorance is becoming more dangerous than knowledge."
+    },
+    {
+      "id": "ashen_covenant",
+      "name": "Ashen Covenant",
+      "stance": "Revelation",
+      "summary": "A scattered cult that believes the Veil is a prison and the things behind it deserve to be heard."
+    },
+    {
+      "id": "the_hollow",
+      "name": "The Hollow",
+      "stance": "Unknown",
+      "summary": "Not yet understood as a faction. The name appears in old records for creatures, places, and perhaps something much larger."
+    }
+  ],
+  "characters": [
+    {
+      "id": "captain_aric",
+      "name": "Captain Aric",
+      "role": "Lantern Guard captain",
+      "voice": "tired_guardian",
+      "bio": "A veteran who has buried three generations of recruits and refuses to call the current crisis a war. He believes discipline can hold back the dark, but privately fears the walls are already listening.",
+      "motivation": "Keep Stonehold alive without turning the Lantern Guard into the Council’s secret police.",
+      "secret": "He once received a report about Eir-Vhal and was ordered to destroy it."
+    },
+    {
+      "id": "warden_kael",
+      "name": "Warden Kael",
+      "role": "Veil Warden",
+      "voice": "quiet_scholar",
+      "bio": "A field warden who studies tears in the Veil. He distrusts the Council and suspects the violet ash is a message, not a disease.",
+      "motivation": "Understand the Veil before another generation is sacrificed to ignorance.",
+      "secret": "He believes the ash is communicating through repeated patterns, not spreading randomly."
+    },
+    {
+      "id": "keeper_havel",
+      "name": "Keeper Havel",
+      "role": "forgotten lantern keeper",
+      "voice": "old_witness",
+      "bio": "An old watcher who remembers the road before Stonehold was rebuilt. He knows a secret about the first Lantern Patrol that Aric never learned.",
+      "motivation": "Make sure the missing patrol is remembered as people, not a failed assignment.",
+      "secret": "He heard the sixth lantern answer the bell and has been afraid to tell Aric."
+    },
+    {
+      "id": "quartermaster_vey",
+      "name": "Quartermaster Vey",
+      "role": "Black Citadel quartermaster",
+      "voice": "hard_survivor",
+      "bio": "A former soldier who survived the Citadel's fall. He wants the Citadel sealed, but needs adventurers strong enough to learn what is still moving inside.",
+      "motivation": "Keep the Citadel’s remaining soldiers from becoming another forgotten patrol.",
+      "secret": "His first squad disappeared beneath the Citadel years before the current crisis."
+    }
+  ],
+  "premise": "Stonehold survives behind walls built over the scars of the Veil. Violet ash is rising from below, missing soldiers are returning as empty armor, and an ancient name - Eir-Vhal - is being spoken by things that should not know it. The player is not a chosen hero; they are one person whose decisions determine which truths survive.",
+  "themes": [
+    "Memory versus forgetting",
+    "Duty versus obedience",
+    "The cost of keeping the Veil closed",
+    "Ordinary people living beside ancient horrors"
+  ],
+  "lore_principles": [
+    "No prophecy makes the player important; their importance comes from what they choose to investigate and protect.",
+    "Major reveals should be foreshadowed by ordinary evidence: ledgers, patrol routes, tools, names, scars, and conflicting testimony.",
+    "NPCs should disagree about the truth instead of delivering identical exposition.",
+    "Side quests should reveal how the crisis changes real people, not only award combat rewards.",
+    "Every dungeon should answer one question while creating a more dangerous one."
+  ]
+}

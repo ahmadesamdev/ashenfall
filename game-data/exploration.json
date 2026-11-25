@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "discoveryRewards": { "xp": 150, "gold": 25 },
+  "regionFirstVisitReward": { "xp": 75, "gold": 10 },
+  "zoneCompletionRewards": {
+    "stonehold": { "xp": 250, "gold": 75 },
+    "gloamwood": { "xp": 350, "gold": 100 },
+    "eastern_reach": { "xp": 450, "gold": 125 },
+    "ashen_wastes": { "xp": 650, "gold": 175 },
+    "old_kingdom": { "xp": 750, "gold": 200 },
+    "black_citadel": { "xp": 1000, "gold": 300 },
+    "hollow_expanse": { "xp": 1100, "gold": 325 },
+    "briarfen": { "xp": 400, "gold": 110 },
+    "sunscar_steppe": { "xp": 550, "gold": 150 },
+    "crownfall_expanse": { "xp": 800, "gold": 225 },
+    "veilscar_highlands": { "xp": 900, "gold": 250 },
+    "nightveil_coast": { "xp": 1200, "gold": 350 }
+  },
+  "achievementMilestones": [
+    {
+      "id": "cartographer",
+      "category": "exploration",
+      "condition": "discover_10_locations",
+      "threshold": 10,
+      "rewardXp": 250
+    },
+    {
+      "id": "wayfinder",
+      "category": "exploration",
+      "condition": "discover_5_regions",
+      "threshold": 5,
+      "rewardXp": 500
+    },
+    {
+      "id": "ashen_cartographer",
+      "category": "exploration",
+      "condition": "complete_3_regions",
+      "threshold": 3,
+      "rewardXp": 750
+    }
+  ],
+  "maxDiscoveriesPerZone": 10,
+  "poiTypes": [
+    "landmark",
+    "lore",
+    "treasure",
+    "rare_spawn",
+    "resource_hotspot",
+    "hidden_path",
+    "world_event_site",
+    "settlement",
+    "dungeon_entrance"
+  ],
+  "rules": {
+    "oneTimeCharacterDiscovery": true,
+    "serverAuthoritativeCoordinates": true,
+    "zoneRequired": true,
+    "levelRequired": true,
+    "regionFirstVisit": true,
+    "zoneCompletion": true,
+    "mapFog": true,
+    "questHelperNeverBlocked": true
+  }
+}

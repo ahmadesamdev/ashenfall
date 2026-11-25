@@ -1,0 +1,942 @@
+[
+  {
+    "id": "captain_aric",
+    "name": "Captain Aric",
+    "icon": "🧔",
+    "kind": "quest",
+    "zone": "stonehold",
+    "x": 0.545,
+    "y": 0.5,
+    "title": "Captain of the Lantern Guard",
+    "questIds": [
+      "call_of_ashenfall",
+      "ashes_on_the_road",
+      "below_the_roots",
+      "the_hollow_saint",
+      "cleanse_the_gallery",
+      "citadel_supplies",
+      "alpha_of_the_wastes",
+      "the_world_after",
+      "the_first_day_after",
+      "the_lantern_you_carry",
+      "ashenfall_epilogue",
+      "guard_memorial_first",
+      "guard_memorial_final",
+      "council_record_first",
+      "council_record_final",
+      "the_black_road",
+      "the_last_lantern",
+      "the_road_ahead"
+    ],
+    "hubId": "crown_square",
+    "scheduleProfile": "quest_stationary",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.545,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "id": "mira_provisioner",
+    "name": "Mira",
+    "icon": "🧪",
+    "kind": "shop",
+    "zone": "stonehold",
+    "shopId": "stonehold_general",
+    "x": 0.5,
+    "y": 0.545,
+    "title": "Provisioner",
+    "questIds": ["market_day", "names_not_numbers"],
+    "hubId": "crown_square"
+  },
+  {
+    "id": "garran_blacksmith",
+    "name": "Garran",
+    "icon": "⚒️",
+    "kind": "blacksmith",
+    "zone": "stonehold",
+    "shopId": "stonehold_armory",
+    "x": 0.75,
+    "y": 0.205,
+    "title": "Blacksmith",
+    "questIds": [],
+    "hubId": "craft_quarter"
+  },
+  {
+    "id": "wayfarer_lysa",
+    "name": "Wayfarer Lysa",
+    "icon": "🌀",
+    "kind": "teleporter",
+    "zone": "stonehold",
+    "x": 0.455,
+    "y": 0.5,
+    "title": "Waygate Keeper",
+    "questIds": [],
+    "hubId": "crown_square"
+  },
+  {
+    "id": "warden_kael",
+    "name": "Warden Kael",
+    "icon": "🛡️",
+    "kind": "quest",
+    "zone": "gloamwood",
+    "x": 0.14,
+    "y": 0.5,
+    "title": "Lantern Guard",
+    "questIds": [
+      "lost_patrol",
+      "lanterns_in_the_forest",
+      "the_wardens_warning",
+      "whispers_between_trees",
+      "lantern_oil",
+      "gloam_hunters",
+      "ashes_of_the_cult",
+      "echoes_of_eir_vhal",
+      "hunters_in_the_ash",
+      "the_veilscarred_mind",
+      "roads_without_names",
+      "the_wastes_below",
+      "corrupted_expedition_quest",
+      "warden_archive_first",
+      "warden_archive_final",
+      "covenant_whispers_first",
+      "covenant_whispers_final",
+      "the_lantern_that_lied",
+      "the_eastern_road",
+      "memory_in_the_ash",
+      "watcher_hollow",
+      "the_hollow_warden",
+      "the_court_that_waits",
+      "bells_beneath_world",
+      "gloam_aftershock",
+      "gloam_watch_at_seven",
+      "lantern_guard_side"
+    ],
+    "scheduleProfile": "quest_stationary",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.14,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "id": "duskmere_apothecary",
+    "name": "The Sinking Flask",
+    "icon": "🧪",
+    "kind": "shop",
+    "zone": "duskmoor",
+    "shopId": "duskmoor_apothecary",
+    "x": 0.5,
+    "y": 0.455,
+    "title": "Apothecary",
+    "questIds": [],
+    "hubId": "lantern_square"
+  },
+  {
+    "id": "citadel_quartermaster",
+    "name": "Quartermaster Vey",
+    "icon": "🛡️",
+    "kind": "shop",
+    "zone": "black_citadel",
+    "shopId": "citadel_armory",
+    "x": 0.5,
+    "y": 0.455,
+    "title": "Quartermaster",
+    "questIds": [
+      "the_hollow_saint",
+      "the_black_road",
+      "the_dead_watch",
+      "ash_and_blood",
+      "veins_of_the_wastes",
+      "the_executioners_mark",
+      "dreadsilver_tempering",
+      "ash_that_rises",
+      "the_black_seal",
+      "veil_anomaly_quest",
+      "the_citadel_below",
+      "the_name_below",
+      "citadel_arms",
+      "collapse_the_anomaly",
+      "reckoning_at_the_citadel",
+      "the_dead_guardian",
+      "the_door_that_listens",
+      "the_name_of_the_first",
+      "the_fen_bells"
+    ],
+    "hubId": "war_court"
+  },
+  {
+    "id": "harbor_market",
+    "name": "Tideglass Market",
+    "icon": "⚓",
+    "kind": "shop",
+    "zone": "ebonharbor",
+    "shopId": "harbor_market",
+    "x": 0.5,
+    "y": 0.455,
+    "title": "Market",
+    "questIds": [],
+    "hubId": "tide_square"
+  },
+  {
+    "id": "dawnwatch_supply",
+    "name": "Lantern Supplies",
+    "icon": "🏹",
+    "kind": "shop",
+    "zone": "dawnwatch",
+    "shopId": "dawnwatch_supply",
+    "x": 0.5,
+    "y": 0.455,
+    "title": "Supplies",
+    "questIds": [],
+    "hubId": "lantern_square"
+  },
+  {
+    "id": "sergeant_mara",
+    "name": "Sergeant Mara",
+    "icon": "🗡️",
+    "kind": "quest",
+    "zone": "marches_of_dawn",
+    "x": 0.22,
+    "y": 0.58,
+    "title": "Lantern Guard Scout",
+    "questIds": ["march_of_crows", "ore_under_foot", "village_aftershock"],
+    "scheduleProfile": "quest_local",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.22,
+        "y": 0.58
+      }
+    }
+  },
+  {
+    "id": "old_lantern_keeper",
+    "name": "Keeper Havel",
+    "icon": "🏮",
+    "kind": "quest",
+    "zone": "gloamwood",
+    "x": 0.78,
+    "y": 0.31,
+    "title": "Forgotten Watcher",
+    "questIds": [
+      "the_old_lantern",
+      "the_sixth_lantern",
+      "names_on_the_wall",
+      "hollow_echo_first",
+      "hollow_echo_final",
+      "whispers_between_trees",
+      "spider_silk_side"
+    ],
+    "scheduleProfile": "quest_stationary",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.78,
+        "y": 0.31
+      }
+    }
+  },
+  {
+    "id": "forge_apprentice",
+    "name": "Tessa",
+    "icon": "⚒️",
+    "kind": "blacksmith",
+    "zone": "marches_of_dawn",
+    "x": 0.18,
+    "y": 0.61,
+    "title": "Traveling Smith",
+    "questIds": []
+  },
+  {
+    "id": "hesta_miner",
+    "name": "Hesta Stonehand",
+    "icon": "⛏️",
+    "kind": "profession_trainer",
+    "profession": "mining",
+    "zone": "stonehold",
+    "x": 0.711,
+    "y": 0.2725,
+    "title": "Mining Trainer",
+    "questIds": ["hesta_first_vein", "vein_of_stars"],
+    "hubId": "craft_quarter"
+  },
+  {
+    "id": "brannik_smith",
+    "name": "Brannik Ironvein",
+    "icon": "🔨",
+    "kind": "profession_trainer",
+    "profession": "blacksmith",
+    "zone": "stonehold",
+    "x": 0.789,
+    "y": 0.2725,
+    "title": "Blacksmithing Trainer",
+    "questIds": ["ore_for_the_forge", "first_tempering"],
+    "hubId": "craft_quarter"
+  },
+  {
+    "id": "auctioneer_veyl",
+    "name": "Auctioneer Veyl",
+    "icon": "⚖️",
+    "kind": "auctioneer",
+    "zone": "stonehold",
+    "x": 0.25,
+    "y": 0.205,
+    "title": "Auction House",
+    "questIds": ["list_for_the_market", "hands_across_market"],
+    "hubId": "market_quarter"
+  },
+  {
+    "id": "stonehold_market_clerk",
+    "name": "Mara Vell",
+    "icon": "🧺",
+    "kind": "shop",
+    "zone": "stonehold",
+    "shopId": "stonehold_general",
+    "x": 0.25,
+    "y": 0.295,
+    "title": "Market Quarter Merchant",
+    "questIds": [],
+    "hubId": "market_quarter"
+  },
+  {
+    "id": "stonehold_guildmaster",
+    "name": "Guildmaster Orren",
+    "icon": "🏛️",
+    "kind": "guildmaster",
+    "zone": "stonehold",
+    "x": 0.5,
+    "y": 0.455,
+    "title": "Guild & Adventurer Hall",
+    "questIds": [],
+    "hubId": "crown_square"
+  },
+  {
+    "id": "vanguard_trainer",
+    "name": "Sir Garrick",
+    "icon": "🛡️",
+    "kind": "trainer",
+    "classId": "vanguard",
+    "zone": "stonehold",
+    "x": 0.1988,
+    "y": 0.741,
+    "title": "Vanguard Class Trainer",
+    "questIds": [
+      "vanguard_class_begin",
+      "vanguard_class_trial",
+      "vanguard_class_mastery"
+    ],
+    "hubId": "hall_of_arms"
+  },
+  {
+    "id": "arcanist_trainer",
+    "name": "Archmage Selene",
+    "icon": "🔮",
+    "kind": "trainer",
+    "classId": "arcanist",
+    "zone": "stonehold",
+    "x": 0.25,
+    "y": 0.698,
+    "title": "Arcanist Class Trainer",
+    "questIds": [
+      "arcanist_class_begin",
+      "arcanist_class_trial",
+      "arcanist_class_mastery"
+    ],
+    "hubId": "hall_of_arms"
+  },
+  {
+    "id": "warden_trainer",
+    "name": "Thornspeaker Lyra",
+    "icon": "🌿",
+    "kind": "trainer",
+    "classId": "warden",
+    "zone": "stonehold",
+    "x": 0.2166,
+    "y": 0.7102,
+    "title": "Warden Class Trainer",
+    "questIds": [
+      "warden_class_begin",
+      "warden_class_trial",
+      "warden_class_mastery"
+    ],
+    "hubId": "hall_of_arms"
+  },
+  {
+    "id": "shadowblade_trainer",
+    "name": "Shade Master Vey",
+    "icon": "🗡️",
+    "kind": "trainer",
+    "classId": "shadowblade",
+    "zone": "stonehold",
+    "x": 0.2322,
+    "y": 0.7989,
+    "title": "Shadowblade Class Trainer",
+    "questIds": [
+      "shadows_at_the_gate",
+      "a_clean_cut",
+      "venom_in_the_veins",
+      "the_last_shadow"
+    ],
+    "hubId": "hall_of_arms"
+  },
+  {
+    "id": "ranger_trainer",
+    "name": "Ranger-Captain Rowan",
+    "icon": "🏹",
+    "kind": "trainer",
+    "classId": "ranger",
+    "zone": "stonehold",
+    "x": 0.295,
+    "y": 0.776,
+    "title": "Ranger Class Trainer",
+    "questIds": [
+      "ranger_class_begin",
+      "ranger_class_trial",
+      "ranger_class_mastery"
+    ],
+    "hubId": "hall_of_arms"
+  },
+  {
+    "id": "templar_trainer",
+    "name": "High Templar Aldric",
+    "icon": "✝️",
+    "kind": "trainer",
+    "classId": "templar",
+    "zone": "stonehold",
+    "x": 0.205,
+    "y": 0.776,
+    "title": "Templar Class Trainer",
+    "questIds": [
+      "templar_class_begin",
+      "templar_class_trial",
+      "templar_class_mastery"
+    ],
+    "hubId": "hall_of_arms"
+  },
+  {
+    "id": "occultist_trainer",
+    "name": "Occultist Morwen",
+    "icon": "☠️",
+    "kind": "trainer",
+    "classId": "occultist",
+    "zone": "stonehold",
+    "x": 0.3012,
+    "y": 0.741,
+    "title": "Occultist Class Trainer",
+    "questIds": [
+      "occultist_class_begin",
+      "occultist_class_trial",
+      "occultist_class_mastery"
+    ],
+    "hubId": "hall_of_arms"
+  },
+  {
+    "id": "reaver_trainer",
+    "name": "Reaver Korr",
+    "icon": "🩸",
+    "kind": "trainer",
+    "classId": "reaver",
+    "zone": "stonehold",
+    "x": 0.2678,
+    "y": 0.7989,
+    "title": "Reaver Class Trainer",
+    "questIds": [
+      "reaver_class_begin",
+      "reaver_class_trial",
+      "reaver_class_mastery"
+    ],
+    "hubId": "hall_of_arms"
+  },
+  {
+    "id": "hierophant_trainer",
+    "name": "Hierophant Elira",
+    "icon": "✨",
+    "kind": "trainer",
+    "classId": "hierophant",
+    "zone": "stonehold",
+    "x": 0.2834,
+    "y": 0.7102,
+    "title": "Hierophant Class Trainer",
+    "questIds": [
+      "guardian_of_the_lantern",
+      "hold_the_line",
+      "the_lanterns_burden",
+      "mercy_under_ash"
+    ],
+    "hubId": "hall_of_arms"
+  },
+  {
+    "id": "sergeant_mara_reach",
+    "name": "Sergeant Mara",
+    "icon": "🛡️",
+    "kind": "quest",
+    "zone": "eastern_reach",
+    "x": 0.145,
+    "y": 0.5,
+    "title": "Eastwatch Sergeant",
+    "questIds": [
+      "the_eastern_road",
+      "watchers_on_the_hill",
+      "the_colossus_of_eastwatch",
+      "caravan_under_fire_quest",
+      "the_old_kingdom_road",
+      "watchers_on_the_hill_story",
+      "the_eastwatch_signal",
+      "caravan_aftershock"
+    ],
+    "hubId": "eastern_watch",
+    "scheduleProfile": "quest_local",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.145,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "id": "peddler_tovin",
+    "name": "Tovin",
+    "icon": "🧳",
+    "kind": "shop",
+    "zone": "eastern_reach",
+    "shopId": "eastern_reach_supplies",
+    "x": 0.16,
+    "y": 0.53,
+    "title": "Frontier Peddler",
+    "questIds": [],
+    "hubId": "wayfarer_camp"
+  },
+  {
+    "id": "archivist_elian",
+    "name": "Archivist Elian",
+    "icon": "📜",
+    "kind": "quest",
+    "zone": "old_kingdom",
+    "x": 0.48,
+    "y": 0.44,
+    "title": "Keeper of the Broken Crown",
+    "questIds": [
+      "the_old_kingdom_road",
+      "echoes_of_the_crown",
+      "the_kingless_revenant",
+      "undead_invasion_quest",
+      "a_future_not_a_memory",
+      "the_broken_ledger",
+      "the_royal_descent",
+      "the_king_beneath",
+      "roads_that_remember",
+      "the_first_stitch",
+      "the_royal_memory",
+      "the_sixth_bell",
+      "kingdom_aftershock",
+      "crownfall_watch_at_thirtyfive"
+    ],
+    "hubId": "ruined_crown",
+    "scheduleProfile": "quest_stationary",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.48,
+        "y": 0.44
+      }
+    }
+  },
+  {
+    "id": "quartermaster_voss",
+    "name": "Quartermaster Voss",
+    "icon": "⚒️",
+    "kind": "blacksmith",
+    "zone": "old_kingdom",
+    "shopId": "old_kingdom_armory",
+    "x": 0.68,
+    "y": 0.18,
+    "title": "Kingless Quartermaster",
+    "questIds": [],
+    "hubId": "kingless_watch"
+  },
+  {
+    "id": "covenant_envoy",
+    "name": "Covenant Envoy",
+    "icon": "🕯️",
+    "kind": "quest",
+    "zone": "ashen_wastes",
+    "x": 0.58,
+    "y": 0.48,
+    "title": "Ashen Covenant Envoy",
+    "questIds": [
+      "world_ashen_covenant_1",
+      "world_ashen_covenant_2",
+      "world_ashen_covenant_3",
+      "world_ashen_covenant_4",
+      "world_ashen_covenant_5",
+      "veil_aftershock"
+    ],
+    "scheduleProfile": "quest_stationary",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.58,
+        "y": 0.48
+      }
+    }
+  },
+  {
+    "id": "hollow_watcher",
+    "name": "Hollow Watcher",
+    "icon": "🜏",
+    "kind": "quest",
+    "zone": "eastern_reach",
+    "x": 0.62,
+    "y": 0.46,
+    "title": "Watcher of the Hollow",
+    "questIds": [
+      "world_the_hollow_1",
+      "world_the_hollow_2",
+      "world_the_hollow_3",
+      "world_the_hollow_4",
+      "world_the_hollow_5"
+    ],
+    "scheduleProfile": "quest_local",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.62,
+        "y": 0.46
+      }
+    }
+  },
+  {
+    "id": "lyra_hideworker",
+    "name": "Lyra",
+    "icon": "🪶",
+    "kind": "profession_trainer",
+    "profession": "skinning",
+    "zone": "gloamwood",
+    "x": 0.18,
+    "y": 0.58,
+    "title": "Master Hideworker",
+    "questIds": [],
+    "hubId": "lantern_camp"
+  },
+  {
+    "id": "selene_apothecary",
+    "name": "Selene",
+    "icon": "⚗️",
+    "kind": "profession_trainer",
+    "profession": "alchemy",
+    "zone": "stonehold",
+    "x": 0.75,
+    "y": 0.3,
+    "title": "Grand Alchemist",
+    "questIds": [],
+    "hubId": "craft_quarter"
+  },
+  {
+    "id": "brann_cook",
+    "name": "Brann",
+    "icon": "🍲",
+    "kind": "profession_trainer",
+    "profession": "cooking",
+    "zone": "stonehold",
+    "x": 0.3,
+    "y": 0.25,
+    "title": "Campfire Chef",
+    "questIds": [],
+    "hubId": "market_quarter"
+  },
+  {
+    "id": "bastion_keeper",
+    "name": "Keeper Serah",
+    "icon": "🛡️",
+    "kind": "quest",
+    "zone": "hollow_expanse",
+    "x": 0.12,
+    "y": 0.5,
+    "title": "Lantern Bastion Keeper",
+    "questIds": [
+      "hollow_frontier_watch",
+      "sealbreak_patrol",
+      "breachwarden_hunt",
+      "hollow_aftershock"
+    ],
+    "hubId": "lantern_bastion",
+    "scheduleProfile": "quest_stationary",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.12,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "id": "warden_ren",
+    "name": "Warden Ren",
+    "icon": "🧙",
+    "kind": "quest",
+    "zone": "hollow_expanse",
+    "x": 0.78,
+    "y": 0.68,
+    "title": "Veil Warden Scout",
+    "questIds": ["sealbreak_patrol", "breachwarden_hunt"],
+    "hubId": "hollowwatch",
+    "scheduleProfile": "quest_stationary",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.78,
+        "y": 0.68
+      }
+    }
+  },
+  {
+    "id": "fenwatch_watcher",
+    "name": "Watcher Elira",
+    "icon": "🏮",
+    "kind": "quest",
+    "zone": "briarfen",
+    "x": 0.16,
+    "y": 0.48,
+    "title": "Keeper of Fenwatch",
+    "questIds": [
+      "the_fen_bells",
+      "fenwatch_at_dusk",
+      "thorns_that_remember",
+      "the_drowned_road",
+      "fen_reclamation_story",
+      "fen_aftershock"
+    ],
+    "hubId": "fenwatch",
+    "scheduleProfile": "quest_local",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.16,
+        "y": 0.48
+      }
+    }
+  },
+  {
+    "id": "fenwatch_scavenger",
+    "name": "Mossback Pell",
+    "icon": "🪵",
+    "kind": "quest",
+    "zone": "briarfen",
+    "x": 0.71,
+    "y": 0.24,
+    "title": "Causeway Scavenger",
+    "questIds": [
+      "briarfen_lost_lantern",
+      "briarfen_marrow",
+      "briarfen_ferry",
+      "fen_relics",
+      "fenwatch_supplies"
+    ],
+    "hubId": "fenwatch",
+    "scheduleProfile": "quest_local",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.71,
+        "y": 0.24
+      }
+    }
+  },
+  {
+    "id": "sunscar_caravanmaster",
+    "name": "Caravanmaster Joren",
+    "icon": "🐎",
+    "kind": "quest",
+    "zone": "sunscar_steppe",
+    "x": 0.16,
+    "y": 0.54,
+    "title": "Master of the Red Road",
+    "questIds": [
+      "sunscar_first_light",
+      "caravan_of_names",
+      "redmaw_omens",
+      "the_caravan_signal",
+      "sunscar_caravan_story",
+      "sunscar_aftershock"
+    ],
+    "hubId": "sunscar_camp",
+    "scheduleProfile": "quest_local",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.16,
+        "y": 0.54
+      }
+    }
+  },
+  {
+    "id": "sunscar_pathfinder",
+    "name": "Pathfinder Nima",
+    "icon": "🧭",
+    "kind": "quest",
+    "zone": "sunscar_steppe",
+    "x": 0.72,
+    "y": 0.72,
+    "title": "Frontier Pathfinder",
+    "questIds": [
+      "sunscar_bloodtrail",
+      "sunscar_wings",
+      "sunscar_waystones",
+      "red_ridge_relic",
+      "caravan_scars"
+    ],
+    "hubId": "red_ridge",
+    "scheduleProfile": "quest_local",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.72,
+        "y": 0.72
+      }
+    }
+  },
+  {
+    "id": "crownfall_archivist",
+    "name": "Royal Archivist Neris",
+    "icon": "📜",
+    "kind": "quest",
+    "zone": "crownfall_expanse",
+    "x": 0.15,
+    "y": 0.52,
+    "title": "Last Archivist of Crownfall",
+    "questIds": [
+      "crownfall_road_story",
+      "bones_of_the_crown",
+      "the_crownless_witch",
+      "crownfall_rebellion_story",
+      "crownfall_ledger_story",
+      "crownfall_aftershock"
+    ],
+    "hubId": "crownfall_camp",
+    "scheduleProfile": "quest_stationary",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.15,
+        "y": 0.52
+      }
+    }
+  },
+  {
+    "id": "crownfall_gravewarden",
+    "name": "Gravewarden Tomas",
+    "icon": "🕯️",
+    "kind": "quest",
+    "zone": "crownfall_expanse",
+    "x": 0.72,
+    "y": 0.36,
+    "title": "Keeper of the Royal Dead",
+    "questIds": [
+      "crownfall_bone_tithe",
+      "reclaim_the_estate",
+      "witchglass",
+      "last_royal_patrol",
+      "crownfall_names"
+    ],
+    "hubId": "last_bastion",
+    "scheduleProfile": "quest_stationary",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.72,
+        "y": 0.36
+      }
+    }
+  },
+  {
+    "id": "highland_stormwarden",
+    "name": "Stormwarden Ilyra",
+    "icon": "⛰️",
+    "kind": "quest",
+    "zone": "veilscar_highlands",
+    "x": 0.16,
+    "y": 0.52,
+    "title": "Warden of the High Pass",
+    "questIds": [
+      "highland_ascent_story",
+      "wraiths_in_the_storm",
+      "stormbound_orders",
+      "collapse_the_highland_storm",
+      "highland_aftershock"
+    ],
+    "hubId": "highland_watch",
+    "scheduleProfile": "quest_stationary",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.16,
+        "y": 0.52
+      }
+    }
+  },
+  {
+    "id": "highland_climber",
+    "name": "Climber Rusk",
+    "icon": "🪓",
+    "kind": "quest",
+    "zone": "veilscar_highlands",
+    "x": 0.73,
+    "y": 0.18,
+    "title": "Mountain Pathfinder",
+    "questIds": [
+      "highland_oreline",
+      "stormscar_signal",
+      "gargoyle_roost",
+      "aether_shards",
+      "the_long_climb"
+    ],
+    "hubId": "stormscar",
+    "scheduleProfile": "quest_local",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.73,
+        "y": 0.18
+      }
+    }
+  },
+  {
+    "id": "nightveil_tidewarden",
+    "name": "Tidewarden Sera",
+    "icon": "⚓",
+    "kind": "quest",
+    "zone": "nightveil_coast",
+    "x": 0.15,
+    "y": 0.52,
+    "title": "Keeper of the Black Tide",
+    "questIds": [
+      "nightveil_crossing_story",
+      "drowned_warband",
+      "hollowtide_witch",
+      "nightveil_tide_story",
+      "nightveil_behemoth_story",
+      "nightveil_aftershock"
+    ],
+    "hubId": "tidewatch",
+    "scheduleProfile": "quest_stationary",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.15,
+        "y": 0.52
+      }
+    }
+  },
+  {
+    "id": "nightveil_dredger",
+    "name": "Dredger Venn",
+    "icon": "🪝",
+    "kind": "quest",
+    "zone": "nightveil_coast",
+    "x": 0.72,
+    "y": 0.62,
+    "title": "Ruins Dredger",
+    "questIds": [
+      "nightveil_drowned",
+      "drowned_anchors",
+      "tideglass_names",
+      "behemoth_tracks",
+      "coast_of_whispers"
+    ],
+    "hubId": "tidewatch",
+    "scheduleProfile": "quest_local",
+    "scheduleAnchors": {
+      "home": {
+        "x": 0.72,
+        "y": 0.62
+      }
+    }
+  }
+]

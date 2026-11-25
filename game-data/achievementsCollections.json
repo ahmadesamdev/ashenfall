@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "categories": [
+    "story",
+    "exploration",
+    "combat",
+    "dungeons",
+    "gear",
+    "professions",
+    "social",
+    "pvp",
+    "world_events",
+    "collections"
+  ],
+  "rules": {
+    "accountPersistent": true,
+    "characterMilestonesSupported": true,
+    "hiddenAchievementsSupported": true,
+    "oneTimeRewards": true
+  },
+  "starterAchievements": [
+    {
+      "id": "first_steps",
+      "category": "story",
+      "condition": "complete_first_main_quest",
+      "rewardXp": 100
+    },
+    {
+      "id": "cartographer",
+      "category": "exploration",
+      "condition": "discover_10_pois",
+      "rewardXp": 250
+    },
+    {
+      "id": "dungeon_delver",
+      "category": "dungeons",
+      "condition": "complete_5_dungeons",
+      "rewardXp": 500
+    },
+    {
+      "id": "masterwork",
+      "category": "professions",
+      "condition": "craft_level_60_item",
+      "rewardXp": 750
+    },
+    {
+      "id": "battle_tested",
+      "category": "pvp",
+      "condition": "win_10_pvp_matches",
+      "rewardHonor": 250
+    }
+  ]
+}

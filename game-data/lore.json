@@ -1,0 +1,335 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "lore_stonehold_1",
+      "zone": "stonehold",
+      "minLevel": 1,
+      "title": "Stonehold Memory 1",
+      "text": "A fragment of ordinary life in Stonehold, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 35,
+        "gold": 5
+      }
+    },
+    {
+      "id": "lore_stonehold_2",
+      "zone": "stonehold",
+      "minLevel": 3,
+      "title": "Stonehold Memory 2",
+      "text": "A fragment of ordinary life in Stonehold, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 40,
+        "gold": 6
+      }
+    },
+    {
+      "id": "lore_stonehold_3",
+      "zone": "stonehold",
+      "minLevel": 5,
+      "title": "Stonehold Memory 3",
+      "text": "A fragment of ordinary life in Stonehold, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 45,
+        "gold": 7
+      }
+    },
+    {
+      "id": "lore_gloamwood_1",
+      "zone": "gloamwood",
+      "minLevel": 7,
+      "title": "Gloamwood Memory 1",
+      "text": "A fragment of ordinary life in Gloamwood, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 45,
+        "gold": 6
+      }
+    },
+    {
+      "id": "lore_gloamwood_2",
+      "zone": "gloamwood",
+      "minLevel": 9,
+      "title": "Gloamwood Memory 2",
+      "text": "A fragment of ordinary life in Gloamwood, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 50,
+        "gold": 7
+      }
+    },
+    {
+      "id": "lore_gloamwood_3",
+      "zone": "gloamwood",
+      "minLevel": 11,
+      "title": "Gloamwood Memory 3",
+      "text": "A fragment of ordinary life in Gloamwood, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 55,
+        "gold": 8
+      }
+    },
+    {
+      "id": "lore_marches_of_dawn_1",
+      "zone": "marches_of_dawn",
+      "minLevel": 13,
+      "title": "Marches of Dawn Memory 1",
+      "text": "A fragment of ordinary life in Marches of Dawn, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 55,
+        "gold": 7
+      }
+    },
+    {
+      "id": "lore_marches_of_dawn_2",
+      "zone": "marches_of_dawn",
+      "minLevel": 15,
+      "title": "Marches of Dawn Memory 2",
+      "text": "A fragment of ordinary life in Marches of Dawn, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 60,
+        "gold": 8
+      }
+    },
+    {
+      "id": "lore_marches_of_dawn_3",
+      "zone": "marches_of_dawn",
+      "minLevel": 17,
+      "title": "Marches of Dawn Memory 3",
+      "text": "A fragment of ordinary life in Marches of Dawn, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 65,
+        "gold": 9
+      }
+    },
+    {
+      "id": "lore_duskmoor_1",
+      "zone": "duskmoor",
+      "minLevel": 19,
+      "title": "Duskmere Memory 1",
+      "text": "A fragment of ordinary life in Duskmere, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 65,
+        "gold": 8
+      }
+    },
+    {
+      "id": "lore_duskmoor_2",
+      "zone": "duskmoor",
+      "minLevel": 21,
+      "title": "Duskmere Memory 2",
+      "text": "A fragment of ordinary life in Duskmere, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 70,
+        "gold": 9
+      }
+    },
+    {
+      "id": "lore_duskmoor_3",
+      "zone": "duskmoor",
+      "minLevel": 23,
+      "title": "Duskmere Memory 3",
+      "text": "A fragment of ordinary life in Duskmere, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 75,
+        "gold": 10
+      }
+    },
+    {
+      "id": "lore_ashen_wastes_1",
+      "zone": "ashen_wastes",
+      "minLevel": 25,
+      "title": "Ashen Wastes Memory 1",
+      "text": "A fragment of ordinary life in Ashen Wastes, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 75,
+        "gold": 9
+      }
+    },
+    {
+      "id": "lore_ashen_wastes_2",
+      "zone": "ashen_wastes",
+      "minLevel": 27,
+      "title": "Ashen Wastes Memory 2",
+      "text": "A fragment of ordinary life in Ashen Wastes, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 80,
+        "gold": 10
+      }
+    },
+    {
+      "id": "lore_ashen_wastes_3",
+      "zone": "ashen_wastes",
+      "minLevel": 29,
+      "title": "Ashen Wastes Memory 3",
+      "text": "A fragment of ordinary life in Ashen Wastes, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 85,
+        "gold": 11
+      }
+    },
+    {
+      "id": "lore_black_citadel_1",
+      "zone": "black_citadel",
+      "minLevel": 31,
+      "title": "Black Citadel Memory 1",
+      "text": "A fragment of ordinary life in Black Citadel, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 85,
+        "gold": 10
+      }
+    },
+    {
+      "id": "lore_black_citadel_2",
+      "zone": "black_citadel",
+      "minLevel": 33,
+      "title": "Black Citadel Memory 2",
+      "text": "A fragment of ordinary life in Black Citadel, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 90,
+        "gold": 11
+      }
+    },
+    {
+      "id": "lore_black_citadel_3",
+      "zone": "black_citadel",
+      "minLevel": 35,
+      "title": "Black Citadel Memory 3",
+      "text": "A fragment of ordinary life in Black Citadel, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 95,
+        "gold": 12
+      }
+    },
+    {
+      "id": "lore_dawnwatch_1",
+      "zone": "dawnwatch",
+      "minLevel": 37,
+      "title": "Dawnwatch Memory 1",
+      "text": "A fragment of ordinary life in Dawnwatch, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 95,
+        "gold": 11
+      }
+    },
+    {
+      "id": "lore_dawnwatch_2",
+      "zone": "dawnwatch",
+      "minLevel": 39,
+      "title": "Dawnwatch Memory 2",
+      "text": "A fragment of ordinary life in Dawnwatch, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 100,
+        "gold": 12
+      }
+    },
+    {
+      "id": "lore_dawnwatch_3",
+      "zone": "dawnwatch",
+      "minLevel": 41,
+      "title": "Dawnwatch Memory 3",
+      "text": "A fragment of ordinary life in Dawnwatch, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 105,
+        "gold": 13
+      }
+    },
+    {
+      "id": "lore_ebonharbor_1",
+      "zone": "ebonharbor",
+      "minLevel": 43,
+      "title": "Ebonharbor Memory 1",
+      "text": "A fragment of ordinary life in Ebonharbor, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 105,
+        "gold": 12
+      }
+    },
+    {
+      "id": "lore_ebonharbor_2",
+      "zone": "ebonharbor",
+      "minLevel": 45,
+      "title": "Ebonharbor Memory 2",
+      "text": "A fragment of ordinary life in Ebonharbor, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 110,
+        "gold": 13
+      }
+    },
+    {
+      "id": "lore_ebonharbor_3",
+      "zone": "ebonharbor",
+      "minLevel": 47,
+      "title": "Ebonharbor Memory 3",
+      "text": "A fragment of ordinary life in Ebonharbor, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 115,
+        "gold": 14
+      }
+    },
+    {
+      "id": "lore_eastern_reach_1",
+      "zone": "eastern_reach",
+      "minLevel": 49,
+      "title": "Eastern Reach Memory 1",
+      "text": "A fragment of ordinary life in Eastern Reach, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 115,
+        "gold": 13
+      }
+    },
+    {
+      "id": "lore_eastern_reach_2",
+      "zone": "eastern_reach",
+      "minLevel": 51,
+      "title": "Eastern Reach Memory 2",
+      "text": "A fragment of ordinary life in Eastern Reach, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 120,
+        "gold": 14
+      }
+    },
+    {
+      "id": "lore_eastern_reach_3",
+      "zone": "eastern_reach",
+      "minLevel": 53,
+      "title": "Eastern Reach Memory 3",
+      "text": "A fragment of ordinary life in Eastern Reach, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 125,
+        "gold": 15
+      }
+    },
+    {
+      "id": "lore_old_kingdom_1",
+      "zone": "old_kingdom",
+      "minLevel": 55,
+      "title": "Old Kingdom Memory 1",
+      "text": "A fragment of ordinary life in Old Kingdom, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 125,
+        "gold": 14
+      }
+    },
+    {
+      "id": "lore_old_kingdom_2",
+      "zone": "old_kingdom",
+      "minLevel": 57,
+      "title": "Old Kingdom Memory 2",
+      "text": "A fragment of ordinary life in Old Kingdom, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 130,
+        "gold": 15
+      }
+    },
+    {
+      "id": "lore_old_kingdom_3",
+      "zone": "old_kingdom",
+      "minLevel": 59,
+      "title": "Old Kingdom Memory 3",
+      "text": "A fragment of ordinary life in Old Kingdom, preserved as evidence of what the Veil changed.",
+      "reward": {
+        "xp": 135,
+        "gold": 16
+      }
+    }
+  ]
+}

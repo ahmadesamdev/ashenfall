@@ -1,0 +1,372 @@
+{
+  "title": "Ashenfall  -  Story & World Contract",
+  "arcs": [
+    {
+      "id": "arc_0",
+      "name": "The Last Wall",
+      "zones": ["stonehold"],
+      "quests": ["call_of_ashenfall"],
+      "purpose": "Establish Stonehold, the Lantern Guard and the ordinary cost of the Veil."
+    },
+    {
+      "id": "arc_1",
+      "name": "Ashes of the Past",
+      "zones": ["stonehold", "gloamwood"],
+      "quests": [
+        "ashes_on_the_road",
+        "the_lantern_that_lied",
+        "lost_patrol",
+        "lanterns_in_the_forest",
+        "the_old_lantern",
+        "whispers_between_trees"
+      ],
+      "purpose": "Turn the missing patrol into evidence of a deeper wound."
+    },
+    {
+      "id": "arc_2",
+      "name": "The Bell Below",
+      "zones": ["gloamwood", "sunken_catacombs"],
+      "quests": ["below_the_roots", "the_hollow_saint"],
+      "purpose": "Introduce Eir-Vhal and establish the Veil-stitching mystery."
+    },
+    {
+      "id": "arc_3",
+      "name": "A Door That Remembers",
+      "zones": ["stonehold", "ashen_wastes", "black_citadel", "dreadvault"],
+      "quests": [
+        "the_black_road",
+        "citadel_supplies",
+        "citadel_arms",
+        "the_citadel_below",
+        "the_name_below"
+      ],
+      "purpose": "Show that the threat remembers people and uses old institutions."
+    },
+    {
+      "id": "arc_4",
+      "name": "The Wastes Remember",
+      "zones": ["black_citadel", "briarfen", "ashen_wastes"],
+      "quests": [
+        "the_fen_bells",
+        "fenwatch_at_dusk",
+        "thorns_that_remember",
+        "the_drowned_road",
+        "fen_reclamation_story",
+        "ash_that_rises",
+        "the_black_seal",
+        "roads_without_names",
+        "the_wastes_below"
+      ],
+      "purpose": "Reveal that corruption is moving along ancient roads and teaching living creatures to carry the old seal."
+    },
+    {
+      "id": "arc_5",
+      "name": "The Eastern Road",
+      "zones": ["sunscar_steppe", "eastern_reach"],
+      "quests": [
+        "sunscar_first_light",
+        "caravan_of_names",
+        "redmaw_omens",
+        "the_caravan_signal",
+        "sunscar_caravan_story",
+        "the_eastern_road",
+        "watchers_on_the_hill_story",
+        "the_eastwatch_signal"
+      ],
+      "purpose": "Follow the old road network and discover that dead authority still issues commands."
+    },
+    {
+      "id": "arc_6",
+      "name": "The Crown Beneath",
+      "zones": ["crownfall_expanse", "old_kingdom", "royal_catacombs"],
+      "quests": [
+        "crownfall_road_story",
+        "bones_of_the_crown",
+        "the_crownless_witch",
+        "crownfall_rebellion_story",
+        "crownfall_ledger_story",
+        "the_old_kingdom_road",
+        "the_broken_ledger",
+        "the_royal_descent",
+        "the_king_beneath"
+      ],
+      "purpose": "Recover the first stitching record from the buried royal court."
+    },
+    {
+      "id": "arc_7",
+      "name": "Roads That Remember",
+      "zones": ["veilscar_highlands", "ashen_wastes"],
+      "quests": [
+        "highland_ascent_story",
+        "wraiths_in_the_storm",
+        "stormbound_orders",
+        "collapse_the_highland_storm",
+        "roads_that_remember",
+        "memory_in_the_ash",
+        "collapse_the_anomaly"
+      ],
+      "purpose": "Prove that the roads are memory channels reopening beneath the world."
+    },
+    {
+      "id": "arc_8",
+      "name": "The Hollow Court",
+      "zones": ["watcher_hollow", "gloamwood", "nightveil_coast"],
+      "quests": [
+        "watcher_hollow",
+        "the_hollow_warden",
+        "the_court_that_waits",
+        "nightveil_crossing_story",
+        "drowned_warband",
+        "hollowtide_witch",
+        "nightveil_tide_story",
+        "nightveil_behemoth_story"
+      ],
+      "purpose": "Discover that an ancient court survives inside the Veil as memory."
+    },
+    {
+      "id": "arc_9",
+      "name": "The First Stitch",
+      "zones": ["black_citadel", "dreadvault"],
+      "quests": [
+        "reckoning_at_the_citadel",
+        "the_dead_guardian",
+        "the_door_that_listens",
+        "the_name_of_the_first"
+      ],
+      "purpose": "Trace the first stitch and learn what was sacrificed to create it."
+    },
+    {
+      "id": "arc_10",
+      "name": "The Bells Beneath the World",
+      "zones": ["old_kingdom", "royal_catacombs", "stonehold"],
+      "quests": [
+        "the_first_stitch",
+        "the_royal_memory",
+        "bells_beneath_world",
+        "the_last_lantern"
+      ],
+      "purpose": "Bring the campaign to its first conclusion: the bell can be silenced, but memory must be chosen."
+    }
+  ],
+  "regionIdentity": [
+    {
+      "zone": "stonehold",
+      "identity": "Fortified human capital; politics, duty, markets and class trainers.",
+      "materials": ["copper_ore", "iron_ore"]
+    },
+    {
+      "zone": "gloamwood",
+      "identity": "Ancient forest guarding a buried wound; lantern trails, roots and Veil scars.",
+      "materials": ["umbral_iron_ore", "silver_ore"]
+    },
+    {
+      "zone": "ashen_wastes",
+      "identity": "Blackened badlands where old roads and living corruption overlap.",
+      "materials": ["star_iron_ore", "blacksteel_ore", "dreadsilver_ore"]
+    },
+    {
+      "zone": "black_citadel",
+      "identity": "Fortress-city built around a sealed door; military memory and the old court.",
+      "materials": ["blacksteel_ore", "dreadsilver_ore"]
+    },
+    {
+      "id": "eastern_reach",
+      "name": "Eastern Reach",
+      "identity": "Wind-cut frontier farms and caravan roads between Stonehold and the northern ash routes.",
+      "gameplay": "Road patrols, beast packs, contested ore veins, a roaming elite guardian and caravan-focused quests."
+    },
+    {
+      "id": "old_kingdom",
+      "name": "Old Kingdom",
+      "identity": "Ruined royal heartland where broken keeps and forgotten roads expose the history beneath Ashenfall.",
+      "gameplay": "Undead patrols, relic ruins, higher-tier ore, a rare guardian and exploration quests."
+    },
+    {
+      "id": "briarfen",
+      "name": "Briarfen",
+      "identity": "Drowned thorn marshes where old Lantern Guard causeways disappear beneath black water.",
+      "gameplay": "Marsh patrols, lantern restoration, thorn creatures, caravan routes and a Fen Reclamation event."
+    },
+    {
+      "id": "sunscar_steppe",
+      "name": "Sunscar Steppe",
+      "identity": "Red-grass caravan frontier where old battlefields overlap living trade roads.",
+      "gameplay": "Caravan defense, raider camps, battlefield hunts and the Sunscar Caravan War."
+    },
+    {
+      "id": "crownfall_expanse",
+      "name": "Crownfall Expanse",
+      "identity": "Broken royal heartland where the dead court still enforces its ancient roads.",
+      "gameplay": "Royal undead patrols, ruined estates, memory seals and the Crownfall Rebellion."
+    },
+    {
+      "id": "veilscar_highlands",
+      "name": "Veilscar Highlands",
+      "identity": "Storm-battered black highlands above the oldest Veil scar.",
+      "gameplay": "Aether storms, highland patrols, dangerous climbs and the Highland Storm event."
+    },
+    {
+      "id": "nightveil_coast",
+      "name": "Nightveil Coast",
+      "identity": "Storm-dark coast where drowned armies protect a road toward the Hollow.",
+      "gameplay": "Drowned warbands, black tides, exposed ruins and the Nightveil Black Tide event."
+    }
+  ],
+  "questCategories": {
+    "main_story": "Primary arc progression and world revelations.",
+    "character": "NPC lives, local people, survivors and faction consequences.",
+    "world": "Faction, Veil and regional history.",
+    "profession": "Teaches and advances gathering/crafting identity.",
+    "exploration": "Discovers roads, landmarks, hidden places and rare creatures.",
+    "dungeon": "Introduces dungeon lore and contextualizes its encounters.",
+    "class": "Class identity, combat philosophy and personal mastery.",
+    "story_branch": "Branching narrative consequence quests.",
+    "regional_story": "Zone-specific campaign quests that bridge the main story through the expanded world."
+  },
+  "creditRules": {
+    "kill": "Party-share when quest is accepted, same zone, within 120m, online/alive and level-eligible.",
+    "dungeon": "Party-share for active participants in the same dungeon run.",
+    "dungeon_stage": "Party-share for active participants in the same dungeon run.",
+    "travel": "Individual; discovering a place belongs to the character.",
+    "talk": "Individual; the character must personally speak to the NPC.",
+    "mine": "Individual; gathering ownership stays with the miner.",
+    "craft": "Individual; crafting mastery belongs to the crafter.",
+    "sell": "Individual; economic actions are personal.",
+    "auction": "Individual; market actions are personal.",
+    "trade": "Individual; trade completion is personal."
+  },
+  "regionProgression": [
+    {
+      "id": "eastern_reach",
+      "recommendedLevel": [5, 9],
+      "neighbors": ["stonehold", "ashen_wastes"],
+      "rareMob": "eastwatch_colossus",
+      "dungeon": null
+    },
+    {
+      "id": "old_kingdom",
+      "recommendedLevel": [8, 12],
+      "neighbors": ["stonehold", "ashen_wastes"],
+      "rareMob": "kingdom_revenant",
+      "dungeon": null
+    },
+    {
+      "id": "briarfen",
+      "recommendedLevel": [9, 18],
+      "neighbors": ["gloamwood", "eastern_reach", "sunscar_steppe"],
+      "rareMob": "fen_revenant",
+      "dungeon": null
+    },
+    {
+      "id": "sunscar_steppe",
+      "recommendedLevel": [17, 28],
+      "neighbors": [
+        "briarfen",
+        "eastern_reach",
+        "ashen_wastes",
+        "crownfall_expanse"
+      ],
+      "rareMob": "steppe_colossus",
+      "dungeon": null
+    },
+    {
+      "id": "crownfall_expanse",
+      "recommendedLevel": [28, 40],
+      "neighbors": [
+        "sunscar_steppe",
+        "ashen_wastes",
+        "old_kingdom",
+        "veilscar_highlands"
+      ],
+      "rareMob": "crownfall_revenant",
+      "dungeon": null
+    },
+    {
+      "id": "veilscar_highlands",
+      "recommendedLevel": [38, 52],
+      "neighbors": ["crownfall_expanse", "black_citadel", "nightveil_coast"],
+      "rareMob": "highland_gargoyle",
+      "dungeon": null
+    },
+    {
+      "id": "nightveil_coast",
+      "recommendedLevel": [50, 60],
+      "neighbors": ["veilscar_highlands", "hollow_expanse"],
+      "rareMob": "nightveil_behemoth",
+      "dungeon": null
+    }
+  ],
+  "campaignProgression": [
+    {
+      "chapter": 0,
+      "recommendedLevels": [1, 4]
+    },
+    {
+      "chapter": 1,
+      "recommendedLevels": [1, 7]
+    },
+    {
+      "chapter": 2,
+      "recommendedLevels": [4, 9]
+    },
+    {
+      "chapter": 3,
+      "recommendedLevels": [5, 12]
+    },
+    {
+      "chapter": 4,
+      "recommendedLevels": [10, 16]
+    },
+    {
+      "chapter": 5,
+      "recommendedLevels": [17, 27]
+    },
+    {
+      "chapter": 6,
+      "recommendedLevels": [28, 37]
+    },
+    {
+      "chapter": 7,
+      "recommendedLevels": [38, 47]
+    },
+    {
+      "chapter": 8,
+      "recommendedLevels": [31, 57]
+    },
+    {
+      "chapter": 9,
+      "recommendedLevels": [58, 59]
+    },
+    {
+      "chapter": 10,
+      "recommendedLevels": [60, 60]
+    }
+  ],
+  "worldPhases": [
+    {
+      "id": "chapter_1_awareness",
+      "flag": "choice_council_truth",
+      "description": "Stonehold openly records the sixth lantern incident."
+    },
+    {
+      "id": "chapter_2_guard_route",
+      "flag": "choice_guard_duty",
+      "description": "Lantern Guard patrols receive additional authority."
+    },
+    {
+      "id": "chapter_4_covenant_contact",
+      "flag": "choice_covenant_heard",
+      "description": "The Covenant is treated as a source of intelligence rather than an immediate enemy."
+    },
+    {
+      "id": "chapter_8_hollow_contact",
+      "flag": "choice_hollow_listened",
+      "description": "Hollow manifestations may be approached without immediate hostility in narrative events."
+    },
+    {
+      "id": "chapter_10_final_memory",
+      "flag": "choice_final_memory",
+      "description": "The final memory choice becomes the campaign ending state."
+    }
+  ]
+}

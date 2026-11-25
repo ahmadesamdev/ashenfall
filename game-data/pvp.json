@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "season": {
+    "id": "season-1",
+    "name": "Ashenfall Season 1",
+    "durationDays": 90
+  },
+  "modes": ["duel", "open_world", "arena", "battleground"],
+  "arenaBrackets": {
+    "2v2": { "teamSize": 2, "placementGames": 10, "startingMMR": 1000 },
+    "3v3": { "teamSize": 3, "placementGames": 10, "startingMMR": 1000 }
+  },
+  "battleground": {
+    "teamSize": 5,
+    "matchSize": 10,
+    "durationSeconds": 480,
+    "honorWin": 100,
+    "honorLoss": 50,
+    "conquestWin": 15
+  },
+  "ratingBands": ["combatant", "challenger", "rival", "duelist", "gladiator"],
+  "ratingThresholds": {
+    "combatant": 1400,
+    "challenger": 1600,
+    "rival": 1800,
+    "duelist": 2100,
+    "gladiator": 2400
+  },
+  "rewards": ["honor", "conquest", "cosmetics", "gear_tokens"],
+  "rules": {
+    "combatIsolation": true,
+    "levelScaling": true,
+    "disengageProtection": true,
+    "ratingServerAuthoritative": true,
+    "honorPersistent": true,
+    "pvpGearNormalized": true,
+    "ratedArenaMMR": true,
+    "ratedArenaPersonalRating": true
+  }
+}

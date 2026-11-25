@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "profiles": {
+    "fortified_capital": {
+      "roadSpeedMultiplier": 1.08,
+      "offRoadSpeedMultiplier": 0.96,
+      "roadAggroMultiplier": 0.65,
+      "offRoadAggroMultiplier": 1,
+      "condition": "stonehold-roads",
+      "travelTip": "Stone roads are the safest route through the capital.",
+      "offRoadCondition": "stonehold-roads-offroad"
+    },
+    "lantern_forest": {
+      "roadSpeedMultiplier": 1.1,
+      "offRoadSpeedMultiplier": 0.92,
+      "roadAggroMultiplier": 0.82,
+      "offRoadAggroMultiplier": 1.05,
+      "condition": "lantern-trails",
+      "travelTip": "Lantern-marked paths are safer and faster than the deep woods.",
+      "offRoadCondition": "lantern-trails-offroad"
+    },
+    "frontier_caravan": {
+      "roadSpeedMultiplier": 1.15,
+      "offRoadSpeedMultiplier": 0.94,
+      "roadAggroMultiplier": 1.12,
+      "offRoadAggroMultiplier": 1.02,
+      "condition": "caravan-lane",
+      "travelTip": "Caravan roads are fast, but roaming threats patrol valuable routes.",
+      "offRoadCondition": "caravan-lane-offroad"
+    },
+    "veil_badlands": {
+      "roadSpeedMultiplier": 1.04,
+      "offRoadSpeedMultiplier": 0.9,
+      "roadAggroMultiplier": 1.08,
+      "offRoadAggroMultiplier": 1.15,
+      "condition": "veil-winds",
+      "travelTip": "Storm-battered roads offer the least dangerous crossing.",
+      "offRoadCondition": "veil-winds-offroad"
+    },
+    "royal_ruins": {
+      "roadSpeedMultiplier": 1.08,
+      "offRoadSpeedMultiplier": 0.91,
+      "roadAggroMultiplier": 0.88,
+      "offRoadAggroMultiplier": 1.1,
+      "condition": "royal-road",
+      "travelTip": "Old royal roads are safer than wandering through the ruins.",
+      "offRoadCondition": "royal-road-offroad"
+    },
+    "fortress": {
+      "roadSpeedMultiplier": 1.06,
+      "offRoadSpeedMultiplier": 0.98,
+      "roadAggroMultiplier": 0.6,
+      "offRoadAggroMultiplier": 0.8,
+      "condition": "citadel-road",
+      "travelTip": "Guarded fortress roads keep travel predictable.",
+      "offRoadCondition": "citadel-road-offroad"
+    },
+    "apex_frontier": {
+      "roadSpeedMultiplier": 1.05,
+      "offRoadSpeedMultiplier": 0.88,
+      "roadAggroMultiplier": 1.16,
+      "offRoadAggroMultiplier": 1.2,
+      "condition": "hollow-winds",
+      "travelTip": "Exposed roads are faster; leaving them means entering the worst of the frontier.",
+      "offRoadCondition": "hollow-winds-offroad"
+    },
+    "marsh_frontier": {
+      "roadSpeedMultiplier": 1.08,
+      "offRoadSpeedMultiplier": 0.86,
+      "roadAggroMultiplier": 0.96,
+      "offRoadAggroMultiplier": 1.12,
+      "condition": "fen-causeway",
+      "travelTip": "Lantern causeways keep you above the worst of the marsh.",
+      "offRoadCondition": "fen-causeway-offroad"
+    },
+    "open_steppe": {
+      "roadSpeedMultiplier": 1.12,
+      "offRoadSpeedMultiplier": 0.98,
+      "roadAggroMultiplier": 1.08,
+      "offRoadAggroMultiplier": 1.04,
+      "condition": "steppe-road",
+      "travelTip": "Open roads cross the steppe quickly, but patrols can spot travelers from far away.",
+      "offRoadCondition": "steppe-road-offroad"
+    },
+    "haunted_estates": {
+      "roadSpeedMultiplier": 1.07,
+      "offRoadSpeedMultiplier": 0.89,
+      "roadAggroMultiplier": 0.92,
+      "offRoadAggroMultiplier": 1.14,
+      "condition": "crownfall-road",
+      "travelTip": "Broken royal roads remain the safest way between ruined estates.",
+      "offRoadCondition": "crownfall-road-offroad"
+    },
+    "storm_highlands": {
+      "roadSpeedMultiplier": 1.04,
+      "offRoadSpeedMultiplier": 0.84,
+      "roadAggroMultiplier": 1.1,
+      "offRoadAggroMultiplier": 1.18,
+      "condition": "storm-pass",
+      "travelTip": "Highland passes are exposed, but marked routes avoid the worst climbs.",
+      "offRoadCondition": "storm-pass-offroad"
+    },
+    "drowned_coast": {
+      "roadSpeedMultiplier": 1.06,
+      "offRoadSpeedMultiplier": 0.87,
+      "roadAggroMultiplier": 1.05,
+      "offRoadAggroMultiplier": 1.15,
+      "condition": "coastal-road",
+      "travelTip": "Raised causeways are the reliable route through the drowned coast.",
+      "offRoadCondition": "coastal-road-offroad"
+    }
+  },
+  "regionProfiles": {
+    "stonehold": "fortified_capital",
+    "gloamwood": "lantern_forest",
+    "eastern_reach": "frontier_caravan",
+    "ashen_wastes": "veil_badlands",
+    "old_kingdom": "royal_ruins",
+    "black_citadel": "fortress",
+    "hollow_expanse": "apex_frontier",
+    "briarfen": "marsh_frontier",
+    "sunscar_steppe": "open_steppe",
+    "crownfall_expanse": "haunted_estates",
+    "veilscar_highlands": "storm_highlands",
+    "nightveil_coast": "drowned_coast"
+  }
+}

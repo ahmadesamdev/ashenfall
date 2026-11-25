@@ -1,0 +1,5 @@
+build/
+dist/
+coverage/
+*.min.js
+package-lock.json

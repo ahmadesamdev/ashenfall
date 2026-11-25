@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "stateContractVersion": 3,
+  "panels": [
+    "character",
+    "story",
+    "world_map",
+    "quests",
+    "gear",
+    "dungeon",
+    "party",
+    "guild",
+    "professions",
+    "economy",
+    "pvp",
+    "achievements"
+  ],
+  "rules": {
+    "serverStateFirst": true,
+    "motionSeparateFromUiState": true,
+    "revisionedSnapshots": true,
+    "catalogLazyLoad": true,
+    "commandErrorsStructured": true
+  }
+}

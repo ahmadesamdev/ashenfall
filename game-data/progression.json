@@ -1,0 +1,486 @@
+{
+  "version": "2.18.0",
+  "maxLevel": 60,
+  "levels": [
+    {
+      "level": 1,
+      "band": "initiate",
+      "storyChapter": 0,
+      "unlockMilestones": [],
+      "statPoints": 0,
+      "talentPoints": 0
+    },
+    {
+      "level": 2,
+      "band": "initiate",
+      "storyChapter": 0,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 3,
+      "band": "initiate",
+      "storyChapter": 0,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 4,
+      "band": "initiate",
+      "storyChapter": 0,
+      "unlockMilestones": ["dungeons"],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 5,
+      "band": "adventurer",
+      "storyChapter": 1,
+      "unlockMilestones": ["advanced_professions"],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 6,
+      "band": "adventurer",
+      "storyChapter": 1,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 7,
+      "band": "adventurer",
+      "storyChapter": 1,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 8,
+      "band": "adventurer",
+      "storyChapter": 2,
+      "unlockMilestones": ["open_pvp_regions"],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 9,
+      "band": "adventurer",
+      "storyChapter": 2,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 10,
+      "band": "veteran",
+      "storyChapter": 3,
+      "unlockMilestones": ["specializations", "advanced_talents"],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 11,
+      "band": "veteran",
+      "storyChapter": 3,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 12,
+      "band": "veteran",
+      "storyChapter": 3,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 13,
+      "band": "veteran",
+      "storyChapter": 4,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 14,
+      "band": "veteran",
+      "storyChapter": 4,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 15,
+      "band": "veteran",
+      "storyChapter": 4,
+      "unlockMilestones": ["heroic_gear_band"],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 16,
+      "band": "heroic",
+      "storyChapter": 4,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 17,
+      "band": "heroic",
+      "storyChapter": 4,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 18,
+      "band": "heroic",
+      "storyChapter": 5,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 19,
+      "band": "heroic",
+      "storyChapter": 5,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 20,
+      "band": "heroic",
+      "storyChapter": 5,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 21,
+      "band": "heroic",
+      "storyChapter": 5,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 22,
+      "band": "heroic",
+      "storyChapter": 5,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 23,
+      "band": "heroic",
+      "storyChapter": 5,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 24,
+      "band": "heroic",
+      "storyChapter": 5,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 25,
+      "band": "heroic",
+      "storyChapter": 6,
+      "unlockMilestones": ["mythic_gear_band"],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 26,
+      "band": "mythic",
+      "storyChapter": 6,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 27,
+      "band": "mythic",
+      "storyChapter": 6,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 28,
+      "band": "mythic",
+      "storyChapter": 6,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 29,
+      "band": "mythic",
+      "storyChapter": 6,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 30,
+      "band": "mythic",
+      "storyChapter": 6,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 31,
+      "band": "mythic",
+      "storyChapter": 7,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 32,
+      "band": "mythic",
+      "storyChapter": 7,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 33,
+      "band": "mythic",
+      "storyChapter": 7,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 34,
+      "band": "mythic",
+      "storyChapter": 7,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 35,
+      "band": "mythic",
+      "storyChapter": 7,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 36,
+      "band": "mythic",
+      "storyChapter": 7,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 37,
+      "band": "mythic",
+      "storyChapter": 8,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 38,
+      "band": "mythic",
+      "storyChapter": 8,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 39,
+      "band": "mythic",
+      "storyChapter": 8,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 40,
+      "band": "mythic",
+      "storyChapter": 8,
+      "unlockMilestones": ["apex_gear_band"],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 41,
+      "band": "apex",
+      "storyChapter": 8,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 42,
+      "band": "apex",
+      "storyChapter": 8,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 43,
+      "band": "apex",
+      "storyChapter": 8,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 44,
+      "band": "apex",
+      "storyChapter": 8,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 45,
+      "band": "apex",
+      "storyChapter": 9,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 46,
+      "band": "apex",
+      "storyChapter": 9,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 47,
+      "band": "apex",
+      "storyChapter": 9,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 48,
+      "band": "apex",
+      "storyChapter": 9,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 49,
+      "band": "apex",
+      "storyChapter": 9,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 50,
+      "band": "apex",
+      "storyChapter": 9,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 51,
+      "band": "apex",
+      "storyChapter": 9,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 52,
+      "band": "apex",
+      "storyChapter": 9,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 53,
+      "band": "apex",
+      "storyChapter": 10,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 54,
+      "band": "apex",
+      "storyChapter": 10,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 55,
+      "band": "apex",
+      "storyChapter": 10,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 56,
+      "band": "apex",
+      "storyChapter": 10,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 57,
+      "band": "apex",
+      "storyChapter": 10,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 58,
+      "band": "apex",
+      "storyChapter": 10,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 59,
+      "band": "apex",
+      "storyChapter": 10,
+      "unlockMilestones": [],
+      "statPoints": 4,
+      "talentPoints": 1
+    },
+    {
+      "level": 60,
+      "band": "apex",
+      "storyChapter": 10,
+      "unlockMilestones": ["level_cap"],
+      "statPoints": 4,
+      "talentPoints": 1
+    }
+  ]
+}

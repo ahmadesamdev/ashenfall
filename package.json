@@ -1,0 +1,55 @@
+{
+  "name": "ashenfall-mmo",
+  "version": "0.5.0",
+  "private": false,
+  "type": "module",
+  "description": "Browser-first dark-fantasy multiplayer RPG with a server-authoritative world, real-time combat, persistent progression, dungeons, professions, economy, social systems and emergent world simulation.",
+  "scripts": {
+    "build": "tsc && node scripts/bundle-client.mjs && node scripts/copy-static.mjs",
+    "dev": "npm run build && node dist/server/index.js",
+    "start": "node dist/server/index.js",
+    "typecheck": "tsc --noEmit",
+    "check": "node tests/run.mjs auth/dependency-security-policy && node scripts/lint-wiring.mjs && node scripts/verify-core.mjs",
+    "test": "node tests/run.mjs",
+    "test:list": "node tests/run.mjs --list",
+    "verify": "npm run check && npm run build && npm test",
+    "audit:security": "npm audit --audit-level=high",
+    "test:fuzz": "node scripts/fuzz-server.mjs 300 2",
+    "test:combat-bot": "node scripts/combat-bot.mjs vanguard 75",
+    "balance": "node scripts/balance-report.mjs"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "ws": "^8.18.3",
+    "pg": "^8.16.3",
+    "dotenv": "^17.2.1",
+    "nodemailer": "^10.1.1",
+    "bcrypt": "^6.0.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@types/ws": "^8.18.1",
+    "typescript": "^5.8.3",
+    "esbuild": "^0.28.2"
+  },
+  "keywords": [
+    "mmo",
+    "rpg",
+    "typescript",
+    "websocket",
+    "multiplayer",
+    "game-development"
+  ],
+  "allowScripts": {
+    "bcrypt@6.0.0": true,
+    "esbuild@0.28.2": true
+  }
+}

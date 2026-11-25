@@ -1,0 +1,3260 @@
+{
+  "version": "3.3",
+  "builds": {
+    "warden": {
+      "grovekeeper": [
+        {
+          "talentId": "warden.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["warden.power"],
+          "exclusiveGroup": "grovekeeper.path",
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["warden.power"],
+          "exclusiveGroup": "grovekeeper.path",
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["warden.vigor", "warden.discipline"],
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["warden.resilience"],
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["warden.mastery"],
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.grovekeeper.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["warden.resilience", "warden.mastery"],
+          "keystone": true,
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.grovekeeper.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["warden.grovekeeper.keystone"],
+          "exclusiveGroup": "grovekeeper.late_path",
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.grovekeeper.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["warden.grovekeeper.keystone"],
+          "exclusiveGroup": "grovekeeper.late_path",
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.grovekeeper.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "warden.grovekeeper.skillmastery",
+            "warden.grovekeeper.rotation"
+          ],
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.grovekeeper.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["warden.grovekeeper.power"],
+          "exclusiveGroup": "grovekeeper.apex_path",
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.grovekeeper.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["warden.grovekeeper.power"],
+          "exclusiveGroup": "grovekeeper.apex_path",
+          "buildId": "grovekeeper"
+        },
+        {
+          "talentId": "warden.grovekeeper.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "warden.grovekeeper.precision",
+            "warden.grovekeeper.mastery"
+          ],
+          "buildId": "grovekeeper",
+          "capstone": true
+        }
+      ],
+      "rootcaller": [
+        {
+          "talentId": "warden.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["warden.power"],
+          "exclusiveGroup": "rootcaller.path",
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["warden.power"],
+          "exclusiveGroup": "rootcaller.path",
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["warden.vigor", "warden.discipline"],
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["warden.resilience"],
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["warden.mastery"],
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.rootcaller.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["warden.resilience", "warden.mastery"],
+          "keystone": true,
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.rootcaller.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["warden.rootcaller.keystone"],
+          "exclusiveGroup": "rootcaller.late_path",
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.rootcaller.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["warden.rootcaller.keystone"],
+          "exclusiveGroup": "rootcaller.late_path",
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.rootcaller.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "warden.rootcaller.skillmastery",
+            "warden.rootcaller.rotation"
+          ],
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.rootcaller.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["warden.rootcaller.power"],
+          "exclusiveGroup": "rootcaller.apex_path",
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.rootcaller.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["warden.rootcaller.power"],
+          "exclusiveGroup": "rootcaller.apex_path",
+          "buildId": "rootcaller"
+        },
+        {
+          "talentId": "warden.rootcaller.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "warden.rootcaller.precision",
+            "warden.rootcaller.mastery"
+          ],
+          "buildId": "rootcaller",
+          "capstone": true
+        }
+      ],
+      "thornwarden": [
+        {
+          "talentId": "warden.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["warden.power"],
+          "exclusiveGroup": "thornwarden.path",
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["warden.power"],
+          "exclusiveGroup": "thornwarden.path",
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["warden.vigor", "warden.discipline"],
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["warden.resilience"],
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["warden.mastery"],
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.thornwarden.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["warden.resilience", "warden.mastery"],
+          "keystone": true,
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.thornwarden.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["warden.thornwarden.keystone"],
+          "exclusiveGroup": "thornwarden.late_path",
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.thornwarden.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["warden.thornwarden.keystone"],
+          "exclusiveGroup": "thornwarden.late_path",
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.thornwarden.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "warden.thornwarden.skillmastery",
+            "warden.thornwarden.rotation"
+          ],
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.thornwarden.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["warden.thornwarden.power"],
+          "exclusiveGroup": "thornwarden.apex_path",
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.thornwarden.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["warden.thornwarden.power"],
+          "exclusiveGroup": "thornwarden.apex_path",
+          "buildId": "thornwarden"
+        },
+        {
+          "talentId": "warden.thornwarden.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "warden.thornwarden.precision",
+            "warden.thornwarden.mastery"
+          ],
+          "buildId": "thornwarden",
+          "capstone": true
+        }
+      ]
+    },
+    "hierophant": {
+      "sanctuary": [
+        {
+          "talentId": "hierophant.grace",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.faith",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["hierophant.grace"],
+          "exclusiveGroup": "sanctuary.path",
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.light",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["hierophant.grace"],
+          "exclusiveGroup": "sanctuary.path",
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.aegis",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["hierophant.faith", "hierophant.light"],
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.hotmastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["hierophant.aegis"],
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.stability",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["hierophant.hotmastery"],
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.sanctuary.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["hierophant.aegis", "hierophant.hotmastery"],
+          "keystone": true,
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.sanctuary.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["hierophant.sanctuary.keystone"],
+          "exclusiveGroup": "sanctuary.late_path",
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.sanctuary.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["hierophant.sanctuary.keystone"],
+          "exclusiveGroup": "sanctuary.late_path",
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.sanctuary.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "hierophant.sanctuary.skillmastery",
+            "hierophant.sanctuary.rotation"
+          ],
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.sanctuary.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["hierophant.sanctuary.power"],
+          "exclusiveGroup": "sanctuary.apex_path",
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.sanctuary.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["hierophant.sanctuary.power"],
+          "exclusiveGroup": "sanctuary.apex_path",
+          "buildId": "sanctuary"
+        },
+        {
+          "talentId": "hierophant.sanctuary.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "hierophant.sanctuary.precision",
+            "hierophant.sanctuary.mastery"
+          ],
+          "buildId": "sanctuary",
+          "capstone": true
+        }
+      ],
+      "aegis": [
+        {
+          "talentId": "hierophant.grace",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.faith",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["hierophant.grace"],
+          "exclusiveGroup": "aegis.path",
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.light",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["hierophant.grace"],
+          "exclusiveGroup": "aegis.path",
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.aegis",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["hierophant.faith", "hierophant.light"],
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.hotmastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["hierophant.aegis"],
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.stability",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["hierophant.hotmastery"],
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.aegis.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["hierophant.aegis", "hierophant.hotmastery"],
+          "keystone": true,
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.aegis.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["hierophant.aegis.keystone"],
+          "exclusiveGroup": "aegis.late_path",
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.aegis.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["hierophant.aegis.keystone"],
+          "exclusiveGroup": "aegis.late_path",
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.aegis.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "hierophant.aegis.skillmastery",
+            "hierophant.aegis.rotation"
+          ],
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.aegis.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["hierophant.aegis.power"],
+          "exclusiveGroup": "aegis.apex_path",
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.aegis.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["hierophant.aegis.power"],
+          "exclusiveGroup": "aegis.apex_path",
+          "buildId": "aegis"
+        },
+        {
+          "talentId": "hierophant.aegis.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "hierophant.aegis.precision",
+            "hierophant.aegis.mastery"
+          ],
+          "buildId": "aegis",
+          "capstone": true
+        }
+      ],
+      "battlepriest": [
+        {
+          "talentId": "hierophant.grace",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.faith",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["hierophant.grace"],
+          "exclusiveGroup": "battlepriest.path",
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.light",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["hierophant.grace"],
+          "exclusiveGroup": "battlepriest.path",
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.aegis",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["hierophant.faith", "hierophant.light"],
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.hotmastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["hierophant.aegis"],
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.stability",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["hierophant.hotmastery"],
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.battlepriest.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["hierophant.aegis", "hierophant.hotmastery"],
+          "keystone": true,
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.battlepriest.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["hierophant.battlepriest.keystone"],
+          "exclusiveGroup": "battlepriest.late_path",
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.battlepriest.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["hierophant.battlepriest.keystone"],
+          "exclusiveGroup": "battlepriest.late_path",
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.battlepriest.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "hierophant.battlepriest.skillmastery",
+            "hierophant.battlepriest.rotation"
+          ],
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.battlepriest.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["hierophant.battlepriest.power"],
+          "exclusiveGroup": "battlepriest.apex_path",
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.battlepriest.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["hierophant.battlepriest.power"],
+          "exclusiveGroup": "battlepriest.apex_path",
+          "buildId": "battlepriest"
+        },
+        {
+          "talentId": "hierophant.battlepriest.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "hierophant.battlepriest.precision",
+            "hierophant.battlepriest.mastery"
+          ],
+          "buildId": "battlepriest",
+          "capstone": true
+        }
+      ]
+    },
+    "vanguard": {
+      "fortress": [
+        {
+          "talentId": "vanguard.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["vanguard.power"],
+          "exclusiveGroup": "fortress.path",
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["vanguard.power"],
+          "exclusiveGroup": "fortress.path",
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["vanguard.vigor", "vanguard.discipline"],
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["vanguard.resilience"],
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["vanguard.mastery"],
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.fortress.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["vanguard.resilience", "vanguard.mastery"],
+          "keystone": true,
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.fortress.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["vanguard.fortress.keystone"],
+          "exclusiveGroup": "fortress.late_path",
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.fortress.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["vanguard.fortress.keystone"],
+          "exclusiveGroup": "fortress.late_path",
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.fortress.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "vanguard.fortress.skillmastery",
+            "vanguard.fortress.rotation"
+          ],
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.fortress.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["vanguard.fortress.power"],
+          "exclusiveGroup": "fortress.apex_path",
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.fortress.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["vanguard.fortress.power"],
+          "exclusiveGroup": "fortress.apex_path",
+          "buildId": "fortress"
+        },
+        {
+          "talentId": "vanguard.fortress.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "vanguard.fortress.precision",
+            "vanguard.fortress.mastery"
+          ],
+          "buildId": "fortress",
+          "capstone": true
+        }
+      ],
+      "warbreaker": [
+        {
+          "talentId": "vanguard.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["vanguard.power"],
+          "exclusiveGroup": "warbreaker.path",
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["vanguard.power"],
+          "exclusiveGroup": "warbreaker.path",
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["vanguard.vigor", "vanguard.discipline"],
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["vanguard.resilience"],
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["vanguard.mastery"],
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.warbreaker.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["vanguard.resilience", "vanguard.mastery"],
+          "keystone": true,
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.warbreaker.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["vanguard.warbreaker.keystone"],
+          "exclusiveGroup": "warbreaker.late_path",
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.warbreaker.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["vanguard.warbreaker.keystone"],
+          "exclusiveGroup": "warbreaker.late_path",
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.warbreaker.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "vanguard.warbreaker.skillmastery",
+            "vanguard.warbreaker.rotation"
+          ],
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.warbreaker.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["vanguard.warbreaker.power"],
+          "exclusiveGroup": "warbreaker.apex_path",
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.warbreaker.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["vanguard.warbreaker.power"],
+          "exclusiveGroup": "warbreaker.apex_path",
+          "buildId": "warbreaker"
+        },
+        {
+          "talentId": "vanguard.warbreaker.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "vanguard.warbreaker.precision",
+            "vanguard.warbreaker.mastery"
+          ],
+          "buildId": "warbreaker",
+          "capstone": true
+        }
+      ],
+      "warden": [
+        {
+          "talentId": "vanguard.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["vanguard.power"],
+          "exclusiveGroup": "warden.path",
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["vanguard.power"],
+          "exclusiveGroup": "warden.path",
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["vanguard.vigor", "vanguard.discipline"],
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["vanguard.resilience"],
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["vanguard.mastery"],
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.warden.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["vanguard.resilience", "vanguard.mastery"],
+          "keystone": true,
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.warden.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["vanguard.warden.keystone"],
+          "exclusiveGroup": "warden.late_path",
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.warden.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["vanguard.warden.keystone"],
+          "exclusiveGroup": "warden.late_path",
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.warden.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "vanguard.warden.skillmastery",
+            "vanguard.warden.rotation"
+          ],
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.warden.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["vanguard.warden.power"],
+          "exclusiveGroup": "warden.apex_path",
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.warden.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["vanguard.warden.power"],
+          "exclusiveGroup": "warden.apex_path",
+          "buildId": "warden"
+        },
+        {
+          "talentId": "vanguard.warden.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "vanguard.warden.precision",
+            "vanguard.warden.mastery"
+          ],
+          "buildId": "warden",
+          "capstone": true
+        }
+      ]
+    },
+    "ranger": {
+      "marksman": [
+        {
+          "talentId": "ranger.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["ranger.power"],
+          "exclusiveGroup": "marksman.path",
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["ranger.power"],
+          "exclusiveGroup": "marksman.path",
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["ranger.vigor", "ranger.discipline"],
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["ranger.resilience"],
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["ranger.mastery"],
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.marksman.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["ranger.resilience", "ranger.mastery"],
+          "keystone": true,
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.marksman.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["ranger.marksman.keystone"],
+          "exclusiveGroup": "marksman.late_path",
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.marksman.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["ranger.marksman.keystone"],
+          "exclusiveGroup": "marksman.late_path",
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.marksman.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "ranger.marksman.skillmastery",
+            "ranger.marksman.rotation"
+          ],
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.marksman.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["ranger.marksman.power"],
+          "exclusiveGroup": "marksman.apex_path",
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.marksman.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["ranger.marksman.power"],
+          "exclusiveGroup": "marksman.apex_path",
+          "buildId": "marksman"
+        },
+        {
+          "talentId": "ranger.marksman.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "ranger.marksman.precision",
+            "ranger.marksman.mastery"
+          ],
+          "buildId": "marksman",
+          "capstone": true
+        }
+      ],
+      "skirmisher": [
+        {
+          "talentId": "ranger.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["ranger.power"],
+          "exclusiveGroup": "skirmisher.path",
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["ranger.power"],
+          "exclusiveGroup": "skirmisher.path",
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["ranger.vigor", "ranger.discipline"],
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["ranger.resilience"],
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["ranger.mastery"],
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.skirmisher.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["ranger.resilience", "ranger.mastery"],
+          "keystone": true,
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.skirmisher.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["ranger.skirmisher.keystone"],
+          "exclusiveGroup": "skirmisher.late_path",
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.skirmisher.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["ranger.skirmisher.keystone"],
+          "exclusiveGroup": "skirmisher.late_path",
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.skirmisher.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "ranger.skirmisher.skillmastery",
+            "ranger.skirmisher.rotation"
+          ],
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.skirmisher.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["ranger.skirmisher.power"],
+          "exclusiveGroup": "skirmisher.apex_path",
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.skirmisher.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["ranger.skirmisher.power"],
+          "exclusiveGroup": "skirmisher.apex_path",
+          "buildId": "skirmisher"
+        },
+        {
+          "talentId": "ranger.skirmisher.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "ranger.skirmisher.precision",
+            "ranger.skirmisher.mastery"
+          ],
+          "buildId": "skirmisher",
+          "capstone": true
+        }
+      ],
+      "stormarcher": [
+        {
+          "talentId": "ranger.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["ranger.power"],
+          "exclusiveGroup": "stormarcher.path",
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["ranger.power"],
+          "exclusiveGroup": "stormarcher.path",
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["ranger.vigor", "ranger.discipline"],
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["ranger.resilience"],
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["ranger.mastery"],
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.stormarcher.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["ranger.resilience", "ranger.mastery"],
+          "keystone": true,
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.stormarcher.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["ranger.stormarcher.keystone"],
+          "exclusiveGroup": "stormarcher.late_path",
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.stormarcher.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["ranger.stormarcher.keystone"],
+          "exclusiveGroup": "stormarcher.late_path",
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.stormarcher.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "ranger.stormarcher.skillmastery",
+            "ranger.stormarcher.rotation"
+          ],
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.stormarcher.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["ranger.stormarcher.power"],
+          "exclusiveGroup": "stormarcher.apex_path",
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.stormarcher.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["ranger.stormarcher.power"],
+          "exclusiveGroup": "stormarcher.apex_path",
+          "buildId": "stormarcher"
+        },
+        {
+          "talentId": "ranger.stormarcher.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "ranger.stormarcher.precision",
+            "ranger.stormarcher.mastery"
+          ],
+          "buildId": "stormarcher",
+          "capstone": true
+        }
+      ]
+    },
+    "arcanist": {
+      "spellfire": [
+        {
+          "talentId": "arcanist.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["arcanist.power"],
+          "exclusiveGroup": "spellfire.path",
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["arcanist.power"],
+          "exclusiveGroup": "spellfire.path",
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["arcanist.vigor", "arcanist.discipline"],
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["arcanist.resilience"],
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["arcanist.mastery"],
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.spellfire.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["arcanist.resilience", "arcanist.mastery"],
+          "keystone": true,
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.spellfire.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["arcanist.spellfire.keystone"],
+          "exclusiveGroup": "spellfire.late_path",
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.spellfire.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["arcanist.spellfire.keystone"],
+          "exclusiveGroup": "spellfire.late_path",
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.spellfire.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "arcanist.spellfire.skillmastery",
+            "arcanist.spellfire.rotation"
+          ],
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.spellfire.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["arcanist.spellfire.power"],
+          "exclusiveGroup": "spellfire.apex_path",
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.spellfire.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["arcanist.spellfire.power"],
+          "exclusiveGroup": "spellfire.apex_path",
+          "buildId": "spellfire"
+        },
+        {
+          "talentId": "arcanist.spellfire.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "arcanist.spellfire.precision",
+            "arcanist.spellfire.mastery"
+          ],
+          "buildId": "spellfire",
+          "capstone": true
+        }
+      ],
+      "frostweaver": [
+        {
+          "talentId": "arcanist.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["arcanist.power"],
+          "exclusiveGroup": "frostweaver.path",
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["arcanist.power"],
+          "exclusiveGroup": "frostweaver.path",
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["arcanist.vigor", "arcanist.discipline"],
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["arcanist.resilience"],
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["arcanist.mastery"],
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.frostweaver.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["arcanist.resilience", "arcanist.mastery"],
+          "keystone": true,
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.frostweaver.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["arcanist.frostweaver.keystone"],
+          "exclusiveGroup": "frostweaver.late_path",
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.frostweaver.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["arcanist.frostweaver.keystone"],
+          "exclusiveGroup": "frostweaver.late_path",
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.frostweaver.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "arcanist.frostweaver.skillmastery",
+            "arcanist.frostweaver.rotation"
+          ],
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.frostweaver.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["arcanist.frostweaver.power"],
+          "exclusiveGroup": "frostweaver.apex_path",
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.frostweaver.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["arcanist.frostweaver.power"],
+          "exclusiveGroup": "frostweaver.apex_path",
+          "buildId": "frostweaver"
+        },
+        {
+          "talentId": "arcanist.frostweaver.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "arcanist.frostweaver.precision",
+            "arcanist.frostweaver.mastery"
+          ],
+          "buildId": "frostweaver",
+          "capstone": true
+        }
+      ],
+      "aethermind": [
+        {
+          "talentId": "arcanist.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["arcanist.power"],
+          "exclusiveGroup": "aethermind.path",
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["arcanist.power"],
+          "exclusiveGroup": "aethermind.path",
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["arcanist.vigor", "arcanist.discipline"],
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["arcanist.resilience"],
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["arcanist.mastery"],
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.aethermind.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["arcanist.resilience", "arcanist.mastery"],
+          "keystone": true,
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.aethermind.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["arcanist.aethermind.keystone"],
+          "exclusiveGroup": "aethermind.late_path",
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.aethermind.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["arcanist.aethermind.keystone"],
+          "exclusiveGroup": "aethermind.late_path",
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.aethermind.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "arcanist.aethermind.skillmastery",
+            "arcanist.aethermind.rotation"
+          ],
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.aethermind.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["arcanist.aethermind.power"],
+          "exclusiveGroup": "aethermind.apex_path",
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.aethermind.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["arcanist.aethermind.power"],
+          "exclusiveGroup": "aethermind.apex_path",
+          "buildId": "aethermind"
+        },
+        {
+          "talentId": "arcanist.aethermind.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "arcanist.aethermind.precision",
+            "arcanist.aethermind.mastery"
+          ],
+          "buildId": "aethermind",
+          "capstone": true
+        }
+      ]
+    },
+    "templar": {
+      "crusader": [
+        {
+          "talentId": "templar.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["templar.power"],
+          "exclusiveGroup": "crusader.path",
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["templar.power"],
+          "exclusiveGroup": "crusader.path",
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["templar.vigor", "templar.discipline"],
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["templar.resilience"],
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["templar.mastery"],
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.crusader.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["templar.resilience", "templar.mastery"],
+          "keystone": true,
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.crusader.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["templar.crusader.keystone"],
+          "exclusiveGroup": "crusader.late_path",
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.crusader.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["templar.crusader.keystone"],
+          "exclusiveGroup": "crusader.late_path",
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.crusader.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "templar.crusader.skillmastery",
+            "templar.crusader.rotation"
+          ],
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.crusader.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["templar.crusader.power"],
+          "exclusiveGroup": "crusader.apex_path",
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.crusader.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["templar.crusader.power"],
+          "exclusiveGroup": "crusader.apex_path",
+          "buildId": "crusader"
+        },
+        {
+          "talentId": "templar.crusader.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "templar.crusader.precision",
+            "templar.crusader.mastery"
+          ],
+          "buildId": "crusader",
+          "capstone": true
+        }
+      ],
+      "guardian": [
+        {
+          "talentId": "templar.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["templar.power"],
+          "exclusiveGroup": "guardian.path",
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["templar.power"],
+          "exclusiveGroup": "guardian.path",
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["templar.vigor", "templar.discipline"],
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["templar.resilience"],
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["templar.mastery"],
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.guardian.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["templar.resilience", "templar.mastery"],
+          "keystone": true,
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.guardian.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["templar.guardian.keystone"],
+          "exclusiveGroup": "guardian.late_path",
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.guardian.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["templar.guardian.keystone"],
+          "exclusiveGroup": "guardian.late_path",
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.guardian.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "templar.guardian.skillmastery",
+            "templar.guardian.rotation"
+          ],
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.guardian.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["templar.guardian.power"],
+          "exclusiveGroup": "guardian.apex_path",
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.guardian.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["templar.guardian.power"],
+          "exclusiveGroup": "guardian.apex_path",
+          "buildId": "guardian"
+        },
+        {
+          "talentId": "templar.guardian.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "templar.guardian.precision",
+            "templar.guardian.mastery"
+          ],
+          "buildId": "guardian",
+          "capstone": true
+        }
+      ],
+      "redeemer": [
+        {
+          "talentId": "templar.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["templar.power"],
+          "exclusiveGroup": "redeemer.path",
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["templar.power"],
+          "exclusiveGroup": "redeemer.path",
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["templar.vigor", "templar.discipline"],
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["templar.resilience"],
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["templar.mastery"],
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.redeemer.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["templar.resilience", "templar.mastery"],
+          "keystone": true,
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.redeemer.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["templar.redeemer.keystone"],
+          "exclusiveGroup": "redeemer.late_path",
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.redeemer.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["templar.redeemer.keystone"],
+          "exclusiveGroup": "redeemer.late_path",
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.redeemer.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "templar.redeemer.skillmastery",
+            "templar.redeemer.rotation"
+          ],
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.redeemer.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["templar.redeemer.power"],
+          "exclusiveGroup": "redeemer.apex_path",
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.redeemer.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["templar.redeemer.power"],
+          "exclusiveGroup": "redeemer.apex_path",
+          "buildId": "redeemer"
+        },
+        {
+          "talentId": "templar.redeemer.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "templar.redeemer.precision",
+            "templar.redeemer.mastery"
+          ],
+          "buildId": "redeemer",
+          "capstone": true
+        }
+      ]
+    },
+    "occultist": {
+      "plaguecaller": [
+        {
+          "talentId": "occultist.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["occultist.power"],
+          "exclusiveGroup": "plaguecaller.path",
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["occultist.power"],
+          "exclusiveGroup": "plaguecaller.path",
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["occultist.vigor", "occultist.discipline"],
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["occultist.resilience"],
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["occultist.mastery"],
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.plaguecaller.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["occultist.resilience", "occultist.mastery"],
+          "keystone": true,
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.plaguecaller.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["occultist.plaguecaller.keystone"],
+          "exclusiveGroup": "plaguecaller.late_path",
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.plaguecaller.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["occultist.plaguecaller.keystone"],
+          "exclusiveGroup": "plaguecaller.late_path",
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.plaguecaller.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "occultist.plaguecaller.skillmastery",
+            "occultist.plaguecaller.rotation"
+          ],
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.plaguecaller.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["occultist.plaguecaller.power"],
+          "exclusiveGroup": "plaguecaller.apex_path",
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.plaguecaller.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["occultist.plaguecaller.power"],
+          "exclusiveGroup": "plaguecaller.apex_path",
+          "buildId": "plaguecaller"
+        },
+        {
+          "talentId": "occultist.plaguecaller.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "occultist.plaguecaller.precision",
+            "occultist.plaguecaller.mastery"
+          ],
+          "buildId": "plaguecaller",
+          "capstone": true
+        }
+      ],
+      "soulreaper": [
+        {
+          "talentId": "occultist.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["occultist.power"],
+          "exclusiveGroup": "soulreaper.path",
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["occultist.power"],
+          "exclusiveGroup": "soulreaper.path",
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["occultist.vigor", "occultist.discipline"],
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["occultist.resilience"],
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["occultist.mastery"],
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.soulreaper.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["occultist.resilience", "occultist.mastery"],
+          "keystone": true,
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.soulreaper.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["occultist.soulreaper.keystone"],
+          "exclusiveGroup": "soulreaper.late_path",
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.soulreaper.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["occultist.soulreaper.keystone"],
+          "exclusiveGroup": "soulreaper.late_path",
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.soulreaper.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "occultist.soulreaper.skillmastery",
+            "occultist.soulreaper.rotation"
+          ],
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.soulreaper.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["occultist.soulreaper.power"],
+          "exclusiveGroup": "soulreaper.apex_path",
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.soulreaper.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["occultist.soulreaper.power"],
+          "exclusiveGroup": "soulreaper.apex_path",
+          "buildId": "soulreaper"
+        },
+        {
+          "talentId": "occultist.soulreaper.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "occultist.soulreaper.precision",
+            "occultist.soulreaper.mastery"
+          ],
+          "buildId": "soulreaper",
+          "capstone": true
+        }
+      ],
+      "voidcaller": [
+        {
+          "talentId": "occultist.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["occultist.power"],
+          "exclusiveGroup": "voidcaller.path",
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["occultist.power"],
+          "exclusiveGroup": "voidcaller.path",
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["occultist.vigor", "occultist.discipline"],
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["occultist.resilience"],
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["occultist.mastery"],
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.voidcaller.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["occultist.resilience", "occultist.mastery"],
+          "keystone": true,
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.voidcaller.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["occultist.voidcaller.keystone"],
+          "exclusiveGroup": "voidcaller.late_path",
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.voidcaller.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["occultist.voidcaller.keystone"],
+          "exclusiveGroup": "voidcaller.late_path",
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.voidcaller.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "occultist.voidcaller.skillmastery",
+            "occultist.voidcaller.rotation"
+          ],
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.voidcaller.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["occultist.voidcaller.power"],
+          "exclusiveGroup": "voidcaller.apex_path",
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.voidcaller.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["occultist.voidcaller.power"],
+          "exclusiveGroup": "voidcaller.apex_path",
+          "buildId": "voidcaller"
+        },
+        {
+          "talentId": "occultist.voidcaller.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "occultist.voidcaller.precision",
+            "occultist.voidcaller.mastery"
+          ],
+          "buildId": "voidcaller",
+          "capstone": true
+        }
+      ]
+    },
+    "reaver": {
+      "berserker": [
+        {
+          "talentId": "reaver.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["reaver.power"],
+          "exclusiveGroup": "berserker.path",
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["reaver.power"],
+          "exclusiveGroup": "berserker.path",
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["reaver.vigor", "reaver.discipline"],
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["reaver.resilience"],
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["reaver.mastery"],
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.berserker.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["reaver.resilience", "reaver.mastery"],
+          "keystone": true,
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.berserker.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["reaver.berserker.keystone"],
+          "exclusiveGroup": "berserker.late_path",
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.berserker.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["reaver.berserker.keystone"],
+          "exclusiveGroup": "berserker.late_path",
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.berserker.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "reaver.berserker.skillmastery",
+            "reaver.berserker.rotation"
+          ],
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.berserker.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["reaver.berserker.power"],
+          "exclusiveGroup": "berserker.apex_path",
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.berserker.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["reaver.berserker.power"],
+          "exclusiveGroup": "berserker.apex_path",
+          "buildId": "berserker"
+        },
+        {
+          "talentId": "reaver.berserker.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "reaver.berserker.precision",
+            "reaver.berserker.mastery"
+          ],
+          "buildId": "berserker",
+          "capstone": true
+        }
+      ],
+      "bloodreaver": [
+        {
+          "talentId": "reaver.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["reaver.power"],
+          "exclusiveGroup": "bloodreaver.path",
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["reaver.power"],
+          "exclusiveGroup": "bloodreaver.path",
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["reaver.vigor", "reaver.discipline"],
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["reaver.resilience"],
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["reaver.mastery"],
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.bloodreaver.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["reaver.resilience", "reaver.mastery"],
+          "keystone": true,
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.bloodreaver.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["reaver.bloodreaver.keystone"],
+          "exclusiveGroup": "bloodreaver.late_path",
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.bloodreaver.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["reaver.bloodreaver.keystone"],
+          "exclusiveGroup": "bloodreaver.late_path",
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.bloodreaver.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "reaver.bloodreaver.skillmastery",
+            "reaver.bloodreaver.rotation"
+          ],
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.bloodreaver.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["reaver.bloodreaver.power"],
+          "exclusiveGroup": "bloodreaver.apex_path",
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.bloodreaver.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["reaver.bloodreaver.power"],
+          "exclusiveGroup": "bloodreaver.apex_path",
+          "buildId": "bloodreaver"
+        },
+        {
+          "talentId": "reaver.bloodreaver.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "reaver.bloodreaver.precision",
+            "reaver.bloodreaver.mastery"
+          ],
+          "buildId": "bloodreaver",
+          "capstone": true
+        }
+      ],
+      "warborn": [
+        {
+          "talentId": "reaver.power",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.vigor",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["reaver.power"],
+          "exclusiveGroup": "warborn.path",
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.discipline",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["reaver.power"],
+          "exclusiveGroup": "warborn.path",
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.resilience",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["reaver.vigor", "reaver.discipline"],
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.mastery",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["reaver.resilience"],
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.endurance",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["reaver.mastery"],
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.warborn.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["reaver.resilience", "reaver.mastery"],
+          "keystone": true,
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.warborn.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["reaver.warborn.keystone"],
+          "exclusiveGroup": "warborn.late_path",
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.warborn.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["reaver.warborn.keystone"],
+          "exclusiveGroup": "warborn.late_path",
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.warborn.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "reaver.warborn.skillmastery",
+            "reaver.warborn.rotation"
+          ],
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.warborn.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["reaver.warborn.power"],
+          "exclusiveGroup": "warborn.apex_path",
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.warborn.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["reaver.warborn.power"],
+          "exclusiveGroup": "warborn.apex_path",
+          "buildId": "warborn"
+        },
+        {
+          "talentId": "reaver.warborn.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": ["reaver.warborn.precision", "reaver.warborn.mastery"],
+          "buildId": "warborn",
+          "capstone": true
+        }
+      ]
+    },
+    "shadowblade": {
+      "assassin": [
+        {
+          "talentId": "shadowblade.poisonmaster",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.momentum",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["shadowblade.poisonmaster"],
+          "exclusiveGroup": "assassin.path",
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.executioner",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["shadowblade.poisonmaster"],
+          "exclusiveGroup": "assassin.path",
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.evasion",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["shadowblade.momentum", "shadowblade.executioner"],
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.hemorrhage",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["shadowblade.evasion"],
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.venom",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["shadowblade.hemorrhage"],
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.assassin.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["shadowblade.evasion", "shadowblade.hemorrhage"],
+          "keystone": true,
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.assassin.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["shadowblade.assassin.keystone"],
+          "exclusiveGroup": "assassin.late_path",
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.assassin.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["shadowblade.assassin.keystone"],
+          "exclusiveGroup": "assassin.late_path",
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.assassin.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "shadowblade.assassin.skillmastery",
+            "shadowblade.assassin.rotation"
+          ],
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.assassin.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["shadowblade.assassin.power"],
+          "exclusiveGroup": "assassin.apex_path",
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.assassin.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["shadowblade.assassin.power"],
+          "exclusiveGroup": "assassin.apex_path",
+          "buildId": "assassin"
+        },
+        {
+          "talentId": "shadowblade.assassin.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "shadowblade.assassin.precision",
+            "shadowblade.assassin.mastery"
+          ],
+          "buildId": "assassin",
+          "capstone": true
+        }
+      ],
+      "saboteur": [
+        {
+          "talentId": "shadowblade.poisonmaster",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.momentum",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["shadowblade.poisonmaster"],
+          "exclusiveGroup": "saboteur.path",
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.executioner",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["shadowblade.poisonmaster"],
+          "exclusiveGroup": "saboteur.path",
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.evasion",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["shadowblade.momentum", "shadowblade.executioner"],
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.hemorrhage",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["shadowblade.evasion"],
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.venom",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["shadowblade.hemorrhage"],
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.saboteur.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["shadowblade.evasion", "shadowblade.hemorrhage"],
+          "keystone": true,
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.saboteur.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["shadowblade.saboteur.keystone"],
+          "exclusiveGroup": "saboteur.late_path",
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.saboteur.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["shadowblade.saboteur.keystone"],
+          "exclusiveGroup": "saboteur.late_path",
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.saboteur.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "shadowblade.saboteur.skillmastery",
+            "shadowblade.saboteur.rotation"
+          ],
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.saboteur.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["shadowblade.saboteur.power"],
+          "exclusiveGroup": "saboteur.apex_path",
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.saboteur.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["shadowblade.saboteur.power"],
+          "exclusiveGroup": "saboteur.apex_path",
+          "buildId": "saboteur"
+        },
+        {
+          "talentId": "shadowblade.saboteur.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "shadowblade.saboteur.precision",
+            "shadowblade.saboteur.mastery"
+          ],
+          "buildId": "saboteur",
+          "capstone": true
+        }
+      ],
+      "duelist": [
+        {
+          "talentId": "shadowblade.poisonmaster",
+          "rankCap": 3,
+          "tier": 1,
+          "branch": "core",
+          "requires": [],
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.momentum",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_a",
+          "requires": ["shadowblade.poisonmaster"],
+          "exclusiveGroup": "duelist.path",
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.executioner",
+          "rankCap": 3,
+          "tier": 2,
+          "branch": "path_b",
+          "requires": ["shadowblade.poisonmaster"],
+          "exclusiveGroup": "duelist.path",
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.evasion",
+          "rankCap": 3,
+          "tier": 3,
+          "branch": "core",
+          "requiresAny": ["shadowblade.momentum", "shadowblade.executioner"],
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.hemorrhage",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["shadowblade.evasion"],
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.venom",
+          "rankCap": 3,
+          "tier": 4,
+          "branch": "core",
+          "requiresAny": ["shadowblade.hemorrhage"],
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.duelist.keystone",
+          "rankCap": 1,
+          "tier": 5,
+          "branch": "keystone",
+          "requires": ["shadowblade.evasion", "shadowblade.hemorrhage"],
+          "keystone": true,
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.duelist.skillmastery",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_a",
+          "requires": ["shadowblade.duelist.keystone"],
+          "exclusiveGroup": "duelist.late_path",
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.duelist.rotation",
+          "rankCap": 3,
+          "tier": 6,
+          "branch": "path_b",
+          "requires": ["shadowblade.duelist.keystone"],
+          "exclusiveGroup": "duelist.late_path",
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.duelist.power",
+          "rankCap": 3,
+          "tier": 7,
+          "branch": "core",
+          "requiresAny": [
+            "shadowblade.duelist.skillmastery",
+            "shadowblade.duelist.rotation"
+          ],
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.duelist.precision",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_a",
+          "requires": ["shadowblade.duelist.power"],
+          "exclusiveGroup": "duelist.apex_path",
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.duelist.mastery",
+          "rankCap": 3,
+          "tier": 8,
+          "branch": "path_b",
+          "requires": ["shadowblade.duelist.power"],
+          "exclusiveGroup": "duelist.apex_path",
+          "buildId": "duelist"
+        },
+        {
+          "talentId": "shadowblade.duelist.apex",
+          "rankCap": 1,
+          "tier": 9,
+          "branch": "capstone",
+          "requiresAny": [
+            "shadowblade.duelist.precision",
+            "shadowblade.duelist.mastery"
+          ],
+          "buildId": "duelist",
+          "capstone": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,619 @@
+{
+  "version": 2,
+  "rules": {
+    "serverAuthoritative": true,
+    "discoverRadiusMeters": 12,
+    "oneTimeDiscovery": true,
+    "types": [
+      "settlement",
+      "landmark",
+      "lore",
+      "resource_hotspot",
+      "rare_spawn",
+      "event_site",
+      "dungeon_entrance"
+    ]
+  },
+  "zones": {
+    "stonehold": [
+      {
+        "id": "crown_square",
+        "name": "Crown Square",
+        "type": "settlement",
+        "icon": "🏰",
+        "x": 0.5,
+        "y": 0.5,
+        "description": "The civic heart of Stonehold, surrounded by guild, market and guard services."
+      },
+      {
+        "id": "hall_of_arms",
+        "name": "Hall of Arms",
+        "type": "landmark",
+        "icon": "⚔️",
+        "x": 0.5,
+        "y": 0.25,
+        "description": "Veterans train here beneath banners from the Last Wall."
+      },
+      {
+        "id": "sealed_archive_poi",
+        "name": "Sealed Archive",
+        "type": "lore",
+        "icon": "📜",
+        "x": 0.61,
+        "y": 0.38,
+        "description": "An old record hall containing fragments of the Lantern Guard's first maps."
+      }
+    ],
+    "gloamwood": [
+      {
+        "id": "lantern_rest",
+        "name": "Lantern Rest",
+        "type": "settlement",
+        "icon": "🏕️",
+        "x": 0.19,
+        "y": 0.52,
+        "description": "A guarded forest outpost built around a chain of old lanterns."
+      },
+      {
+        "id": "whispering_stump",
+        "name": "Whispering Stump",
+        "type": "lore",
+        "icon": "🌳",
+        "x": 0.73,
+        "y": 0.22,
+        "description": "A hollow stump that repeats voices from travelers who passed long ago."
+      },
+      {
+        "id": "rootbound_shrine",
+        "name": "Rootbound Shrine",
+        "type": "landmark",
+        "icon": "⛩️",
+        "x": 0.31,
+        "y": 0.77,
+        "description": "A broken shrine beneath the oldest roots. Corruption gathers around it."
+      },
+      {
+        "id": "gloam_veinfield",
+        "name": "Umbral Veinfield",
+        "type": "resource_hotspot",
+        "icon": "⛏️",
+        "x": 0.48,
+        "y": 0.34,
+        "description": "A rich pocket of Umbral Iron and Silver veins."
+      },
+      {
+        "id": "gloam_huntmaster_den",
+        "name": "Huntmaster's Den",
+        "type": "rare_spawn",
+        "icon": "☠️",
+        "x": 0.77,
+        "y": 0.22,
+        "description": "The reported hunting ground of the Gloam Huntmaster."
+      },
+      {
+        "id": "sunken_catacombs_gate",
+        "name": "Sunken Catacombs Entrance",
+        "type": "dungeon_entrance",
+        "icon": "💀",
+        "x": 0.86,
+        "y": 0.53,
+        "description": "A flooded stairway descending beneath the forest floor."
+      }
+    ],
+    "eastern_reach": [
+      {
+        "id": "ravenford_watch",
+        "name": "Ravenford Watch",
+        "type": "settlement",
+        "icon": "🛡️",
+        "x": 0.18,
+        "y": 0.5,
+        "description": "A frontier watchpost guarding the caravan road."
+      },
+      {
+        "id": "fallen_caravan_poi",
+        "name": "Fallen Caravan",
+        "type": "lore",
+        "icon": "🛒",
+        "x": 0.37,
+        "y": 0.34,
+        "description": "A wrecked supply caravan that never reached Ravenford."
+      },
+      {
+        "id": "windscar_quarry",
+        "name": "Windscar Quarry",
+        "type": "resource_hotspot",
+        "icon": "⛏️",
+        "x": 0.79,
+        "y": 0.61,
+        "description": "Blacksteel and Silver are exposed along the eastern ridge."
+      },
+      {
+        "id": "eastwatch_colossus_lair",
+        "name": "Colossus Lair",
+        "type": "rare_spawn",
+        "icon": "👹",
+        "x": 0.79,
+        "y": 0.61,
+        "description": "A massive beast has been seen around the quarry after dusk."
+      },
+      {
+        "id": "watcher_hollow_gate",
+        "name": "Watcher Hollow Entrance",
+        "type": "dungeon_entrance",
+        "icon": "🕳️",
+        "x": 0.9,
+        "y": 0.5,
+        "description": "A hollow in the ridge leads into the Watcher's buried domain."
+      }
+    ],
+    "ashen_wastes": [
+      {
+        "id": "ashen_waystation",
+        "name": "Ashen Waystation",
+        "type": "settlement",
+        "icon": "🏕️",
+        "x": 0.12,
+        "y": 0.52,
+        "description": "The last guarded camp before the open frontier begins."
+      },
+      {
+        "id": "glassroad",
+        "name": "The Glassroad",
+        "type": "lore",
+        "icon": "🔥",
+        "x": 0.71,
+        "y": 0.24,
+        "description": "A road melted into black glass by an ancient Veil storm."
+      },
+      {
+        "id": "volatile_veins",
+        "name": "Volatile Veins",
+        "type": "resource_hotspot",
+        "icon": "💎",
+        "x": 0.6,
+        "y": 0.7,
+        "description": "Dangerous exposed ore saturated with unstable Veil energy."
+      },
+      {
+        "id": "dreadfang_lair",
+        "name": "Dreadfang Alpha's Lair",
+        "type": "rare_spawn",
+        "icon": "🐺",
+        "x": 0.78,
+        "y": 0.3,
+        "description": "A corrupted predator hunts the ash fields from this den."
+      },
+      {
+        "id": "dreadvault_gate",
+        "name": "Dreadvault Entrance",
+        "type": "dungeon_entrance",
+        "icon": "☠️",
+        "x": 0.9,
+        "y": 0.5,
+        "description": "A fortress-sized breach descends into the Dreadvault."
+      },
+      {
+        "id": "veil_anomaly_site",
+        "name": "Veil Anomaly Site",
+        "type": "event_site",
+        "icon": "🌀",
+        "x": 0.52,
+        "y": 0.25,
+        "description": "A recurring anomaly concentrates hostile creatures during world events."
+      }
+    ],
+    "old_kingdom": [
+      {
+        "id": "crownfall_camp",
+        "name": "Crownfall Camp",
+        "type": "settlement",
+        "icon": "🏕️",
+        "x": 0.2,
+        "y": 0.28,
+        "description": "An expedition camp built among the ruins of the old royal road."
+      },
+      {
+        "id": "last_shrine",
+        "name": "The Last Shrine",
+        "type": "landmark",
+        "icon": "🕯️",
+        "x": 0.48,
+        "y": 0.24,
+        "description": "The final shrine still tended by the descendants of the old kingdom."
+      },
+      {
+        "id": "nameless_cairn",
+        "name": "Nameless Cairn",
+        "type": "lore",
+        "icon": "🪦",
+        "x": 0.22,
+        "y": 0.72,
+        "description": "A sealed cairn bearing no name, only the oldest royal mark."
+      },
+      {
+        "id": "relic_site",
+        "name": "Royal Relic Site",
+        "type": "resource_hotspot",
+        "icon": "💎",
+        "x": 0.48,
+        "y": 0.48,
+        "description": "Ancient ruins yield Silver, Blacksteel and Dreadsilver fragments."
+      },
+      {
+        "id": "kingdom_revenant_lair",
+        "name": "Revenant Court",
+        "type": "rare_spawn",
+        "icon": "👑",
+        "x": 0.78,
+        "y": 0.3,
+        "description": "A former royal champion is said to rise here after midnight."
+      },
+      {
+        "id": "royal_catacombs_gate",
+        "name": "Royal Catacombs Entrance",
+        "type": "dungeon_entrance",
+        "icon": "💀",
+        "x": 0.9,
+        "y": 0.5,
+        "description": "The old royal dead were buried far below the ruined palace."
+      },
+      {
+        "id": "undead_invasion_site",
+        "name": "Crownfall Defense Site",
+        "type": "event_site",
+        "icon": "⚔️",
+        "x": 0.35,
+        "y": 0.55,
+        "description": "A recurring invasion site where undead forces gather around the ruins."
+      }
+    ],
+    "black_citadel": [
+      {
+        "id": "citadel_gate",
+        "name": "Citadel Gate",
+        "type": "settlement",
+        "icon": "🏯",
+        "x": 0.48,
+        "y": 0.48,
+        "description": "The last fortified city before the deepest endgame frontier."
+      },
+      {
+        "id": "hollow_throne",
+        "name": "The Hollow Throne",
+        "type": "lore",
+        "icon": "👑",
+        "x": 0.68,
+        "y": 0.28,
+        "description": "A ruined throne room where the old rulers first heard the Hollow speak."
+      },
+      {
+        "id": "blacksteel_forge",
+        "name": "Blacksteel Forge",
+        "type": "resource_hotspot",
+        "icon": "🔥",
+        "x": 0.28,
+        "y": 0.62,
+        "description": "A fortified forge built over an unusually rich blacksteel seam."
+      },
+      {
+        "id": "citadel_event_site",
+        "name": "Citadel Breach",
+        "type": "event_site",
+        "icon": "⚔️",
+        "x": 0.76,
+        "y": 0.72,
+        "description": "A recurring breach where enemies test the outer defenses."
+      },
+      {
+        "id": "black_citadel_dreadvault_gate",
+        "name": "Dreadvault Descent",
+        "type": "dungeon_entrance",
+        "icon": "☠️",
+        "x": 0.86,
+        "y": 0.5,
+        "description": "A sealed descent leading toward the Dreadvault."
+      }
+    ],
+    "hollow_expanse": [
+      {
+        "id": "lantern_bastion",
+        "name": "Lantern Bastion",
+        "type": "settlement",
+        "icon": "🏕️",
+        "x": 0.12,
+        "y": 0.5,
+        "description": "A fortified apex resupply camp on the edge of the Hollow."
+      },
+      {
+        "id": "hollowwatch",
+        "name": "Hollowwatch",
+        "type": "settlement",
+        "icon": "🛡️",
+        "x": 0.78,
+        "y": 0.68,
+        "description": "Veil Wardens hold this outpost against roaming elites."
+      },
+      {
+        "id": "broken_seal",
+        "name": "Broken Seal",
+        "type": "lore",
+        "icon": "🔮",
+        "x": 0.42,
+        "y": 0.24,
+        "description": "An ancient seal split open from the inside."
+      },
+      {
+        "id": "dreadsilver_ridge",
+        "name": "Dreadsilver Ridge",
+        "type": "resource_hotspot",
+        "icon": "💎",
+        "x": 0.68,
+        "y": 0.62,
+        "description": "A dangerous ridge rich in Dreadsilver."
+      },
+      {
+        "id": "breachwarden_lair",
+        "name": "Breachwarden Lair",
+        "type": "rare_spawn",
+        "icon": "👑",
+        "x": 0.84,
+        "y": 0.3,
+        "description": "The Citadel Breachwarden patrols this ruined road."
+      },
+      {
+        "id": "hollow_breach_site",
+        "name": "Hollow Breach",
+        "type": "event_site",
+        "icon": "🌀",
+        "x": 0.52,
+        "y": 0.52,
+        "description": "A recurring breach where the Veil tears open."
+      },
+      {
+        "id": "dreadvault_expedition",
+        "name": "Dreadvault Expedition Gate",
+        "type": "dungeon_entrance",
+        "icon": "☠️",
+        "x": 0.92,
+        "y": 0.5,
+        "description": "The road descends toward the deepest Dreadvault entrance."
+      }
+    ],
+    "briarfen": [
+      {
+        "id": "briarfen_settlement",
+        "name": "Fenwatch",
+        "type": "settlement",
+        "icon": "🏕️",
+        "x": 0.18,
+        "y": 0.5,
+        "description": "A frontier settlement."
+      },
+      {
+        "id": "briarfen_camp",
+        "name": "Thornmere",
+        "type": "settlement",
+        "icon": "🛡️",
+        "x": 0.72,
+        "y": 0.28,
+        "description": "A defended outpost."
+      },
+      {
+        "id": "briarfen_resource",
+        "name": "Briarfen Resource Fields",
+        "type": "resource_hotspot",
+        "icon": "⛏️",
+        "x": 0.56,
+        "y": 0.68,
+        "description": "A valuable gathering region."
+      },
+      {
+        "id": "briarfen_rare",
+        "name": "Briarfen Rare Spawn",
+        "type": "rare_spawn",
+        "icon": "👹",
+        "x": 0.82,
+        "y": 0.72,
+        "description": "A rare creature territory."
+      },
+      {
+        "id": "briarfen_event",
+        "name": "Briarfen Event Site",
+        "type": "event_site",
+        "icon": "⚔️",
+        "x": 0.5,
+        "y": 0.25,
+        "description": "A recurring world-event location."
+      }
+    ],
+    "sunscar_steppe": [
+      {
+        "id": "sunscar_steppe_settlement",
+        "name": "Sunscar Camp",
+        "type": "settlement",
+        "icon": "🏕️",
+        "x": 0.18,
+        "y": 0.5,
+        "description": "A frontier settlement."
+      },
+      {
+        "id": "sunscar_steppe_camp",
+        "name": "Red Ridge",
+        "type": "settlement",
+        "icon": "🛡️",
+        "x": 0.72,
+        "y": 0.28,
+        "description": "A defended outpost."
+      },
+      {
+        "id": "sunscar_steppe_resource",
+        "name": "Sunscar Steppe Resource Fields",
+        "type": "resource_hotspot",
+        "icon": "⛏️",
+        "x": 0.56,
+        "y": 0.68,
+        "description": "A valuable gathering region."
+      },
+      {
+        "id": "sunscar_steppe_rare",
+        "name": "Sunscar Steppe Rare Spawn",
+        "type": "rare_spawn",
+        "icon": "👹",
+        "x": 0.82,
+        "y": 0.72,
+        "description": "A rare creature territory."
+      },
+      {
+        "id": "sunscar_steppe_event",
+        "name": "Sunscar Steppe Event Site",
+        "type": "event_site",
+        "icon": "⚔️",
+        "x": 0.5,
+        "y": 0.25,
+        "description": "A recurring world-event location."
+      }
+    ],
+    "crownfall_expanse": [
+      {
+        "id": "crownfall_expanse_settlement",
+        "name": "Crownfall Camp",
+        "type": "settlement",
+        "icon": "🏕️",
+        "x": 0.18,
+        "y": 0.5,
+        "description": "A frontier settlement."
+      },
+      {
+        "id": "crownfall_expanse_camp",
+        "name": "Last Bastion",
+        "type": "settlement",
+        "icon": "🛡️",
+        "x": 0.72,
+        "y": 0.28,
+        "description": "A defended outpost."
+      },
+      {
+        "id": "crownfall_expanse_resource",
+        "name": "Crownfall Expanse Resource Fields",
+        "type": "resource_hotspot",
+        "icon": "⛏️",
+        "x": 0.56,
+        "y": 0.68,
+        "description": "A valuable gathering region."
+      },
+      {
+        "id": "crownfall_expanse_rare",
+        "name": "Crownfall Expanse Rare Spawn",
+        "type": "rare_spawn",
+        "icon": "👹",
+        "x": 0.82,
+        "y": 0.72,
+        "description": "A rare creature territory."
+      },
+      {
+        "id": "crownfall_expanse_event",
+        "name": "Crownfall Expanse Event Site",
+        "type": "event_site",
+        "icon": "⚔️",
+        "x": 0.5,
+        "y": 0.25,
+        "description": "A recurring world-event location."
+      }
+    ],
+    "veilscar_highlands": [
+      {
+        "id": "veilscar_highlands_settlement",
+        "name": "Highland Watch",
+        "type": "settlement",
+        "icon": "🏕️",
+        "x": 0.18,
+        "y": 0.5,
+        "description": "A frontier settlement."
+      },
+      {
+        "id": "veilscar_highlands_camp",
+        "name": "Stormscar",
+        "type": "settlement",
+        "icon": "🛡️",
+        "x": 0.72,
+        "y": 0.28,
+        "description": "A defended outpost."
+      },
+      {
+        "id": "veilscar_highlands_resource",
+        "name": "Veilscar Highlands Resource Fields",
+        "type": "resource_hotspot",
+        "icon": "⛏️",
+        "x": 0.56,
+        "y": 0.68,
+        "description": "A valuable gathering region."
+      },
+      {
+        "id": "veilscar_highlands_rare",
+        "name": "Veilscar Highlands Rare Spawn",
+        "type": "rare_spawn",
+        "icon": "👹",
+        "x": 0.82,
+        "y": 0.72,
+        "description": "A rare creature territory."
+      },
+      {
+        "id": "veilscar_highlands_event",
+        "name": "Veilscar Highlands Event Site",
+        "type": "event_site",
+        "icon": "⚔️",
+        "x": 0.5,
+        "y": 0.25,
+        "description": "A recurring world-event location."
+      }
+    ],
+    "nightveil_coast": [
+      {
+        "id": "nightveil_coast_settlement",
+        "name": "Nightveil Anchorage",
+        "type": "settlement",
+        "icon": "🏕️",
+        "x": 0.18,
+        "y": 0.5,
+        "description": "A frontier settlement."
+      },
+      {
+        "id": "nightveil_coast_camp",
+        "name": "Drowned Ward",
+        "type": "settlement",
+        "icon": "🛡️",
+        "x": 0.72,
+        "y": 0.28,
+        "description": "A defended outpost."
+      },
+      {
+        "id": "nightveil_coast_resource",
+        "name": "Nightveil Coast Resource Fields",
+        "type": "resource_hotspot",
+        "icon": "⛏️",
+        "x": 0.56,
+        "y": 0.68,
+        "description": "A valuable gathering region."
+      },
+      {
+        "id": "nightveil_coast_rare",
+        "name": "Nightveil Coast Rare Spawn",
+        "type": "rare_spawn",
+        "icon": "👹",
+        "x": 0.82,
+        "y": 0.72,
+        "description": "A rare creature territory."
+      },
+      {
+        "id": "nightveil_coast_event",
+        "name": "Nightveil Coast Event Site",
+        "type": "event_site",
+        "icon": "⚔️",
+        "x": 0.5,
+        "y": 0.25,
+        "description": "A recurring world-event location."
+      }
+    ]
+  }
+}

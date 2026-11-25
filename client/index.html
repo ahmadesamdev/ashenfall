@@ -1,0 +1,648 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ashenfall</title>
+    <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link
+      rel="icon"
+      href="/assets/icons/favicon-32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0d0a0c" />
+    <link rel="preload" as="image" href="/assets/cursors/move.png?v=050" />
+    <link rel="preload" as="image" href="/assets/cursors/target.png?v=050" />
+    <link rel="preload" as="image" href="/assets/cursors/attack.png?v=050" />
+    <link rel="preload" as="image" href="/assets/cursors/talk.png?v=050" />
+    <link rel="preload" as="image" href="/assets/cursors/gate.png?v=050" />
+    <link rel="preload" as="image" href="/assets/cursors/loot.png?v=050" />
+    <link rel="preload" as="image" href="/assets/cursors/mine.png?v=050" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="auth-gate">
+    <div id="authScreen" class="auth-screen">
+      <div class="auth-backdrop">
+        <div class="auth-glow auth-glow-a"></div>
+        <div class="auth-glow auth-glow-b"></div>
+        <div class="auth-particles">✦　·　✧　　·　✦　　·　✧　·　✦</div>
+      </div>
+      <div class="auth-shell">
+        <section id="landingPanel" class="auth-panel landing-panel">
+          <div class="landing-mark">⚔️</div>
+          <div class="eyebrow">A DARK-FANTASY MMO</div>
+          <h1>ASHENFALL</h1>
+          <p class="landing-lead">
+            Enter a living world of ancient corruption, dangerous roads, deep
+            dungeons and player-driven progression.
+          </p>
+          <div class="landing-features">
+            <span>⚔️ Authoritative combat</span><span>🏰 Dungeons</span
+            ><span>⛏️ Professions</span><span>⚖️ Player economy</span
+            ><span>🗺️ Persistent world</span><span>🔥 PvP</span>
+          </div>
+          <div class="landing-actions">
+            <button
+              class="primary wide auth-primary"
+              data-auth-action="show-login"
+            >
+              Enter Ashenfall</button
+            ><button class="secondary wide" data-auth-action="show-register">
+              Create Account</button
+            ><button class="ghost wide" data-auth-action="guest">
+              Continue as Guest
+            </button>
+          </div>
+          <p class="auth-footnote">
+            Create an account to keep your characters and progression across
+            devices. Guest mode stores its session locally in this browser.
+          </p>
+        </section>
+        <section id="loginPanel" class="auth-panel auth-card hidden">
+          <div class="auth-card-head">
+            <div class="landing-mark small">⚔️</div>
+            <div>
+              <div class="eyebrow">WELCOME BACK</div>
+              <h2>Sign in</h2>
+            </div>
+          </div>
+          <label
+            >Email<input
+              id="loginEmail"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com" /></label
+          ><label
+            >Password<input
+              id="loginPassword"
+              type="password"
+              autocomplete="current-password"
+              placeholder="Your password" /></label
+          ><button class="primary wide" data-auth-action="login">
+            Sign In
+          </button>
+          <div class="auth-links">
+            <button data-auth-action="show-register">Create account</button
+            ><button data-auth-action="show-verify">Verify email</button
+            ><button data-auth-action="show-reset">Forgot password?</button
+            ><button data-auth-action="guest">Guest mode</button>
+          </div>
+        </section>
+        <section id="registerPanel" class="auth-panel auth-card hidden">
+          <div class="auth-card-head">
+            <div class="landing-mark small">✦</div>
+            <div>
+              <div class="eyebrow">JOIN THE WORLD</div>
+              <h2>Create account</h2>
+            </div>
+          </div>
+          <label
+            >Email<input
+              id="registerEmail"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com" /></label
+          ><label
+            >Password<input
+              id="registerPassword"
+              type="password"
+              autocomplete="new-password"
+              placeholder="At least 8 characters"
+          /></label>
+          <p class="auth-hint">
+            We'll send a six-digit verification code to your email.
+          </p>
+          <button class="primary wide" data-auth-action="register">
+            Create Account
+          </button>
+          <div class="auth-links">
+            <button data-auth-action="show-login">
+              Already have an account?</button
+            ><button data-auth-action="guest">Guest mode</button>
+          </div>
+        </section>
+        <section id="verifyPanel" class="auth-panel auth-card hidden">
+          <div class="auth-card-head">
+            <div class="landing-mark small">✉️</div>
+            <div>
+              <div class="eyebrow">ONE LAST STEP</div>
+              <h2>Verify your email</h2>
+            </div>
+          </div>
+          <label
+            >Email<input
+              id="verifyEmail"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com" /></label
+          ><label
+            >Verification code<input
+              id="verifyCode"
+              inputmode="numeric"
+              maxlength="6"
+              autocomplete="one-time-code"
+              placeholder="123456" /></label
+          ><button class="primary wide" data-auth-action="verify">
+            Verify Email
+          </button>
+          <div class="auth-links">
+            <button data-auth-action="resend">Send new code</button
+            ><button data-auth-action="show-login">Back to sign in</button>
+          </div>
+        </section>
+        <section id="resetPanel" class="auth-panel auth-card hidden">
+          <div class="auth-card-head">
+            <div class="landing-mark small">🔐</div>
+            <div>
+              <div class="eyebrow">ACCOUNT RECOVERY</div>
+              <h2>Reset password</h2>
+            </div>
+          </div>
+          <label
+            >Email<input
+              id="resetEmail"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+          /></label>
+          <p class="auth-hint">
+            We'll email a short-lived reset code if the account exists.
+          </p>
+          <button class="primary wide" data-auth-action="reset-request">
+            Send reset code
+          </button>
+          <div class="auth-links">
+            <button data-auth-action="show-login">Back to sign in</button>
+          </div>
+        </section>
+        <section id="resetConfirmPanel" class="auth-panel auth-card hidden">
+          <div class="auth-card-head">
+            <div class="landing-mark small">🗝️</div>
+            <div>
+              <div class="eyebrow">NEW CREDENTIALS</div>
+              <h2>Choose a new password</h2>
+            </div>
+          </div>
+          <label
+            >Email<input
+              id="resetConfirmEmail"
+              type="email"
+              autocomplete="email" /></label
+          ><label
+            >Reset code<input
+              id="resetCode"
+              inputmode="numeric"
+              maxlength="6"
+              autocomplete="one-time-code"
+              placeholder="123456" /></label
+          ><label
+            >New password<input
+              id="resetPassword"
+              type="password"
+              autocomplete="new-password"
+              placeholder="At least 8 characters" /></label
+          ><button class="primary wide" data-auth-action="reset-confirm">
+            Change Password
+          </button>
+          <div class="auth-links">
+            <button data-auth-action="show-login">Back to sign in</button>
+          </div>
+        </section>
+        <div id="authStatus" class="auth-status" aria-live="polite"></div>
+      </div>
+    </div>
+    <header class="topbar">
+      <div class="brand">⚔️ ASHENFALL</div>
+      <div class="zone-head">
+        <span id="zoneTitle">Stonehold</span><span id="zoneSubtitle"></span>
+      </div>
+      <div class="top-actions compact-status">
+        <span class="hud-status">⚔️ Live World</span
+        ><span class="hud-status">WASD Move</span
+        ><span class="hud-status">Wheel Zoom</span
+        ><span id="conn" class="disconnected">Connecting…</span>
+      </div>
+    </header>
+    <main>
+      <section class="hero card">
+        <div id="icon" class="avatar">🛡️</div>
+        <div class="hero-main">
+          <div class="name-row">
+            <h1 id="name"></h1>
+            <span id="role" class="tag">Tank</span
+            ><span id="level" class="tag">Lv 1</span>
+          </div>
+          <div id="meta" class="muted"></div>
+          <div class="resource-line">
+            <span>HP</span>
+            <div class="bar hp"><i id="hp"></i></div>
+            <b id="hpText"></b>
+          </div>
+          <div class="resource-line">
+            <span id="resTextName">Resource</span>
+            <div class="bar res"><i id="res"></i></div>
+            <b id="resText"></b>
+          </div>
+        </div>
+        <div class="currency">
+          <div class="momentum-chip">Momentum <b id="momentum">0</b></div>
+          <div>🪙 <b id="gold">100</b></div>
+          <div>🏆 <b id="achievementCount">0</b></div>
+          <button
+            id="runBtn"
+            type="button"
+            data-action="toggle-run"
+            title="Toggle walking/running"
+          >
+            🚶 Walk
+          </button>
+        </div>
+      </section>
+      <div class="game-layout">
+        <section class="main-column">
+          <div class="world-card card">
+            <div class="viewport-wrap">
+              <canvas id="worldCanvas" width="1200" height="700"></canvas
+              ><canvas
+                id="minimap"
+                width="180"
+                height="180"
+                aria-label="Minimap"
+              ></canvas>
+              <div class="minimap-tools" aria-label="Minimap zoom">
+                <button
+                  id="minimapZoomOut"
+                  type="button"
+                  aria-label="Zoom minimap out"
+                >
+                  −</button
+                ><span>MAP</span
+                ><button
+                  id="minimapZoomIn"
+                  type="button"
+                  aria-label="Zoom minimap in"
+                >
+                  +
+                </button>
+              </div>
+              <div
+                id="partyHud"
+                class="party-hud hidden"
+                aria-label="Party frames"
+              ></div>
+              <div id="regionHud" class="region-hud hidden">
+                <div class="region-hud-top">
+                  <span id="regionHudIcon">🌲</span>
+                  <div>
+                    <b id="regionHudName">Gloamwood</b
+                    ><span id="regionHudBand">Adventurer</span>
+                  </div>
+                  <span id="regionHudDanger" class="region-danger"
+                    >DANGER 1</span
+                  >
+                </div>
+                <div id="regionHudCondition" class="region-hud-condition">
+                  Normal travel
+                </div>
+                <div class="region-progress">
+                  <i id="regionProgressFill"></i>
+                </div>
+                <div id="regionHudDiscovery" class="region-hud-discovery">
+                  0 / 0 discovered
+                </div>
+                <div id="regionHudActivity" class="region-hud-activity"></div>
+              </div>
+              <div id="mapCharacterHud" class="map-character-hud">
+                <div class="map-avatar" id="mapHudIcon">🛡️</div>
+                <div class="map-hud-main">
+                  <div class="map-hud-name">
+                    <b id="mapHudName"></b><span id="mapHudLevel">Lv 1</span>
+                  </div>
+                  <div class="map-hud-role" id="mapHudRole">Tank</div>
+                  <div class="map-hud-bar hp"><i id="mapHudHp"></i></div>
+                  <div class="map-hud-bar res"><i id="mapHudRes"></i></div>
+                  <div class="map-hud-resource" id="mapHudResource">
+                    Resource 100/100
+                  </div>
+                </div>
+              </div>
+              <div id="targetHud" class="target-hud hidden">
+                <div class="target-avatar" id="targetHudIcon">🎯</div>
+                <div class="target-hud-main">
+                  <div class="target-hud-name">
+                    <b id="targetHudName">Target</b
+                    ><span id="targetHudLevel">Lv 1</span>
+                  </div>
+                  <div class="target-hud-role" id="targetHudRole"></div>
+                  <div class="target-hud-bar hp"><i id="targetHudHp"></i></div>
+                  <div class="target-hud-hptext" id="targetHudHpText"></div>
+                  <div id="targetHudStatuses" class="status-icons"></div>
+                </div>
+              </div>
+              <div id="questHelper" class="quest-helper hidden"></div>
+              <div id="dungeonQueueHud" class="dungeon-queue-hud hidden"></div>
+              <div id="arenaQueueHud" class="arena-queue-hud hidden"></div>
+              <div id="worldEventHud" class="world-event-hud hidden"></div>
+              <div id="mapChat" class="map-chat">
+                <div class="map-chat-head">
+                  <span>💬 Chat</span><span id="chatZone" class="muted"></span
+                  ><select id="mapChatChannel" aria-label="Chat channel">
+                    <option value="say">Say</option>
+                    <option value="party">Party</option>
+                    <option value="whisper">Whisper</option>
+                  </select>
+                </div>
+                <div id="mapChatLog" class="map-chat-log"></div>
+                <div class="map-chat-row">
+                  <input
+                    id="mapChatInput"
+                    placeholder="Say something…"
+                  /><button id="mapChatSend" type="button">Send</button>
+                </div>
+              </div>
+            </div>
+            <div class="combat-presentation">
+              <div
+                id="combatPhaseBanner"
+                class="combat-phase-banner hidden"
+              ></div>
+              <div
+                id="combatFeedback"
+                class="combat-feedback"
+                aria-live="polite"
+              ></div>
+              <div id="combatVignette" class="combat-vignette"></div>
+            </div>
+            <div class="map-overlay-combat">
+              <div id="combatHud" class="combat">
+                <div id="combatCastBar" class="combat-cast-bar hidden">
+                  <div class="combat-cast-head">
+                    <b id="combatCastName">Casting</b
+                    ><span id="combatCastTime">0.0s</span>
+                  </div>
+                  <div class="combat-cast-track">
+                    <i id="combatCastFill"></i>
+                  </div>
+                  <div id="combatCastHint" class="combat-cast-hint"></div>
+                </div>
+                <div id="cooldowns" class="cooldowns"></div>
+                <div class="hotbar-row" id="hotbar2">
+                  <div id="actions2" class="skillbar"></div>
+                </div>
+                <div class="hotbar-row" id="hotbar1">
+                  <div id="actions" class="skillbar"></div>
+                </div>
+                <div class="xp-track" aria-label="Experience progress">
+                  <div class="xp-track-head">
+                    <span>XP</span><b id="xpText">0 / 300</b>
+                  </div>
+                  <div class="xp-bar"><i id="xpFill"></i></div>
+                </div>
+                <div class="gcd-line">
+                  <span id="gcdText">Ready</span>
+                  <div class="gcd-bar"><i id="gcdBar"></i></div>
+                  <span id="queueText"></span>
+                </div>
+              </div>
+            </div>
+            <div class="map-help">
+              Left click: move/target • middle drag: pan • wheel: zoom • Shift:
+              run
+            </div>
+            <nav
+              id="bottomMenu"
+              class="bottom-menu"
+              aria-label="Game menu"
+            ></nav>
+          </div>
+          <div class="info-grid">
+            <div class="card">
+              <div class="section-head">
+                <h2>📖 Story & Objectives</h2>
+                <button type="button" data-action="open-quests">Journal</button>
+              </div>
+              <div id="story"></div>
+              <div id="quests"></div>
+            </div>
+            <div class="card">
+              <div class="section-head">
+                <h2>⚔️ Combat Log</h2>
+                <button type="button" data-action="clear-log">Clear</button>
+              </div>
+              <div id="log" class="log"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div
+      id="sessionLoading"
+      class="session-loading hidden"
+      role="status"
+      aria-live="polite"
+    >
+      <div class="session-loading-card">
+        <div class="session-spinner"></div>
+        <h2>Restoring Ashenfall…</h2>
+        <p id="sessionLoadingText">Loading your character.</p>
+      </div>
+    </div>
+    <div id="create" class="modal hidden" aria-hidden="true">
+      <div class="modal-card intro-card">
+        <h1>⚔️ Enter Ashenfall</h1>
+        <p class="muted">
+          Choose your name and class. Your first two abilities are available
+          immediately; the rest are learned as you grow.
+          <button
+            type="button"
+            class="create-signout"
+            data-auth-action="signout"
+          >
+            Sign out
+          </button>
+        </p>
+        <div class="form-grid">
+          <label
+            >Name<input
+              id="charname"
+              maxlength="20"
+              placeholder="Character name" /></label
+          ><label
+            >Class<select id="classid" aria-label="Class">
+              <option value="vanguard">🛡️ Vanguard - Tank</option>
+              <option value="arcanist">🔮 Arcanist - DPS</option>
+              <option value="warden">🌿 Warden - Support</option>
+              <option value="shadowblade">🗡️ Shadowblade - Rogue</option>
+              <option value="ranger">🏹 Ranger - Ranged</option>
+              <option value="templar">✝️ Templar - Battlemage</option>
+              <option value="occultist">☠️ Occultist - Caster</option>
+              <option value="reaver">🩸 Reaver - Melee DPS</option>
+              <option value="hierophant">✨ Hierophant - Healer</option>
+            </select></label
+          >
+        </div>
+        <div class="class-preview-shell">
+          <div id="classPreviewImage" class="class-preview-image"></div>
+          <div class="class-preview-copy">
+            <div class="eyebrow">YOUR PATH</div>
+            <h2 id="classPreviewName">Vanguard</h2>
+            <div id="classPreviewRole" class="class-preview-role">Tank</div>
+            <p id="classPreviewDescription">
+              Choose a class to begin your journey.
+            </p>
+            <div id="classPreviewResource" class="class-preview-resource">
+              Primary resource
+            </div>
+          </div>
+        </div>
+        <div
+          id="classChoices"
+          class="class-choices"
+          aria-label="Choose a class"
+        ></div>
+        <button
+          class="primary wide enter-world-button"
+          data-action="create-character"
+          type="button"
+        >
+          <span>Enter the World</span><small>Begin your journey</small>
+        </button>
+      </div>
+    </div>
+
+    <div id="teleportModal" class="modal hidden">
+      <div class="modal-card large">
+        <div class="modal-head">
+          <h2>🌀 Waygate Network</h2>
+          <button
+            type="button"
+            data-action="close-modal"
+            data-modal="teleportModal"
+          >
+            ×
+          </button>
+        </div>
+        <div id="teleportList" class="journal-list"></div>
+      </div>
+    </div>
+
+    <div id="lootRollPanel" class="loot-roll-panel hidden"></div>
+    <div id="storyModal" class="modal hidden">
+      <div class="modal-card dialogue">
+        <div class="eyebrow" id="dialogueStep"></div>
+        <h2 id="dialogueTitle">Ashes of the Past</h2>
+        <div class="speaker" id="dialogueSpeaker">Captain Aric</div>
+        <p id="dialogueText"></p>
+        <button id="dialogueNext" class="primary" type="button">
+          Continue
+        </button>
+      </div>
+    </div>
+
+    <div id="worldMapModal" class="modal hidden">
+      <div class="modal-card xlarge world-map-modal"></div>
+    </div>
+    <div id="worldIntelModal" class="modal hidden">
+      <div class="modal-card xlarge world-intel-modal">
+        <div class="modal-head">
+          <div>
+            <h2>🌍 World Intelligence</h2>
+            <div class="muted">
+              What is happening here, why it is happening, and what you can do
+              about it.
+            </div>
+          </div>
+          <button
+            type="button"
+            data-action="close-modal"
+            data-modal="worldIntelModal"
+          >
+            ×
+          </button>
+        </div>
+        <div id="worldIntelBody" class="world-intel-body"></div>
+      </div>
+    </div>
+    <div id="settingsModal" class="modal hidden">
+      <div class="modal-card">
+        <div class="modal-head">
+          <h2>⚙️ World Settings</h2>
+          <button
+            type="button"
+            data-action="close-modal"
+            data-modal="settingsModal"
+          >
+            ×
+          </button>
+        </div>
+        <div id="accountSettings" class="account-settings">
+          <div class="section-head">
+            <h3>Account</h3>
+            <span id="accountSettingsStatus" class="muted"></span>
+          </div>
+          <div id="accountSessionList" class="account-session-list"></div>
+          <div class="auth-links">
+            <button type="button" data-account-action="refresh-sessions">
+              Refresh sessions</button
+            ><button type="button" data-account-action="logout-all">
+              Sign out all sessions
+            </button>
+          </div>
+        </div>
+        <div class="settings-list">
+          <label
+            >Maximum visible players
+            <input
+              id="settingMaxPlayers"
+              type="range"
+              min="10"
+              max="250"
+              step="10"
+              value="80"
+            /><output id="settingMaxPlayersValue">80</output></label
+          ><label
+            ><input id="settingShowNames" type="checkbox" checked /> Show player
+            names</label
+          ><label
+            ><input id="settingShowMobs" type="checkbox" checked /> Show mob
+            names and health bars</label
+          ><label
+            ><input id="settingShowTerrain" type="checkbox" checked /> Show
+            terrain icons and landmarks</label
+          ><label
+            ><input id="settingReduceMotion" type="checkbox" /> Reduce camera
+            interpolation</label
+          >
+        </div>
+        <button
+          class="primary wide"
+          data-action="close-modal"
+          data-modal="settingsModal"
+        >
+          Done
+        </button>
+      </div>
+    </div>
+    <div id="contextMenu" class="context-menu hidden"></div>
+
+    <div id="tooltip" class="tooltip"></div>
+    <div id="deathModal" class="modal hidden">
+      <div class="modal-card death">
+        <div class="skull">☠️</div>
+        <h1>You Died</h1>
+        <p id="deathText"></p>
+        <div id="respawnTimer"></div>
+        <button id="respawnBtn" class="primary" type="button" disabled>
+          Respawn
+        </button>
+      </div>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1732 @@
+[
+  {
+    "id": "training_dummy",
+    "name": "Training Dummy",
+    "icon": "🎯",
+    "level": 1,
+    "maxHp": 220,
+    "attack": 0,
+    "armor": 0,
+    "xp": 30,
+    "gold": 8,
+    "loot": ["wolf_fang"],
+    "ai": "dummy"
+  },
+  {
+    "id": "hollow_wolf",
+    "name": "Hollow Wolf",
+    "icon": "🐺",
+    "level": 1,
+    "maxHp": 60,
+    "attack": 5.5,
+    "armor": 3,
+    "xp": 34,
+    "gold": 24,
+    "loot": ["wolf_fang"],
+    "ai": "wolf"
+  },
+  {
+    "id": "grave_knight",
+    "name": "Grave Knight",
+    "icon": "💀",
+    "level": 3,
+    "maxHp": 230,
+    "attack": 12.5,
+    "armor": 7,
+    "xp": 95,
+    "gold": 80,
+    "loot": ["grave_steel"],
+    "ai": "elite",
+    "castEvery": 6,
+    "castDuration": 1.5,
+    "castName": "Grave Nova",
+    "castMultiplier": 1.65,
+    "mechanicPattern": [
+      {
+        "name": "Grave Nova",
+        "kind": "ground",
+        "radius": 10,
+        "multiplier": 1.65,
+        "interruptible": false
+      },
+      {
+        "name": "Bonebreaker",
+        "kind": "single",
+        "interruptible": true,
+        "multiplier": 1.8
+      }
+    ]
+  },
+  {
+    "id": "crypt_acolyte",
+    "name": "Crypt Acolyte",
+    "icon": "🕯️",
+    "level": 2,
+    "maxHp": 95,
+    "attack": 7.2,
+    "armor": 4,
+    "xp": 70,
+    "gold": 35,
+    "loot": ["grave_steel"],
+    "ai": "caster",
+    "castEvery": 7,
+    "castDuration": 1.4,
+    "castName": "Dark Benediction",
+    "castMultiplier": 1.5
+  },
+  {
+    "id": "catacomb_abomination",
+    "name": "Catacomb Abomination",
+    "icon": "🧟",
+    "level": 4,
+    "maxHp": 320,
+    "attack": 15,
+    "armor": 8,
+    "xp": 180,
+    "gold": 120,
+    "loot": ["ember_core"],
+    "ai": "elite",
+    "castEvery": 8,
+    "castDuration": 1.8,
+    "castName": "Putrid Roar",
+    "castMultiplier": 1.7,
+    "mechanicPattern": [
+      {
+        "name": "Putrid Roar",
+        "kind": "ground",
+        "radius": 12,
+        "multiplier": 1.65,
+        "interruptible": false
+      },
+      {
+        "name": "Rot Pool",
+        "kind": "ground",
+        "radius": 8,
+        "multiplier": 1.15,
+        "interruptible": false
+      },
+      {
+        "name": "Meat Hook",
+        "kind": "tank_buster",
+        "multiplier": 2.2,
+        "interruptible": true,
+        "target": "threat"
+      }
+    ],
+    "enrageAfter": 80,
+    "enrageMultiplier": 1.5
+  },
+  {
+    "id": "hollow_saint",
+    "name": "The Hollow Saint",
+    "icon": "👑",
+    "level": 6,
+    "maxHp": 1850,
+    "attack": 33,
+    "armor": 18,
+    "xp": 650,
+    "gold": 500,
+    "loot": ["saint_relic", "saints_aegis"],
+    "ai": "boss",
+    "phases": [
+      {
+        "at": 0.66,
+        "name": "The Bell Tolls",
+        "mult": 1.15,
+        "castName": "Bell of Ruin",
+        "castMultiplier": 1.9
+      },
+      {
+        "at": 0.33,
+        "name": "Absolution",
+        "mult": 1.35,
+        "castName": "Absolution",
+        "castMultiplier": 2.3,
+        "mechanicPattern": [
+          {
+            "name": "Absolution",
+            "kind": "single",
+            "multiplier": 2.3,
+            "interruptible": true,
+            "target": "threat",
+            "overlap": [
+              {
+                "name": "Hollow Ground",
+                "delayMs": 800
+              }
+            ]
+          },
+          {
+            "name": "Hollow Ground",
+            "kind": "ground",
+            "radius": 14,
+            "multiplier": 1.35,
+            "interruptible": false,
+            "overlap": [
+              {
+                "name": "Falling Bells",
+                "delayMs": 600
+              }
+            ]
+          },
+          {
+            "name": "Falling Bells",
+            "kind": "spread",
+            "radius": 7,
+            "multiplier": 1.45,
+            "interruptible": false,
+            "targets": "two"
+          },
+          {
+            "name": "Saintly Convergence",
+            "kind": "stack",
+            "radius": 5,
+            "multiplier": 1.25,
+            "interruptible": false,
+            "targets": "two",
+            "minStack": 3,
+            "failure": "party_damage"
+          },
+          {
+            "name": "Cathedral Lance",
+            "kind": "cone",
+            "radius": 12,
+            "multiplier": 1.55,
+            "interruptible": true,
+            "target": "threat",
+            "failure": "heavy_damage"
+          }
+        ]
+      }
+    ],
+    "castEvery": 6,
+    "castDuration": 2.5,
+    "castName": "Grave Nova",
+    "castMultiplier": 1.7,
+    "enrageAfter": 90,
+    "mechanicPattern": [
+      {
+        "name": "Bell of Ruin",
+        "kind": "single",
+        "interruptible": true,
+        "multiplier": 1.9,
+        "target": "threat"
+      },
+      {
+        "name": "Falling Bells",
+        "kind": "spread",
+        "radius": 7,
+        "multiplier": 1.35,
+        "interruptible": false,
+        "targets": "two",
+        "overlap": [
+          {
+            "name": "Bell of Ruin",
+            "delayMs": 700
+          }
+        ]
+      },
+      {
+        "name": "Devouring Gaze",
+        "kind": "gaze",
+        "escapeRadius": 8,
+        "multiplier": 1.55,
+        "interruptible": true,
+        "target": "non_tank"
+      },
+      {
+        "name": "Grave Choir",
+        "kind": "summon",
+        "summon": "catacomb_guard",
+        "count": 3,
+        "interruptible": true,
+        "multiplier": 0,
+        "overlap": [
+          {
+            "name": "Devouring Gaze",
+            "delayMs": 900
+          }
+        ]
+      },
+      {
+        "name": "Hollow Ground",
+        "kind": "ground",
+        "radius": 14,
+        "multiplier": 1.35,
+        "interruptible": false
+      },
+      {
+        "name": "Sanctified Absorb",
+        "kind": "absorb",
+        "absorbAmount": 260,
+        "durationMs": 7000,
+        "multiplier": 0,
+        "interruptible": false,
+        "target": "healer"
+      },
+      {
+        "name": "Saintly Benediction",
+        "kind": "dispel",
+        "multiplier": 0,
+        "interruptible": false,
+        "target": "threat",
+        "shieldAmount": 300,
+        "durationMs": 7000
+      }
+    ],
+    "enrageMultiplier": 1.6,
+    "encounterVersion": "3.9",
+    "mechanicFailureLimit": 3,
+    "mechanicFailureWindowSec": 30,
+    "encounterMechanics": [
+      {
+        "id": "bell_ruin",
+        "name": "Bell of Ruin",
+        "type": "interrupt",
+        "telegraphMs": 2500,
+        "failure": "heavy_damage",
+        "phase": 1
+      },
+      {
+        "id": "falling_bells",
+        "name": "Falling Bells",
+        "type": "spread",
+        "telegraphMs": 2200,
+        "failure": "heavy_damage",
+        "phase": 1
+      },
+      {
+        "id": "devouring_gaze",
+        "name": "Devouring Gaze",
+        "type": "gaze",
+        "telegraphMs": 2400,
+        "failure": "heavy_damage",
+        "phase": 1
+      },
+      {
+        "id": "grave_choir",
+        "name": "Grave Choir",
+        "type": "adds",
+        "telegraphMs": 2200,
+        "failure": "add_pressure",
+        "phase": 1
+      },
+      {
+        "id": "absolution",
+        "name": "Absolution",
+        "type": "interrupt",
+        "telegraphMs": 2600,
+        "failure": "party_damage",
+        "phase": 2
+      },
+      {
+        "id": "hollow_ground",
+        "name": "Hollow Ground",
+        "type": "movement",
+        "telegraphMs": 1800,
+        "failure": "heavy_damage",
+        "phase": 2
+      },
+      {
+        "id": "bell_enrage",
+        "name": "Bell of Final Ruin",
+        "type": "enrage",
+        "telegraphMs": 0,
+        "failure": "wipe",
+        "phase": 3
+      },
+      {
+        "id": "saintly_convergence",
+        "name": "Saintly Convergence",
+        "type": "stack",
+        "telegraphMs": 2200,
+        "failure": "party_damage",
+        "phase": 2
+      },
+      {
+        "id": "cathedral_lance",
+        "name": "Cathedral Lance",
+        "type": "cone",
+        "telegraphMs": 1800,
+        "failure": "heavy_damage",
+        "phase": 2
+      },
+      {
+        "id": "sanctified_absorb",
+        "name": "Sanctified Absorb",
+        "type": "absorb",
+        "telegraphMs": 2200,
+        "failure": "damage_pressure",
+        "phase": 1
+      },
+      {
+        "id": "saintly_benediction",
+        "name": "Saintly Benediction",
+        "type": "dispel",
+        "telegraphMs": 2200,
+        "failure": "damage_pressure",
+        "phase": 1
+      }
+    ],
+    "bossAI": {
+      "version": "4.4",
+      "decisionCooldownMs": 9000,
+      "lowPartyHpThreshold": 0.58,
+      "criticalPartyHpThreshold": 0.32,
+      "failureEscalation": true,
+      "avoidRepeatedMechanicMs": 9000,
+      "directorTickMs": 2000,
+      "maxConcurrentOverlaps": 2,
+      "maxActiveAdds": 3,
+      "mechanicBudget": 3,
+      "directorVersion": "4.5",
+      "vocabularyVersion": "4.6",
+      "mechanicVocabulary": [
+        "tank_buster",
+        "frontal",
+        "cone",
+        "single_target",
+        "targeted",
+        "ground",
+        "movement",
+        "spread",
+        "stack",
+        "soak",
+        "interrupt",
+        "summon",
+        "adds",
+        "cleanse",
+        "dispel",
+        "tether",
+        "absorb",
+        "anti_heal",
+        "threat_wipe",
+        "enrage"
+      ]
+    },
+    "encounterChoreography": [
+      {
+        "id": "phase_1_choreography",
+        "phase": 1,
+        "sequence": [
+          "Falling Bells",
+          "Grave Choir",
+          "Sanctified Absorb",
+          "Bell of Ruin",
+          "Devouring Gaze"
+        ]
+      },
+      {
+        "id": "phase_2_choreography",
+        "phase": 2,
+        "sequence": [
+          "Absolution",
+          "Hollow Ground",
+          "Falling Bells",
+          "Devouring Gaze"
+        ]
+      },
+      {
+        "id": "phase_3_choreography",
+        "phase": 3,
+        "sequence": [
+          "Absolution",
+          "Hollow Ground",
+          "Falling Bells",
+          "Saintly Convergence",
+          "Cathedral Lance"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ashen_reaver",
+    "name": "Ashen Reaver",
+    "icon": "🧟",
+    "level": 10,
+    "maxHp": 900,
+    "attack": 30,
+    "armor": 16,
+    "xp": 650,
+    "gold": 70,
+    "loot": ["ember_core", "saintbreaker"],
+    "ai": "elite"
+  },
+  {
+    "id": "crypt_warden",
+    "name": "Crypt Warden",
+    "icon": "🪦",
+    "level": 4,
+    "maxHp": 300,
+    "attack": 14.5,
+    "armor": 8,
+    "xp": 95,
+    "gold": 110,
+    "loot": ["grave_steel", "blacksteel_ore"],
+    "ai": "elite",
+    "castEvery": 7,
+    "castDuration": 2,
+    "castName": "Fracture Wave",
+    "castMultiplier": 1.8,
+    "mechanicPattern": [
+      {
+        "name": "Fracture Wave",
+        "kind": "single",
+        "interruptible": true,
+        "multiplier": 1.7,
+        "target": "threat"
+      },
+      {
+        "name": "Graveguard Surge",
+        "kind": "summon",
+        "summon": "catacomb_guard",
+        "count": 2,
+        "interruptible": true,
+        "multiplier": 0
+      },
+      {
+        "name": "Dark Ground",
+        "kind": "ground",
+        "radius": 10,
+        "multiplier": 1.35,
+        "interruptible": false
+      },
+      {
+        "name": "Warden Stun",
+        "kind": "stun",
+        "stun": 2,
+        "interruptible": true,
+        "multiplier": 1.35,
+        "target": "non_tank"
+      }
+    ],
+    "enrageAfter": 75,
+    "enrageMultiplier": 1.5
+  },
+  {
+    "id": "catacomb_stalker",
+    "name": "Catacomb Stalker",
+    "icon": "🦴",
+    "level": 3,
+    "maxHp": 135,
+    "attack": 9.2,
+    "armor": 5.5,
+    "xp": 55,
+    "gold": 26,
+    "loot": ["grave_steel"],
+    "ai": "wolf"
+  },
+  {
+    "id": "risen_guardian",
+    "name": "Risen Guardian",
+    "icon": "💀",
+    "level": 8,
+    "maxHp": 620,
+    "attack": 24,
+    "armor": 13,
+    "xp": 420,
+    "gold": 55,
+    "loot": ["grave_steel"],
+    "ai": "elite",
+    "castEvery": 7,
+    "castDuration": 1.8,
+    "castName": "Guardian Fracture",
+    "castMultiplier": 1.7
+  },
+  {
+    "id": "dreadbound_guard",
+    "name": "Dreadbound Guard",
+    "icon": "🛡️",
+    "level": 8,
+    "maxHp": 580,
+    "attack": 22,
+    "armor": 13,
+    "xp": 120,
+    "gold": 48,
+    "loot": ["grave_steel"],
+    "ai": "elite",
+    "castEvery": 7,
+    "castDuration": 1.5,
+    "castName": "Shield Break",
+    "castMultiplier": 1.5
+  },
+  {
+    "id": "ashen_hexer",
+    "name": "Ashen Hexer",
+    "icon": "🕯️",
+    "level": 8,
+    "maxHp": 310,
+    "attack": 18.5,
+    "armor": 10,
+    "xp": 110,
+    "gold": 55,
+    "loot": ["ember_core"],
+    "ai": "caster",
+    "castEvery": 6,
+    "castDuration": 1.4,
+    "castName": "Ashen Bolt",
+    "castMultiplier": 1.7
+  },
+  {
+    "id": "vault_keeper",
+    "name": "Vault Keeper",
+    "icon": "⛓️",
+    "level": 9,
+    "maxHp": 880,
+    "attack": 28,
+    "armor": 15,
+    "xp": 180,
+    "gold": 140,
+    "loot": ["vaultbreaker"],
+    "ai": "elite",
+    "castEvery": 6,
+    "castDuration": 1.8,
+    "castName": "Chain Prison",
+    "castMultiplier": 1.8,
+    "mechanicPattern": [
+      {
+        "name": "Chain Prison",
+        "kind": "stun",
+        "stun": 2.2,
+        "interruptible": true,
+        "multiplier": 1.5
+      },
+      {
+        "name": "Cleave",
+        "kind": "single",
+        "multiplier": 1.7
+      },
+      {
+        "name": "Ashen Mark",
+        "kind": "aoe",
+        "radius": 10,
+        "multiplier": 1.25
+      },
+      {
+        "name": "Ashen Collapse",
+        "kind": "ground",
+        "radius": 12,
+        "multiplier": 1.45,
+        "interruptible": false
+      }
+    ]
+  },
+  {
+    "id": "vault_tyrant",
+    "name": "The Vault Tyrant",
+    "icon": "👁️",
+    "level": 10,
+    "maxHp": 2800,
+    "attack": 40,
+    "armor": 20,
+    "xp": 850,
+    "gold": 500,
+    "loot": ["vaultbreaker", "veilglass_prism"],
+    "ai": "boss",
+    "phases": [
+      {
+        "at": 0.5,
+        "name": "The Door Remembers",
+        "mult": 1.2,
+        "castName": "Black Star",
+        "castMultiplier": 2
+      },
+      {
+        "at": 0.2,
+        "name": "Collapse",
+        "mult": 1.4,
+        "castName": "Collapse",
+        "castMultiplier": 2.4,
+        "mechanicPattern": [
+          {
+            "name": "Vaultfall Soak",
+            "kind": "soak",
+            "radius": 6,
+            "multiplier": 1.9,
+            "interruptible": false,
+            "target": "non_tank",
+            "minSoak": 2,
+            "failure": "party_damage"
+          },
+          {
+            "name": "Tyrant Fracture",
+            "kind": "frontal",
+            "radius": 10,
+            "multiplier": 1.7,
+            "interruptible": false,
+            "target": "threat",
+            "failure": "heavy_damage"
+          }
+        ]
+      }
+    ],
+    "castEvery": 6,
+    "castDuration": 2,
+    "castName": "Black Star",
+    "castMultiplier": 1.8,
+    "enrageAfter": 120,
+    "mechanicPattern": [
+      {
+        "name": "Black Star",
+        "kind": "ground",
+        "radius": 12,
+        "multiplier": 2,
+        "interruptible": false,
+        "target": "threat"
+      },
+      {
+        "name": "Tyrant’s Brand",
+        "kind": "tank_buster",
+        "multiplier": 2.35,
+        "interruptible": true,
+        "target": "threat",
+        "overlap": [
+          {
+            "name": "Black Star",
+            "delayMs": 650
+          }
+        ]
+      },
+      {
+        "name": "Grave Chains",
+        "kind": "stun",
+        "stun": 1.4,
+        "interruptible": true,
+        "multiplier": 1.6,
+        "target": "non_tank"
+      },
+      {
+        "name": "Door Remembers",
+        "kind": "spread",
+        "radius": 8,
+        "multiplier": 1.7,
+        "interruptible": false,
+        "targets": "two",
+        "overlap": [
+          {
+            "name": "Grave Chains",
+            "delayMs": 700
+          }
+        ]
+      },
+      {
+        "name": "Vault Collapse",
+        "kind": "ground",
+        "radius": 18,
+        "multiplier": 2.5,
+        "interruptible": false,
+        "overlap": [
+          {
+            "name": "Voidbound Reinforcements",
+            "delayMs": 800
+          }
+        ]
+      },
+      {
+        "name": "Voidbound Reinforcements",
+        "kind": "summon",
+        "summon": "dreadbound_guard",
+        "count": 2,
+        "interruptible": true,
+        "multiplier": 0
+      },
+      {
+        "name": "Tyrant’s Aegis",
+        "kind": "dispel",
+        "multiplier": 0,
+        "interruptible": false,
+        "target": "threat",
+        "shieldAmount": 360,
+        "durationMs": 8000
+      },
+      {
+        "name": "Grave Rot",
+        "kind": "anti_heal",
+        "multiplier": 0.2,
+        "interruptible": true,
+        "target": "healer",
+        "healingReductionPct": 35,
+        "durationMs": 6500,
+        "failure": "heavy_damage"
+      }
+    ],
+    "enrageMultiplier": 1.65,
+    "encounterVersion": "3.9",
+    "mechanicFailureLimit": 3,
+    "mechanicFailureWindowSec": 30,
+    "encounterMechanics": [
+      {
+        "id": "tyrant_brand",
+        "name": "Tyrant’s Brand",
+        "type": "tank_swap",
+        "telegraphMs": 2200,
+        "failure": "threat_swap",
+        "phase": 1
+      },
+      {
+        "id": "black_star",
+        "name": "Black Star",
+        "type": "movement",
+        "telegraphMs": 2200,
+        "failure": "heavy_damage",
+        "phase": 1
+      },
+      {
+        "id": "grave_chains",
+        "name": "Grave Chains",
+        "type": "spread",
+        "telegraphMs": 2400,
+        "failure": "party_damage",
+        "phase": 1
+      },
+      {
+        "id": "door_remembers",
+        "name": "Door Remembers",
+        "type": "phase_transition",
+        "telegraphMs": 0,
+        "failure": "room_change",
+        "phase": 2
+      },
+      {
+        "id": "void_reinforcements",
+        "name": "Voidbound Reinforcements",
+        "type": "adds",
+        "telegraphMs": 1800,
+        "failure": "add_pressure",
+        "phase": 2
+      },
+      {
+        "id": "vault_collapse",
+        "name": "Vault Collapse",
+        "type": "movement",
+        "telegraphMs": 1800,
+        "failure": "wipe",
+        "phase": 3
+      },
+      {
+        "id": "vaultfall_soak",
+        "name": "Vaultfall Soak",
+        "type": "soak",
+        "telegraphMs": 2000,
+        "failure": "party_damage",
+        "phase": 2
+      },
+      {
+        "id": "tyrant_fracture",
+        "name": "Tyrant Fracture",
+        "type": "frontal",
+        "telegraphMs": 1800,
+        "failure": "heavy_damage",
+        "phase": 2
+      },
+      {
+        "id": "tyrant_s_aegis",
+        "name": "Tyrant’s Aegis",
+        "type": "dispel",
+        "telegraphMs": 2200,
+        "failure": "damage_pressure",
+        "phase": 1
+      },
+      {
+        "id": "grave_rot",
+        "name": "Grave Rot",
+        "type": "anti_heal",
+        "telegraphMs": 2200,
+        "failure": "heavy_damage",
+        "phase": 1
+      }
+    ],
+    "bossAI": {
+      "version": "4.4",
+      "decisionCooldownMs": 9000,
+      "lowPartyHpThreshold": 0.58,
+      "criticalPartyHpThreshold": 0.32,
+      "failureEscalation": true,
+      "avoidRepeatedMechanicMs": 9000,
+      "directorTickMs": 2000,
+      "maxConcurrentOverlaps": 2,
+      "maxActiveAdds": 3,
+      "mechanicBudget": 3,
+      "directorVersion": "4.5",
+      "vocabularyVersion": "4.6",
+      "mechanicVocabulary": [
+        "tank_buster",
+        "frontal",
+        "cone",
+        "single_target",
+        "targeted",
+        "ground",
+        "movement",
+        "spread",
+        "stack",
+        "soak",
+        "interrupt",
+        "summon",
+        "adds",
+        "cleanse",
+        "dispel",
+        "tether",
+        "absorb",
+        "anti_heal",
+        "threat_wipe",
+        "enrage"
+      ]
+    },
+    "encounterChoreography": [
+      {
+        "id": "phase_1_choreography",
+        "phase": 1,
+        "sequence": [
+          "Tyrant’s Brand",
+          "Door Remembers",
+          "Vault Collapse",
+          "Black Star",
+          "Grave Chains"
+        ]
+      },
+      {
+        "id": "phase_2_choreography",
+        "phase": 2,
+        "sequence": [
+          "Tyrant’s Brand",
+          "Vault Collapse",
+          "Grave Rot",
+          "Tyrant’s Aegis"
+        ]
+      },
+      {
+        "id": "phase_3_choreography",
+        "phase": 3,
+        "sequence": ["Vaultfall Soak", "Tyrant Fracture", "Tyrant’s Brand"]
+      }
+    ]
+  },
+  {
+    "id": "watcher_hollowkeeper",
+    "name": "Hollowkeeper Veyr",
+    "icon": "🕳️",
+    "level": 8,
+    "maxHp": 1050,
+    "attack": 30,
+    "armor": 16,
+    "xp": 420,
+    "gold": 180,
+    "loot": ["dawnwatch_bow", "star_iron_ore"],
+    "ai": "elite",
+    "castEvery": 6,
+    "castDuration": 1.8,
+    "castName": "Watcher’s Brand",
+    "castMultiplier": 1.8,
+    "mechanicPattern": [
+      {
+        "name": "Watcher’s Brand",
+        "kind": "single",
+        "interruptible": true,
+        "multiplier": 1.8,
+        "target": "threat"
+      },
+      {
+        "name": "Mire Chains",
+        "kind": "stun",
+        "stun": 1.8,
+        "interruptible": true,
+        "multiplier": 1.45,
+        "target": "non_tank"
+      },
+      {
+        "name": "Flooded Ground",
+        "kind": "ground",
+        "radius": 12,
+        "multiplier": 1.35,
+        "interruptible": false
+      },
+      {
+        "name": "Watchers Rise",
+        "kind": "summon",
+        "summon": "reach_roadbandit",
+        "count": 2,
+        "interruptible": true,
+        "multiplier": 0
+      }
+    ],
+    "enrageAfter": 75,
+    "enrageMultiplier": 1.5
+  },
+  {
+    "id": "watcher_hollowwarden",
+    "name": "The Hollow Warden",
+    "icon": "🗿",
+    "level": 10,
+    "maxHp": 2900,
+    "attack": 42,
+    "armor": 21,
+    "xp": 900,
+    "gold": 650,
+    "loot": ["dreadwatch_9_bow", "star_iron_ore"],
+    "ai": "boss",
+    "phases": [
+      {
+        "at": 0.66,
+        "name": "Tide of Eyes",
+        "mult": 1.15,
+        "castName": "Flooded Gaze",
+        "castMultiplier": 2,
+        "mechanicPattern": [
+          {
+            "name": "Mire Surge",
+            "kind": "ground",
+            "radius": 16,
+            "multiplier": 1.9,
+            "interruptible": false
+          },
+          {
+            "name": "Hollow Reinforcements",
+            "kind": "summon",
+            "summon": "reach_mirewing",
+            "count": 2,
+            "interruptible": true,
+            "multiplier": 0
+          },
+          {
+            "name": "Flooded Gaze",
+            "kind": "gaze",
+            "escapeRadius": 10,
+            "multiplier": 1.95,
+            "interruptible": true,
+            "target": "non_tank"
+          },
+          {
+            "name": "Tidebreaker",
+            "kind": "tank_buster",
+            "multiplier": 2.55,
+            "interruptible": true,
+            "target": "threat",
+            "overlap": [
+              {
+                "name": "Flooded Gaze",
+                "delayMs": 650
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "at": 0.33,
+        "name": "The Hollow Watches",
+        "mult": 1.35,
+        "castName": "Watcher’s Deluge",
+        "castMultiplier": 2.4,
+        "mechanicPattern": [
+          {
+            "name": "Watcher’s Deluge",
+            "kind": "aoe",
+            "radius": 20,
+            "multiplier": 2.15,
+            "interruptible": false,
+            "partyWide": true,
+            "overlap": [
+              {
+                "name": "Hollow Reinforcements",
+                "delayMs": 700
+              }
+            ]
+          },
+          {
+            "name": "Hollow Reinforcements",
+            "kind": "summon",
+            "summon": "reach_mirewing",
+            "count": 3,
+            "interruptible": true,
+            "multiplier": 0
+          },
+          {
+            "name": "Tidebreaker",
+            "kind": "tank_buster",
+            "multiplier": 2.8,
+            "interruptible": true,
+            "target": "threat",
+            "overlap": [
+              {
+                "name": "Flooded Gaze",
+                "delayMs": 650
+              }
+            ]
+          },
+          {
+            "name": "Flooded Gaze",
+            "kind": "gaze",
+            "escapeRadius": 11,
+            "multiplier": 2.1,
+            "interruptible": true,
+            "target": "non_tank"
+          },
+          {
+            "name": "Watcher Tether",
+            "kind": "tether",
+            "radius": 7,
+            "multiplier": 1.35,
+            "interruptible": false,
+            "targets": "two",
+            "maxDistance": 9,
+            "failure": "party_damage"
+          },
+          {
+            "name": "Abyssal Brand",
+            "kind": "anti_heal",
+            "multiplier": 1.2,
+            "interruptible": true,
+            "target": "healer",
+            "healingReductionPct": 40,
+            "durationMs": 7000,
+            "failure": "heavy_damage"
+          }
+        ]
+      }
+    ],
+    "castEvery": 6,
+    "castDuration": 2.2,
+    "castName": "Flooded Gaze",
+    "castMultiplier": 1.9,
+    "enrageAfter": 120,
+    "enrageMultiplier": 1.65,
+    "mechanicPattern": [
+      {
+        "name": "Flooded Gaze",
+        "kind": "gaze",
+        "escapeRadius": 9,
+        "multiplier": 1.7,
+        "interruptible": true,
+        "target": "non_tank"
+      },
+      {
+        "name": "Tidebreaker",
+        "kind": "tank_buster",
+        "multiplier": 2.35,
+        "interruptible": true,
+        "target": "threat",
+        "overlap": [
+          {
+            "name": "Watcher Rings",
+            "delayMs": 650
+          }
+        ]
+      },
+      {
+        "name": "Watcher Rings",
+        "kind": "spread",
+        "radius": 8,
+        "multiplier": 1.55,
+        "interruptible": false,
+        "targets": "two",
+        "overlap": [
+          {
+            "name": "Flooded Gaze",
+            "delayMs": 700
+          }
+        ]
+      },
+      {
+        "name": "Mire Surge",
+        "kind": "ground",
+        "radius": 16,
+        "multiplier": 1.8,
+        "interruptible": false
+      },
+      {
+        "name": "Hollow Reinforcements",
+        "kind": "summon",
+        "summon": "reach_mirewing",
+        "count": 2,
+        "interruptible": true,
+        "multiplier": 0
+      },
+      {
+        "name": "Drowning Ward",
+        "kind": "absorb",
+        "absorbAmount": 280,
+        "durationMs": 7000,
+        "multiplier": 0,
+        "interruptible": false,
+        "target": "healer"
+      }
+    ],
+    "phase1MechanicPattern": [
+      {
+        "name": "Flooded Gaze",
+        "kind": "gaze",
+        "escapeRadius": 9,
+        "multiplier": 1.7,
+        "interruptible": true,
+        "target": "non_tank"
+      },
+      {
+        "name": "Tidebreaker",
+        "kind": "tank_buster",
+        "multiplier": 2.35,
+        "interruptible": true,
+        "target": "threat"
+      },
+      {
+        "name": "Watcher Rings",
+        "kind": "spread",
+        "radius": 8,
+        "multiplier": 1.55,
+        "interruptible": false,
+        "targets": "two"
+      }
+    ],
+    "encounterVersion": "3.9",
+    "mechanicFailureLimit": 3,
+    "mechanicFailureWindowSec": 30,
+    "encounterMechanics": [
+      {
+        "id": "flooded_gaze",
+        "name": "Flooded Gaze",
+        "type": "gaze",
+        "telegraphMs": 2200,
+        "failure": "heavy_damage",
+        "phase": 1
+      },
+      {
+        "id": "tidebreaker",
+        "name": "Tidebreaker",
+        "type": "tank_buster",
+        "telegraphMs": 1800,
+        "failure": "heavy_damage",
+        "phase": 1
+      },
+      {
+        "id": "watcher_rings",
+        "name": "Watcher Rings",
+        "type": "spread",
+        "telegraphMs": 2200,
+        "failure": "party_damage",
+        "phase": 1
+      },
+      {
+        "id": "mire_surge",
+        "name": "Mire Surge",
+        "type": "movement",
+        "telegraphMs": 1800,
+        "failure": "heavy_damage",
+        "phase": 2
+      },
+      {
+        "id": "deluge",
+        "name": "Watcher’s Deluge",
+        "type": "party_defensive",
+        "telegraphMs": 2500,
+        "failure": "party_damage",
+        "phase": 2
+      },
+      {
+        "id": "hollow_reinforcements",
+        "name": "Hollow Reinforcements",
+        "type": "adds",
+        "telegraphMs": 1800,
+        "failure": "add_pressure",
+        "phase": 2
+      },
+      {
+        "id": "watcher_tether",
+        "name": "Watcher Tether",
+        "type": "tether",
+        "telegraphMs": 2200,
+        "failure": "party_damage",
+        "phase": 1
+      },
+      {
+        "id": "abyssal_brand",
+        "name": "Abyssal Brand",
+        "type": "anti_heal",
+        "telegraphMs": 2000,
+        "failure": "heavy_damage",
+        "phase": 2
+      },
+      {
+        "id": "drowning_ward",
+        "name": "Drowning Ward",
+        "type": "absorb",
+        "telegraphMs": 2200,
+        "failure": "damage_pressure",
+        "phase": 1
+      }
+    ],
+    "bossAI": {
+      "version": "4.4",
+      "decisionCooldownMs": 9000,
+      "lowPartyHpThreshold": 0.58,
+      "criticalPartyHpThreshold": 0.32,
+      "failureEscalation": true,
+      "avoidRepeatedMechanicMs": 9000,
+      "directorTickMs": 2000,
+      "maxConcurrentOverlaps": 2,
+      "maxActiveAdds": 3,
+      "mechanicBudget": 3,
+      "directorVersion": "4.5",
+      "vocabularyVersion": "4.6",
+      "mechanicVocabulary": [
+        "tank_buster",
+        "frontal",
+        "cone",
+        "single_target",
+        "targeted",
+        "ground",
+        "movement",
+        "spread",
+        "stack",
+        "soak",
+        "interrupt",
+        "summon",
+        "adds",
+        "cleanse",
+        "dispel",
+        "tether",
+        "absorb",
+        "anti_heal",
+        "threat_wipe",
+        "enrage"
+      ]
+    },
+    "encounterChoreography": [
+      {
+        "id": "phase_1_choreography",
+        "phase": 1,
+        "sequence": [
+          "Tidebreaker",
+          "Watcher Rings",
+          "Flooded Gaze",
+          "Mire Surge"
+        ]
+      },
+      {
+        "id": "phase_2_choreography",
+        "phase": 2,
+        "sequence": [
+          "Tidebreaker",
+          "Flooded Gaze",
+          "Hollow Reinforcements",
+          "Mire Surge"
+        ]
+      },
+      {
+        "id": "phase_3_choreography",
+        "phase": 3,
+        "sequence": [
+          "Watcher’s Deluge",
+          "Tidebreaker",
+          "Watcher Tether",
+          "Abyssal Brand",
+          "Drowning Ward",
+          "Hollow Reinforcements"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "royal_catacomb_sentinel",
+    "name": "Royal Tomb Sentinel",
+    "icon": "⚰️",
+    "level": 11,
+    "maxHp": 1250,
+    "attack": 34,
+    "armor": 19,
+    "xp": 480,
+    "gold": 210,
+    "loot": ["gravewatch_mail", "grave_steel"],
+    "ai": "elite",
+    "castEvery": 7,
+    "castDuration": 1.8,
+    "castName": "Crown Shatter",
+    "castMultiplier": 1.9,
+    "mechanicPattern": [
+      {
+        "name": "Crown Shatter",
+        "kind": "single",
+        "interruptible": true,
+        "multiplier": 1.9,
+        "target": "threat"
+      },
+      {
+        "name": "Royal Decree",
+        "kind": "stun",
+        "stun": 2,
+        "interruptible": true,
+        "multiplier": 1.5,
+        "target": "non_tank"
+      },
+      {
+        "name": "Tombfire",
+        "kind": "ground",
+        "radius": 11,
+        "multiplier": 1.4,
+        "interruptible": false
+      },
+      {
+        "name": "Grave Retinue",
+        "kind": "summon",
+        "summon": "kingdom_hollow_knight",
+        "count": 2,
+        "interruptible": true,
+        "multiplier": 0
+      }
+    ],
+    "enrageAfter": 75,
+    "enrageMultiplier": 1.5
+  },
+  {
+    "id": "royal_catacomb_king",
+    "name": "The King Beneath",
+    "icon": "👑",
+    "level": 13,
+    "maxHp": 3300,
+    "attack": 46,
+    "armor": 23,
+    "xp": 1050,
+    "gold": 780,
+    "loot": ["gloam_15_relic", "citadel_mantle"],
+    "ai": "boss",
+    "phases": [
+      {
+        "at": 0.66,
+        "name": "The Crown Remembers",
+        "mult": 1.15,
+        "castName": "Royal Decree",
+        "castMultiplier": 2,
+        "mechanicPattern": [
+          {
+            "name": "Sepulchral Collapse",
+            "kind": "ground",
+            "radius": 18,
+            "multiplier": 2.4,
+            "interruptible": false
+          },
+          {
+            "name": "Unburied Retinue",
+            "kind": "summon",
+            "summon": "kingdom_crownwraith",
+            "count": 2,
+            "interruptible": true,
+            "multiplier": 0
+          },
+          {
+            "name": "Royal Decree",
+            "kind": "single",
+            "multiplier": 2.2,
+            "interruptible": true,
+            "target": "threat"
+          },
+          {
+            "name": "Crownfire",
+            "kind": "spread",
+            "radius": 9,
+            "multiplier": 1.9,
+            "interruptible": false,
+            "targets": "two"
+          }
+        ]
+      },
+      {
+        "at": 0.33,
+        "name": "Kingdom Unburied",
+        "mult": 1.4,
+        "castName": "Sepulchral Collapse",
+        "castMultiplier": 2.5,
+        "mechanicPattern": [
+          {
+            "name": "Sepulchral Collapse",
+            "kind": "ground",
+            "radius": 22,
+            "multiplier": 2.8,
+            "interruptible": false
+          },
+          {
+            "name": "Unburied Retinue",
+            "kind": "summon",
+            "summon": "kingdom_crownwraith",
+            "count": 3,
+            "interruptible": true,
+            "multiplier": 0
+          },
+          {
+            "name": "King’s Chains",
+            "kind": "stun",
+            "stun": 1.8,
+            "interruptible": true,
+            "multiplier": 1.9,
+            "target": "non_tank",
+            "overlap": [
+              {
+                "name": "Royal Decree",
+                "delayMs": 700
+              }
+            ]
+          },
+          {
+            "name": "Royal Decree",
+            "kind": "single",
+            "multiplier": 2.6,
+            "interruptible": true,
+            "target": "threat"
+          },
+          {
+            "name": "Royal Decree",
+            "kind": "threat_wipe",
+            "multiplier": 1,
+            "interruptible": true,
+            "failure": "threat_wipe"
+          },
+          {
+            "name": "King's Arc",
+            "kind": "cone",
+            "radius": 11,
+            "multiplier": 1.8,
+            "interruptible": false,
+            "target": "threat",
+            "failure": "heavy_damage"
+          }
+        ]
+      }
+    ],
+    "castEvery": 6,
+    "castDuration": 2.3,
+    "castName": "Royal Decree",
+    "castMultiplier": 1.9,
+    "enrageAfter": 120,
+    "enrageMultiplier": 1.7,
+    "mechanicPattern": [
+      {
+        "name": "Royal Decree",
+        "kind": "single",
+        "interruptible": true,
+        "multiplier": 2,
+        "target": "threat",
+        "overlap": [
+          {
+            "name": "Crownfire",
+            "delayMs": 650
+          }
+        ]
+      },
+      {
+        "name": "Crownfire",
+        "kind": "spread",
+        "radius": 8,
+        "multiplier": 1.7,
+        "interruptible": false,
+        "targets": "two"
+      },
+      {
+        "name": "Sepulchral Collapse",
+        "kind": "ground",
+        "radius": 18,
+        "multiplier": 2.4,
+        "interruptible": false,
+        "overlap": [
+          {
+            "name": "Unburied Retinue",
+            "delayMs": 750
+          }
+        ]
+      },
+      {
+        "name": "King’s Chains",
+        "kind": "stun",
+        "stun": 1.6,
+        "interruptible": true,
+        "multiplier": 1.6,
+        "target": "non_tank"
+      },
+      {
+        "name": "Unburied Retinue",
+        "kind": "summon",
+        "summon": "kingdom_crownwraith",
+        "count": 2,
+        "interruptible": true,
+        "multiplier": 0
+      },
+      {
+        "name": "King’s Bulwark",
+        "kind": "absorb",
+        "absorbAmount": 320,
+        "durationMs": 7500,
+        "multiplier": 0,
+        "interruptible": false,
+        "target": "healer"
+      },
+      {
+        "name": "Crown Authority",
+        "kind": "dispel",
+        "multiplier": 0,
+        "interruptible": false,
+        "target": "threat",
+        "shieldAmount": 420,
+        "durationMs": 8000
+      }
+    ],
+    "phase1MechanicPattern": [
+      {
+        "name": "Royal Decree",
+        "kind": "single",
+        "multiplier": 2,
+        "interruptible": true,
+        "target": "threat"
+      },
+      {
+        "name": "Crownfire",
+        "kind": "spread",
+        "radius": 8,
+        "multiplier": 1.7,
+        "interruptible": false,
+        "targets": "two"
+      },
+      {
+        "name": "King’s Chains",
+        "kind": "stun",
+        "stun": 1.6,
+        "interruptible": true,
+        "multiplier": 1.6,
+        "target": "non_tank"
+      }
+    ],
+    "encounterVersion": "3.9",
+    "mechanicFailureLimit": 3,
+    "mechanicFailureWindowSec": 30,
+    "encounterMechanics": [
+      {
+        "id": "royal_decree",
+        "name": "Royal Decree",
+        "type": "tank_buster",
+        "telegraphMs": 2300,
+        "failure": "heavy_damage",
+        "phase": 1
+      },
+      {
+        "id": "crownfire",
+        "name": "Crownfire",
+        "type": "spread",
+        "telegraphMs": 2200,
+        "failure": "party_damage",
+        "phase": 1
+      },
+      {
+        "id": "kings_chains",
+        "name": "King’s Chains",
+        "type": "interrupt",
+        "telegraphMs": 2400,
+        "failure": "prison",
+        "phase": 2
+      },
+      {
+        "id": "retinue",
+        "name": "Unburied Retinue",
+        "type": "adds",
+        "telegraphMs": 1800,
+        "failure": "add_pressure",
+        "phase": 1
+      },
+      {
+        "id": "sepulchral_collapse",
+        "name": "Sepulchral Collapse",
+        "type": "movement",
+        "telegraphMs": 1800,
+        "failure": "wipe",
+        "phase": 2
+      },
+      {
+        "id": "kings_arc",
+        "name": "King's Arc",
+        "type": "cone",
+        "telegraphMs": 1800,
+        "failure": "heavy_damage",
+        "phase": 2
+      },
+      {
+        "id": "king_s_bulwark",
+        "name": "King’s Bulwark",
+        "type": "absorb",
+        "telegraphMs": 2200,
+        "failure": "damage_pressure",
+        "phase": 1
+      },
+      {
+        "id": "crown_authority",
+        "name": "Crown Authority",
+        "type": "dispel",
+        "telegraphMs": 2200,
+        "failure": "damage_pressure",
+        "phase": 1
+      }
+    ],
+    "bossAI": {
+      "version": "4.4",
+      "decisionCooldownMs": 9000,
+      "lowPartyHpThreshold": 0.58,
+      "criticalPartyHpThreshold": 0.32,
+      "failureEscalation": true,
+      "avoidRepeatedMechanicMs": 9000,
+      "directorTickMs": 2000,
+      "maxConcurrentOverlaps": 2,
+      "maxActiveAdds": 3,
+      "mechanicBudget": 3,
+      "directorVersion": "4.5",
+      "vocabularyVersion": "4.6",
+      "mechanicVocabulary": [
+        "tank_buster",
+        "frontal",
+        "cone",
+        "single_target",
+        "targeted",
+        "ground",
+        "movement",
+        "spread",
+        "stack",
+        "soak",
+        "interrupt",
+        "summon",
+        "adds",
+        "cleanse",
+        "dispel",
+        "tether",
+        "absorb",
+        "anti_heal",
+        "threat_wipe",
+        "enrage"
+      ]
+    },
+    "encounterChoreography": [
+      {
+        "id": "phase_1_choreography",
+        "phase": 1,
+        "sequence": [
+          "Royal Decree",
+          "Sepulchral Collapse",
+          "Crownfire",
+          "King’s Chains"
+        ]
+      },
+      {
+        "id": "phase_2_choreography",
+        "phase": 2,
+        "sequence": [
+          "Sepulchral Collapse",
+          "Royal Decree",
+          "Crownfire",
+          "Unburied Retinue"
+        ]
+      },
+      {
+        "id": "phase_3_choreography",
+        "phase": 3,
+        "sequence": [
+          "King’s Chains",
+          "Royal Decree",
+          "Sepulchral Collapse",
+          "King’s Bulwark",
+          "King's Arc",
+          "Crown Authority"
+        ]
+      }
+    ]
+  }
+]

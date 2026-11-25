@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "maxLevel": 60,
+  "zones": [
+    {
+      "id": "stonehold",
+      "band": "initiate",
+      "minLevel": 1,
+      "maxLevel": 10,
+      "next": ["gloamwood", "eastern_reach"]
+    },
+    {
+      "id": "gloamwood",
+      "band": "adventurer",
+      "minLevel": 5,
+      "maxLevel": 15,
+      "next": ["briarfen", "sunken_catacombs", "ashen_wastes"]
+    },
+    {
+      "id": "eastern_reach",
+      "band": "veteran",
+      "minLevel": 12,
+      "maxLevel": 24,
+      "next": ["briarfen", "sunscar_steppe", "old_kingdom"]
+    },
+    {
+      "id": "ashen_wastes",
+      "band": "mythic",
+      "minLevel": 24,
+      "maxLevel": 38,
+      "next": [
+        "sunscar_steppe",
+        "old_kingdom",
+        "black_citadel",
+        "crownfall_expanse"
+      ]
+    },
+    {
+      "id": "old_kingdom",
+      "band": "mythic",
+      "minLevel": 30,
+      "maxLevel": 45,
+      "next": ["crownfall_expanse", "black_citadel"]
+    },
+    {
+      "id": "black_citadel",
+      "band": "apex",
+      "minLevel": 40,
+      "maxLevel": 60,
+      "next": ["veilscar_highlands", "hollow_expanse"]
+    },
+    {
+      "id": "marches_of_dawn",
+      "band": "adventurer",
+      "minLevel": 8,
+      "maxLevel": 20,
+      "next": ["briarfen", "eastern_reach"]
+    },
+    {
+      "id": "hollow_expanse",
+      "band": "apex",
+      "minLevel": 42,
+      "maxLevel": 60,
+      "next": ["nightveil_coast", "dreadvault", "black_citadel"]
+    },
+    {
+      "id": "briarfen",
+      "band": "adventurer",
+      "minLevel": 9,
+      "maxLevel": 18,
+      "next": ["eastern_reach", "sunscar_steppe"]
+    },
+    {
+      "id": "sunscar_steppe",
+      "band": "veteran",
+      "minLevel": 17,
+      "maxLevel": 28,
+      "next": ["ashen_wastes", "crownfall_expanse"]
+    },
+    {
+      "id": "crownfall_expanse",
+      "band": "mythic",
+      "minLevel": 28,
+      "maxLevel": 40,
+      "next": ["old_kingdom", "black_citadel", "veilscar_highlands"]
+    },
+    {
+      "id": "veilscar_highlands",
+      "band": "mythic",
+      "minLevel": 38,
+      "maxLevel": 52,
+      "next": ["black_citadel", "nightveil_coast", "hollow_expanse"]
+    },
+    {
+      "id": "nightveil_coast",
+      "band": "apex",
+      "minLevel": 50,
+      "maxLevel": 60,
+      "next": ["hollow_expanse", "black_citadel"]
+    }
+  ],
+  "travelRules": {
+    "levelGated": true,
+    "storyGated": true,
+    "safeCities": true,
+    "dungeonIsolation": true
+  }
+}

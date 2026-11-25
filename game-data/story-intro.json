@@ -1,0 +1,20 @@
+{
+  "title": "Ashes of the Past  -  Prologue",
+  "speaker": "Captain Aric",
+  "steps": [
+    "Captain Aric studies you for a long moment. 'You look like someone who still believes the road leads somewhere. Keep that belief if you can.'",
+    "'The Veil was built to keep the mortal world apart from places where old kingdoms died badly. It held for centuries. Then the bells beneath the earth began answering one another.'",
+    "'Three nights ago, the Lantern Patrol vanished. Six soldiers, one scout, one priest. No bodies. No horses. Just violet ash - and one lantern still burning beneath the roots.'",
+    "Aric lowers his voice. 'I am sending you because I need someone who has not learned the city's favorite lie: that if we do not name a horror, it cannot reach us.'",
+    "'Warden Kael will meet you in Gloamwood. Listen to him. He has been studying the ash longer than the Council admits. But do not trust every voice you hear beneath the trees.'",
+    "'You are not the chosen one. There is no prophecy waiting to crown you. You are simply the person who decided to step beyond the wall.'",
+    "Aric hands you a battered lantern. The flame burns violet for half a second, then gold. He notices. He says nothing.",
+    "'Go. Find the missing patrol. Bring back proof. And if something beneath the roots calls you by name - do not answer.'"
+  ],
+  "firstQuest": "ashes_on_the_road",
+  "reward": {
+    "gold": 25,
+    "xp": 50,
+    "item": "ashen_tonic"
+  }
+}

@@ -1,0 +1,3886 @@
+{
+  "vanguard": [
+    {
+      "id": "vanguard.power",
+      "name": "Focused Power",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase Attack by 1.5 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1.5
+      },
+      "choiceGroup": "offense",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in offense; resetting talents refunds the choice."
+    },
+    {
+      "id": "vanguard.vigor",
+      "name": "Vitality",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase maximum health by 15 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 15
+      },
+      "choiceGroup": "defense",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in defense; resetting talents refunds the choice."
+    },
+    {
+      "id": "vanguard.discipline",
+      "name": "Battle Discipline",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 4,
+      "description": "Reduce global cooldowns very slightly per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 3
+      }
+    },
+    {
+      "id": "vanguard.resilience",
+      "name": "Resilience",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 6,
+      "description": "Increase Armor by 1.25 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1.25
+      }
+    },
+    {
+      "id": "vanguard.mastery",
+      "name": "Resource Depth",
+      "icon": "✨",
+      "cost": 1,
+      "minLevel": 8,
+      "description": "Increase resource cap by 8 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 8
+      }
+    },
+    {
+      "id": "vanguard.endurance",
+      "name": "Endurance",
+      "icon": "🔥",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Increase health and resource regeneration per rank.",
+      "maxRank": 3,
+      "effect": {
+        "resolveRegen": 1
+      }
+    },
+    {
+      "id": "vanguard.offense",
+      "name": "Brutal Precision",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Attack by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1
+      },
+      "choiceGroup": "offense",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in offense; resetting talents refunds the choice."
+    },
+    {
+      "id": "vanguard.defense",
+      "name": "Iron Will",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Armor by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1
+      },
+      "choiceGroup": "defense",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in defense; resetting talents refunds the choice."
+    },
+    {
+      "id": "vanguard.vitality",
+      "name": "Deep Reserves",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase maximum health by 11 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 11
+      }
+    },
+    {
+      "id": "vanguard.focus",
+      "name": "Resource Reserve",
+      "icon": "🔷",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase resource cap by 7 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 7
+      }
+    },
+    {
+      "id": "vanguard.haste",
+      "name": "Quickened Rhythm",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 2% haste per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 2
+      },
+      "choiceGroup": "utility",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in utility; resetting talents refunds the choice."
+    },
+    {
+      "id": "vanguard.crit",
+      "name": "Keen Edge",
+      "icon": "🎯",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 3% critical chance per rank.",
+      "maxRank": 3,
+      "effect": {
+        "crit": 3
+      },
+      "choiceGroup": "utility",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in utility; resetting talents refunds the choice."
+    },
+    {
+      "id": "vanguard.recovery",
+      "name": "Field Medic",
+      "icon": "💚",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Increase healing received by 5% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "healing": 5
+      }
+    },
+    {
+      "id": "vanguard.apex",
+      "name": "Battle Instinct",
+      "icon": "👑",
+      "cost": 3,
+      "minLevel": 14,
+      "description": "Increase Attack and maximum health by 10 per rank.",
+      "maxRank": 2,
+      "effect": {
+        "attack": 2.5,
+        "maxHp": 2
+      }
+    },
+    {
+      "id": "vanguard.fortress.keystone",
+      "name": "Fortress Tank Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Fortress Tank specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "armor": 3,
+        "maxHp": 35
+      },
+      "buildOnly": "fortress",
+      "keystone": true
+    },
+    {
+      "id": "vanguard.warbreaker.keystone",
+      "name": "Warbreaker Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Warbreaker specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "attack": 4,
+        "damage": 3
+      },
+      "buildOnly": "warbreaker",
+      "keystone": true
+    },
+    {
+      "id": "vanguard.warden.keystone",
+      "name": "Bulwark Controller Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Bulwark Controller specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "armor": 2,
+        "maxHp": 20,
+        "controlDuration": 5
+      },
+      "buildOnly": "warden",
+      "keystone": true
+    },
+    {
+      "id": "vanguard.fortress.skillmastery",
+      "name": "Empowered Rallying Banner",
+      "icon": "🚩",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "fortress",
+      "abilityId": "rallying_banner",
+      "description": "A specialization talent that modifies Rallying Banner: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.fortress.rotation",
+      "name": "Efficient Shield Storm",
+      "icon": "🌪️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "fortress",
+      "abilityId": "shield_storm",
+      "description": "A specialization talent that modifies Shield Storm: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.fortress.power",
+      "name": "Potent Unyielding",
+      "icon": "🏰",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "fortress",
+      "abilityId": "unyielding",
+      "description": "A specialization talent that modifies Unyielding: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.fortress.precision",
+      "name": "Swift Thunderous Challenge",
+      "icon": "⚡",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "fortress",
+      "abilityId": "thunderous_challenge",
+      "description": "A specialization talent that modifies Thunderous Challenge: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.fortress.mastery",
+      "name": "Advanced Last Stand",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "fortress",
+      "abilityId": "last_stand",
+      "description": "A specialization talent that modifies Last Stand: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🩸",
+      "minLevel": 58
+    },
+    {
+      "id": "vanguard.fortress.apex",
+      "name": "Signature Citadel Breaker",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "fortress",
+      "abilityId": "citadel_breaker",
+      "description": "A specialization talent that modifies Citadel Breaker: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "🏰",
+      "minLevel": 60
+    },
+    {
+      "id": "vanguard.warbreaker.skillmastery",
+      "name": "Empowered Rallying Banner",
+      "icon": "🚩",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warbreaker",
+      "abilityId": "rallying_banner",
+      "description": "A specialization talent that modifies Rallying Banner: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.warbreaker.rotation",
+      "name": "Efficient Shield Storm",
+      "icon": "🌪️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warbreaker",
+      "abilityId": "shield_storm",
+      "description": "A specialization talent that modifies Shield Storm: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.warbreaker.power",
+      "name": "Potent Unyielding",
+      "icon": "🏰",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warbreaker",
+      "abilityId": "unyielding",
+      "description": "A specialization talent that modifies Unyielding: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.warbreaker.precision",
+      "name": "Swift Thunderous Challenge",
+      "icon": "⚡",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warbreaker",
+      "abilityId": "thunderous_challenge",
+      "description": "A specialization talent that modifies Thunderous Challenge: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.warbreaker.mastery",
+      "name": "Advanced Last Stand",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warbreaker",
+      "abilityId": "last_stand",
+      "description": "A specialization talent that modifies Last Stand: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🩸",
+      "minLevel": 58
+    },
+    {
+      "id": "vanguard.warbreaker.apex",
+      "name": "Signature Citadel Breaker",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "warbreaker",
+      "abilityId": "citadel_breaker",
+      "description": "A specialization talent that modifies Citadel Breaker: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "🏰",
+      "minLevel": 60
+    },
+    {
+      "id": "vanguard.warden.skillmastery",
+      "name": "Empowered Rallying Banner",
+      "icon": "🚩",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warden",
+      "abilityId": "rallying_banner",
+      "description": "A specialization talent that modifies Rallying Banner: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.warden.rotation",
+      "name": "Efficient Shield Storm",
+      "icon": "🌪️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warden",
+      "abilityId": "shield_storm",
+      "description": "A specialization talent that modifies Shield Storm: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.warden.power",
+      "name": "Potent Unyielding",
+      "icon": "🏰",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warden",
+      "abilityId": "unyielding",
+      "description": "A specialization talent that modifies Unyielding: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.warden.precision",
+      "name": "Swift Thunderous Challenge",
+      "icon": "⚡",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warden",
+      "abilityId": "thunderous_challenge",
+      "description": "A specialization talent that modifies Thunderous Challenge: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "vanguard.warden.mastery",
+      "name": "Advanced Last Stand",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warden",
+      "abilityId": "last_stand",
+      "description": "A specialization talent that modifies Last Stand: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🩸",
+      "minLevel": 58
+    },
+    {
+      "id": "vanguard.warden.apex",
+      "name": "Signature Citadel Breaker",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "warden",
+      "abilityId": "citadel_breaker",
+      "description": "A specialization talent that modifies Citadel Breaker: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "🏰",
+      "minLevel": 60
+    }
+  ],
+  "arcanist": [
+    {
+      "id": "arcanist.power",
+      "name": "Focused Power",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase Attack by 1.5 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1.5
+      },
+      "choiceGroup": "burst",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in burst; resetting talents refunds the choice."
+    },
+    {
+      "id": "arcanist.vigor",
+      "name": "Vitality",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase maximum health by 15 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 15
+      },
+      "choiceGroup": "survival",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in survival; resetting talents refunds the choice."
+    },
+    {
+      "id": "arcanist.discipline",
+      "name": "Battle Discipline",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 4,
+      "description": "Reduce global cooldowns very slightly per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 3
+      }
+    },
+    {
+      "id": "arcanist.resilience",
+      "name": "Resilience",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 6,
+      "description": "Increase Armor by 1.25 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1.25
+      }
+    },
+    {
+      "id": "arcanist.mastery",
+      "name": "Resource Depth",
+      "icon": "✨",
+      "cost": 1,
+      "minLevel": 8,
+      "description": "Increase resource cap by 8 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 8
+      }
+    },
+    {
+      "id": "arcanist.endurance",
+      "name": "Endurance",
+      "icon": "🔥",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Increase health and resource regeneration per rank.",
+      "maxRank": 3,
+      "effect": {
+        "resolveRegen": 1
+      }
+    },
+    {
+      "id": "arcanist.offense",
+      "name": "Brutal Precision",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Attack by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1
+      },
+      "choiceGroup": "burst",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in burst; resetting talents refunds the choice."
+    },
+    {
+      "id": "arcanist.defense",
+      "name": "Iron Will",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Armor by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1
+      },
+      "choiceGroup": "survival",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in survival; resetting talents refunds the choice."
+    },
+    {
+      "id": "arcanist.vitality",
+      "name": "Deep Reserves",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase maximum health by 11 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 11
+      }
+    },
+    {
+      "id": "arcanist.focus",
+      "name": "Resource Reserve",
+      "icon": "🔷",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase resource cap by 7 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 7
+      }
+    },
+    {
+      "id": "arcanist.haste",
+      "name": "Quickened Rhythm",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 2% haste per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 2
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "arcanist.crit",
+      "name": "Keen Edge",
+      "icon": "🎯",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 3% critical chance per rank.",
+      "maxRank": 3,
+      "effect": {
+        "crit": 3
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "arcanist.recovery",
+      "name": "Field Medic",
+      "icon": "💚",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Increase healing received by 5% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "healing": 5
+      }
+    },
+    {
+      "id": "arcanist.apex",
+      "name": "Battle Instinct",
+      "icon": "👑",
+      "cost": 3,
+      "minLevel": 14,
+      "description": "Increase Attack and maximum health by 10 per rank.",
+      "maxRank": 2,
+      "effect": {
+        "attack": 2.5,
+        "maxHp": 2
+      }
+    },
+    {
+      "id": "arcanist.spellfire.keystone",
+      "name": "Spellfire Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Spellfire specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "damage": 5,
+        "crit": 3
+      },
+      "buildOnly": "spellfire",
+      "keystone": true
+    },
+    {
+      "id": "arcanist.frostweaver.keystone",
+      "name": "Frostweaver Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Frostweaver specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "stunDuration": 8,
+        "damage": 3
+      },
+      "buildOnly": "frostweaver",
+      "keystone": true
+    },
+    {
+      "id": "arcanist.aethermind.keystone",
+      "name": "Aethermind Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Aethermind specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "haste": 4,
+        "maxResolve": 12
+      },
+      "buildOnly": "aethermind",
+      "keystone": true
+    },
+    {
+      "id": "arcanist.spellfire.skillmastery",
+      "name": "Empowered Flame Burst",
+      "icon": "🔥",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "spellfire",
+      "abilityId": "flame_burst",
+      "description": "A specialization talent that modifies Flame Burst: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.spellfire.rotation",
+      "name": "Efficient Temporal Shift",
+      "icon": "⏳",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "spellfire",
+      "abilityId": "temporal_shift",
+      "description": "A specialization talent that modifies Temporal Shift: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.spellfire.power",
+      "name": "Potent Spellward",
+      "icon": "🔷",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "spellfire",
+      "abilityId": "spellward",
+      "description": "A specialization talent that modifies Spellward: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.spellfire.precision",
+      "name": "Swift Comet",
+      "icon": "☄️",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "spellfire",
+      "abilityId": "comet",
+      "description": "A specialization talent that modifies Comet: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.spellfire.mastery",
+      "name": "Advanced Mana Rupture",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "spellfire",
+      "abilityId": "mana_rupture",
+      "description": "A specialization talent that modifies Mana Rupture: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🌀",
+      "minLevel": 58
+    },
+    {
+      "id": "arcanist.spellfire.apex",
+      "name": "Signature Arcane Overload",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "spellfire",
+      "abilityId": "arcane_overload",
+      "description": "A specialization talent that modifies Arcane Overload: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "✨",
+      "minLevel": 60
+    },
+    {
+      "id": "arcanist.frostweaver.skillmastery",
+      "name": "Empowered Flame Burst",
+      "icon": "🔥",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "frostweaver",
+      "abilityId": "flame_burst",
+      "description": "A specialization talent that modifies Flame Burst: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.frostweaver.rotation",
+      "name": "Efficient Temporal Shift",
+      "icon": "⏳",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "frostweaver",
+      "abilityId": "temporal_shift",
+      "description": "A specialization talent that modifies Temporal Shift: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.frostweaver.power",
+      "name": "Potent Spellward",
+      "icon": "🔷",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "frostweaver",
+      "abilityId": "spellward",
+      "description": "A specialization talent that modifies Spellward: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.frostweaver.precision",
+      "name": "Swift Comet",
+      "icon": "☄️",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "frostweaver",
+      "abilityId": "comet",
+      "description": "A specialization talent that modifies Comet: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.frostweaver.mastery",
+      "name": "Advanced Mana Rupture",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "frostweaver",
+      "abilityId": "mana_rupture",
+      "description": "A specialization talent that modifies Mana Rupture: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🌀",
+      "minLevel": 58
+    },
+    {
+      "id": "arcanist.frostweaver.apex",
+      "name": "Signature Arcane Overload",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "frostweaver",
+      "abilityId": "arcane_overload",
+      "description": "A specialization talent that modifies Arcane Overload: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "✨",
+      "minLevel": 60
+    },
+    {
+      "id": "arcanist.aethermind.skillmastery",
+      "name": "Empowered Flame Burst",
+      "icon": "🔥",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "aethermind",
+      "abilityId": "flame_burst",
+      "description": "A specialization talent that modifies Flame Burst: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.aethermind.rotation",
+      "name": "Efficient Temporal Shift",
+      "icon": "⏳",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "aethermind",
+      "abilityId": "temporal_shift",
+      "description": "A specialization talent that modifies Temporal Shift: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.aethermind.power",
+      "name": "Potent Spellward",
+      "icon": "🔷",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "aethermind",
+      "abilityId": "spellward",
+      "description": "A specialization talent that modifies Spellward: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.aethermind.precision",
+      "name": "Swift Comet",
+      "icon": "☄️",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "aethermind",
+      "abilityId": "comet",
+      "description": "A specialization talent that modifies Comet: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "arcanist.aethermind.mastery",
+      "name": "Advanced Mana Rupture",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "aethermind",
+      "abilityId": "mana_rupture",
+      "description": "A specialization talent that modifies Mana Rupture: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🌀",
+      "minLevel": 58
+    },
+    {
+      "id": "arcanist.aethermind.apex",
+      "name": "Signature Arcane Overload",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "aethermind",
+      "abilityId": "arcane_overload",
+      "description": "A specialization talent that modifies Arcane Overload: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "✨",
+      "minLevel": 60
+    }
+  ],
+  "warden": [
+    {
+      "id": "warden.power",
+      "name": "Focused Power",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase Attack by 1.5 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1.5
+      },
+      "choiceGroup": "damage",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in damage; resetting talents refunds the choice."
+    },
+    {
+      "id": "warden.vigor",
+      "name": "Vitality",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase maximum health by 15 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 15
+      },
+      "choiceGroup": "support",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in support; resetting talents refunds the choice."
+    },
+    {
+      "id": "warden.discipline",
+      "name": "Battle Discipline",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 4,
+      "description": "Reduce global cooldowns very slightly per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 3
+      }
+    },
+    {
+      "id": "warden.resilience",
+      "name": "Resilience",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 6,
+      "description": "Increase Armor by 1.25 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1.25
+      }
+    },
+    {
+      "id": "warden.mastery",
+      "name": "Resource Depth",
+      "icon": "✨",
+      "cost": 1,
+      "minLevel": 8,
+      "description": "Increase resource cap by 8 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 8
+      }
+    },
+    {
+      "id": "warden.endurance",
+      "name": "Endurance",
+      "icon": "🔥",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Increase health and resource regeneration per rank.",
+      "maxRank": 3,
+      "effect": {
+        "resolveRegen": 1
+      }
+    },
+    {
+      "id": "warden.offense",
+      "name": "Brutal Precision",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Attack by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1
+      },
+      "choiceGroup": "damage",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in damage; resetting talents refunds the choice."
+    },
+    {
+      "id": "warden.defense",
+      "name": "Iron Will",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Armor by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1
+      },
+      "choiceGroup": "support",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in support; resetting talents refunds the choice."
+    },
+    {
+      "id": "warden.vitality",
+      "name": "Deep Reserves",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase maximum health by 11 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 11
+      }
+    },
+    {
+      "id": "warden.focus",
+      "name": "Resource Reserve",
+      "icon": "🔷",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase resource cap by 7 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 7
+      }
+    },
+    {
+      "id": "warden.haste",
+      "name": "Quickened Rhythm",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 2% haste per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 2
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "warden.crit",
+      "name": "Keen Edge",
+      "icon": "🎯",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 3% critical chance per rank.",
+      "maxRank": 3,
+      "effect": {
+        "crit": 3
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "warden.recovery",
+      "name": "Field Medic",
+      "icon": "💚",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Increase healing received by 5% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "healing": 5
+      }
+    },
+    {
+      "id": "warden.apex",
+      "name": "Battle Instinct",
+      "icon": "👑",
+      "cost": 3,
+      "minLevel": 14,
+      "description": "Increase Attack and maximum health by 10 per rank.",
+      "maxRank": 2,
+      "effect": {
+        "attack": 2.5,
+        "maxHp": 2
+      }
+    },
+    {
+      "id": "warden.hotmastery",
+      "name": "Living Rhythm",
+      "icon": "🌺",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase healing-over-time duration by 5% per rank.",
+      "maxRank": 5,
+      "effect": {
+        "hotDuration": 5
+      }
+    },
+    {
+      "id": "warden.stability",
+      "name": "Steady Spirit",
+      "icon": "🌳",
+      "cost": 1,
+      "minLevel": 4,
+      "description": "Reduce incoming stun duration by 4% per rank.",
+      "maxRank": 5,
+      "effect": {
+        "stunResist": 4
+      }
+    },
+    {
+      "id": "warden.grace",
+      "name": "Merciful Hands",
+      "icon": "💚",
+      "cost": 2,
+      "minLevel": 7,
+      "description": "Increase healing done by 3% per rank.",
+      "maxRank": 5,
+      "effect": {
+        "healing": 3
+      }
+    },
+    {
+      "id": "warden.rootward",
+      "name": "Rooted Faith",
+      "icon": "🛡️",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Rootward and defensive effects last 6% longer per rank.",
+      "maxRank": 3,
+      "effect": {
+        "buffDuration": 6
+      }
+    },
+    {
+      "id": "warden.grovekeeper.keystone",
+      "name": "Grovekeeper Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Grovekeeper specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "healing": 5,
+        "hotDuration": 8
+      },
+      "buildOnly": "grovekeeper",
+      "keystone": true
+    },
+    {
+      "id": "warden.rootcaller.keystone",
+      "name": "Rootcaller Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Rootcaller specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "stunDuration": 6,
+        "damage": 3
+      },
+      "buildOnly": "rootcaller",
+      "keystone": true
+    },
+    {
+      "id": "warden.thornwarden.keystone",
+      "name": "Thorn Warden Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Thorn Warden specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "damage": 5,
+        "crit": 3
+      },
+      "buildOnly": "thornwarden",
+      "keystone": true
+    },
+    {
+      "id": "warden.grovekeeper.skillmastery",
+      "name": "Empowered Ironbark",
+      "icon": "🌳",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "grovekeeper",
+      "abilityId": "ironbark",
+      "description": "A specialization talent that modifies Ironbark: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.grovekeeper.rotation",
+      "name": "Efficient Spirit Bloom",
+      "icon": "🌸",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "grovekeeper",
+      "abilityId": "spirit_bloom",
+      "description": "A specialization talent that modifies Spirit Bloom: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.grovekeeper.power",
+      "name": "Potent Ancestral Growth",
+      "icon": "🍃",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "grovekeeper",
+      "abilityId": "ancestral_growth",
+      "description": "A specialization talent that modifies Ancestral Growth: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.grovekeeper.precision",
+      "name": "Swift Nature’s Grasp",
+      "icon": "🪴",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "grovekeeper",
+      "abilityId": "natures_grasp",
+      "description": "A specialization talent that modifies Nature’s Grasp: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.grovekeeper.mastery",
+      "name": "Advanced Tranquility",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "grovekeeper",
+      "abilityId": "tranquility",
+      "description": "A specialization talent that modifies Tranquility: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "☘️",
+      "minLevel": 58
+    },
+    {
+      "id": "warden.grovekeeper.apex",
+      "name": "Signature Tranquility",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "grovekeeper",
+      "abilityId": "tranquility",
+      "description": "A specialization talent that modifies Tranquility: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "☘️",
+      "minLevel": 60
+    },
+    {
+      "id": "warden.rootcaller.skillmastery",
+      "name": "Empowered Ironbark",
+      "icon": "🌳",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "rootcaller",
+      "abilityId": "ironbark",
+      "description": "A specialization talent that modifies Ironbark: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.rootcaller.rotation",
+      "name": "Efficient Spirit Bloom",
+      "icon": "🌸",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "rootcaller",
+      "abilityId": "spirit_bloom",
+      "description": "A specialization talent that modifies Spirit Bloom: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.rootcaller.power",
+      "name": "Potent Ancestral Growth",
+      "icon": "🍃",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "rootcaller",
+      "abilityId": "ancestral_growth",
+      "description": "A specialization talent that modifies Ancestral Growth: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.rootcaller.precision",
+      "name": "Swift Nature’s Grasp",
+      "icon": "🪴",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "rootcaller",
+      "abilityId": "natures_grasp",
+      "description": "A specialization talent that modifies Nature’s Grasp: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.rootcaller.mastery",
+      "name": "Advanced Tranquility",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "rootcaller",
+      "abilityId": "tranquility",
+      "description": "A specialization talent that modifies Tranquility: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "☘️",
+      "minLevel": 58
+    },
+    {
+      "id": "warden.rootcaller.apex",
+      "name": "Signature Tranquility",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "rootcaller",
+      "abilityId": "tranquility",
+      "description": "A specialization talent that modifies Tranquility: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "☘️",
+      "minLevel": 60
+    },
+    {
+      "id": "warden.thornwarden.skillmastery",
+      "name": "Empowered Ironbark",
+      "icon": "🌳",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "thornwarden",
+      "abilityId": "ironbark",
+      "description": "A specialization talent that modifies Ironbark: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.thornwarden.rotation",
+      "name": "Efficient Spirit Bloom",
+      "icon": "🌸",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "thornwarden",
+      "abilityId": "spirit_bloom",
+      "description": "A specialization talent that modifies Spirit Bloom: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.thornwarden.power",
+      "name": "Potent Ancestral Growth",
+      "icon": "🍃",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "thornwarden",
+      "abilityId": "ancestral_growth",
+      "description": "A specialization talent that modifies Ancestral Growth: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.thornwarden.precision",
+      "name": "Swift Nature’s Grasp",
+      "icon": "🪴",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "thornwarden",
+      "abilityId": "natures_grasp",
+      "description": "A specialization talent that modifies Nature’s Grasp: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "warden.thornwarden.mastery",
+      "name": "Advanced Tranquility",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "thornwarden",
+      "abilityId": "tranquility",
+      "description": "A specialization talent that modifies Tranquility: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "☘️",
+      "minLevel": 58
+    },
+    {
+      "id": "warden.thornwarden.apex",
+      "name": "Signature Tranquility",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "thornwarden",
+      "abilityId": "tranquility",
+      "description": "A specialization talent that modifies Tranquility: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "☘️",
+      "minLevel": 60
+    }
+  ],
+  "shadowblade": [
+    {
+      "id": "shadowblade.poisonmaster",
+      "name": "Poisonmaster",
+      "description": "Venom and damage-over-time effects deal 8% more damage per rank.",
+      "cost": 1,
+      "maxRank": 5,
+      "minLevel": 2,
+      "effect": {
+        "damage": 8
+      },
+      "choiceGroup": "venom",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one venom path."
+    },
+    {
+      "id": "shadowblade.momentum",
+      "name": "Predator Momentum",
+      "description": "Increase Momentum generation by 3 per rank.",
+      "cost": 1,
+      "maxRank": 5,
+      "minLevel": 4,
+      "effect": {
+        "maxResolve": 3
+      }
+    },
+    {
+      "id": "shadowblade.executioner",
+      "name": "Executioner",
+      "description": "Increase critical strike chance by 2% per rank.",
+      "cost": 2,
+      "maxRank": 5,
+      "minLevel": 8,
+      "effect": {
+        "crit": 2
+      },
+      "choiceGroup": "burst",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one burst path."
+    },
+    {
+      "id": "shadowblade.evasion",
+      "name": "Evasion",
+      "description": "Increase maximum health by 9 per rank and improve survivability.",
+      "cost": 1,
+      "maxRank": 5,
+      "minLevel": 3,
+      "effect": {
+        "maxHp": 9
+      },
+      "choiceGroup": "survival",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one survival path."
+    },
+    {
+      "id": "shadowblade.hemorrhage",
+      "name": "Deep Cuts",
+      "icon": "🩸",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase bleed damage by 2% per rank.",
+      "maxRank": 5,
+      "effect": {
+        "bleedDamage": 2
+      },
+      "choiceGroup": "bleed",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one bleed path."
+    },
+    {
+      "id": "shadowblade.venom",
+      "name": "Toxic Edge",
+      "icon": "🧪",
+      "cost": 1,
+      "minLevel": 4,
+      "description": "Increase poison damage by 2% per rank.",
+      "maxRank": 5,
+      "effect": {
+        "poisonDamage": 2
+      }
+    },
+    {
+      "id": "shadowblade.control",
+      "name": "Cruel Timing",
+      "icon": "⏳",
+      "cost": 2,
+      "minLevel": 7,
+      "description": "Increase your stun duration by 4% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "stunDuration": 4
+      }
+    },
+    {
+      "id": "shadowblade.veil",
+      "name": "Veilcraft",
+      "icon": "🌫️",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Vanish and defensive smoke effects last 8% longer per rank.",
+      "maxRank": 3,
+      "effect": {
+        "buffDuration": 8
+      }
+    },
+    {
+      "id": "shadowblade.blooded_edge",
+      "name": "Blooded Edge",
+      "icon": "🩸",
+      "cost": 2,
+      "minLevel": 8,
+      "description": "Bleed damage and bleed duration increase by 3% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "bleedDamage": 3,
+        "bleedDuration": 3
+      }
+    },
+    {
+      "id": "shadowblade.toxic_precision",
+      "name": "Toxic Precision",
+      "icon": "☠️",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Poison damage and poison duration increase by 3% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "poisonDamage": 3,
+        "poisonDuration": 3
+      }
+    },
+    {
+      "id": "shadowblade.shadowstepper",
+      "name": "Shadowstepper",
+      "icon": "🌑",
+      "cost": 2,
+      "minLevel": 12,
+      "description": "Stealth and defensive smoke effects last 10% longer per rank.",
+      "maxRank": 3,
+      "effect": {
+        "buffDuration": 10
+      }
+    },
+    {
+      "id": "shadowblade_assassin",
+      "name": "Assassin's Rhythm",
+      "icon": "⚔️",
+      "cost": 3,
+      "minLevel": 14,
+      "description": "Increase Attack by 2 and Critical chance by 2% per rank.",
+      "maxRank": 2,
+      "effect": {
+        "attack": 2,
+        "crit": 2
+      }
+    },
+    {
+      "id": "shadowblade.cold_blood",
+      "name": "Cold Blood",
+      "icon": "🩸",
+      "cost": 2,
+      "minLevel": 12,
+      "description": "Increase critical chance by 2% and damage by 2% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "crit": 2,
+        "damage": 2
+      }
+    },
+    {
+      "id": "shadowblade.assassin.keystone",
+      "name": "Assassin Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Assassin specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "crit": 5,
+        "damage": 4
+      },
+      "buildOnly": "assassin",
+      "keystone": true
+    },
+    {
+      "id": "shadowblade.saboteur.keystone",
+      "name": "Saboteur Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Saboteur specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "poisonDamage": 6,
+        "poisonDuration": 8
+      },
+      "buildOnly": "saboteur",
+      "keystone": true
+    },
+    {
+      "id": "shadowblade.duelist.keystone",
+      "name": "Duelist Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Duelist specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "haste": 5,
+        "stunResist": 8
+      },
+      "buildOnly": "duelist",
+      "keystone": true
+    },
+    {
+      "id": "shadowblade.assassin.skillmastery",
+      "name": "Empowered Sinister Strike",
+      "icon": "🗡️",
+      "minLevel": 18,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "assassin",
+      "abilityId": "sinister_strike",
+      "description": "A specialization talent that modifies Sinister Strike: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.assassin.rotation",
+      "name": "Efficient Toxic Barrage",
+      "icon": "☠️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "assassin",
+      "abilityId": "toxic_barrage",
+      "description": "A specialization talent that modifies Toxic Barrage: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.assassin.power",
+      "name": "Potent Cloak of Shadows",
+      "icon": "🌑",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "assassin",
+      "abilityId": "cloak_of_shadows",
+      "description": "A specialization talent that modifies Cloak of Shadows: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.assassin.precision",
+      "name": "Swift Fan of Blades",
+      "icon": "🔪",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "assassin",
+      "abilityId": "fan_of_blades",
+      "description": "A specialization talent that modifies Fan of Blades: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.assassin.mastery",
+      "name": "Advanced Shadow Execution",
+      "icon": "💀",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "assassin",
+      "abilityId": "shadow_execution",
+      "description": "A specialization talent that modifies Shadow Execution: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.assassin.apex",
+      "name": "Signature Dance of Death",
+      "icon": "🩸",
+      "minLevel": 60,
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "assassin",
+      "abilityId": "dance_of_death",
+      "description": "A specialization talent that modifies Dance of Death: +6% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.saboteur.skillmastery",
+      "name": "Empowered Sinister Strike",
+      "icon": "🗡️",
+      "minLevel": 18,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "saboteur",
+      "abilityId": "sinister_strike",
+      "description": "A specialization talent that modifies Sinister Strike: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.saboteur.rotation",
+      "name": "Efficient Toxic Barrage",
+      "icon": "☠️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "saboteur",
+      "abilityId": "toxic_barrage",
+      "description": "A specialization talent that modifies Toxic Barrage: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.saboteur.power",
+      "name": "Potent Cloak of Shadows",
+      "icon": "🌑",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "saboteur",
+      "abilityId": "cloak_of_shadows",
+      "description": "A specialization talent that modifies Cloak of Shadows: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.saboteur.precision",
+      "name": "Swift Fan of Blades",
+      "icon": "🔪",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "saboteur",
+      "abilityId": "fan_of_blades",
+      "description": "A specialization talent that modifies Fan of Blades: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.saboteur.mastery",
+      "name": "Advanced Shadow Execution",
+      "icon": "💀",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "saboteur",
+      "abilityId": "shadow_execution",
+      "description": "A specialization talent that modifies Shadow Execution: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.saboteur.apex",
+      "name": "Signature Dance of Death",
+      "icon": "🩸",
+      "minLevel": 60,
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "saboteur",
+      "abilityId": "dance_of_death",
+      "description": "A specialization talent that modifies Dance of Death: +6% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.duelist.skillmastery",
+      "name": "Empowered Sinister Strike",
+      "icon": "🗡️",
+      "minLevel": 18,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "duelist",
+      "abilityId": "sinister_strike",
+      "description": "A specialization talent that modifies Sinister Strike: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.duelist.rotation",
+      "name": "Efficient Toxic Barrage",
+      "icon": "☠️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "duelist",
+      "abilityId": "toxic_barrage",
+      "description": "A specialization talent that modifies Toxic Barrage: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.duelist.power",
+      "name": "Potent Cloak of Shadows",
+      "icon": "🌑",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "duelist",
+      "abilityId": "cloak_of_shadows",
+      "description": "A specialization talent that modifies Cloak of Shadows: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.duelist.precision",
+      "name": "Swift Fan of Blades",
+      "icon": "🔪",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "duelist",
+      "abilityId": "fan_of_blades",
+      "description": "A specialization talent that modifies Fan of Blades: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.duelist.mastery",
+      "name": "Advanced Shadow Execution",
+      "icon": "💀",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "duelist",
+      "abilityId": "shadow_execution",
+      "description": "A specialization talent that modifies Shadow Execution: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "shadowblade.duelist.apex",
+      "name": "Signature Dance of Death",
+      "icon": "🩸",
+      "minLevel": 60,
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "duelist",
+      "abilityId": "dance_of_death",
+      "description": "A specialization talent that modifies Dance of Death: +6% effect power Hover for the exact effect and current rank."
+    }
+  ],
+  "ranger": [
+    {
+      "id": "ranger.power",
+      "name": "Focused Power",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase Attack by 1.5 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1.5
+      },
+      "choiceGroup": "precision",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in precision; resetting talents refunds the choice."
+    },
+    {
+      "id": "ranger.vigor",
+      "name": "Vitality",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase maximum health by 15 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 15
+      },
+      "choiceGroup": "survival",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in survival; resetting talents refunds the choice."
+    },
+    {
+      "id": "ranger.discipline",
+      "name": "Battle Discipline",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 4,
+      "description": "Reduce global cooldowns very slightly per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 3
+      }
+    },
+    {
+      "id": "ranger.resilience",
+      "name": "Resilience",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 6,
+      "description": "Increase Armor by 1.25 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1.25
+      }
+    },
+    {
+      "id": "ranger.mastery",
+      "name": "Resource Depth",
+      "icon": "✨",
+      "cost": 1,
+      "minLevel": 8,
+      "description": "Increase resource cap by 8 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 8
+      }
+    },
+    {
+      "id": "ranger.endurance",
+      "name": "Endurance",
+      "icon": "🔥",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Increase health and resource regeneration per rank.",
+      "maxRank": 3,
+      "effect": {
+        "resolveRegen": 1
+      }
+    },
+    {
+      "id": "ranger.offense",
+      "name": "Brutal Precision",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Attack by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1
+      },
+      "choiceGroup": "precision",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in precision; resetting talents refunds the choice."
+    },
+    {
+      "id": "ranger.defense",
+      "name": "Iron Will",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Armor by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1
+      },
+      "choiceGroup": "survival",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in survival; resetting talents refunds the choice."
+    },
+    {
+      "id": "ranger.vitality",
+      "name": "Deep Reserves",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase maximum health by 11 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 11
+      }
+    },
+    {
+      "id": "ranger.focus",
+      "name": "Resource Reserve",
+      "icon": "🔷",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase resource cap by 7 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 7
+      }
+    },
+    {
+      "id": "ranger.haste",
+      "name": "Quickened Rhythm",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 2% haste per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 2
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "ranger.crit",
+      "name": "Keen Edge",
+      "icon": "🎯",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 3% critical chance per rank.",
+      "maxRank": 3,
+      "effect": {
+        "crit": 3
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "ranger.recovery",
+      "name": "Field Medic",
+      "icon": "💚",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Increase healing received by 5% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "healing": 5
+      }
+    },
+    {
+      "id": "ranger.apex",
+      "name": "Battle Instinct",
+      "icon": "👑",
+      "cost": 3,
+      "minLevel": 14,
+      "description": "Increase Attack and maximum health by 10 per rank.",
+      "maxRank": 2,
+      "effect": {
+        "attack": 2.5,
+        "maxHp": 2
+      }
+    },
+    {
+      "id": "ranger.marksman.keystone",
+      "name": "Marksman Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Marksman specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "crit": 4,
+        "damage": 4
+      },
+      "buildOnly": "marksman",
+      "keystone": true
+    },
+    {
+      "id": "ranger.skirmisher.keystone",
+      "name": "Skirmisher Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Skirmisher specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "haste": 4,
+        "damage": 3
+      },
+      "buildOnly": "skirmisher",
+      "keystone": true
+    },
+    {
+      "id": "ranger.stormarcher.keystone",
+      "name": "Storm Archer Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Storm Archer specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "damage": 5,
+        "crit": 3
+      },
+      "buildOnly": "stormarcher",
+      "keystone": true
+    },
+    {
+      "id": "ranger.marksman.skillmastery",
+      "name": "Empowered Concussive Shot",
+      "icon": "💥",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "marksman",
+      "abilityId": "concussive_shot",
+      "description": "A specialization talent that modifies Concussive Shot: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.marksman.rotation",
+      "name": "Efficient Camouflage",
+      "icon": "🌲",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "marksman",
+      "abilityId": "camouflage",
+      "description": "A specialization talent that modifies Camouflage: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.marksman.power",
+      "name": "Potent Rapid Fire",
+      "icon": "🎯",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "marksman",
+      "abilityId": "rapid_fire",
+      "description": "A specialization talent that modifies Rapid Fire: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.marksman.precision",
+      "name": "Swift Serpent Sting",
+      "icon": "🐍",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "marksman",
+      "abilityId": "serpent_sting",
+      "description": "A specialization talent that modifies Serpent Sting: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.marksman.mastery",
+      "name": "Advanced Kill Command",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "marksman",
+      "abilityId": "kill_command",
+      "description": "A specialization talent that modifies Kill Command: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🐺",
+      "minLevel": 58
+    },
+    {
+      "id": "ranger.marksman.apex",
+      "name": "Signature Explosive Trap",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "marksman",
+      "abilityId": "explosive_trap",
+      "description": "A specialization talent that modifies Explosive Trap: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "💣",
+      "minLevel": 60
+    },
+    {
+      "id": "ranger.skirmisher.skillmastery",
+      "name": "Empowered Concussive Shot",
+      "icon": "💥",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "skirmisher",
+      "abilityId": "concussive_shot",
+      "description": "A specialization talent that modifies Concussive Shot: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.skirmisher.rotation",
+      "name": "Efficient Camouflage",
+      "icon": "🌲",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "skirmisher",
+      "abilityId": "camouflage",
+      "description": "A specialization talent that modifies Camouflage: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.skirmisher.power",
+      "name": "Potent Rapid Fire",
+      "icon": "🎯",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "skirmisher",
+      "abilityId": "rapid_fire",
+      "description": "A specialization talent that modifies Rapid Fire: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.skirmisher.precision",
+      "name": "Swift Serpent Sting",
+      "icon": "🐍",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "skirmisher",
+      "abilityId": "serpent_sting",
+      "description": "A specialization talent that modifies Serpent Sting: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.skirmisher.mastery",
+      "name": "Advanced Kill Command",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "skirmisher",
+      "abilityId": "kill_command",
+      "description": "A specialization talent that modifies Kill Command: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🐺",
+      "minLevel": 58
+    },
+    {
+      "id": "ranger.skirmisher.apex",
+      "name": "Signature Explosive Trap",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "skirmisher",
+      "abilityId": "explosive_trap",
+      "description": "A specialization talent that modifies Explosive Trap: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "💣",
+      "minLevel": 60
+    },
+    {
+      "id": "ranger.stormarcher.skillmastery",
+      "name": "Empowered Concussive Shot",
+      "icon": "💥",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "stormarcher",
+      "abilityId": "concussive_shot",
+      "description": "A specialization talent that modifies Concussive Shot: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.stormarcher.rotation",
+      "name": "Efficient Camouflage",
+      "icon": "🌲",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "stormarcher",
+      "abilityId": "camouflage",
+      "description": "A specialization talent that modifies Camouflage: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.stormarcher.power",
+      "name": "Potent Rapid Fire",
+      "icon": "🎯",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "stormarcher",
+      "abilityId": "rapid_fire",
+      "description": "A specialization talent that modifies Rapid Fire: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.stormarcher.precision",
+      "name": "Swift Serpent Sting",
+      "icon": "🐍",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "stormarcher",
+      "abilityId": "serpent_sting",
+      "description": "A specialization talent that modifies Serpent Sting: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "ranger.stormarcher.mastery",
+      "name": "Advanced Kill Command",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "stormarcher",
+      "abilityId": "kill_command",
+      "description": "A specialization talent that modifies Kill Command: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🐺",
+      "minLevel": 58
+    },
+    {
+      "id": "ranger.stormarcher.apex",
+      "name": "Signature Explosive Trap",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "stormarcher",
+      "abilityId": "explosive_trap",
+      "description": "A specialization talent that modifies Explosive Trap: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "💣",
+      "minLevel": 60
+    }
+  ],
+  "templar": [
+    {
+      "id": "templar.power",
+      "name": "Focused Power",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase Attack by 1.5 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1.5
+      },
+      "choiceGroup": "damage",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in damage; resetting talents refunds the choice."
+    },
+    {
+      "id": "templar.vigor",
+      "name": "Vitality",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase maximum health by 15 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 15
+      },
+      "choiceGroup": "defense",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in defense; resetting talents refunds the choice."
+    },
+    {
+      "id": "templar.discipline",
+      "name": "Battle Discipline",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 4,
+      "description": "Reduce global cooldowns very slightly per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 3
+      }
+    },
+    {
+      "id": "templar.resilience",
+      "name": "Resilience",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 6,
+      "description": "Increase Armor by 1.25 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1.25
+      }
+    },
+    {
+      "id": "templar.mastery",
+      "name": "Resource Depth",
+      "icon": "✨",
+      "cost": 1,
+      "minLevel": 8,
+      "description": "Increase resource cap by 8 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 8
+      }
+    },
+    {
+      "id": "templar.endurance",
+      "name": "Endurance",
+      "icon": "🔥",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Increase health and resource regeneration per rank.",
+      "maxRank": 3,
+      "effect": {
+        "resolveRegen": 1
+      }
+    },
+    {
+      "id": "templar.offense",
+      "name": "Brutal Precision",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Attack by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1
+      },
+      "choiceGroup": "damage",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in damage; resetting talents refunds the choice."
+    },
+    {
+      "id": "templar.defense",
+      "name": "Iron Will",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Armor by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1
+      },
+      "choiceGroup": "defense",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in defense; resetting talents refunds the choice."
+    },
+    {
+      "id": "templar.vitality",
+      "name": "Deep Reserves",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase maximum health by 11 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 11
+      }
+    },
+    {
+      "id": "templar.focus",
+      "name": "Resource Reserve",
+      "icon": "🔷",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase resource cap by 7 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 7
+      }
+    },
+    {
+      "id": "templar.haste",
+      "name": "Quickened Rhythm",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 2% haste per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 2
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "templar.crit",
+      "name": "Keen Edge",
+      "icon": "🎯",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 3% critical chance per rank.",
+      "maxRank": 3,
+      "effect": {
+        "crit": 3
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "templar.recovery",
+      "name": "Field Medic",
+      "icon": "💚",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Increase healing received by 5% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "healing": 5
+      }
+    },
+    {
+      "id": "templar.apex",
+      "name": "Battle Instinct",
+      "icon": "👑",
+      "cost": 3,
+      "minLevel": 14,
+      "description": "Increase Attack and maximum health by 10 per rank.",
+      "maxRank": 2,
+      "effect": {
+        "attack": 2.5,
+        "maxHp": 2
+      }
+    },
+    {
+      "id": "templar.crusader.keystone",
+      "name": "Crusader Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Crusader specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "attack": 4,
+        "damage": 3
+      },
+      "buildOnly": "crusader",
+      "keystone": true
+    },
+    {
+      "id": "templar.guardian.keystone",
+      "name": "Guardian Templar Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Guardian Templar specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "armor": 4,
+        "maxHp": 30
+      },
+      "buildOnly": "guardian",
+      "keystone": true
+    },
+    {
+      "id": "templar.redeemer.keystone",
+      "name": "Redeemer Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Redeemer specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "healing": 5,
+        "maxHp": 20
+      },
+      "buildOnly": "redeemer",
+      "keystone": true
+    },
+    {
+      "id": "templar.crusader.skillmastery",
+      "name": "Empowered Divine Storm",
+      "icon": "🌪️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "crusader",
+      "abilityId": "divine_storm",
+      "description": "A specialization talent that modifies Divine Storm: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.crusader.rotation",
+      "name": "Efficient Flash of Light",
+      "icon": "✨",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "crusader",
+      "abilityId": "flash_of_light",
+      "description": "A specialization talent that modifies Flash of Light: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.crusader.power",
+      "name": "Potent Divine Shield",
+      "icon": "🛡️",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "crusader",
+      "abilityId": "divine_shield",
+      "description": "A specialization talent that modifies Divine Shield: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.crusader.precision",
+      "name": "Swift Holy Fire",
+      "icon": "🔥",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "crusader",
+      "abilityId": "holy_fire",
+      "description": "A specialization talent that modifies Holy Fire: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.crusader.mastery",
+      "name": "Advanced Wrathful Verdict",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "crusader",
+      "abilityId": "wrathful_verdict",
+      "description": "A specialization talent that modifies Wrathful Verdict: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "⚖️",
+      "minLevel": 58
+    },
+    {
+      "id": "templar.crusader.apex",
+      "name": "Signature Guardian Spirit",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "crusader",
+      "abilityId": "guardian_spirit",
+      "description": "A specialization talent that modifies Guardian Spirit: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "👼",
+      "minLevel": 60
+    },
+    {
+      "id": "templar.guardian.skillmastery",
+      "name": "Empowered Divine Storm",
+      "icon": "🌪️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "guardian",
+      "abilityId": "divine_storm",
+      "description": "A specialization talent that modifies Divine Storm: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.guardian.rotation",
+      "name": "Efficient Flash of Light",
+      "icon": "✨",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "guardian",
+      "abilityId": "flash_of_light",
+      "description": "A specialization talent that modifies Flash of Light: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.guardian.power",
+      "name": "Potent Divine Shield",
+      "icon": "🛡️",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "guardian",
+      "abilityId": "divine_shield",
+      "description": "A specialization talent that modifies Divine Shield: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.guardian.precision",
+      "name": "Swift Holy Fire",
+      "icon": "🔥",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "guardian",
+      "abilityId": "holy_fire",
+      "description": "A specialization talent that modifies Holy Fire: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.guardian.mastery",
+      "name": "Advanced Wrathful Verdict",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "guardian",
+      "abilityId": "wrathful_verdict",
+      "description": "A specialization talent that modifies Wrathful Verdict: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "⚖️",
+      "minLevel": 58
+    },
+    {
+      "id": "templar.guardian.apex",
+      "name": "Signature Guardian Spirit",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "guardian",
+      "abilityId": "guardian_spirit",
+      "description": "A specialization talent that modifies Guardian Spirit: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "👼",
+      "minLevel": 60
+    },
+    {
+      "id": "templar.redeemer.skillmastery",
+      "name": "Empowered Divine Storm",
+      "icon": "🌪️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "redeemer",
+      "abilityId": "divine_storm",
+      "description": "A specialization talent that modifies Divine Storm: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.redeemer.rotation",
+      "name": "Efficient Flash of Light",
+      "icon": "✨",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "redeemer",
+      "abilityId": "flash_of_light",
+      "description": "A specialization talent that modifies Flash of Light: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.redeemer.power",
+      "name": "Potent Divine Shield",
+      "icon": "🛡️",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "redeemer",
+      "abilityId": "divine_shield",
+      "description": "A specialization talent that modifies Divine Shield: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.redeemer.precision",
+      "name": "Swift Holy Fire",
+      "icon": "🔥",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "redeemer",
+      "abilityId": "holy_fire",
+      "description": "A specialization talent that modifies Holy Fire: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "templar.redeemer.mastery",
+      "name": "Advanced Wrathful Verdict",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "redeemer",
+      "abilityId": "wrathful_verdict",
+      "description": "A specialization talent that modifies Wrathful Verdict: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "⚖️",
+      "minLevel": 58
+    },
+    {
+      "id": "templar.redeemer.apex",
+      "name": "Signature Guardian Spirit",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "redeemer",
+      "abilityId": "guardian_spirit",
+      "description": "A specialization talent that modifies Guardian Spirit: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "👼",
+      "minLevel": 60
+    }
+  ],
+  "occultist": [
+    {
+      "id": "occultist.power",
+      "name": "Focused Power",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase Attack by 1.5 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1.5
+      },
+      "choiceGroup": "curse",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in curse; resetting talents refunds the choice."
+    },
+    {
+      "id": "occultist.vigor",
+      "name": "Vitality",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase maximum health by 15 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 15
+      },
+      "choiceGroup": "survival",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in survival; resetting talents refunds the choice."
+    },
+    {
+      "id": "occultist.discipline",
+      "name": "Battle Discipline",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 4,
+      "description": "Reduce global cooldowns very slightly per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 3
+      }
+    },
+    {
+      "id": "occultist.resilience",
+      "name": "Resilience",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 6,
+      "description": "Increase Armor by 1.25 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1.25
+      }
+    },
+    {
+      "id": "occultist.mastery",
+      "name": "Resource Depth",
+      "icon": "✨",
+      "cost": 1,
+      "minLevel": 8,
+      "description": "Increase resource cap by 8 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 8
+      }
+    },
+    {
+      "id": "occultist.endurance",
+      "name": "Endurance",
+      "icon": "🔥",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Increase health and resource regeneration per rank.",
+      "maxRank": 3,
+      "effect": {
+        "resolveRegen": 1
+      }
+    },
+    {
+      "id": "occultist.offense",
+      "name": "Brutal Precision",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Attack by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1
+      },
+      "choiceGroup": "curse",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in curse; resetting talents refunds the choice."
+    },
+    {
+      "id": "occultist.defense",
+      "name": "Iron Will",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Armor by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1
+      },
+      "choiceGroup": "survival",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in survival; resetting talents refunds the choice."
+    },
+    {
+      "id": "occultist.vitality",
+      "name": "Deep Reserves",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase maximum health by 11 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 11
+      }
+    },
+    {
+      "id": "occultist.focus",
+      "name": "Resource Reserve",
+      "icon": "🔷",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase resource cap by 7 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 7
+      }
+    },
+    {
+      "id": "occultist.haste",
+      "name": "Quickened Rhythm",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 2% haste per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 2
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "occultist.crit",
+      "name": "Keen Edge",
+      "icon": "🎯",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 3% critical chance per rank.",
+      "maxRank": 3,
+      "effect": {
+        "crit": 3
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "occultist.recovery",
+      "name": "Field Medic",
+      "icon": "💚",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Increase healing received by 5% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "healing": 5
+      }
+    },
+    {
+      "id": "occultist.apex",
+      "name": "Battle Instinct",
+      "icon": "👑",
+      "cost": 3,
+      "minLevel": 14,
+      "description": "Increase Attack and maximum health by 10 per rank.",
+      "maxRank": 2,
+      "effect": {
+        "attack": 2.5,
+        "maxHp": 2
+      }
+    },
+    {
+      "id": "occultist.plaguecaller.keystone",
+      "name": "Plaguecaller Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Plaguecaller specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "poisonDamage": 6,
+        "poisonDuration": 8
+      },
+      "buildOnly": "plaguecaller",
+      "keystone": true
+    },
+    {
+      "id": "occultist.soulreaper.keystone",
+      "name": "Soul Reaper Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Soul Reaper specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "damage": 5,
+        "healing": 3
+      },
+      "buildOnly": "soulreaper",
+      "keystone": true
+    },
+    {
+      "id": "occultist.voidcaller.keystone",
+      "name": "Voidcaller Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Voidcaller specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "haste": 4,
+        "damage": 4
+      },
+      "buildOnly": "voidcaller",
+      "keystone": true
+    },
+    {
+      "id": "occultist.plaguecaller.skillmastery",
+      "name": "Empowered Siphon Life",
+      "icon": "🩸",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "plaguecaller",
+      "abilityId": "siphon_life",
+      "description": "A specialization talent that modifies Siphon Life: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.plaguecaller.rotation",
+      "name": "Efficient Dark Ward",
+      "icon": "🕯️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "plaguecaller",
+      "abilityId": "dark_ward",
+      "description": "A specialization talent that modifies Dark Ward: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.plaguecaller.power",
+      "name": "Potent Soul Burst",
+      "icon": "💥",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "plaguecaller",
+      "abilityId": "soul_burst",
+      "description": "A specialization talent that modifies Soul Burst: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.plaguecaller.precision",
+      "name": "Swift Plague of Shadows",
+      "icon": "☠️",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "plaguecaller",
+      "abilityId": "plague_of_shadows",
+      "description": "A specialization talent that modifies Plague of Shadows: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.plaguecaller.mastery",
+      "name": "Advanced Void Ascendance",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "plaguecaller",
+      "abilityId": "void_ascendance",
+      "description": "A specialization talent that modifies Void Ascendance: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🌌",
+      "minLevel": 58
+    },
+    {
+      "id": "occultist.plaguecaller.apex",
+      "name": "Signature Harvest Soul",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "plaguecaller",
+      "abilityId": "harvest_soul",
+      "description": "A specialization talent that modifies Harvest Soul: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "💀",
+      "minLevel": 60
+    },
+    {
+      "id": "occultist.soulreaper.skillmastery",
+      "name": "Empowered Siphon Life",
+      "icon": "🩸",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "soulreaper",
+      "abilityId": "siphon_life",
+      "description": "A specialization talent that modifies Siphon Life: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.soulreaper.rotation",
+      "name": "Efficient Dark Ward",
+      "icon": "🕯️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "soulreaper",
+      "abilityId": "dark_ward",
+      "description": "A specialization talent that modifies Dark Ward: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.soulreaper.power",
+      "name": "Potent Soul Burst",
+      "icon": "💥",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "soulreaper",
+      "abilityId": "soul_burst",
+      "description": "A specialization talent that modifies Soul Burst: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.soulreaper.precision",
+      "name": "Swift Plague of Shadows",
+      "icon": "☠️",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "soulreaper",
+      "abilityId": "plague_of_shadows",
+      "description": "A specialization talent that modifies Plague of Shadows: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.soulreaper.mastery",
+      "name": "Advanced Void Ascendance",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "soulreaper",
+      "abilityId": "void_ascendance",
+      "description": "A specialization talent that modifies Void Ascendance: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🌌",
+      "minLevel": 58
+    },
+    {
+      "id": "occultist.soulreaper.apex",
+      "name": "Signature Harvest Soul",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "soulreaper",
+      "abilityId": "harvest_soul",
+      "description": "A specialization talent that modifies Harvest Soul: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "💀",
+      "minLevel": 60
+    },
+    {
+      "id": "occultist.voidcaller.skillmastery",
+      "name": "Empowered Siphon Life",
+      "icon": "🩸",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "voidcaller",
+      "abilityId": "siphon_life",
+      "description": "A specialization talent that modifies Siphon Life: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.voidcaller.rotation",
+      "name": "Efficient Dark Ward",
+      "icon": "🕯️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "voidcaller",
+      "abilityId": "dark_ward",
+      "description": "A specialization talent that modifies Dark Ward: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.voidcaller.power",
+      "name": "Potent Soul Burst",
+      "icon": "💥",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "voidcaller",
+      "abilityId": "soul_burst",
+      "description": "A specialization talent that modifies Soul Burst: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.voidcaller.precision",
+      "name": "Swift Plague of Shadows",
+      "icon": "☠️",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "voidcaller",
+      "abilityId": "plague_of_shadows",
+      "description": "A specialization talent that modifies Plague of Shadows: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "occultist.voidcaller.mastery",
+      "name": "Advanced Void Ascendance",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "voidcaller",
+      "abilityId": "void_ascendance",
+      "description": "A specialization talent that modifies Void Ascendance: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🌌",
+      "minLevel": 58
+    },
+    {
+      "id": "occultist.voidcaller.apex",
+      "name": "Signature Harvest Soul",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "voidcaller",
+      "abilityId": "harvest_soul",
+      "description": "A specialization talent that modifies Harvest Soul: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "💀",
+      "minLevel": 60
+    }
+  ],
+  "reaver": [
+    {
+      "id": "reaver.power",
+      "name": "Focused Power",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase Attack by 1.5 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1.5
+      },
+      "choiceGroup": "pressure",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in pressure; resetting talents refunds the choice."
+    },
+    {
+      "id": "reaver.vigor",
+      "name": "Vitality",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase maximum health by 15 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 15
+      },
+      "choiceGroup": "survival",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in survival; resetting talents refunds the choice."
+    },
+    {
+      "id": "reaver.discipline",
+      "name": "Battle Discipline",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 4,
+      "description": "Reduce global cooldowns very slightly per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 3
+      }
+    },
+    {
+      "id": "reaver.resilience",
+      "name": "Resilience",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 6,
+      "description": "Increase Armor by 1.25 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1.25
+      }
+    },
+    {
+      "id": "reaver.mastery",
+      "name": "Resource Depth",
+      "icon": "✨",
+      "cost": 1,
+      "minLevel": 8,
+      "description": "Increase resource cap by 8 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 8
+      }
+    },
+    {
+      "id": "reaver.endurance",
+      "name": "Endurance",
+      "icon": "🔥",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Increase health and resource regeneration per rank.",
+      "maxRank": 3,
+      "effect": {
+        "resolveRegen": 1
+      }
+    },
+    {
+      "id": "reaver.offense",
+      "name": "Brutal Precision",
+      "icon": "⚔️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Attack by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "attack": 1
+      },
+      "choiceGroup": "pressure",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in pressure; resetting talents refunds the choice."
+    },
+    {
+      "id": "reaver.defense",
+      "name": "Iron Will",
+      "icon": "🛡️",
+      "cost": 1,
+      "minLevel": 3,
+      "description": "Increase Armor by 1.0 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "armor": 1
+      },
+      "choiceGroup": "survival",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in survival; resetting talents refunds the choice."
+    },
+    {
+      "id": "reaver.vitality",
+      "name": "Deep Reserves",
+      "icon": "❤️",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase maximum health by 11 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxHp": 11
+      }
+    },
+    {
+      "id": "reaver.focus",
+      "name": "Resource Reserve",
+      "icon": "🔷",
+      "cost": 1,
+      "minLevel": 5,
+      "description": "Increase resource cap by 7 per rank.",
+      "maxRank": 5,
+      "effect": {
+        "maxResolve": 7
+      }
+    },
+    {
+      "id": "reaver.haste",
+      "name": "Quickened Rhythm",
+      "icon": "⏱️",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 2% haste per rank.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 2
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "reaver.crit",
+      "name": "Keen Edge",
+      "icon": "🎯",
+      "cost": 1,
+      "minLevel": 7,
+      "description": "Gain 3% critical chance per rank.",
+      "maxRank": 3,
+      "effect": {
+        "crit": 3
+      },
+      "choiceGroup": "tempo",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one branch in tempo; resetting talents refunds the choice."
+    },
+    {
+      "id": "reaver.recovery",
+      "name": "Field Medic",
+      "icon": "💚",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Increase healing received by 5% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "healing": 5
+      }
+    },
+    {
+      "id": "reaver.apex",
+      "name": "Battle Instinct",
+      "icon": "👑",
+      "cost": 3,
+      "minLevel": 14,
+      "description": "Increase Attack and maximum health by 10 per rank.",
+      "maxRank": 2,
+      "effect": {
+        "attack": 2.5,
+        "maxHp": 2
+      }
+    },
+    {
+      "id": "reaver.berserker.keystone",
+      "name": "Berserker Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Berserker specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "attack": 5,
+        "crit": 3
+      },
+      "buildOnly": "berserker",
+      "keystone": true
+    },
+    {
+      "id": "reaver.bloodreaver.keystone",
+      "name": "Blood Reaver Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Blood Reaver specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "bleedDamage": 7,
+        "bleedDuration": 8
+      },
+      "buildOnly": "bloodreaver",
+      "keystone": true
+    },
+    {
+      "id": "reaver.warborn.keystone",
+      "name": "Warborn Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Warborn specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "maxHp": 25,
+        "damage": 4
+      },
+      "buildOnly": "warborn",
+      "keystone": true
+    },
+    {
+      "id": "reaver.berserker.skillmastery",
+      "name": "Empowered Sweeping Blows",
+      "icon": "⚔️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "berserker",
+      "abilityId": "sweeping_blows",
+      "description": "A specialization talent that modifies Sweeping Blows: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.berserker.rotation",
+      "name": "Efficient Rupturing Strike",
+      "icon": "🩸",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "berserker",
+      "abilityId": "rupturing_strike",
+      "description": "A specialization talent that modifies Rupturing Strike: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.berserker.power",
+      "name": "Potent Battle Howl",
+      "icon": "🐺",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "berserker",
+      "abilityId": "battle_howl",
+      "description": "A specialization talent that modifies Battle Howl: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.berserker.precision",
+      "name": "Swift Berserker Rage",
+      "icon": "🔥",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "berserker",
+      "abilityId": "berserker_rage",
+      "description": "A specialization talent that modifies Berserker Rage: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.berserker.mastery",
+      "name": "Advanced Cleaving Rend",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "berserker",
+      "abilityId": "cleaving_rend",
+      "description": "A specialization talent that modifies Cleaving Rend: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🩸",
+      "minLevel": 58
+    },
+    {
+      "id": "reaver.berserker.apex",
+      "name": "Signature Carnage",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "berserker",
+      "abilityId": "carnage",
+      "description": "A specialization talent that modifies Carnage: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "💢",
+      "minLevel": 60
+    },
+    {
+      "id": "reaver.bloodreaver.skillmastery",
+      "name": "Empowered Sweeping Blows",
+      "icon": "⚔️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "bloodreaver",
+      "abilityId": "sweeping_blows",
+      "description": "A specialization talent that modifies Sweeping Blows: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.bloodreaver.rotation",
+      "name": "Efficient Rupturing Strike",
+      "icon": "🩸",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "bloodreaver",
+      "abilityId": "rupturing_strike",
+      "description": "A specialization talent that modifies Rupturing Strike: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.bloodreaver.power",
+      "name": "Potent Battle Howl",
+      "icon": "🐺",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "bloodreaver",
+      "abilityId": "battle_howl",
+      "description": "A specialization talent that modifies Battle Howl: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.bloodreaver.precision",
+      "name": "Swift Berserker Rage",
+      "icon": "🔥",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "bloodreaver",
+      "abilityId": "berserker_rage",
+      "description": "A specialization talent that modifies Berserker Rage: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.bloodreaver.mastery",
+      "name": "Advanced Cleaving Rend",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "bloodreaver",
+      "abilityId": "cleaving_rend",
+      "description": "A specialization talent that modifies Cleaving Rend: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🩸",
+      "minLevel": 58
+    },
+    {
+      "id": "reaver.bloodreaver.apex",
+      "name": "Signature Carnage",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "bloodreaver",
+      "abilityId": "carnage",
+      "description": "A specialization talent that modifies Carnage: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "💢",
+      "minLevel": 60
+    },
+    {
+      "id": "reaver.warborn.skillmastery",
+      "name": "Empowered Sweeping Blows",
+      "icon": "⚔️",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warborn",
+      "abilityId": "sweeping_blows",
+      "description": "A specialization talent that modifies Sweeping Blows: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.warborn.rotation",
+      "name": "Efficient Rupturing Strike",
+      "icon": "🩸",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warborn",
+      "abilityId": "rupturing_strike",
+      "description": "A specialization talent that modifies Rupturing Strike: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.warborn.power",
+      "name": "Potent Battle Howl",
+      "icon": "🐺",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warborn",
+      "abilityId": "battle_howl",
+      "description": "A specialization talent that modifies Battle Howl: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.warborn.precision",
+      "name": "Swift Berserker Rage",
+      "icon": "🔥",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warborn",
+      "abilityId": "berserker_rage",
+      "description": "A specialization talent that modifies Berserker Rage: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "reaver.warborn.mastery",
+      "name": "Advanced Cleaving Rend",
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "warborn",
+      "abilityId": "cleaving_rend",
+      "description": "A specialization talent that modifies Cleaving Rend: +3% effect power Hover for the exact effect and current rank.",
+      "icon": "🩸",
+      "minLevel": 58
+    },
+    {
+      "id": "reaver.warborn.apex",
+      "name": "Signature Carnage",
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "warborn",
+      "abilityId": "carnage",
+      "description": "A specialization talent that modifies Carnage: +6% effect power Hover for the exact effect and current rank.",
+      "icon": "💢",
+      "minLevel": 60
+    }
+  ],
+  "hierophant": [
+    {
+      "id": "hierophant.grace",
+      "name": "Grace",
+      "description": "Increase healing effectiveness by 4% per rank.",
+      "cost": 1,
+      "maxRank": 5,
+      "minLevel": 2,
+      "effect": {
+        "healing": 4
+      },
+      "choiceGroup": "direct-heal",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one direct-heal path."
+    },
+    {
+      "id": "hierophant.faith",
+      "name": "Deep Faith",
+      "description": "Increase maximum Faith by 4 per rank.",
+      "cost": 1,
+      "maxRank": 5,
+      "minLevel": 4,
+      "effect": {
+        "maxResolve": 4
+      }
+    },
+    {
+      "id": "hierophant.light",
+      "name": "Radiant Mastery",
+      "description": "Increase damage by 4% per rank.",
+      "cost": 2,
+      "maxRank": 5,
+      "minLevel": 8,
+      "effect": {
+        "damage": 4
+      }
+    },
+    {
+      "id": "hierophant.aegis",
+      "name": "Sacred Aegis",
+      "description": "Increase maximum health by 10 per rank.",
+      "cost": 1,
+      "maxRank": 5,
+      "minLevel": 3,
+      "effect": {
+        "maxHp": 10
+      }
+    },
+    {
+      "id": "hierophant.hotmastery",
+      "name": "Living Rhythm",
+      "icon": "🌺",
+      "cost": 1,
+      "minLevel": 2,
+      "description": "Increase healing-over-time duration by 5% per rank.",
+      "maxRank": 5,
+      "effect": {
+        "hotDuration": 5
+      },
+      "choiceGroup": "hot",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one hot path."
+    },
+    {
+      "id": "hierophant.stability",
+      "name": "Steady Spirit",
+      "icon": "🌳",
+      "cost": 1,
+      "minLevel": 4,
+      "description": "Reduce incoming stun duration by 4% per rank.",
+      "maxRank": 5,
+      "effect": {
+        "stunResist": 4
+      },
+      "choiceGroup": "utility",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one utility path."
+    },
+    {
+      "id": "hierophant.rootward",
+      "name": "Rooted Faith",
+      "icon": "🛡️",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Rootward and defensive effects last 6% longer per rank.",
+      "maxRank": 3,
+      "effect": {
+        "buffDuration": 6
+      }
+    },
+    {
+      "id": "hierophant.emergency_grace",
+      "name": "Emergency Grace",
+      "icon": "💚",
+      "cost": 2,
+      "minLevel": 8,
+      "description": "Increase healing effectiveness by 5% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "healing": 5
+      },
+      "choiceGroup": "direct-heal",
+      "choiceRule": "exclusive",
+      "choiceNote": "Choose one direct-heal path."
+    },
+    {
+      "id": "hierophant.living_light",
+      "name": "Living Light",
+      "icon": "🌿",
+      "cost": 2,
+      "minLevel": 10,
+      "description": "Increase healing-over-time duration by 7% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "hotDuration": 7
+      }
+    },
+    {
+      "id": "hierophant.aegis_keeper",
+      "name": "Aegis Keeper",
+      "icon": "🛡️",
+      "cost": 2,
+      "minLevel": 12,
+      "description": "Increase defensive buff duration by 10% per rank.",
+      "maxRank": 3,
+      "effect": {
+        "buffDuration": 10
+      }
+    },
+    {
+      "id": "hierophant.faithful_hand",
+      "name": "Faithful Hand",
+      "icon": "✨",
+      "cost": 3,
+      "minLevel": 14,
+      "description": "Increase Healing by 4% and maximum health by 6 per rank.",
+      "maxRank": 2,
+      "effect": {
+        "healing": 4,
+        "maxHp": 6
+      }
+    },
+    {
+      "id": "hierophant.sanctified_rhythm",
+      "name": "Sanctified Rhythm",
+      "icon": "✨",
+      "cost": 1,
+      "minLevel": 6,
+      "description": "Gain 2% haste per rank, improving healing cadence and spell timing.",
+      "maxRank": 3,
+      "effect": {
+        "haste": 2
+      }
+    },
+    {
+      "id": "hierophant.sanctuary.keystone",
+      "name": "Sanctuary Healer Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Sanctuary Healer specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "healing": 6,
+        "maxHp": 20
+      },
+      "buildOnly": "sanctuary",
+      "keystone": true
+    },
+    {
+      "id": "hierophant.aegis.keystone",
+      "name": "Aegis Healer Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Aegis Healer specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "armor": 3,
+        "maxHp": 30
+      },
+      "buildOnly": "aegis",
+      "keystone": true
+    },
+    {
+      "id": "hierophant.battlepriest.keystone",
+      "name": "Battle Priest Keystone",
+      "icon": "◆",
+      "cost": 1,
+      "minLevel": 10,
+      "description": "Keystone for the Battle Priest specialization. Changes one core ability interaction.",
+      "maxRank": 1,
+      "effect": {
+        "attack": 4,
+        "healing": 3
+      },
+      "buildOnly": "battlepriest",
+      "keystone": true
+    },
+    {
+      "id": "hierophant.sanctuary.skillmastery",
+      "name": "Empowered Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 18,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "sanctuary",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.sanctuary.rotation",
+      "name": "Efficient Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "sanctuary",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.sanctuary.power",
+      "name": "Potent Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "sanctuary",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.sanctuary.precision",
+      "name": "Swift Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "sanctuary",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.sanctuary.mastery",
+      "name": "Advanced Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "sanctuary",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.sanctuary.apex",
+      "name": "Signature Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 60,
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "sanctuary",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +6% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.aegis.skillmastery",
+      "name": "Empowered Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 18,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "aegis",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.aegis.rotation",
+      "name": "Efficient Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "aegis",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.aegis.power",
+      "name": "Potent Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "aegis",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.aegis.precision",
+      "name": "Swift Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "aegis",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.aegis.mastery",
+      "name": "Advanced Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "aegis",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.aegis.apex",
+      "name": "Signature Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 60,
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "aegis",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +6% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.battlepriest.skillmastery",
+      "name": "Empowered Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 18,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "battlepriest",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.battlepriest.rotation",
+      "name": "Efficient Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 34,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "battlepriest",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: -5% resource cost Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.battlepriest.power",
+      "name": "Potent Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 50,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "battlepriest",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +4% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.battlepriest.precision",
+      "name": "Swift Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "battlepriest",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: -4% cast/GCD time Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.battlepriest.mastery",
+      "name": "Advanced Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 58,
+      "maxRank": 3,
+      "cost": 1,
+      "buildOnly": "battlepriest",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +3% effect power Hover for the exact effect and current rank."
+    },
+    {
+      "id": "hierophant.battlepriest.apex",
+      "name": "Signature Divine Hymn",
+      "icon": "🎶",
+      "minLevel": 60,
+      "maxRank": 1,
+      "cost": 1,
+      "buildOnly": "battlepriest",
+      "abilityId": "divine_hymn",
+      "description": "A specialization talent that modifies Divine Hymn: +6% effect power Hover for the exact effect and current rank."
+    }
+  ]
+}

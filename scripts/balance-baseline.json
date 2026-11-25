@@ -1,0 +1,1064 @@
+{
+  "basic_strike": {
+    "power": 1,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 0
+  },
+  "shield_bash": {
+    "power": 1.85,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 8
+  },
+  "cleave": {
+    "power": 1.45,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 6
+  },
+  "revenge": {
+    "power": 2.8,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 10
+  },
+  "guard": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 14
+  },
+  "shield_wall": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 90
+  },
+  "arcane_bolt": {
+    "power": 1.08,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 0
+  },
+  "frost_nova": {
+    "power": 1.5,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 10
+  },
+  "arcane_surge": {
+    "power": 2.8,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 25
+  },
+  "blink": {
+    "power": 0,
+    "heal": null,
+    "gcd": 0.5,
+    "cooldown": 12
+  },
+  "barrier": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 25
+  },
+  "mana_burn": {
+    "power": 2.1,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 18
+  },
+  "thorn_lash": {
+    "power": 0.98,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 0
+  },
+  "rejuvenation": {
+    "power": 0,
+    "heal": 0.18,
+    "gcd": 1.2,
+    "cooldown": 8
+  },
+  "root": {
+    "power": 0.95,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "natures_wrath": {
+    "power": 2.7,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 20
+  },
+  "barkskin": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 35
+  },
+  "soothing_bloom": {
+    "power": 0,
+    "heal": 0.32,
+    "gcd": 1.2,
+    "cooldown": 18
+  },
+  "quick_cut": {
+    "power": 1.03,
+    "heal": null,
+    "gcd": 1.1,
+    "cooldown": 0
+  },
+  "venom": {
+    "power": 1.5,
+    "heal": null,
+    "gcd": 1.4,
+    "cooldown": 10
+  },
+  "ambush": {
+    "power": 3,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 14
+  },
+  "smoke_bomb": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 22
+  },
+  "shadow_dance": {
+    "power": 3,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 35
+  },
+  "steady_shot": {
+    "power": 1,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 0
+  },
+  "hunter_mark": {
+    "power": 1.15,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "volley": {
+    "power": 1.6,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 8
+  },
+  "evasive_step": {
+    "power": 0,
+    "heal": null,
+    "gcd": 0.6,
+    "cooldown": 18
+  },
+  "rain_of_arrows": {
+    "power": 3.1,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 28
+  },
+  "holy_strike": {
+    "power": 1.12,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 0
+  },
+  "smite": {
+    "power": 1.35,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 8
+  },
+  "lay_on_hands": {
+    "power": 0,
+    "heal": 0.35,
+    "gcd": 1.2,
+    "cooldown": 90
+  },
+  "blessed_guard": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 28
+  },
+  "judgement": {
+    "power": 2.9,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 20
+  },
+  "eldritch_bolt": {
+    "power": 1.08,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 0
+  },
+  "curse": {
+    "power": 1.15,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 10
+  },
+  "life_drain": {
+    "power": 1,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "shadow_pact": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 30
+  },
+  "doom": {
+    "power": 3.4,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 24
+  },
+  "veil_step": {
+    "power": 0,
+    "heal": null,
+    "gcd": 0.6,
+    "cooldown": 20
+  },
+  "blood_strike": {
+    "power": 1.05,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 0
+  },
+  "rend": {
+    "power": 1.15,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 8
+  },
+  "whirlwind": {
+    "power": 1.45,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 9
+  },
+  "frenzy": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 25
+  },
+  "bloodrush": {
+    "power": 2.4,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 18
+  },
+  "execution": {
+    "power": 4,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 16
+  },
+  "holy_light": {
+    "power": 0.95,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 0
+  },
+  "renew": {
+    "power": 0,
+    "heal": 0.16,
+    "gcd": 1.2,
+    "cooldown": 8
+  },
+  "smite_light": {
+    "power": 1.05,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 7
+  },
+  "sanctuary": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 30
+  },
+  "purify": {
+    "power": 0,
+    "heal": 0.12,
+    "gcd": 1.2,
+    "cooldown": 18
+  },
+  "divine_word": {
+    "power": 3,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 35
+  },
+  "shield_throw": {
+    "power": 1.8,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 10
+  },
+  "deep_wound": {
+    "power": 1.7,
+    "heal": null,
+    "gcd": 1.4,
+    "cooldown": 12
+  },
+  "flame_surge": {
+    "power": 1.9,
+    "heal": null,
+    "gcd": 1.4,
+    "cooldown": 8
+  },
+  "purifying_light": {
+    "power": 0,
+    "heal": 0.22,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "shadow_rend": {
+    "power": 1.8,
+    "heal": null,
+    "gcd": 1.3,
+    "cooldown": 9
+  },
+  "shield_charge": {
+    "power": 1.9,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 14
+  },
+  "fortifying_roar": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 28
+  },
+  "whirlwind_guard": {
+    "power": 1.7,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 18
+  },
+  "meteor_shard": {
+    "power": 2.2,
+    "heal": null,
+    "gcd": 1.4,
+    "cooldown": 9
+  },
+  "arcane_echo": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 22
+  },
+  "frost_lance": {
+    "power": 1.8,
+    "heal": null,
+    "gcd": 1.3,
+    "cooldown": 7
+  },
+  "wild_growth": {
+    "power": 0,
+    "heal": 0.28,
+    "gcd": 1.2,
+    "cooldown": 14
+  },
+  "thorn_barrage": {
+    "power": 1.7,
+    "heal": null,
+    "gcd": 1.4,
+    "cooldown": 8
+  },
+  "shadow_step": {
+    "power": 2.2,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 16
+  },
+  "marked_for_death": {
+    "power": 1.6,
+    "heal": null,
+    "gcd": 1.3,
+    "cooldown": 20
+  },
+  "piercing_arrow": {
+    "power": 2,
+    "heal": null,
+    "gcd": 1.4,
+    "cooldown": 9
+  },
+  "trueshot": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 30
+  },
+  "judging_blade": {
+    "power": 2,
+    "heal": null,
+    "gcd": 1.4,
+    "cooldown": 12
+  },
+  "aegis_of_light": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 32
+  },
+  "soul_siphon": {
+    "power": 1.7,
+    "heal": null,
+    "gcd": 1.4,
+    "cooldown": 10
+  },
+  "nightfall": {
+    "power": 2.6,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 20
+  },
+  "bloodletter": {
+    "power": 1.7,
+    "heal": null,
+    "gcd": 1.3,
+    "cooldown": 8
+  },
+  "death_waltz": {
+    "power": 2.4,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 24
+  },
+  "radiant_word": {
+    "power": 1.5,
+    "heal": null,
+    "gcd": 1.3,
+    "cooldown": 12
+  },
+  "salvation": {
+    "power": 0,
+    "heal": 0.6,
+    "gcd": 1.5,
+    "cooldown": 40
+  },
+  "ground_smash": {
+    "power": 2.1,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 14
+  },
+  "smoke_burst": {
+    "power": 2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 16
+  },
+  "consecration": {
+    "power": 2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 18
+  },
+  "void_pulse": {
+    "power": 2.3,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 16
+  },
+  "blood_whirl": {
+    "power": 2.1,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 13
+  },
+  "radiant_burst": {
+    "power": 2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 16
+  },
+  "holy_aegis": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 24
+  },
+  "mass_renew": {
+    "power": 0,
+    "heal": 0.38,
+    "gcd": 1.5,
+    "cooldown": 28
+  },
+  "hemorrhage": {
+    "power": 1.35,
+    "heal": null,
+    "gcd": 1.3,
+    "cooldown": 8
+  },
+  "eviscerate": {
+    "power": 2.65,
+    "heal": null,
+    "gcd": 1.4,
+    "cooldown": 12
+  },
+  "vanish": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 45
+  },
+  "lifebloom": {
+    "power": 0,
+    "heal": 0.16,
+    "gcd": 1.2,
+    "cooldown": 10
+  },
+  "purifying_grove": {
+    "power": 0,
+    "heal": 0.2,
+    "gcd": 1.3,
+    "cooldown": 24
+  },
+  "rootward": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 30
+  },
+  "shadow_flurry": {
+    "power": 2.05,
+    "heal": null,
+    "gcd": 1.3,
+    "cooldown": 14
+  },
+  "crippling_toxin": {
+    "power": 1.15,
+    "heal": null,
+    "gcd": 1.3,
+    "cooldown": 18
+  },
+  "death_mark": {
+    "power": 3.35,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 28
+  },
+  "guardian_grace": {
+    "power": 0,
+    "heal": 0.32,
+    "gcd": 1.2,
+    "cooldown": 24
+  },
+  "radiant_barrier": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 30
+  },
+  "purifying_wave": {
+    "power": 0,
+    "heal": 0.24,
+    "gcd": 1.2,
+    "cooldown": 20
+  },
+  "blessing_of_ashenfall": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 24
+  },
+  "revive": {
+    "power": 0,
+    "heal": 0,
+    "gcd": 2,
+    "cooldown": 45
+  },
+  "purge": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 16
+  },
+  "iron_rebuke": {
+    "power": 1.9,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "shield_reinforcement": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "rallying_banner": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "shield_storm": {
+    "power": 2.2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "unyielding": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "thunderous_challenge": {
+    "power": 2.25,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "last_stand": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "citadel_breaker": {
+    "power": 3.8,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "arcane_missiles": {
+    "power": 2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "ice_lance": {
+    "power": 1.9,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "flame_burst": {
+    "power": 2.1,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "temporal_shift": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "spellward": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "comet": {
+    "power": 3.3,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "mana_rupture": {
+    "power": 2.6,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "arcane_overload": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "time_stop": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "starfall": {
+    "power": 3.6,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 30
+  },
+  "swiftmend": {
+    "power": 0,
+    "heal": 0.28,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "entangling_vines": {
+    "power": 1.25,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "ironbark": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "spirit_bloom": {
+    "power": 0,
+    "heal": 0.35,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "ancestral_growth": {
+    "power": 0,
+    "heal": 0.25,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "natures_grasp": {
+    "power": 1.9,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "tranquility": {
+    "power": 0,
+    "heal": 0.55,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "sinister_strike": {
+    "power": 1.45,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "toxic_barrage": {
+    "power": 1.8,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "cloak_of_shadows": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "fan_of_blades": {
+    "power": 2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "shadow_execution": {
+    "power": 3.8,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "dance_of_death": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "aimed_shot": {
+    "power": 2.1,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "multishot": {
+    "power": 1.4,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "concussive_shot": {
+    "power": 1.15,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "camouflage": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "rapid_fire": {
+    "power": 2.4,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "serpent_sting": {
+    "power": 1.25,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "kill_command": {
+    "power": 2.8,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "explosive_trap": {
+    "power": 2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "barrage": {
+    "power": 3,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "aspect_of_the_wild": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "black_arrow": {
+    "power": 3.4,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "deadeye": {
+    "power": 4.2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 30
+  },
+  "hunters_fury": {
+    "power": 2.25,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "shield_of_faith": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "holy_hammer": {
+    "power": 1.8,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "divine_storm": {
+    "power": 2.2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "flash_of_light": {
+    "power": 0,
+    "heal": 0.25,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "divine_shield": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "holy_fire": {
+    "power": 2.2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "wrathful_verdict": {
+    "power": 3.6,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "guardian_spirit": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "consecrated_light": {
+    "power": 0,
+    "heal": 0.4,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "last_judgment": {
+    "power": 4,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "beacon_of_hope": {
+    "power": 0,
+    "heal": 0.5,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "holy_reckoning": {
+    "power": 2.7,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "plague_spread": {
+    "power": 1.7,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "fear": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "siphon_life": {
+    "power": 1.4,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "dark_ward": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "soul_burst": {
+    "power": 2.8,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "plague_of_shadows": {
+    "power": 3,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "void_ascendance": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "harvest_soul": {
+    "power": 4.2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "void_rift": {
+    "power": 3.2,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "apocalypse": {
+    "power": 4.6,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 45
+  },
+  "savage_slash": {
+    "power": 1.4,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "blood_frenzy": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "sweeping_blows": {
+    "power": 1.8,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "rupturing_strike": {
+    "power": 1.65,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "battle_howl": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "berserker_rage": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "cleaving_rend": {
+    "power": 2.1,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "carnage": {
+    "power": 2.8,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "unbound_fury": {
+    "power": 0,
+    "heal": null,
+    "gcd": 1.2,
+    "cooldown": 12
+  },
+  "annihilate": {
+    "power": 3.5,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 12
+  },
+  "apocalypse_blade": {
+    "power": 4.5,
+    "heal": null,
+    "gcd": 1.5,
+    "cooldown": 45
+  },
+  "divine_hymn": {
+    "power": 0,
+    "heal": 0.55,
+    "gcd": 1.2,
+    "cooldown": 12
+  }
+}

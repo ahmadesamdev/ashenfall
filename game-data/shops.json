@@ -1,0 +1,200 @@
+{
+  "stonehold": [
+    {
+      "id": "stonehold_general",
+      "name": "Mira's Provisioner",
+      "icon": "🧺",
+      "items": [
+        {
+          "itemId": "small_health_potion",
+          "price": 12
+        },
+        {
+          "itemId": "iron_sword",
+          "price": 85
+        },
+        {
+          "itemId": "iron_helmet",
+          "price": 65
+        },
+        {
+          "itemId": "ashen_tonic",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": "stonehold_armory",
+      "name": "Blacksmith Garran",
+      "icon": "⚒️",
+      "items": [
+        {
+          "itemId": "ashen_buckler",
+          "price": 120
+        },
+        {
+          "itemId": "iron_sword",
+          "price": 85
+        },
+        {
+          "itemId": "lantern_cloak",
+          "price": 220
+        },
+        {
+          "itemId": "warden_mail",
+          "price": 280
+        },
+        {
+          "itemId": "gloomweave_hood",
+          "price": 340
+        },
+        {
+          "itemId": "lantern_ring",
+          "price": 360
+        }
+      ]
+    }
+  ],
+  "duskmoor": [
+    {
+      "id": "duskmoor_apothecary",
+      "name": "The Sinking Flask",
+      "icon": "🧪",
+      "items": [
+        {
+          "itemId": "greater_health_potion",
+          "price": 55
+        },
+        {
+          "itemId": "mana_tonic",
+          "price": 45
+        }
+      ]
+    }
+  ],
+  "black_citadel": [
+    {
+      "id": "citadel_armory",
+      "name": "Quartermaster Vey",
+      "icon": "🛡️",
+      "items": [
+        {
+          "itemId": "greater_health_potion",
+          "price": 70
+        },
+        {
+          "itemId": "saints_aegis",
+          "price": 650
+        },
+        {
+          "itemId": "ashguard_plate",
+          "price": 900
+        },
+        {
+          "itemId": "saintbreaker",
+          "price": 1200
+        }
+      ]
+    }
+  ],
+  "ebonharbor": [
+    {
+      "id": "harbor_market",
+      "name": "Tideglass Market",
+      "icon": "⚓",
+      "items": [
+        {
+          "itemId": "small_health_potion",
+          "price": 12
+        },
+        {
+          "itemId": "hunter_bow",
+          "price": 180
+        },
+        {
+          "itemId": "mana_tonic",
+          "price": 45
+        },
+        {
+          "itemId": "arcane_focus",
+          "price": 520
+        },
+        {
+          "itemId": "wolfheart_charm",
+          "price": 420
+        }
+      ]
+    }
+  ],
+  "dawnwatch": [
+    {
+      "id": "dawnwatch_supply",
+      "name": "Lantern Supplies",
+      "icon": "🏹",
+      "items": [
+        {
+          "itemId": "small_health_potion",
+          "price": 12
+        },
+        {
+          "itemId": "hunter_bow",
+          "price": 180
+        },
+        {
+          "itemId": "iron_helmet",
+          "price": 65
+        },
+        {
+          "itemId": "dawnwatch_bow",
+          "price": 500
+        }
+      ]
+    }
+  ],
+  "eastern_reach": [
+    {
+      "id": "eastern_reach_supplies",
+      "name": "Tovin's Frontier Stock",
+      "icon": "🧳",
+      "items": [
+        {
+          "itemId": "greater_health_potion",
+          "price": 55
+        },
+        {
+          "itemId": "mana_tonic",
+          "price": 45
+        },
+        {
+          "itemId": "ashen_tonic",
+          "price": 20
+        },
+        {
+          "itemId": "iron_sword",
+          "price": 85
+        }
+      ]
+    }
+  ],
+  "old_kingdom": [
+    {
+      "id": "old_kingdom_armory",
+      "name": "Kingless Armory",
+      "icon": "⚒️",
+      "items": [
+        {
+          "itemId": "grave_steel_blade",
+          "price": 420
+        },
+        {
+          "itemId": "blacksteel_blade",
+          "price": 700
+        },
+        {
+          "itemId": "greater_health_potion",
+          "price": 55
+        }
+      ]
+    }
+  ]
+}
